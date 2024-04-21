@@ -1,0 +1,348 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ed0c9598759298d081a15b6669d751, type: 3}
+  m_Name: "VP 6 Hard Boss Level With Plus and Minus Bubbles"
+  m_EditorClassIdentifier: 
+  contentHash: "b8815f9c1c84d3a69570e727a5e39f40"
+  tiles:
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  moves: 22
+  hardLevelParameters:
+    moves: 18
+    overrideCharge: 0
+    starThresholds: A00F0000401F0000983A0000
+    enabledPowerupColors:
+    - value: "Blue"
+    - value: "Yellow"
+  starThresholds: A00F0000401F0000983A0000
+  spawnInfos:
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Blue"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Red"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Green"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Yellow"
+    chance: 1
+    maxObjects: 0
+  tutorialSteps: []
+  firstPieces: []
+  spawnExistingColorsOnly: 1
+  amountOfOneTurnBoosters: 0
+  enableOneTurnBoosterShield: 0
+  enableOneTurnBoosterSuperaim: 0
+  enableOneTurnBoosterSuperqueue: 0
+  enabledPowerupColors:
+  - value: "Yellow"
+  - value: "Blue"
+  overrideChargeAmount: 40
+  bossLevelStages:
+  - {fileID: 11400000, guid: faeb41e434e14de18369e5473bafb05e, type: 2}
+  - {fileID: 11400000, guid: ac55746fa2b940399cc63431746fda8e, type: 2}
+  - {fileID: 11400000, guid: ba9791b1859e4931b2a9af1633c8a13f, type: 2}
+  - {fileID: 11400000, guid: abc7bfddcc74457c99ee79251807b217, type: 2}
+  - {fileID: 11400000, guid: 419464a52d4f4c138d31c14c39d566c0, type: 2}
+  - {fileID: 11400000, guid: a760ea6953354f92bbb8e89e661ada87, type: 2}

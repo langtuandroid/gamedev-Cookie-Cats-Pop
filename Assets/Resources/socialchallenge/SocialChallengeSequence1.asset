@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070d0ec5ba7089440fe5393ed4d4b70d, type: 3}
+  m_Name: "SocialChallengeSequence1"
+  m_EditorClassIdentifier: 
+  contentHash: "50ca204459f05ebc174a85bb4b739cd2"
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f1_Morph Charlie 3.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 983A000030750000C8AF0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f2_Football Trophy 2.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 4C1D0000983A0000A8610000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f3_Clou Datlas 1.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: 70170000E02E0000C05D0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f4_Fire rainbow 2.asset"
+    humanNumber: 4
+    index: 3
+    starThresholds: E4570000C8AF0000D8D60000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f5_Kill The Duck Leave The
+    Canoli 1.asset"
+    humanNumber: 5
+    index: 4
+    starThresholds: A861000050C3000070110100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f6_Fabulous Faberge 1.asset"
+    humanNumber: 6
+    index: 5
+    starThresholds: A861000050C30000F8240100
+  - metaClassType: "RewardLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fRewardLevelAsset.asset"
+    humanNumber: 7
+    index: 6
+    starThresholds: 
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f8_Nookie Cats 4.asset"
+    humanNumber: 8
+    index: 7
+    starThresholds: 5C440000B888000060EA0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f9_We Shall Go Through The
+    Mines 2.asset"
+    humanNumber: 9
+    index: 8
+    starThresholds: 8813000010270000A8610000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2fSo Many Kittens So Few Moves
+    2 x 1.asset"
+    humanNumber: 10
+    index: 9
+    starThresholds: 803E0000007D000050C30000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2fDeath Minus 4 colors 1x 1.asset"
+    humanNumber: 11
+    index: 10
+    starThresholds: 983A00003075000050C30000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f12_Am Vierten Tag Geschuf
+    Gott Den Bubble Shooter 2x.asset"
+    humanNumber: 12
+    index: 11
+    starThresholds: F0550000E0AB000060EA0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2fTwo kittens but where 1 x
+    2.asset"
+    humanNumber: 13
+    index: 12
+    starThresholds: 8813000010270000204E0000
+  - metaClassType: "RewardLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fRewardLevelAsset.asset"
+    humanNumber: 14
+    index: 13
+    starThresholds: 
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f14_Morph Spike Death 2.asset"
+    humanNumber: 15
+    index: 14
+    starThresholds: 3075000060EA000010980200
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f15_MH_RBY_4SCM_This started
+    as an ear 1.asset"
+    humanNumber: 16
+    index: 15
+    starThresholds: 10270000204E000070110100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f16_With Teeth 1.asset"
+    humanNumber: 17
+    index: 16
+    starThresholds: 5C440000B888000080380100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f17_Team Power Printer 1.asset"
+    humanNumber: 18
+    index: 17
+    starThresholds: 10270000204E0000409C0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f18_Rain 3.asset"
+    humanNumber: 19
+    index: 18
+    starThresholds: 10270000204E000048E80100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2f19_Tralala Smaa Molntusser
+    2.asset"
+    humanNumber: 20
+    index: 19
+    starThresholds: 8813000010270000A8610000
+  - metaClassType: "RewardLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fRewardLevelAsset.asset"
+    humanNumber: 21
+    index: 20
+    starThresholds: 

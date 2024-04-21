@@ -1,0 +1,48 @@
+
+FireBall.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FireBall
+  rotate: false
+  xy: 155, 11
+  size: 148, 238
+  orig: 148, 238
+  offset: 0, 0
+  index: -1
+FireBall 2
+  rotate: false
+  xy: 307, 262
+  size: 141, 246
+  orig: 141, 246
+  offset: 0, 0
+  index: -1
+FireBall 3
+  rotate: false
+  xy: 161, 253
+  size: 144, 255
+  orig: 144, 255
+  offset: 0, 0
+  index: -1
+FireBall 4
+  rotate: false
+  xy: 2, 2
+  size: 151, 247
+  orig: 151, 247
+  offset: 0, 0
+  index: -1
+FireBall 5
+  rotate: false
+  xy: 2, 251
+  size: 157, 257
+  orig: 157, 257
+  offset: 0, 0
+  index: -1
+FireBall 6
+  rotate: false
+  xy: 305, 23
+  size: 146, 228
+  orig: 146, 228
+  offset: 0, 0
+  index: -1

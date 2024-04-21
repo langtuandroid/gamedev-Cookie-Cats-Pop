@@ -1,0 +1,4673 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 248aff4532e0b97870e80c8b689d76bb, type: 3}
+  m_Name: "Counted Steps 1"
+  m_EditorClassIdentifier: 
+  contentHash: "edd2087b1d73725c631338a2fe47d069"
+  tiles:
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "PowerPieceHorizontal"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  moves: 40
+  hardLevelParameters:
+    moves: 40
+    overrideCharge: 11
+    starThresholds: 10270000204E000088900000
+    enabledPowerupColors:
+    - value: "Red"
+    - value: "Yellow"
+  starThresholds: 10270000204E000088900000
+  spawnInfos:
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Red"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Green"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Blue"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Yellow"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Purple"
+    chance: 1
+    maxObjects: 0
+  tutorialSteps: []
+  firstPieces:
+  - typeName: "NormalPiece"
+    matchFlag:
+      value: "?4"
+  - typeName: "NormalPiece"
+    matchFlag:
+      value: "?0"
+  spawnExistingColorsOnly: 1
+  amountOfOneTurnBoosters: 0
+  enableOneTurnBoosterShield: 0
+  enableOneTurnBoosterSuperaim: 0
+  enableOneTurnBoosterSuperqueue: 0
+  enabledPowerupColors:
+  - value: "Red"
+  - value: "Yellow"
+  overrideChargeAmount: 11

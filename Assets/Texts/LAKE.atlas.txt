@@ -1,0 +1,153 @@
+
+LAKE.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Drop_blue
+  rotate: false
+  xy: 2021, 2009
+  size: 20, 28
+  orig: 20, 28
+  offset: 0, 0
+  index: -1
+Drop_green
+  rotate: false
+  xy: 401, 134
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+Handle_Center
+  rotate: false
+  xy: 1951, 1675
+  size: 31, 30
+  orig: 31, 30
+  offset: 0, 0
+  index: -1
+Handle_Mercedes
+  rotate: true
+  xy: 261, 10
+  size: 82, 91
+  orig: 82, 91
+  offset: 0, 0
+  index: -1
+Handle_Ring
+  rotate: false
+  xy: 687, 951
+  size: 101, 68
+  orig: 101, 68
+  offset: 0, 0
+  index: -1
+LILY_PAD_floating_1
+  rotate: false
+  xy: 428, 784
+  size: 254, 142
+  orig: 254, 142
+  offset: 0, 0
+  index: -1
+LILY_PAD_floating_Blue
+  rotate: false
+  xy: 2, 2
+  size: 257, 153
+  orig: 257, 153
+  offset: 0, 0
+  index: -1
+LILY_PAD_floating_Green
+  rotate: false
+  xy: 428, 928
+  size: 257, 153
+  orig: 257, 153
+  offset: 0, 0
+  index: -1
+OL
+  rotate: true
+  xy: 2, 157
+  size: 924, 424
+  orig: 924, 424
+  offset: 0, 0
+  index: -1
+Water_tap
+  rotate: true
+  xy: 1811, 1707
+  size: 330, 208
+  orig: 330, 208
+  offset: 0, 0
+  index: -1
+haandle_saddle
+  rotate: false
+  xy: 804, 1026
+  size: 89, 55
+  orig: 89, 55
+  offset: 0, 0
+  index: -1
+handle_mount
+  rotate: false
+  xy: 428, 540
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+lake_EMPTY_2
+  rotate: false
+  xy: 2, 1083
+  size: 894, 476
+  orig: 894, 476
+  offset: 0, 0
+  index: -1
+lake_FULL_Clean_3
+  rotate: false
+  xy: 2, 1561
+  size: 915, 476
+  orig: 915, 476
+  offset: 0, 0
+  index: -1
+lake_FULL_Dirty_1
+  rotate: false
+  xy: 919, 1575
+  size: 890, 462
+  orig: 890, 462
+  offset: 0, 0
+  index: -1
+splash_back_1
+  rotate: false
+  xy: 687, 1021
+  size: 115, 60
+  orig: 115, 60
+  offset: 0, 0
+  index: -1
+splash_back_2
+  rotate: false
+  xy: 428, 722
+  size: 115, 60
+  orig: 115, 60
+  offset: 0, 0
+  index: -1
+splash_front_1
+  rotate: false
+  xy: 1811, 1644
+  size: 138, 61
+  orig: 138, 61
+  offset: 0, 0
+  index: -1
+splash_front_2
+  rotate: false
+  xy: 261, 94
+  size: 138, 61
+  orig: 138, 61
+  offset: 0, 0
+  index: -1
+water_flow_1
+  rotate: true
+  xy: 1811, 1578
+  size: 64, 104
+  orig: 64, 104
+  offset: 0, 0
+  index: -1
+water_flow_2
+  rotate: false
+  xy: 428, 616
+  size: 64, 104
+  orig: 64, 104
+  offset: 0, 0
+  index: -1

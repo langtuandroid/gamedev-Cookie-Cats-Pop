@@ -1,0 +1,396 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5c06b9f617d501162b96a533447645, type: 3}
+  m_Name: "LevelVisuals"
+  m_EditorClassIdentifier: 
+  topLine: {fileID: 1790486008800894365, guid: b4ef2b83bc0e14074aaad0feb14ab6a3, type: 2}
+  aimDot: {fileID: 1790486008851226014, guid: 4b8186a1bc2ac4673aa7eda45bc6ff06, type: 2}
+  unitsPerDot: 50
+  shotSpeed: 4000
+  resolveTimingInterval: 0.05
+  collectPrefab: {fileID: 1790486008800894365, guid: e1cee4f879ef94394943ded39552e714, type: 2}
+  collectCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.001872659
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.8225825
+      value: 0.6880316
+      inSlope: 2.939866
+      outSlope: 2.939866
+    - serializedVersion: 2
+      time: 1
+      value: 1.001873
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  collectScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.001069427
+      value: 1.001889
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.9989306
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  bigBubblePopScale:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 20.30545
+      outSlope: 20.30545
+    - serializedVersion: 2
+      time: 0.08224621
+      value: 1.670046
+      inSlope: 0.2593121
+      outSlope: 0.2593121
+    - serializedVersion: 2
+      time: 0.1523947
+      value: 1.55854
+      inSlope: 0.1318322
+      outSlope: 0.1318322
+    - serializedVersion: 2
+      time: 0.3486722
+      value: 1.53877
+      inSlope: -0.4780387
+      outSlope: -0.4780387
+    - serializedVersion: 2
+      time: 0.3752159
+      value: 1.376841
+      inSlope: 0.2639552
+      outSlope: 0.2639552
+    - serializedVersion: 2
+      time: 0.55
+      value: 2.5
+      inSlope: 2.247223
+      outSlope: 2.247223
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  boxJumpCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 3.962198
+      outSlope: 3.962198
+    - serializedVersion: 2
+      time: 0.0009508189
+      value: 0.04345512
+      inSlope: 4.876029
+      outSlope: 4.876029
+    - serializedVersion: 2
+      time: 0.1533602
+      value: 0.3340124
+      inSlope: 0.05146546
+      outSlope: 0.05146546
+    - serializedVersion: 2
+      time: 0.2518466
+      value: 0.2125036
+      inSlope: -2.852902
+      outSlope: -2.852902
+    - serializedVersion: 2
+      time: 0.3071434
+      value: -0.000894536
+      inSlope: -0.002865694
+      outSlope: -0.002865694
+    - serializedVersion: 2
+      time: 0.3412797
+      value: 0.0828599
+      inSlope: 3.647676
+      outSlope: 3.647676
+    - serializedVersion: 2
+      time: 0.4933613
+      value: 0.1375263
+      inSlope: -1.778327
+      outSlope: -1.778327
+    - serializedVersion: 2
+      time: 0.5591329
+      value: 0.001017408
+      inSlope: 0.02297149
+      outSlope: 0.02297149
+    - serializedVersion: 2
+      time: 0.597073
+      value: 0.05973161
+      inSlope: 1.341237
+      outSlope: 1.341237
+    - serializedVersion: 2
+      time: 0.6710261
+      value: 0.03060649
+      inSlope: -1.714003
+      outSlope: -1.714003
+    - serializedVersion: 2
+      time: 0.6919397
+      value: 0.0006895207
+      inSlope: 0.007703674
+      outSlope: 0.007703674
+    - serializedVersion: 2
+      time: 0.7693356
+      value: 0.01937533
+      inSlope: 0.001643132
+      outSlope: 0.001643132
+    - serializedVersion: 2
+      time: 0.8406664
+      value: 6.729434E-05
+      inSlope: -0.2706831
+      outSlope: -0.2706831
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  tracerBounceLength: 210
+  clusterPopInterval: 0.08
+  piecesSpringCoefficient: 100
+  piecesSpringFriction: 0.1
+  piecesSpringForce: 1
+  piecesSpringWobble: 0.003
+  kittenWalkHeight: 10
+  kittenWalkStepLength: 20
+  piecesSpringArea: 300
+  boardPanningInUnitsPerSecond: 500
+  freebeeBoosters:
+  - logicPrefab: {fileID: 1790486010696719793, guid: 248b16499be7b44b2b9fe2c486b2db66, type: 2}
+    chance: 0.1
+    availableWithBoosters: 0
+  - logicPrefab: {fileID: 1790486010696719827, guid: ac85c74fc391d432c9aa0b8ea266f193, type: 2}
+    chance: 0.4
+    availableWithBoosters: 1
+  - logicPrefab: {fileID: 1790486010696719795, guid: c6ed14e3ce9374705bd0ddb0270ce3ab, type: 2}
+    chance: 0.5
+    availableWithBoosters: 1
+  - logicPrefab: {fileID: 1790486010696719814, guid: 79f4c724241804475bda487c8e10952a, type: 2}
+    chance: 0.1
+    availableWithBoosters: 1
+  hardModeFreebeeBoosters:
+  - logicPrefab: {fileID: 1790486010696719793, guid: 248b16499be7b44b2b9fe2c486b2db66, type: 2}
+    chance: 0.05
+    availableWithBoosters: 0
+  - logicPrefab: {fileID: 1790486010696719827, guid: ac85c74fc391d432c9aa0b8ea266f193, type: 2}
+    chance: 0.25
+    availableWithBoosters: 1
+  - logicPrefab: {fileID: 1790486010696719795, guid: c6ed14e3ce9374705bd0ddb0270ce3ab, type: 2}
+    chance: 0.7
+    availableWithBoosters: 1
+  - logicPrefab: {fileID: 1790486010696719814, guid: 79f4c724241804475bda487c8e10952a, type: 2}
+    chance: 0.05
+    availableWithBoosters: 1
+  catPowerPurchaseBoosterLogic: {fileID: 1790486010696719821, guid: eb6ecf2d1cc5b454390762a360c27899, type: 2}
+  cookieJarBoosterLogic: {fileID: 1790486010696719827, guid: ac85c74fc391d432c9aa0b8ea266f193, type: 2}
+  cookieJarFillUpBoosterLogic: {fileID: 1790486010696719842, guid: 6bb8b41e95f654b10ae1ae427055ea35, type: 2}
+  NoMatchBallSwapText: "Nearly there!"
+  FreebieInstafeedText: "Free Power"
+  powercatReady: "Power Ready"
+  powerCatShimmerScale:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: -0.003457759
+      outSlope: -0.003457759
+    - serializedVersion: 2
+      time: 1.5
+      value: 3
+      inSlope: Infinity
+      outSlope: -2.403095
+    - serializedVersion: 2
+      time: 2.5
+      value: 1
+      inSlope: -0.083264
+      outSlope: -0.083264
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  redCollectSprite: "Piece_Cookie_Red"
+  blueCollectSprite: "Piece_Cookie_Blue"
+  yellowCollectSprite: "Piece_Cookie_Yellow"
+  greenCollectSprite: "Piece_Cookie_Green"
+  redAim: {r: 1, g: 0, b: 0, a: 1}
+  blueAim: {r: 0, g: 0.5862067, b: 1, a: 1}
+  yellowAim: {r: 1, g: 0.9310344, b: 0, a: 1}
+  greenAim: {r: 0, g: 1, b: 0.04827595, a: 1}
+  pinkAim: {r: 0.9448276, g: 0, b: 1, a: 1}
+  fallingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: -0.01050228
+      outSlope: -0.01050228
+    - serializedVersion: 2
+      time: 0.5501691
+      value: 1
+      inSlope: 4.877118
+      outSlope: 4.877118
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  aftermathCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 1.731249
+      outSlope: 1.731249
+    - serializedVersion: 2
+      time: 1.1
+      value: 1
+      inSlope: -0.8558214
+      outSlope: -0.8558214
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  GameUITintColor: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  GameSpineTintColor: {r: 0.8529412, g: 0.8529412, b: 0.8529412, a: 1}
+  multiplierAwesomeTexts:
+  - texts:
+    - "Great!"
+    - "Amazing!"
+  - texts:
+    - "Awesome!"
+    - "Wow!"
+  - texts:
+    - "Fantastic!"
+    - "Perfect!"
+  - texts:
+    - "Mega Combo!"
+    - "Insane!"
+  levelResultVisuals:
+    starScaleCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1.45
+        inSlope: 0
+        outSlope: 0
+      - serializedVersion: 2
+        time: 0.1559562
+        value: 1.002992
+        inSlope: -2.948046
+        outSlope: -2.948046
+      - serializedVersion: 2
+        time: 0.2173287
+        value: 1.321905
+        inSlope: -0.086346
+        outSlope: -0.086346
+      - serializedVersion: 2
+        time: 0.3153893
+        value: 0.9998017
+        inSlope: 0.02205372
+        outSlope: 0.02205372
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    starColorCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: -0.0004321812
+        value: -0.002338409
+        inSlope: 0.0006377567
+        outSlope: 0.0006377567
+      - serializedVersion: 2
+        time: 0.1378575
+        value: 0
+        inSlope: 0.01535227
+        outSlope: 0.01535227
+      - serializedVersion: 2
+        time: 0.15
+        value: 1
+        inSlope: 0.01482957
+        outSlope: 0.01482957
+      - serializedVersion: 2
+        time: 0.35
+        value: 0
+        inSlope: 0.01221383
+        outSlope: 0.01221383
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    starMoveCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0.04301291
+        outSlope: 0.04301291
+      - serializedVersion: 2
+        time: 0.15
+        value: 1
+        inSlope: 2.500117
+        outSlope: 2.500117
+      - serializedVersion: 2
+        time: 0.2117747
+        value: 0.9178844
+        inSlope: 0
+        outSlope: 0
+      - serializedVersion: 2
+        time: 0.2617647
+        value: 1.005762
+        inSlope: 1.757911
+        outSlope: 1.757911
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    glowCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0.06450608
+        outSlope: 0.06450608
+      - serializedVersion: 2
+        time: 0.05310903
+        value: 0.003425855
+        inSlope: 0
+        outSlope: 0
+      - serializedVersion: 2
+        time: 0.1455234
+        value: 0.5002349
+        inSlope: 0
+        outSlope: 0
+      - serializedVersion: 2
+        time: 0.51
+        value: 0
+        inSlope: 0.01044723
+        outSlope: 0.01044723
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    starHitDelay: 0.15
+    starAnimationDuration: 0.7
+  fontStyleBlue: {fileID: 11400000, guid: 1459c57220774768862f198dea3897e3, type: 2}
+  fontStyleGreen: {fileID: 11400000, guid: 7eb578491bb145a9a32c9741547798c2, type: 2}
+  fontStylePurple: {fileID: 11400000, guid: 07cc4424bccb4dc69055b71615a23988, type: 2}
+  fontStyleRed: {fileID: 11400000, guid: 2837bb07f1e64cf28f13ddb57b053e0c, type: 2}
+  fontStyleWhite: {fileID: 11400000, guid: 01e1b2f82d2a44128b134ca795e3d95c, type: 2}
+  fontStyleYellow: {fileID: 11400000, guid: 5ac8fdba46a842f58672507bf0c5eda6, type: 2}

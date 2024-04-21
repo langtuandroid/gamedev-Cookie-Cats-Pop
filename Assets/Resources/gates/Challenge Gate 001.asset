@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b0932b89bc15cf39fc35b9f3e60853, type: 3}
+  m_Name: "Challenge Gate 001"
+  m_EditorClassIdentifier: 
+  contentHash: "f72dd93dee9b5e1b917067973af0d9d2"
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2fSGate EarthWorm 1.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 983A000030750000C8AF0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2fSGate GB_Firework 1.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 10270000204E000060EA0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSocialChallenge\x2fSGate Skullottery 1.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: 384A00007094000050C30000

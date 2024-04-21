@@ -1,0 +1,62 @@
+
+propeller.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Propeller_top
+  rotate: false
+  xy: 192, 90
+  size: 61, 61
+  orig: 61, 61
+  offset: 0, 0
+  index: -1
+bar
+  rotate: false
+  xy: 2, 131
+  size: 168, 87
+  orig: 168, 87
+  offset: 0, 0
+  index: -1
+propel01_A
+  rotate: false
+  xy: 2, 88
+  size: 102, 41
+  orig: 102, 41
+  offset: 0, 0
+  index: -1
+propel01_B
+  rotate: false
+  xy: 2, 45
+  size: 102, 41
+  orig: 102, 41
+  offset: 0, 0
+  index: -1
+propel02_A
+  rotate: false
+  xy: 2, 2
+  size: 102, 41
+  orig: 102, 41
+  offset: 0, 0
+  index: -1
+propel02_B
+  rotate: true
+  xy: 106, 27
+  size: 102, 41
+  orig: 102, 41
+  offset: 0, 0
+  index: -1
+propelTop_shadow
+  rotate: false
+  xy: 172, 153
+  size: 66, 65
+  orig: 66, 65
+  offset: 0, 0
+  index: -1
+propel_shadow
+  rotate: true
+  xy: 149, 27
+  size: 102, 41
+  orig: 102, 41
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3b2bc57f3471f17851a860ca014cf6, type: 3}
+  m_Name: "TreasureHunt Boss"
+  m_EditorClassIdentifier: 
+  contentHash: "e3accef9aa3ee5113fb38c3c6d848304"
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2f1.0.x\x2f201-400\x2fWhat Happens If You Give LSD
+    To A Spider.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 204E0000409C000060EA0000
+  - metaClassType: "BossLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fBosslevels for Treasurehunt\x2f1
+    TreasureHunt 1 VP Tutorial Level 1.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 000000000000000000000000
+  - metaClassType: "BossLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fBosslevels for Treasurehunt\x2f2
+    TreasureHunt Easy Boss Level With Normal Bubbles 1.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: 000000000000000000000000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2f1.0.x\x2f1-200\x2fNormalization Of Realization
+    2.asset"
+    humanNumber: 4
+    index: 3
+    starThresholds: 8813000010270000A8610000
+  - metaClassType: "BossLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fBosslevels for Treasurehunt\x2f2_1
+    Treasurehunt VP 3 Easy Boss Level With Metal Balls 1.asset"
+    humanNumber: 5
+    index: 4
+    starThresholds: 000000000000000000000000
+  - metaClassType: "BossLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fBosslevels for Treasurehunt\x2f3
+    Treasurehunt Medium Easy Level With Ice 1.asset"
+    humanNumber: 6
+    index: 5
+    starThresholds: 000000000000000000000000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2f1.0.x\x2f1-200\x2fHindbaersnitte 4.asset"
+    humanNumber: 7
+    index: 6
+    starThresholds: 5C440000B888000060EA0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2f1.4.x - 461-530\x2fLet Them Eat Cookies 1.asset"
+    humanNumber: 8
+    index: 7
+    starThresholds: B0360000606D000050C30000
+  - metaClassType: "BossLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fBosslevels for Treasurehunt\x2f4
+    Treasurehunt Medium Boss Level With Metal 1.asset"
+    humanNumber: 9
+    index: 8
+    starThresholds: 000000000000000000000000
+  - metaClassType: "BossLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fBosslevels for Treasurehunt\x2f5
+    Treasurehunt VP 3 Medium Boss Level With Ice and Spikes 1.asset"
+    humanNumber: 10
+    index: 9
+    starThresholds: 000000000000000000000000
+  - metaClassType: "RewardLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fRewardLevelAsset.asset"
+    humanNumber: 11
+    index: 10
+    starThresholds: 

@@ -1,0 +1,345 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ed0c9598759298d081a15b6669d751, type: 3}
+  m_Name: "VP 3 Very Easy Boss Level With Metal Balls"
+  m_EditorClassIdentifier: 
+  contentHash: "6231da0a27c6658f6b1306858331f15f"
+  tiles:
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  - piece:
+      id:
+        typeName: 
+        matchFlag:
+          value: 
+      amount: 0
+      direction: 0
+    attachments: []
+  moves: 24
+  hardLevelParameters:
+    moves: 18
+    overrideCharge: 0
+    starThresholds: B80B00007017000028230000
+    enabledPowerupColors:
+    - value: "Blue"
+    - value: "Red"
+  starThresholds: B80B00007017000028230000
+  spawnInfos:
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Blue"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Red"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Green"
+    chance: 1
+    maxObjects: 0
+  - id:
+      typeName: "NormalPiece"
+      matchFlag:
+        value: "Yellow"
+    chance: 1
+    maxObjects: 0
+  tutorialSteps: []
+  firstPieces: []
+  spawnExistingColorsOnly: 1
+  amountOfOneTurnBoosters: 0
+  enableOneTurnBoosterShield: 0
+  enableOneTurnBoosterSuperaim: 0
+  enableOneTurnBoosterSuperqueue: 0
+  enabledPowerupColors:
+  - value: "Blue"
+  - value: "Red"
+  overrideChargeAmount: 0
+  bossLevelStages:
+  - {fileID: 11400000, guid: f38e810e1cd04b03b40bba01a9b0ba8b, type: 2}
+  - {fileID: 11400000, guid: 733050bb5d2c4066a176e0b9b04cf276, type: 2}
+  - {fileID: 11400000, guid: 5e792f4811d64a1d861af18295311bca, type: 2}

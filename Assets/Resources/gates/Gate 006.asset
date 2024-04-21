@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b0932b89bc15cf39fc35b9f3e60853, type: 3}
+  m_Name: "Gate 006"
+  m_EditorClassIdentifier: 
+  contentHash: "375f55cd1f3402a2d905ce3bfaeba575"
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fGates\x2fGate Just Do It With Five Colours.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 7C150000F82A0000384A0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fGates\x2fGate Metal And Things.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 10270000204E000030750000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fGates\x2fGate Gately Mail 1.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: 10270000204E0000C8AF0000

@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!4 &1790486008851226015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1790486008851226016}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1790486008851226016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790486008851226015}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1790486008800894365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790486008851226016}
+  - component: {fileID: 1790486010696719779}
+  - component: {fileID: 1790486010696719783}
+  - component: {fileID: 1790486009874636194}
+  - component: {fileID: 1790486010696719784}
+  - component: {fileID: 1790486009690086817}
+  m_Layer: 0
+  m_Name: "Scrollpanel"
+  m_TagString:
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1790486008800894366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790486008851226015}
+  - component: {fileID: 1790486010696719781}
+  - component: {fileID: 1790486010696719782}
+  - component: {fileID: 1790486010696719785}
+  - component: {fileID: 1790486010696719780}
+  m_Layer: 0
+  m_Name: "SlidesAndLaddersMapSagaView"
+  m_TagString:
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1790486009690086817
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1790486009874636194
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 640, y: 960, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1790486010696719779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad79745f8763d31928a8754e0822ceb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoSizing: 60
+  layoutChildren: 1
+  mSize: {x: 640, y: 960}
+--- !u!114 &1790486010696719780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db32aa253496ce16ef864d72b41a091e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1790486010696719781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad79745f8763d31928a8754e0822ceb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoSizing: 0
+  layoutChildren: 1
+  mSize: {x: 640, y: 960}
+--- !u!114 &1790486010696719782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b578323d9242169776e85e88f5630975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useFixedWidth: 0
+  fillToAspect: 0
+  maxAjustedWidth: 0
+  poolingAmount: 0
+  blockOtherViews: 0
+  ignoreFocus: 0
+  useDefaultViewAnimator: 0
+  overrideLayerAnimation: {fileID: 0}
+  useBottomViewZone: 0
+  ignoreSafeArea: 1
+  backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  disableViewAnalytics: 0
+--- !u!114 &1790486010696719783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbfe716ec8775938baf1f4e219d26843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  depthMaskMaterial: {fileID: 0}
+  scrollAxis: 1
+  edgeDamping: 0.5
+  edgeSeekSpeed: 5
+  damping: 0.98
+  edgeElasticity: 0.5
+  startFromTop: 0
+  limitAutoContentSize: 1
+  autoContentSizeLimits:
+    x: 0
+    y: 0
+    width: 640
+    height: 7680
+  autoDisableHiddenElements: 0
+  disableCellVisibility: 0
+  isMouseScrollable: 0
+  mouseScrollSpeed: 30
+  pixelPerfectCamera: {fileID: 0}
+--- !u!114 &1790486010696719784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f291f3582b3c39754e6ebfc7ffa3c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapIdentifier:
+    ID: "SlidesAndLadders"
+  preloadMargin: 0
+  BackgroundLayer: 19
+  mapSegmentNumberFormat: "D3"
+--- !u!114 &1790486010696719785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a14835f44f9611aad0f7739b4f2bed43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ladderCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0.06908813
+      outSlope: 0.06908813
+    - serializedVersion: 2
+      time: 0.1990597
+      value: 0.1034689
+      inSlope: 1.021202
+      outSlope: 1.021202
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1.119348
+      outSlope: 1.119348
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  slideCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0.150297
+      outSlope: 0.150297
+    - serializedVersion: 2
+      time: 0.69461
+      value: 0.670914
+      inSlope: 3.170317
+      outSlope: 3.170317
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.03244951
+      outSlope: -0.03244951
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  avatarMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  avatarMoveOffsetCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 5.669807
+      outSlope: 5.669807
+    - serializedVersion: 2
+      time: 0.5000305
+      value: 1.015113
+      inSlope: -0.002607366
+      outSlope: -0.002607366
+    - serializedVersion: 2
+      time: 1
+      value: 1.899898E-06
+      inSlope: -4.590275
+      outSlope: -4.590275
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0

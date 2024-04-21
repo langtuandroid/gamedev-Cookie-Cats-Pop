@@ -1,0 +1,188 @@
+
+PiggieBank.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Belt1
+  rotate: true
+  xy: 419, 126
+  size: 285, 157
+  orig: 285, 157
+  offset: 0, 0
+  index: -1
+Belt2
+  rotate: false
+  xy: 787, 605
+  size: 118, 238
+  orig: 118, 238
+  offset: 0, 0
+  index: -1
+BeltPin
+  rotate: false
+  xy: 956, 783
+  size: 51, 57
+  orig: 51, 57
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 2, 8
+  size: 415, 403
+  orig: 415, 403
+  offset: 0, 0
+  index: -1
+Ear1
+  rotate: true
+  xy: 668, 56
+  size: 87, 75
+  orig: 87, 75
+  offset: 0, 0
+  index: -1
+Ear2
+  rotate: true
+  xy: 758, 387
+  size: 86, 75
+  orig: 86, 75
+  offset: 0, 0
+  index: -1
+Hole
+  rotate: false
+  xy: 606, 394
+  size: 150, 79
+  orig: 150, 79
+  offset: 0, 0
+  index: -1
+HoleOverlay
+  rotate: false
+  xy: 578, 320
+  size: 150, 72
+  orig: 150, 72
+  offset: 0, 0
+  index: -1
+Leg1
+  rotate: false
+  xy: 594, 53
+  size: 72, 88
+  orig: 72, 88
+  offset: 0, 0
+  index: -1
+Leg2
+  rotate: false
+  xy: 654, 228
+  size: 73, 90
+  orig: 73, 90
+  offset: 0, 0
+  index: -1
+Leg3
+  rotate: true
+  xy: 835, 397
+  size: 77, 75
+  orig: 77, 75
+  offset: 0, 0
+  index: -1
+MouthClosed
+  rotate: true
+  xy: 578, 143
+  size: 52, 77
+  orig: 52, 77
+  offset: 0, 0
+  index: -1
+MouthOpen
+  rotate: false
+  xy: 578, 197
+  size: 74, 121
+  orig: 74, 121
+  offset: 0, 0
+  index: -1
+Mussle
+  rotate: true
+  xy: 606, 475
+  size: 183, 177
+  orig: 183, 177
+  offset: 0, 0
+  index: -1
+PadLockPin
+  rotate: false
+  xy: 657, 145
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+Padlock
+  rotate: false
+  xy: 785, 476
+  size: 121, 127
+  orig: 121, 127
+  offset: 0, 0
+  index: -1
+PadlockShadow
+  rotate: true
+  xy: 419, 7
+  size: 117, 173
+  orig: 117, 173
+  offset: 0, 0
+  index: -1
+Piggie shadow
+  rotate: false
+  xy: 606, 845
+  size: 359, 161
+  orig: 359, 161
+  offset: 0, 0
+  index: -1
+PiggieBankCoin
+  rotate: false
+  xy: 606, 660
+  size: 179, 183
+  orig: 179, 183
+  offset: 0, 0
+  index: -1
+Polygon 1
+  rotate: false
+  xy: 2, 413
+  size: 602, 593
+  orig: 602, 593
+  offset: 0, 0
+  index: -1
+Pupil1
+  rotate: false
+  xy: 967, 925
+  size: 55, 81
+  orig: 55, 81
+  offset: 0, 0
+  index: -1
+Pupil1Closed
+  rotate: false
+  xy: 907, 648
+  size: 47, 195
+  orig: 47, 195
+  offset: 0, 0
+  index: -1
+Pupil1HalfClosed
+  rotate: false
+  xy: 967, 842
+  size: 53, 81
+  orig: 53, 81
+  offset: 0, 0
+  index: -1
+Pupil2
+  rotate: true
+  xy: 594, 2
+  size: 49, 73
+  orig: 49, 73
+  offset: 0, 0
+  index: -1
+Pupil2Closed
+  rotate: false
+  xy: 956, 728
+  size: 39, 53
+  orig: 39, 53
+  offset: 0, 0
+  index: -1
+Pupil2HalfClosed
+  rotate: true
+  xy: 669, 5
+  size: 49, 73
+  orig: 49, 73
+  offset: 0, 0
+  index: -1

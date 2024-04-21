@@ -1,0 +1,747 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918240fae6815ba32a860611ed525bcd, type: 3}
+  m_Name: "PieceDatabase"
+  m_EditorClassIdentifier: 
+  pieceTypeInfos:
+  - typeName: "BonusPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719791, guid: 891f86913eccd4a10935bd6cb824a828, type: 2}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719794, guid: c27a67baffe89463dabdd52dae10f530, type: 2}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719791, guid: 1d4737e30d5074ba8a850fe6ce538162, type: 2}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719786, guid: ac3b49c90d4e04807b719e40a7b53f88, type: 2}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719794, guid: 3839d2f8a7f95486f9d25afed0c7a9f9, type: 2}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "BonusPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  - typeName: "BossCheckpointPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "BossCheckpointPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719775, guid: d30d52e541f434cd194f529730af1dea, type: 2}
+  - typeName: "BumperPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "BumperPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719777, guid: 321997ad1e1aa41f88b00ea3e3f5032f, type: 2}
+  - typeName: "ChainPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "ChainPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719779, guid: 820db5182df944c0da488b2a1b9b7e39, type: 2}
+  - typeName: "CloudPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "CloudPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719779, guid: dedd1bd7e49b34f908788533e0299aad, type: 2}
+  - typeName: "ComboPowerPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "ComboPowerPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719846, guid: 85c6dc02cc29349138740a8035114820, type: 2}
+  - typeName: "DeathPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "DeathPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719789, guid: 8f17d72259e124fa0ad49fab65316017, type: 2}
+  - typeName: "FillPowerPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719778, guid: 84a2bbe7f32b24d62b451e1efa4709f7, type: 2}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719777, guid: d134e8508043c48549e7e612aab957e4, type: 2}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719777, guid: a10d63a6149e2452a9a677cf1c412e20, type: 2}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719777, guid: 10bddb20ac55441148fa2a257d47fde1, type: 2}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719777, guid: 74c577178f79d45d7b9ba59b697c404f, type: 2}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "FillPowerPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  - typeName: "FirePiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "FirePiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719783, guid: cad2410a89eea4e4e894099fe7881655, type: 2}
+  - typeName: "FrozenPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "FrozenPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719781, guid: fa85382ab519b49aca0a67736077c5ea, type: 2}
+  - typeName: "GoalPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719780, guid: 9516a7206c7114bbf9bef21bc9b87d44, type: 2}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719781, guid: 8d71eb2cb55374561bce92cc16b733c1, type: 2}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719780, guid: 11f5dc3812a36463796548eee329cfa5, type: 2}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719780, guid: 80288e3f3257743bf91bdf579c726556, type: 2}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719777, guid: 8130775fdad6441a78157b4a31ba523e, type: 2}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "GoalPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  - typeName: "InkPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "InkPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719786, guid: 0e5b8229d57f44c2a86c069bbc004685, type: 2}
+  - typeName: "LockPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "LockPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719777, guid: 44ca722a2b31141bb8b2fc08a64d4954, type: 2}
+  - typeName: "MetalPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "MetalPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719777, guid: 6c9c34f3206e24d7b83d2b264d01bbcb, type: 2}
+  - typeName: "MinusPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719780, guid: dd432a283f785405d8a2d8368be678cb, type: 2}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719778, guid: 067995e17c2c14083a49d37af8fa7ce7, type: 2}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719777, guid: 4aa1605d202694bd0bc75af77462b61c, type: 2}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719777, guid: cb6fdd516ac5a4f5e858b118fec6edf4, type: 2}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719779, guid: 06fcd2500ae934d0295601783532d7f3, type: 2}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MinusPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  - typeName: "MorphPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719779, guid: 1322dd961401943cd94184b19e89029c, type: 2}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719778, guid: eddbaba36345844fe8c97c6beb575704, type: 2}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719779, guid: d42585ee262b9400f95c92759e6b4ebd, type: 2}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719780, guid: b35934dc0bea5409ab0d70bfbcfc14dc, type: 2}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719777, guid: 9a3ebff373ea44dbc92388abf47937b8, type: 2}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "MorphPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  - typeName: "NormalPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719787, guid: 9a7edd67631fc44038e30f62e9d6afab, type: 2}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719787, guid: a50e4d9687efe41a2b41891284ef90cc, type: 2}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719786, guid: 8f49ec738266d4e8ab460e34d4462394, type: 2}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719787, guid: 36826ef315b414163b27f0f3982e7b01, type: 2}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719787, guid: 5c939946a05dd45ad95699515de55c13, type: 2}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "NormalPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  - typeName: "PlusPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719777, guid: 1f067e9cccf544700967796a7a398211, type: 2}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719779, guid: cdac78001f9ec461da7a956232ef11a7, type: 2}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719777, guid: 0324d6b01cca042b0ba63b1b5a2f2b23, type: 2}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719779, guid: cbad0ca9bad09492989a4f0da71e3c90, type: 2}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719779, guid: 950f3aab570c048d3b2df6d8c63cd272, type: 2}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "PlusPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  - typeName: "PowerPieceHorizontal"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "PowerPieceHorizontal"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719784, guid: 1919b1db3ffb5433a897123211df2028, type: 2}
+  - typeName: "PowerPieceTriple"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "PowerPieceTriple"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719796, guid: 865d341106df54f7e9f569e9b3cdbc8c, type: 2}
+  - typeName: "PowerPieceVertical"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "PowerPieceVertical"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719790, guid: 57d05a190104444409e0e7842e5cd6e7, type: 2}
+  - typeName: "PropellerPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "PropellerPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719779, guid: 5df01bcc4a3a44215a04d9bfa17988f4, type: 2}
+  - typeName: "RainbowPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "RainbowPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719777, guid: a8da2809cb9d442ce9a0fbce25ffce7c, type: 2}
+  - typeName: "ShieldBoosterPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719789, guid: faa394c88bd814fbb896637fd2d93716, type: 2}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719789, guid: cfe9b7077e3f64ff89b49cf005dbf98a, type: 2}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719789, guid: 237d88b42d31e49f2bef170341e53281, type: 2}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719789, guid: a00b2647b48b347f09f295e65bed580f, type: 2}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719789, guid: 8f7f686e7cff141d4b0d0546550be698, type: 2}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "ShieldBoosterPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  - typeName: "SpikePiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "SpikePiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719777, guid: 60a60203a78d74819be0c9bccd4b9f59, type: 2}
+  - typeName: "SquidPiece"
+    hasMultipleColors: 0
+    infoPerColor:
+    - id:
+        typeName: "SquidPiece"
+        matchFlag:
+          value: 
+      gamePrefab: {fileID: 1790486010696719781, guid: 6d3e48e7a15424a3a8afb1ffa5fbda11, type: 2}
+  - typeName: "SuperaimBoosterPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719789, guid: 6a4f3102a80b64473a9aabe01a197e0d, type: 2}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719789, guid: d6aed1aa69fcd4ef2a0e5e9ba5db55bc, type: 2}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719789, guid: 97628e0599c824618ba848535f5e8f28, type: 2}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719789, guid: 7df17f0838ceb4562be916bdbfa78d54, type: 2}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719789, guid: b73d7630b60984284a9a389216300cb3, type: 2}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperaimBoosterPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  - typeName: "SuperqueueBoosterPiece"
+    hasMultipleColors: 1
+    infoPerColor:
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "Blue"
+      gamePrefab: {fileID: 1790486010696719789, guid: e12988f7388a546598bb64098741fb5f, type: 2}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "Green"
+      gamePrefab: {fileID: 1790486010696719789, guid: a626a5550903c4a2780b181289e5a6e8, type: 2}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "Purple"
+      gamePrefab: {fileID: 1790486010696719789, guid: 0a9dee387602149d7a93439e10f76e47, type: 2}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "Red"
+      gamePrefab: {fileID: 1790486010696719789, guid: 794ac5e49a0724e4bb8c010bbf7b044a, type: 2}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "Yellow"
+      gamePrefab: {fileID: 1790486010696719789, guid: b6ed3a573e12e41999d1c034a33ab403, type: 2}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "?"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "?0"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "?1"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "?2"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "?3"
+      gamePrefab: {fileID: 0}
+    - id:
+        typeName: "SuperqueueBoosterPiece"
+        matchFlag:
+          value: "?4"
+      gamePrefab: {fileID: 0}
+  piecesFolder: "Assets\x2fTileElements"
+  specialMatchIds:
+  - "?"
+  - "?0"
+  - "?1"
+  - "?2"
+  - "?3"
+  - "?4"

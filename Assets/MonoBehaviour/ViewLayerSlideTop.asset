@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04b8a77b281a38a3002cd9546127373, type: 3}
+  m_Name: "ViewLayerSlideTop"
+  m_EditorClassIdentifier: 
+  curveIn:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.5
+      inSlope: 3.922992
+      outSlope: 3.922992
+    - serializedVersion: 2
+      time: 0.1915463
+      value: 1.038897
+      inSlope: 0.7337332
+      outSlope: 0.7337332
+    - serializedVersion: 2
+      time: 0.3
+      value: 1
+      inSlope: 0.04869624
+      outSlope: 0.04869624
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curveOut:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.0007826146
+      inSlope: -0.13529
+      outSlope: -0.13529
+    - serializedVersion: 2
+      time: 0.25
+      value: 0.5
+      inSlope: 5.381693
+      outSlope: 5.381693
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  mode: 0

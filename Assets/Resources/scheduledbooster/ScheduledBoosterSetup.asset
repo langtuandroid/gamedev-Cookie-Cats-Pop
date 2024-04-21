@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cffe047fe4fe7713d24743ba4692da5a, type: 3}
+  m_Name: "ScheduledBoosterSetup"
+  m_EditorClassIdentifier: 
+  scheduledBoosterDefinitions:
+  - listOfBoosterLogic:
+    - {fileID: 1790486010696719800, guid: 8617a0f861a80453cbc066c78628b145, type: 2}
+    type:
+      ID: "Paintbrush"
+    location: 0
+    icon: "paintbrush"
+    boosterLargerIconPrefab: {fileID: 0}
+    boosterInfoPrefab: {fileID: 1790486008800894366, guid: 3789165aedaa54a5a88ad1a54541cfdc, type: 2}
+  - listOfBoosterLogic:
+    - {fileID: 1790486010696719799, guid: a972bd97d826b42aca3a50d00ef702a7, type: 2}
+    - {fileID: 1790486010696719842, guid: 6bb8b41e95f654b10ae1ae427055ea35, type: 2}
+    type:
+      ID: "SpecialContinue"
+    location: 2
+    icon: "white"
+    boosterLargerIconPrefab: {fileID: 1790486008800894366, guid: ba764ed8a2e5245dfa35f4d53dbab41f, type: 2}
+    boosterInfoPrefab: {fileID: 1790486008800894365, guid: e29a036c5be4a4d2fbfcb26cd4f32cab, type: 2}

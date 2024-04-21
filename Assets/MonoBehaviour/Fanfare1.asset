@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0811c50eb9fdfc544dbc74a765d57637, type: 3}
+  m_Name: "Fanfare1"
+  m_EditorClassIdentifier: 
+  id: "CC_Fanfare1"
+  voices:
+  - clip: {fileID: 8300000, guid: 74a8da19d4fa45ee8e7145fd569af011, type: 3}
+    audioStartTime: 0
+  - clip: {fileID: 8300000, guid: 3b4f4c99b50f4d1192cbeb957cd2863e, type: 3}
+    audioStartTime: 0
+  - clip: {fileID: 8300000, guid: a18dd98af0794211a6ec7e7dff7cda2f, type: 3}
+    audioStartTime: 0
+  - clip: {fileID: 8300000, guid: dd45f165a7414309b84c43346e74fe60, type: 3}
+    audioStartTime: 0
+  - clip: {fileID: 0}
+    audioStartTime: 0
+  - clip: {fileID: 0}
+    audioStartTime: 0
+  backgroundAudio: {fileID: 0}
+  mouthThreshold: 0.1
+  delayBeforeTitle: 0

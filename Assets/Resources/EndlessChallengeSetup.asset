@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cdec5d09e1682eda74607ab0077339, type: 3}
+  m_Name: "EndlessChallengeSetup"
+  m_EditorClassIdentifier: 
+  endlessCheckpoint: {fileID: 1790486010696719808, guid: cb7cc6de7144241aeb22d1815bbdc68f, type: 2}
+  endlessChallengeFreebeeBoosters:
+  - logicPrefab: {fileID: 1790486010696719795, guid: c6ed14e3ce9374705bd0ddb0270ce3ab, type: 2}
+    chance: 0.7
+    availableWithBoosters: 0
+  - logicPrefab: {fileID: 1790486010696719799, guid: a972bd97d826b42aca3a50d00ef702a7, type: 2}
+    chance: 0.3
+    availableWithBoosters: 0
+  endlessChallengeBonusInfos:
+  - type: 0
+    logicPrefab: {fileID: 1790486010696719811, guid: 4c76c97397ff843cfad2161531a21d15, type: 2}
+    checkpointSprite: "ui_buyMoreBubbles__01"
+  - type: 1
+    logicPrefab: {fileID: 1790486010696719827, guid: ac85c74fc391d432c9aa0b8ea266f193, type: 2}
+    checkpointSprite: "ui_rainbowBubble_bowl_100x100"
+  - type: 2
+    logicPrefab: {fileID: 1790486010696719842, guid: 6bb8b41e95f654b10ae1ae427055ea35, type: 2}
+    checkpointSprite: "ui_rainbowBubble_bowl_100x100"

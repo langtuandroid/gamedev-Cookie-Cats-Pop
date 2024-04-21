@@ -1,0 +1,13 @@
+
+Prof_Whizbang_Eyes.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Prof_Whizbang_Eyes
+  rotate: false
+  xy: 2, 2
+  size: 165, 139
+  orig: 165, 139
+  offset: 0, 0
+  index: -1

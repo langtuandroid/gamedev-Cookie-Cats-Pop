@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2eb44a5a30c329eb4b936648f71f2bb, type: 3}
+  m_Name: "TournamentSetup"
+  m_EditorClassIdentifier: 
+  tutorialSteps:
+  - message: "Welcome to Mr. Waffles' Eating Contest! Are you ready?"
+  - message: "The rules are simple. Make as many points as you can on these 6 levels
+    before the tournament ends!"
+  - message: "Are you feline prepared? Great! I like your cattitude. Good luck
+    and have fun!"
+  ranks:
+  - displayName: "Bronze"
+    tournamentRank: 1
+    bigIconResourcePath: "Tournament\x2fMedalBronze"
+    ticketItem:
+      value: "TicketBronze"
+    fontStyle: {fileID: 11400000, guid: 53592abeb235489db6aac9109bd338a1, type: 2}
+    iconSpriteName: "MedalBronze"
+  - displayName: "Silver"
+    tournamentRank: 2
+    bigIconResourcePath: "Tournament\x2fMedalSilver"
+    ticketItem:
+      value: "TicketSilver"
+    fontStyle: {fileID: 11400000, guid: d521b8e8c6eb496ea242d8aae12245a0, type: 2}
+    iconSpriteName: "MedalSilver"
+  - displayName: "Gold"
+    tournamentRank: 3
+    bigIconResourcePath: "Tournament\x2fMedalGold"
+    ticketItem:
+      value: "TicketGold"
+    fontStyle: {fileID: 11400000, guid: 75608d1cd1974bf6b24b290e46643e95, type: 2}
+    iconSpriteName: "MedalGold"
+  debriefingMessages:
+  - message: "Mr. Waffles congratulates the champion! Well done! I trust I will
+    see you back in another tournament to defend the title?"
+  - message: "Second place! Mr. Waffles is very impressed. Maybe next time you
+    will take home the gold?"
+  - message: "Third place! Catmazing! Surely a brilliant player like yourself will
+    return for the next tournament?"
+  - message: "Well done! Mr. Waffles is happy to see his catprentice prosper! Will
+    I see you in the next tournament?"
+  - message: "An excellent performance! Mr. Waffles shall go to the pub to celebrate!
+    See you in the next tournament!"
+  - message: "Well done, my young Catawan! Many congratulations on your prizes!"
+  - message: "Aww. No prizes this time, but that is no catastrophe. Another tournament
+    will surely bring you luck!"
+  portraitTextures:
+  - {fileID: 2800000, guid: 898b47b79f99435b99323246c6d9dcf7, type: 3}
+  - {fileID: 2800000, guid: 3b914877ecf048b5866593223b46317c, type: 3}
+  - {fileID: 2800000, guid: 668d7e873d404fe0ad49328668aad1b1, type: 3}
+  - {fileID: 2800000, guid: 14dfee945cd34819be2498d5f405d39e, type: 3}
+  - {fileID: 2800000, guid: e837fa39b16e4ff59ae74711fecbc79d, type: 3}
+  - {fileID: 2800000, guid: 0df23cc9bf8c4ddb87176e2e86142d8c, type: 3}
+  - {fileID: 2800000, guid: a213c7311ed64f019fa153a728dca7b9, type: 3}
+  - {fileID: 2800000, guid: b0419e6640dc4f0298ea7273aa37fda4, type: 3}

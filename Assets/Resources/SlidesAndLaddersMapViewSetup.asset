@@ -1,0 +1,294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373782a833ca21affb0c7a8ac068dc1, type: 3}
+  m_Name: "SlidesAndLaddersMapViewSetup"
+  m_EditorClassIdentifier: 
+  mapElementData:
+  - prefabName: "SlidesAndLaddersDummyDot"
+    position: {x: 28, y: 149, z: -10}
+    topEdge: 231.5919
+    bottomEdge: 66.40808
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"LevelId\":0}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 80, y: 212, z: -9.9999}
+    topEdge: 276.3246
+    bottomEdge: 147.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":1,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 176, y: 238, z: -9.9998}
+    topEdge: 302.3246
+    bottomEdge: 173.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":2,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 277, y: 266, z: -9.9997}
+    topEdge: 330.3246
+    bottomEdge: 201.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":3,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 380, y: 279, z: -9.9996}
+    topEdge: 343.3246
+    bottomEdge: 214.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":4,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 499, y: 308, z: -9.9995}
+    topEdge: 372.3246
+    bottomEdge: 243.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":5,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlideRewardPositionLarge"
+    position: {x: 259, y: 375.5, z: -15}
+    topEdge: 376.5
+    bottomEdge: 374.5
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 445, y: 427, z: -9.9994}
+    topEdge: 491.3246
+    bottomEdge: 362.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":6,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 323, y: 447, z: -9.9993}
+    topEdge: 511.3246
+    bottomEdge: 382.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":7,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 214, y: 472, z: -9.9992}
+    topEdge: 536.3246
+    bottomEdge: 407.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":8,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 107, y: 541, z: -9.9991}
+    topEdge: 605.3246
+    bottomEdge: 476.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":9,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlideRewardPositionLarge"
+    position: {x: 342.9, y: 562.3, z: -25.71587}
+    topEdge: 563.3
+    bottomEdge: 561.3
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 0
+  - prefabName: "SlideRewardPositionLarge"
+    position: {x: 515.7, y: 595.4, z: -15}
+    topEdge: 596.4
+    bottomEdge: 594.4
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 201, y: 626, z: -9.999}
+    topEdge: 690.3246
+    bottomEdge: 561.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":10,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 311.6, y: 652.6, z: -10.1}
+    topEdge: 716.9246
+    bottomEdge: 588.2754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":11,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 422.1, y: 680, z: -9.9988}
+    topEdge: 744.3246
+    bottomEdge: 615.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":12,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 555, y: 714, z: -9.9987}
+    topEdge: 778.3246
+    bottomEdge: 649.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":13,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 472, y: 814, z: -9.9986}
+    topEdge: 878.3246
+    bottomEdge: 749.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":14,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlideRewardPositionLarge"
+    position: {x: 51, y: 814.8, z: -15}
+    topEdge: 815.8
+    bottomEdge: 813.8
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 372, y: 828, z: -9.9985}
+    topEdge: 892.3246
+    bottomEdge: 763.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":15,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 277, y: 849, z: -9.9984}
+    topEdge: 913.3246
+    bottomEdge: 784.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":16,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 181, y: 878, z: -9.9983}
+    topEdge: 942.3246
+    bottomEdge: 813.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":17,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 101, y: 921, z: -9.9982}
+    topEdge: 985.3246
+    bottomEdge: 856.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":18,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlideRewardPositionLarge"
+    position: {x: 486.1, y: 966.3, z: -15}
+    topEdge: 967.3
+    bottomEdge: 965.3
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 153, y: 1001, z: -9.9981}
+    topEdge: 1065.325
+    bottomEdge: 936.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":19,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 250, y: 1028, z: -9.998}
+    topEdge: 1092.325
+    bottomEdge: 963.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":20,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 376, y: 1053, z: -9.9979}
+    topEdge: 1117.325
+    bottomEdge: 988.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":21,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 478, y: 1079, z: -9.9978}
+    topEdge: 1143.325
+    bottomEdge: 1014.675
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":22,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 561, y: 1145, z: -9.9977}
+    topEdge: 1209.325
+    bottomEdge: 1080.675
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":23,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersLevelDot"
+    position: {x: 429, y: 1187, z: -9.9976}
+    topEdge: 1251.325
+    bottomEdge: 1122.675
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":24,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "SlidesAndLaddersChestDot"
+    position: {x: 280, y: 1226, z: -9.9975}
+    topEdge: 1308.592
+    bottomEdge: 1143.408
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":25,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  dotPositions:
+  - {x: 28, y: 149}
+  - {x: 80, y: 212}
+  - {x: 176, y: 238}
+  - {x: 277, y: 266}
+  - {x: 380, y: 279}
+  - {x: 499, y: 308}
+  - {x: 445, y: 427}
+  - {x: 323, y: 447}
+  - {x: 214, y: 472}
+  - {x: 107, y: 541}
+  - {x: 201, y: 626}
+  - {x: 311.6, y: 652.6}
+  - {x: 422.1, y: 680}
+  - {x: 555, y: 714}
+  - {x: 472, y: 814}
+  - {x: 372, y: 828}
+  - {x: 277, y: 849}
+  - {x: 181, y: 878}
+  - {x: 101, y: 921}
+  - {x: 153, y: 1001}
+  - {x: 250, y: 1028}
+  - {x: 376, y: 1053}
+  - {x: 478, y: 1079}
+  - {x: 561, y: 1145}
+  - {x: 429, y: 1187}
+  - {x: 280, y: 1226}
+  totalContentSize: {x: 640, y: 1969.85}
+  mapIdentifier:
+    ID: "SlidesAndLadders"
+  optionalLowResSegmentsPaths: []

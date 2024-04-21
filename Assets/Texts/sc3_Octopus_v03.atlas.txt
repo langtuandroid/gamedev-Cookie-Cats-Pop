@@ -1,0 +1,545 @@
+
+sc3_Octopus_v03.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm InTub
+  rotate: false
+  xy: 548, 731
+  size: 248, 126
+  orig: 248, 126
+  offset: 0, 0
+  index: -1
+Arm Soap Small
+  rotate: true
+  xy: 151, 4
+  size: 141, 184
+  orig: 141, 184
+  offset: 0, 0
+  index: -1
+ArmBack01
+  rotate: true
+  xy: 548, 562
+  size: 167, 198
+  orig: 167, 198
+  offset: 0, 0
+  index: -1
+ArmBack2
+  rotate: true
+  xy: 599, 375
+  size: 185, 170
+  orig: 185, 170
+  offset: 0, 0
+  index: -1
+ArmFrontLong
+  rotate: false
+  xy: 599, 277
+  size: 178, 96
+  orig: 178, 96
+  offset: 0, 0
+  index: -1
+ArmFrontShort
+  rotate: false
+  xy: 748, 597
+  size: 81, 83
+  orig: 81, 83
+  offset: 0, 0
+  index: -1
+Ballon4V03 _SoapeGreen
+  rotate: false
+  xy: 2, 262
+  size: 500, 308
+  orig: 500, 308
+  offset: 0, 0
+  index: -1
+Ballon4V03_NoSoap
+  rotate: false
+  xy: 2, 572
+  size: 544, 450
+  orig: 544, 450
+  offset: 0, 0
+  index: -1
+Ballon4V03_Tut
+  rotate: true
+  xy: 507, 37
+  size: 72, 126
+  orig: 72, 126
+  offset: 0, 0
+  index: -1
+Ballon4V03_Wing
+  rotate: false
+  xy: 354, 154
+  size: 151, 106
+  orig: 151, 106
+  offset: 0, 0
+  index: -1
+BigBrush
+  rotate: false
+  xy: 798, 682
+  size: 66, 175
+  orig: 66, 175
+  offset: 0, 0
+  index: -1
+BigBrushArm
+  rotate: true
+  xy: 2, 2
+  size: 143, 147
+  orig: 143, 147
+  offset: 0, 0
+  index: -1
+BigBrushArmBack
+  rotate: false
+  xy: 833, 46
+  size: 47, 71
+  orig: 47, 71
+  offset: 0, 0
+  index: -1
+BigBrushHand
+  rotate: false
+  xy: 895, 2
+  size: 40, 49
+  orig: 40, 49
+  offset: 0, 0
+  index: -1
+Blink 2
+  rotate: true
+  xy: 635, 2
+  size: 37, 64
+  orig: 37, 64
+  offset: 0, 0
+  index: -1
+Blink1
+  rotate: true
+  xy: 407, 8
+  size: 40, 64
+  orig: 40, 64
+  offset: 0, 0
+  index: -1
+Brush Hair
+  rotate: true
+  xy: 858, 2
+  size: 42, 35
+  orig: 42, 35
+  offset: 0, 0
+  index: -1
+Brush Handle
+  rotate: true
+  xy: 965, 334
+  size: 103, 51
+  orig: 103, 51
+  offset: 0, 0
+  index: -1
+BrushArm
+  rotate: true
+  xy: 867, 462
+  size: 67, 90
+  orig: 67, 90
+  offset: 0, 0
+  index: -1
+BrushHand
+  rotate: false
+  xy: 892, 136
+  size: 40, 50
+  orig: 40, 50
+  offset: 0, 0
+  index: -1
+Bubble
+  rotate: false
+  xy: 965, 151
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+Chain
+  rotate: true
+  xy: 965, 300
+  size: 32, 57
+  orig: 32, 57
+  offset: 0, 0
+  index: -1
+Ear1
+  rotate: true
+  xy: 962, 439
+  size: 32, 60
+  orig: 32, 60
+  offset: 0, 0
+  index: -1
+Ear2
+  rotate: true
+  xy: 568, 11
+  size: 24, 52
+  orig: 24, 52
+  offset: 0, 0
+  index: -1
+Eye1
+  rotate: false
+  xy: 864, 219
+  size: 39, 64
+  orig: 39, 64
+  offset: 0, 0
+  index: -1
+Eye1LidOver
+  rotate: true
+  xy: 905, 188
+  size: 41, 55
+  orig: 41, 55
+  offset: 0, 0
+  index: -1
+Eye1LidUnder
+  rotate: true
+  xy: 473, 11
+  size: 37, 32
+  orig: 37, 32
+  offset: 0, 0
+  index: -1
+Eye2
+  rotate: false
+  xy: 882, 53
+  size: 36, 64
+  orig: 36, 64
+  offset: 0, 0
+  index: -1
+Eye2LidOver
+  rotate: true
+  xy: 701, 2
+  size: 37, 51
+  orig: 37, 51
+  offset: 0, 0
+  index: -1
+Eye2LidUnder
+  rotate: false
+  xy: 748, 691
+  size: 36, 38
+  orig: 36, 38
+  offset: 0, 0
+  index: -1
+Foam Back
+  rotate: true
+  xy: 504, 288
+  size: 272, 93
+  orig: 272, 93
+  offset: 0, 0
+  index: -1
+Foam Front
+  rotate: false
+  xy: 635, 41
+  size: 101, 68
+  orig: 101, 68
+  offset: 0, 0
+  index: -1
+Foam Front copy
+  rotate: true
+  xy: 806, 391
+  size: 78, 58
+  orig: 78, 58
+  offset: 0, 0
+  index: -1
+Foam Front copy 2
+  rotate: true
+  xy: 779, 283
+  size: 106, 61
+  orig: 106, 61
+  offset: 0, 0
+  index: -1
+Foam for kitten
+  rotate: true
+  xy: 934, 136
+  size: 50, 29
+  orig: 50, 29
+  offset: 0, 0
+  index: -1
+Glasses1
+  rotate: true
+  xy: 947, 534
+  size: 61, 65
+  orig: 61, 65
+  offset: 0, 0
+  index: -1
+Glasses2
+  rotate: false
+  xy: 959, 473
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+GlassesBridge
+  rotate: false
+  xy: 748, 682
+  size: 9, 7
+  orig: 9, 7
+  offset: 0, 0
+  index: -1
+Hat
+  rotate: true
+  xy: 866, 836
+  size: 186, 106
+  orig: 186, 106
+  offset: 0, 0
+  index: -1
+Hat Back
+  rotate: true
+  xy: 806, 471
+  size: 124, 59
+  orig: 124, 59
+  offset: 0, 0
+  index: -1
+Hat Flower
+  rotate: true
+  xy: 337, 3
+  size: 142, 68
+  orig: 142, 68
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 2, 147
+  size: 113, 350
+  orig: 113, 350
+  offset: 0, 0
+  index: -1
+Lash1 1
+  rotate: false
+  xy: 937, 12
+  size: 13, 42
+  orig: 13, 42
+  offset: 0, 0
+  index: -1
+Lash1 2
+  rotate: true
+  xy: 965, 280
+  size: 18, 36
+  orig: 18, 36
+  offset: 0, 0
+  index: -1
+Lash1 3
+  rotate: true
+  xy: 995, 258
+  size: 20, 27
+  orig: 20, 27
+  offset: 0, 0
+  index: -1
+Lash1 4
+  rotate: false
+  xy: 962, 199
+  size: 23, 22
+  orig: 23, 22
+  offset: 0, 0
+  index: -1
+Lash2 1
+  rotate: true
+  xy: 864, 204
+  size: 13, 38
+  orig: 13, 38
+  offset: 0, 0
+  index: -1
+Lash2 2
+  rotate: true
+  xy: 831, 606
+  size: 17, 34
+  orig: 17, 34
+  offset: 0, 0
+  index: -1
+Lash2 3
+  rotate: false
+  xy: 748, 563
+  size: 21, 32
+  orig: 21, 32
+  offset: 0, 0
+  index: -1
+Lash2 4
+  rotate: true
+  xy: 965, 173
+  size: 24, 18
+  orig: 24, 18
+  offset: 0, 0
+  index: -1
+LipUnder
+  rotate: true
+  xy: 407, 50
+  size: 102, 98
+  orig: 102, 98
+  offset: 0, 0
+  index: -1
+LipsUp
+  rotate: false
+  xy: 754, 2
+  size: 102, 41
+  orig: 102, 41
+  offset: 0, 0
+  index: -1
+Mouth Inner
+  rotate: true
+  xy: 867, 531
+  size: 93, 78
+  orig: 93, 78
+  offset: 0, 0
+  index: -1
+Pearl 01
+  rotate: false
+  xy: 842, 285
+  size: 55, 104
+  orig: 55, 104
+  offset: 0, 0
+  index: -1
+Pearl 02
+  rotate: false
+  xy: 899, 292
+  size: 64, 99
+  orig: 64, 99
+  offset: 0, 0
+  index: -1
+Pupil 01
+  rotate: false
+  xy: 1003, 280
+  size: 13, 18
+  orig: 13, 18
+  offset: 0, 0
+  index: -1
+Pupil 02
+  rotate: true
+  xy: 892, 121
+  size: 13, 18
+  orig: 13, 18
+  offset: 0, 0
+  index: -1
+Rande1
+  rotate: false
+  xy: 962, 254
+  size: 31, 24
+  orig: 31, 24
+  offset: 0, 0
+  index: -1
+Rande2
+  rotate: true
+  xy: 949, 806
+  size: 28, 23
+  orig: 28, 23
+  offset: 0, 0
+  index: -1
+ShowerHead
+  rotate: false
+  xy: 734, 114
+  size: 72, 87
+  orig: 72, 87
+  offset: 0, 0
+  index: -1
+ShowerNeck
+  rotate: false
+  xy: 920, 95
+  size: 35, 39
+  orig: 35, 39
+  offset: 0, 0
+  index: -1
+ShowerSpine
+  rotate: false
+  xy: 771, 395
+  size: 33, 200
+  orig: 33, 200
+  offset: 0, 0
+  index: -1
+Showerfeet
+  rotate: false
+  xy: 507, 15
+  size: 59, 20
+  orig: 59, 20
+  offset: 0, 0
+  index: -1
+Soap Small
+  rotate: false
+  xy: 779, 203
+  size: 83, 78
+  orig: 83, 78
+  offset: 0, 0
+  index: -1
+Soap Small Hand
+  rotate: false
+  xy: 905, 231
+  size: 55, 59
+  orig: 55, 59
+  offset: 0, 0
+  index: -1
+Tub
+  rotate: false
+  xy: 548, 859
+  size: 316, 163
+  orig: 316, 163
+  offset: 0, 0
+  index: -1
+Tub Back
+  rotate: false
+  xy: 507, 203
+  size: 260, 72
+  orig: 260, 72
+  offset: 0, 0
+  index: -1
+Wire
+  rotate: false
+  xy: 949, 597
+  size: 59, 207
+  orig: 59, 207
+  offset: 0, 0
+  index: -1
+Wire back
+  rotate: false
+  xy: 974, 806
+  size: 44, 216
+  orig: 44, 216
+  offset: 0, 0
+  index: -1
+Wire back copy
+  rotate: true
+  xy: 507, 111
+  size: 90, 225
+  orig: 90, 225
+  offset: 0, 0
+  index: -1
+Wire copy
+  rotate: false
+  xy: 866, 626
+  size: 81, 208
+  orig: 81, 208
+  offset: 0, 0
+  index: -1
+bryn 1
+  rotate: true
+  xy: 866, 393
+  size: 67, 94
+  orig: 67, 94
+  offset: 0, 0
+  index: -1
+bryn 2
+  rotate: true
+  xy: 738, 45
+  size: 67, 93
+  orig: 67, 93
+  offset: 0, 0
+  index: -1
+teethUnder
+  rotate: true
+  xy: 920, 56
+  size: 37, 34
+  orig: 37, 34
+  offset: 0, 0
+  index: -1
+teethUpper
+  rotate: true
+  xy: 831, 625
+  size: 55, 33
+  orig: 55, 33
+  offset: 0, 0
+  index: -1
+tung
+  rotate: false
+  xy: 962, 223
+  size: 25, 29
+  orig: 25, 29
+  offset: 0, 0
+  index: -1
+ui_bubbles_100x100_pink
+  rotate: false
+  xy: 808, 119
+  size: 82, 82
+  orig: 82, 82
+  offset: 0, 0
+  index: -1

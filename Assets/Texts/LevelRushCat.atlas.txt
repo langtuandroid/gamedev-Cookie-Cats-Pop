@@ -1,0 +1,125 @@
+
+LevelRushCat.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blink_00
+  rotate: false
+  xy: 2, 2
+  size: 158, 140
+  orig: 158, 140
+  offset: 0, 0
+  index: -1
+blink_01
+  rotate: false
+  xy: 162, 2
+  size: 158, 140
+  orig: 158, 140
+  offset: 0, 0
+  index: -1
+blink_02
+  rotate: false
+  xy: 322, 2
+  size: 158, 140
+  orig: 158, 140
+  offset: 0, 0
+  index: -1
+bow
+  rotate: true
+  xy: 806, 524
+  size: 255, 158
+  orig: 255, 158
+  offset: 0, 0
+  index: -1
+box Regular back
+  rotate: true
+  xy: 2, 144
+  size: 347, 342
+  orig: 347, 342
+  offset: 0, 0
+  index: -1
+box Regular front
+  rotate: true
+  xy: 346, 145
+  size: 346, 254
+  orig: 346, 254
+  offset: 0, 0
+  index: -1
+box shadow
+  rotate: false
+  xy: 642, 24
+  size: 310, 181
+  orig: 310, 181
+  offset: 0, 0
+  index: -1
+bubble
+  rotate: false
+  xy: 862, 833
+  size: 88, 88
+  orig: 88, 88
+  offset: 0, 0
+  index: -1
+cat
+  rotate: false
+  xy: 2, 493
+  size: 499, 520
+  orig: 499, 520
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 862, 923
+  size: 90, 92
+  orig: 90, 92
+  offset: 0, 0
+  index: -1
+eyeball
+  rotate: false
+  xy: 482, 3
+  size: 158, 140
+  orig: 158, 140
+  offset: 0, 0
+  index: -1
+lid Regular
+  rotate: false
+  xy: 503, 781
+  size: 357, 232
+  orig: 357, 232
+  offset: 0, 0
+  index: -1
+paw
+  rotate: false
+  xy: 503, 496
+  size: 19, 10
+  orig: 19, 10
+  offset: 0, 0
+  index: -1
+ribbon whole
+  rotate: false
+  xy: 602, 207
+  size: 264, 299
+  orig: 264, 299
+  offset: 0, 0
+  index: -1
+ribbon whole Shadow Regular
+  rotate: true
+  xy: 503, 508
+  size: 271, 301
+  orig: 271, 301
+  offset: 0, 0
+  index: -1
+sparkle
+  rotate: true
+  xy: 868, 372
+  size: 73, 74
+  orig: 73, 74
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 868, 447
+  size: 92, 75
+  orig: 92, 75
+  offset: 0, 0
+  index: -1

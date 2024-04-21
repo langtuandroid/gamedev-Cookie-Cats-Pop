@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633dfa9ce20d085302ee4f50dc88ffff, type: 3}
+  m_Name: "Motor_SkeletonData"
+  m_EditorClassIdentifier: 
+  atlasAssets:
+  - {fileID: 11400000, guid: dfc0cb2cb94d4061999a4b6d22549dd9, type: 2}
+  scale: 0.01
+  skeletonJSON: {fileID: 4900000, guid: b798e040a8c844dfb9d1a204e37056d1, type: 3}
+  fromAnimation: []
+  toAnimation: []
+  duration: 
+  defaultMix: 0.2
+  controller: {fileID: 0}

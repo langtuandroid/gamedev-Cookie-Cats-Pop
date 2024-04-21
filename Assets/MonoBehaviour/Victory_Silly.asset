@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0811c50eb9fdfc544dbc74a765d57637, type: 3}
+  m_Name: "Victory_Silly"
+  m_EditorClassIdentifier: 
+  id: "Sweetheart"
+  voices:
+  - clip: {fileID: 8300000, guid: 0ff2938cf7154ce3a66e168a6706c3ac, type: 3}
+    audioStartTime: 0
+  - clip: {fileID: 8300000, guid: 4a40ee4b28814491bc5efe0095861385, type: 3}
+    audioStartTime: 0
+  - clip: {fileID: 8300000, guid: f4ef503d91a847dab409072f2bcf9fe1, type: 3}
+    audioStartTime: 0
+  - clip: {fileID: 8300000, guid: ae4a969f7ebc41cbbcb9e44941898892, type: 3}
+    audioStartTime: 0
+  - clip: {fileID: 0}
+    audioStartTime: 0
+  - clip: {fileID: 0}
+    audioStartTime: 0
+  backgroundAudio: {fileID: 8300000, guid: ec6ee329eb4d42f19341519559453cb6, type: 3}
+  mouthThreshold: 0.102
+  delayBeforeTitle: 0

@@ -1,0 +1,69 @@
+
+FacebookCat.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blink_00
+  rotate: true
+  xy: 264, 2
+  size: 79, 70
+  orig: 79, 70
+  offset: 0, 0
+  index: -1
+blink_01
+  rotate: true
+  xy: 336, 2
+  size: 79, 70
+  orig: 79, 70
+  offset: 0, 0
+  index: -1
+blink_02
+  rotate: true
+  xy: 408, 2
+  size: 79, 70
+  orig: 79, 70
+  offset: 0, 0
+  index: -1
+cat
+  rotate: true
+  xy: 2, 5
+  size: 249, 260
+  orig: 249, 260
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 437, 127
+  size: 45, 46
+  orig: 45, 46
+  offset: 0, 0
+  index: -1
+eyeball
+  rotate: true
+  xy: 437, 175
+  size: 79, 70
+  orig: 79, 70
+  offset: 0, 0
+  index: -1
+paw
+  rotate: false
+  xy: 484, 168
+  size: 9, 5
+  orig: 9, 5
+  offset: 0, 0
+  index: -1
+profile_03
+  rotate: false
+  xy: 264, 83
+  size: 171, 171
+  orig: 171, 171
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 437, 87
+  size: 46, 38
+  orig: 46, 38
+  offset: 0, 0
+  index: -1

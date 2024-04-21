@@ -1,0 +1,559 @@
+
+Cat_Yellow.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bowl_0
+  rotate: false
+  xy: 488, 74
+  size: 90, 48
+  orig: 90, 48
+  offset: 0, 0
+  index: -1
+Bowl_1
+  rotate: false
+  xy: 882, 161
+  size: 90, 48
+  orig: 90, 48
+  offset: 0, 0
+  index: -1
+Bowl_2
+  rotate: true
+  xy: 974, 119
+  size: 90, 48
+  orig: 90, 48
+  offset: 0, 0
+  index: -1
+Bowl_3
+  rotate: false
+  xy: 882, 111
+  size: 90, 48
+  orig: 90, 48
+  offset: 0, 0
+  index: -1
+Bowl_4
+  rotate: true
+  xy: 974, 27
+  size: 90, 48
+  orig: 90, 48
+  offset: 0, 0
+  index: -1
+Bowl_5
+  rotate: false
+  xy: 160, 55
+  size: 90, 48
+  orig: 90, 48
+  offset: 0, 0
+  index: -1
+Bowl_6
+  rotate: false
+  xy: 631, 87
+  size: 90, 48
+  orig: 90, 48
+  offset: 0, 0
+  index: -1
+Lick_Arm
+  rotate: true
+  xy: 411, 56
+  size: 31, 60
+  orig: 31, 60
+  offset: 0, 0
+  index: -1
+Lick_Hand
+  rotate: false
+  xy: 473, 54
+  size: 21, 18
+  orig: 21, 18
+  offset: 0, 0
+  index: -1
+Lick_Mouth
+  rotate: false
+  xy: 859, 20
+  size: 14, 22
+  orig: 14, 22
+  offset: 0, 0
+  index: -1
+Lick_Tongue
+  rotate: false
+  xy: 949, 56
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1
+YELL__ArmEat_L
+  rotate: true
+  xy: 252, 59
+  size: 44, 52
+  orig: 44, 52
+  offset: 0, 0
+  index: -1
+YELL__ArmEat_R
+  rotate: false
+  xy: 844, 91
+  size: 36, 49
+  orig: 36, 49
+  offset: 0, 0
+  index: -1
+YELL__Arm_L_Up1
+  rotate: false
+  xy: 790, 94
+  size: 52, 41
+  orig: 52, 41
+  offset: 0, 0
+  index: -1
+YELL__Arm_L_Up2
+  rotate: false
+  xy: 2, 2
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+YELL__Arm_L_Up3
+  rotate: false
+  xy: 306, 62
+  size: 68, 37
+  orig: 68, 37
+  offset: 0, 0
+  index: -1
+YELL__Arm_PointingBowl
+  rotate: true
+  xy: 839, 142
+  size: 68, 41
+  orig: 68, 41
+  offset: 0, 0
+  index: -1
+YELL__Arm_R_Up1
+  rotate: false
+  xy: 774, 42
+  size: 35, 44
+  orig: 35, 44
+  offset: 0, 0
+  index: -1
+YELL__Arm_R_Up2
+  rotate: true
+  xy: 723, 88
+  size: 47, 65
+  orig: 47, 65
+  offset: 0, 0
+  index: -1
+YELL__Arm_R_Up3
+  rotate: true
+  xy: 411, 89
+  size: 50, 75
+  orig: 50, 75
+  offset: 0, 0
+  index: -1
+YELL__BODY
+  rotate: false
+  xy: 159, 105
+  size: 156, 149
+  orig: 156, 149
+  offset: 0, 0
+  index: -1
+YELL__Bowl_Down_1
+  rotate: true
+  xy: 495, 124
+  size: 130, 134
+  orig: 130, 134
+  offset: 0, 0
+  index: -1
+YELL__Bowl_Down_2
+  rotate: false
+  xy: 631, 137
+  size: 116, 117
+  orig: 116, 117
+  offset: 0, 0
+  index: -1
+YELL__Bowl_Down_2_NOblur
+  rotate: false
+  xy: 317, 101
+  size: 92, 38
+  orig: 92, 38
+  offset: 0, 0
+  index: -1
+YELL__Bowl_Eat
+  rotate: false
+  xy: 749, 137
+  size: 88, 73
+  orig: 88, 73
+  offset: 0, 0
+  index: -1
+YELL__Bowl_Up_1
+  rotate: true
+  xy: 317, 141
+  size: 113, 176
+  orig: 113, 176
+  offset: 0, 0
+  index: -1
+YELL__Bowl_Up_1_NOblur
+  rotate: false
+  xy: 882, 211
+  size: 93, 43
+  orig: 93, 43
+  offset: 0, 0
+  index: -1
+YELL__Bowl_Up_2
+  rotate: false
+  xy: 2, 76
+  size: 155, 178
+  orig: 155, 178
+  offset: 0, 0
+  index: -1
+YELL__Cheek_Eat_L
+  rotate: false
+  xy: 496, 2
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+YELL__Cheek_Eat_R
+  rotate: false
+  xy: 565, 7
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+YELL__Ear_L
+  rotate: false
+  xy: 376, 61
+  size: 33, 38
+  orig: 33, 38
+  offset: 0, 0
+  index: -1
+YELL__Ear_R
+  rotate: true
+  xy: 526, 6
+  size: 25, 37
+  orig: 25, 37
+  offset: 0, 0
+  index: -1
+YELL__Eyeball_L
+  rotate: true
+  xy: 458, 2
+  size: 38, 36
+  orig: 38, 36
+  offset: 0, 0
+  index: -1
+YELL__Eyeball_R
+  rotate: false
+  xy: 724, 8
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+YELL__File_Arm
+  rotate: false
+  xy: 683, 44
+  size: 39, 41
+  orig: 39, 41
+  offset: 0, 0
+  index: -1
+YELL__File_File
+  rotate: false
+  xy: 68, 5
+  size: 48, 16
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+YELL__File_Hand
+  rotate: true
+  xy: 1000, 2
+  size: 23, 14
+  orig: 23, 14
+  offset: 0, 0
+  index: -1
+YELL__Fingers_Arm
+  rotate: false
+  xy: 811, 7
+  size: 46, 35
+  orig: 46, 35
+  offset: 0, 0
+  index: -1
+YELL__Fingers_Hand
+  rotate: false
+  xy: 949, 82
+  size: 23, 27
+  orig: 23, 27
+  offset: 0, 0
+  index: -1
+YELL__FoodSmudge
+  rotate: true
+  xy: 811, 44
+  size: 48, 24
+  orig: 48, 24
+  offset: 0, 0
+  index: -1
+YELL__Foot_L
+  rotate: false
+  xy: 911, 2
+  size: 22, 11
+  orig: 22, 11
+  offset: 0, 0
+  index: -1
+YELL__Foot_L_Blur
+  rotate: false
+  xy: 429, 3
+  size: 26, 11
+  orig: 26, 11
+  offset: 0, 0
+  index: -1
+YELL__Foot_L_Eat_1
+  rotate: true
+  xy: 354, 45
+  size: 15, 18
+  orig: 15, 18
+  offset: 0, 0
+  index: -1
+YELL__Foot_R
+  rotate: true
+  xy: 788, 18
+  size: 22, 11
+  orig: 22, 11
+  offset: 0, 0
+  index: -1
+YELL__Foot_R_Eat_1
+  rotate: true
+  xy: 374, 44
+  size: 15, 18
+  orig: 15, 18
+  offset: 0, 0
+  index: -1
+YELL__Hair
+  rotate: true
+  xy: 544, 33
+  size: 39, 26
+  orig: 39, 26
+  offset: 0, 0
+  index: -1
+YELL__Leg_L
+  rotate: false
+  xy: 368, 2
+  size: 36, 40
+  orig: 36, 40
+  offset: 0, 0
+  index: -1
+YELL__Leg_L_Blur
+  rotate: false
+  xy: 580, 73
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: -1
+YELL__Leg_L_Bowl
+  rotate: false
+  xy: 882, 70
+  size: 65, 39
+  orig: 65, 39
+  offset: 0, 0
+  index: -1
+YELL__Leg_R
+  rotate: false
+  xy: 288, 2
+  size: 35, 43
+  orig: 35, 43
+  offset: 0, 0
+  index: -1
+YELL__Lid_L_Blink_1_Open
+  rotate: true
+  xy: 248, 2
+  size: 51, 38
+  orig: 51, 38
+  offset: 0, 0
+  index: -1
+YELL__Lid_L_Blink_2
+  rotate: false
+  xy: 631, 47
+  size: 50, 38
+  orig: 50, 38
+  offset: 0, 0
+  index: -1
+YELL__Lid_L_Blink_3
+  rotate: true
+  xy: 208, 2
+  size: 51, 38
+  orig: 51, 38
+  offset: 0, 0
+  index: -1
+YELL__Lid_L_Blink_4_Closed
+  rotate: false
+  xy: 406, 16
+  size: 50, 38
+  orig: 50, 38
+  offset: 0, 0
+  index: -1
+YELL__Lid_L_Wide
+  rotate: false
+  xy: 724, 45
+  size: 48, 41
+  orig: 48, 41
+  offset: 0, 0
+  index: -1
+YELL__Lid_R_Blink_1_Open
+  rotate: false
+  xy: 878, 32
+  size: 47, 36
+  orig: 47, 36
+  offset: 0, 0
+  index: -1
+YELL__Lid_R_Blink_2
+  rotate: false
+  xy: 496, 36
+  size: 46, 36
+  orig: 46, 36
+  offset: 0, 0
+  index: -1
+YELL__Lid_R_Blink_3
+  rotate: false
+  xy: 572, 35
+  size: 46, 36
+  orig: 46, 36
+  offset: 0, 0
+  index: -1
+YELL__Lid_R_Blink_4_Closed
+  rotate: false
+  xy: 927, 18
+  size: 45, 36
+  orig: 45, 36
+  offset: 0, 0
+  index: -1
+YELL__Lid_R_Wide
+  rotate: true
+  xy: 837, 44
+  size: 45, 39
+  orig: 45, 39
+  offset: 0, 0
+  index: -1
+YELL__Mouth_Bored
+  rotate: false
+  xy: 620, 64
+  size: 9, 7
+  orig: 9, 7
+  offset: 0, 0
+  index: -1
+YELL__Mouth_Eat
+  rotate: true
+  xy: 118, 3
+  size: 18, 28
+  orig: 18, 28
+  offset: 0, 0
+  index: -1
+YELL__Mouth_Open_O
+  rotate: false
+  xy: 935, 2
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+YELL__Mouth_Open_sad
+  rotate: true
+  xy: 911, 15
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+YELL__Mouth_Smile
+  rotate: true
+  xy: 148, 2
+  size: 19, 8
+  orig: 19, 8
+  offset: 0, 0
+  index: -1
+YELL__Mouth_Teeth
+  rotate: false
+  xy: 406, 2
+  size: 21, 12
+  orig: 21, 12
+  offset: 0, 0
+  index: -1
+YELL__Nails_Arm
+  rotate: true
+  xy: 977, 212
+  size: 42, 45
+  orig: 42, 45
+  offset: 0, 0
+  index: -1
+YELL__Nose
+  rotate: true
+  xy: 488, 129
+  size: 10, 5
+  orig: 10, 5
+  offset: 0, 0
+  index: -1
+YELL__NoseLine
+  rotate: true
+  xy: 565, 2
+  size: 3, 10
+  orig: 3, 10
+  offset: 0, 0
+  index: -1
+YELL__Pupil_L
+  rotate: false
+  xy: 761, 14
+  size: 25, 26
+  orig: 25, 26
+  offset: 0, 0
+  index: -1
+YELL__Pupil_R
+  rotate: true
+  xy: 974, 2
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1
+YELL__Rouge_L
+  rotate: false
+  xy: 160, 2
+  size: 46, 51
+  orig: 46, 51
+  offset: 0, 0
+  index: -1
+YELL__Rouge_R
+  rotate: false
+  xy: 68, 23
+  size: 90, 51
+  orig: 90, 51
+  offset: 0, 0
+  index: -1
+YELL__Snout
+  rotate: false
+  xy: 875, 9
+  size: 34, 21
+  orig: 34, 21
+  offset: 0, 0
+  index: -1
+YELL__Snout_FoodSmudge
+  rotate: false
+  xy: 325, 44
+  size: 27, 16
+  orig: 27, 16
+  offset: 0, 0
+  index: -1
+YELL__Spec_L
+  rotate: false
+  xy: 927, 57
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+YELL__Spec_R
+  rotate: true
+  xy: 288, 47
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+YELL__Tail
+  rotate: true
+  xy: 749, 212
+  size: 42, 131
+  orig: 42, 131
+  offset: 0, 0
+  index: -1
+hairball
+  rotate: false
+  xy: 325, 2
+  size: 41, 40
+  orig: 41, 40
+  offset: 0, 0
+  index: -1

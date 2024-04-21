@@ -1,0 +1,13 @@
+
+rita_book.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/Rita_Book
+  rotate: false
+  xy: 2, 2
+  size: 692, 666
+  orig: 692, 666
+  offset: 0, 0
+  index: -1

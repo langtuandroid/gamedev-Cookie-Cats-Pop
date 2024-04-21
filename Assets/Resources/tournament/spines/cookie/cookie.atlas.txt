@@ -1,0 +1,20 @@
+
+cookie.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Cookie
+  rotate: false
+  xy: 163, 120
+  size: 120, 122
+  orig: 120, 122
+  offset: 0, 0
+  index: -1
+Layer 700 copy 3
+  rotate: false
+  xy: 2, 2
+  size: 159, 240
+  orig: 159, 240
+  offset: 0, 0
+  index: -1

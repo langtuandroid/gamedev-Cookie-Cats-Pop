@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633dfa9ce20d085302ee4f50dc88ffff, type: 3}
+  m_Name: Cat_Yellow_SkeletonData_d1
+  m_EditorClassIdentifier: 
+  atlasAssets:
+  - {fileID: 11400000, guid: 3155b0ca410a4150992d9ddab4891020, type: 2}
+  scale: 0.01
+  skeletonJSON: {fileID: 4900000, guid: d7f4057f8e3a4c67971121f66ad587d1, type: 3}
+  fromAnimation: []
+  toAnimation: []
+  duration: 
+  defaultMix: 0.2
+  controller: {fileID: 0}

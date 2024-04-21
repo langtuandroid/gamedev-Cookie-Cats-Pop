@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b86d877f9f55223b642b548182b780f, type: 3}
+  m_Name: "PowerVisualSettings"
+  m_EditorClassIdentifier: 
+  pieceGrowCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.3989287
+      value: 1.049718
+      inSlope: 0.949204
+      outSlope: 0.949204
+    - serializedVersion: 2
+      time: 0.5970438
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  pieceMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  flashScreenCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 33.33333
+      outSlope: 33.33333
+    - serializedVersion: 2
+      time: 0.03
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.075
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.65
+      value: 0
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  notesExpandCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  bluebubbleExpandCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.1047886
+      value: 0.3746668
+      inSlope: 0.4992262
+      outSlope: 0.4992262
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  frogHitEffectScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.04354635
+      value: 1.088898
+      inSlope: 0.07755618
+      outSlope: 0.07755618
+    - serializedVersion: 2
+      time: 0.08207785
+      value: 1.06283
+      inSlope: 3.98159
+      outSlope: 3.98159
+    - serializedVersion: 2
+      time: 0.1561732
+      value: 1.451897
+      inSlope: -0.02384186
+      outSlope: -0.02384186
+    - serializedVersion: 2
+      time: 0.2008889
+      value: 1.354364
+      inSlope: -0.2980232
+      outSlope: -0.2980232
+    - serializedVersion: 2
+      time: 0.2705688
+      value: 1.666384
+      inSlope: -0.4458427
+      outSlope: -0.4458427
+    - serializedVersion: 2
+      time: 0.3109694
+      value: 1.645877
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  rainbowHitEffectMaterial: {fileID: 2100000, guid: 52d2ad5c11b34bae82b6d7f3f9b68b89, type: 2}

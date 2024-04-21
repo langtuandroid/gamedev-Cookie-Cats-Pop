@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f7f230384e088e48195209445de5d3, type: 3}
+  m_Name: "TournamentLevelDatabase"
+  m_EditorClassIdentifier: 
+  EDITOR_levelReferences: []
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTournament\x2fTournament 12_11_19\x2fTournament
+    1 3 36 RBY Shoot Up 1.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 70110100E022020080A90300
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTournament\x2fTournament 12_11_19\x2fTournament
+    3 4 42 RY Start It Up 1.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 50C30000A0860100F0490200
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTournament\x2fTournament 12_11_19\x2fTournament
+    6 40 M RB Put It Down 2.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: 409C000080380100C0D40100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTournament\x2fTournament 12_11_19\x2fTournament
+    3 40 M GR Vana Hea Madal Tulumaks 2.asset"
+    humanNumber: 4
+    index: 3
+    starThresholds: C8AF0000905F0100C0D40100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTournament\x2fTournament 12_11_19\x2fTournament
+    9 4 37 GB Tegelikult Ei Ole Raske HIH 1.asset"
+    humanNumber: 5
+    index: 4
+    starThresholds: 803801000071020080A90300
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTournament\x2fTournament 12_11_19\x2fTournament
+    9 3 RGB 39 First Impact HIH 1.asset"
+    humanNumber: 6
+    index: 5
+    starThresholds: A0860100400D0300E0930400
+  levelDifficultyList: 010000000100000001000000010000000100000001000000
+  contentHash: "990368e9ec4d33e6f2a317da1656f449"

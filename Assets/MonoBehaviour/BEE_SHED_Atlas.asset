@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d057d5df1c3e7986783d54ef9fce7951, type: 3}
+  m_Name: "BEE_SHED_Atlas"
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: f11e4734abb14b32a23fbc72e9acbf51, type: 3}
+  materials:
+  - {fileID: 2100000, guid: ecae4c5c0d854a9abbbd7fbf537c3b97, type: 2}

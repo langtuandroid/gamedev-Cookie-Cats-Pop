@@ -1,0 +1,202 @@
+
+BoosterShark.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm1
+  rotate: true
+  xy: 891, 792
+  size: 230, 107
+  orig: 230, 107
+  offset: 0, 0
+  index: -1
+Arm2
+  rotate: false
+  xy: 627, 161
+  size: 222, 76
+  orig: 222, 76
+  offset: 0, 0
+  index: -1
+BackBackFin
+  rotate: true
+  xy: 851, 161
+  size: 61, 75
+  orig: 61, 75
+  offset: 0, 0
+  index: -1
+Balloon
+  rotate: false
+  xy: 2, 220
+  size: 623, 802
+  orig: 623, 802
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 627, 472
+  size: 262, 550
+  orig: 262, 550
+  offset: 0, 0
+  index: -1
+Eye
+  rotate: false
+  xy: 928, 170
+  size: 47, 52
+  orig: 47, 52
+  offset: 0, 0
+  index: -1
+EyeLid1
+  rotate: true
+  xy: 456, 2
+  size: 40, 59
+  orig: 40, 59
+  offset: 0, 0
+  index: -1
+EyeLid2
+  rotate: true
+  xy: 2, 6
+  size: 28, 59
+  orig: 28, 59
+  offset: 0, 0
+  index: -1
+Fin
+  rotate: false
+  xy: 469, 44
+  size: 156, 174
+  orig: 156, 174
+  offset: 0, 0
+  index: -1
+Gum1
+  rotate: false
+  xy: 798, 6
+  size: 76, 153
+  orig: 76, 153
+  offset: 0, 0
+  index: -1
+Gum2
+  rotate: true
+  xy: 260, 2
+  size: 66, 136
+  orig: 66, 136
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 891, 555
+  size: 95, 235
+  orig: 95, 235
+  offset: 0, 0
+  index: -1
+InnerMouth
+  rotate: false
+  xy: 881, 224
+  size: 108, 61
+  orig: 108, 61
+  offset: 0, 0
+  index: -1
+InnerMouthBack
+  rotate: false
+  xy: 891, 437
+  size: 118, 116
+  orig: 118, 116
+  offset: 0, 0
+  index: -1
+LidExtre
+  rotate: false
+  xy: 578, 9
+  size: 46, 33
+  orig: 46, 33
+  offset: 0, 0
+  index: -1
+LipLower
+  rotate: true
+  xy: 627, 49
+  size: 110, 169
+  orig: 110, 169
+  offset: 0, 0
+  index: -1
+LoverBackFin
+  rotate: false
+  xy: 398, 6
+  size: 56, 62
+  orig: 56, 62
+  offset: 0, 0
+  index: -1
+LoverBackFin2
+  rotate: false
+  xy: 951, 121
+  size: 46, 47
+  orig: 46, 47
+  offset: 0, 0
+  index: -1
+Neck
+  rotate: false
+  xy: 260, 70
+  size: 207, 148
+  orig: 207, 148
+  offset: 0, 0
+  index: -1
+String2
+  rotate: true
+  xy: 627, 239
+  size: 231, 252
+  orig: 231, 252
+  offset: 0, 0
+  index: -1
+StringNut
+  rotate: false
+  xy: 517, 4
+  size: 59, 38
+  orig: 59, 38
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: false
+  xy: 2, 36
+  size: 256, 182
+  orig: 256, 182
+  offset: 0, 0
+  index: -1
+TeethLower1
+  rotate: true
+  xy: 881, 358
+  size: 77, 141
+  orig: 77, 141
+  offset: 0, 0
+  index: -1
+TeethLower2
+  rotate: true
+  xy: 876, 2
+  size: 17, 39
+  orig: 17, 39
+  offset: 0, 0
+  index: -1
+TeethLower3
+  rotate: true
+  xy: 876, 21
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+TeethUper1
+  rotate: false
+  xy: 876, 71
+  size: 73, 88
+  orig: 73, 88
+  offset: 0, 0
+  index: -1
+TeethUper2
+  rotate: true
+  xy: 881, 287
+  size: 69, 133
+  orig: 69, 133
+  offset: 0, 0
+  index: -1
+pupile
+  rotate: false
+  xy: 456, 53
+  size: 11, 15
+  orig: 11, 15
+  offset: 0, 0
+  index: -1

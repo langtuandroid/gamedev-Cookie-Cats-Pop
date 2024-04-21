@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3b2bc57f3471f17851a860ca014cf6, type: 3}
+  m_Name: "OneLifeChallenge_FiveColours"
+  m_EditorClassIdentifier: 
+  contentHash: "9e131e5db08e28da67c6914c50161362"
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2f1.0.x\x2f201-400\x2fThe Nameless Blob 2.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 983A000030750000B0B30000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2f1.0.x\x2f201-400\x2fRetrograde Analysis 1.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: E4570000C8AF0000D8D60000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2f1.0.x\x2f201-400\x2fFive Color Babee Metal 1.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: E02E0000C05D0000007D0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2f1.0.x\x2f201-400\x2fDiamonds Are A Cats Best Friend
+    1.asset"
+    humanNumber: 4
+    index: 3
+    starThresholds: 10270000204E000018790000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2f1.0.x\x2f201-400\x2fCall me an artist and gimme
+    your money 1.asset"
+    humanNumber: 5
+    index: 4
+    starThresholds: 10270000204E000030750000

@@ -1,0 +1,913 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!4 &1790486008851226014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1790486008800894365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790486008851226014}
+  - component: {fileID: 1790486010696719810}
+  - component: {fileID: 1790486010696719784}
+  - component: {fileID: 1790486010696719812}
+  - component: {fileID: 1790486010696719805}
+  - component: {fileID: 1790486010696719816}
+  - component: {fileID: 1790486010696719806}
+  - component: {fileID: 1790486010696719795}
+  - component: {fileID: 1790486010696719789}
+  - component: {fileID: 1790486010696719787}
+  - component: {fileID: 1790486010696719798}
+  - component: {fileID: 1790486010696719815}
+  - component: {fileID: 1790486010696719788}
+  - component: {fileID: 1790486010696719801}
+  - component: {fileID: 1790486010696719803}
+  - component: {fileID: 1790486010696719777}
+  - component: {fileID: 1790486010696719808}
+  - component: {fileID: 1790486010696719793}
+  - component: {fileID: 1790486010696719791}
+  - component: {fileID: 1790486010696719814}
+  - component: {fileID: 1790486010696719776}
+  - component: {fileID: 1790486010696719802}
+  - component: {fileID: 1790486010696719796}
+  - component: {fileID: 1790486010696719778}
+  - component: {fileID: 1790486010696719794}
+  - component: {fileID: 1790486010696719807}
+  - component: {fileID: 1790486010696719813}
+  - component: {fileID: 1790486010696719800}
+  - component: {fileID: 1790486010696719790}
+  - component: {fileID: 1790486010696719786}
+  - component: {fileID: 1790486010696719775}
+  - component: {fileID: 1790486010696719779}
+  - component: {fileID: 1790486010696719781}
+  - component: {fileID: 1790486010696719780}
+  - component: {fileID: 1790486010696719809}
+  - component: {fileID: 1790486010696719799}
+  - component: {fileID: 1790486010696719782}
+  - component: {fileID: 1790486010696719804}
+  - component: {fileID: 1790486010696719783}
+  - component: {fileID: 1790486010696719797}
+  - component: {fileID: 1790486010696719811}
+  - component: {fileID: 1790486010696719785}
+  - component: {fileID: 1790486010696719792}
+  m_Layer: 0
+  m_Name: "Clear path to pump"
+  m_TagString:
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1790486010696719775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1790}
+  type: 0
+  dontWait: 0
+  Direction: 1
+  zoomTarget:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  duration: 1
+--- !u!114 &1790486010696719776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1184}
+  type: 0
+  dontWait: 1
+  fadeBehaviour: 1
+--- !u!114 &1790486010696719777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 674}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "\"The biggest challenge with healing potions is finding the right
+  ingredients...\" Yeah yeah I know that..."
+  speakerIndex: 1
+  characters:
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 1790486010696719775, guid: 984f240ce542a9a45a921d9855c31587, type: 2}
+    poseId: "Professor_TiredOfGary_2"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1548}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  targetLocation:
+    Position: {x: 2607.895, y: 1211.303}
+    Rotation: 32.35297
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 2
+--- !u!114 &1790486010696719779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892d4c5cd892d9d545fb502b5549b580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1814}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1040}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 506}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1572}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  targetLocation:
+    Position: {x: 2937.019, y: 1454.073}
+    Rotation: 32.35297
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 2
+--- !u!114 &1790486010696719783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077783757aee2715459c7d1c65ada0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1620}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  direction: {x: 0.8910066, y: -0.4539904}
+--- !u!114 &1790486010696719784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 70}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 0
+--- !u!114 &1790486010696719785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a175a425f07085044fb0184d89a5951c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1112}
+  type: 0
+  dontWait: 0
+  decorationObjectId: "Kmv8o+6svEaXx8Z0"
+  decorationID: 1
+--- !u!114 &1790486010696719786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1766}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 262}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Yes sir, I can do this! I've got a shovel and I'm not afraid to use
+  it!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 554}
+  type: 0
+  dontWait: 0
+  moveableId: "S8nbkXGUuU6IEkNA"
+  placementLocation:
+    Position: {x: 1370.211, y: 2857.759}
+    Rotation: 333
+--- !u!114 &1790486010696719789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 238}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  targetLocation:
+    Position: {x: 2176.189, y: 1099.547}
+    Rotation: 333.9362
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 1
+--- !u!114 &1790486010696719790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1208}
+  type: 0
+  dontWait: 0
+  Delay: 0.5
+--- !u!114 &1790486010696719791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1064}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 0
+--- !u!114 &1790486010696719792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4022439f13b56ec43d2f0aafdad1fd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 190}
+  type: 0
+  dontWait: 1
+--- !u!114 &1790486010696719793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 650}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 1
+--- !u!114 &1790486010696719794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1136}
+  type: 0
+  dontWait: 0
+  moveableId: "2dRwrGdbpUunhFUO"
+  placementLocation:
+    Position: {x: 2339.744, y: 1179.266}
+    Rotation: 222.549
+--- !u!114 &1790486010696719795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 214}
+  type: 0
+  dontWait: 1
+  Direction: 0
+  zoomTarget:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  duration: 1
+--- !u!114 &1790486010696719796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1644}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "What do I see here? More dough? What a surprise!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_SurprisedAmazed_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 796}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "\"It's crucial that you think of the properties of--\" What if I'd
+  added just a bit more Fairy Dust Flour, and maybe some more--"
+  speakerIndex: 1
+  characters:
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 1790486010696719775, guid: 984f240ce542a9a45a921d9855c31587, type: 2}
+    poseId: "Professor_NeutralTalking_2"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 384}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "I wonder if the professor is coming along with his research. Poor
+  him, it must be some hard work! "
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_HappyExcited_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1354}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "...oh!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_SurprisedAmazed_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1596}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  targetLocation:
+    Position: {x: 3037.277, y: 1623.23}
+    Rotation: 325.0449
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 2
+--- !u!114 &1790486010696719801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a175a425f07085044fb0184d89a5951c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 578}
+  type: 0
+  dontWait: 1
+  decorationObjectId: "S8nbkXGUuU6IEkNA"
+  decorationID: 4
+--- !u!114 &1790486010696719802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a175a425f07085044fb0184d89a5951c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1088}
+  type: 0
+  dontWait: 0
+  decorationObjectId: "Pgwnm6z8CkiFzE41"
+  decorationID: 1
+--- !u!114 &1790486010696719803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 602}
+  type: 0
+  dontWait: 0
+  moveableId: "2dRwrGdbpUunhFUO"
+  placementLocation:
+    Position: {x: 1279.69, y: 2857.983}
+    Rotation: 0
+--- !u!114 &1790486010696719804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1476}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 118}
+  type: 0
+  dontWait: 0
+  Direction: 1
+  zoomTarget:
+    x: 1254.753
+    y: 971.0293
+    width: 373.6094
+    height: 1026.498
+  duration: 0.1
+--- !u!114 &1790486010696719806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 166}
+  type: 0
+  dontWait: 1
+  fadeBehaviour: 1
+--- !u!114 &1790486010696719807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1524}
+  type: 0
+  dontWait: 1
+  moveableId: "2dRwrGdbpUunhFUO"
+  targetLocation:
+    Position: {x: 3228.151, y: 1563.587}
+    Rotation: 0
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 0.2
+--- !u!114 &1790486010696719808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986f5623bb0faf2d6c4f735895b25f4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 626}
+  type: 0
+  dontWait: 0
+  message: "Meanwhile..."
+  duration: 1
+--- !u!114 &1790486010696719809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1232}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "There we go! A clear path to the pump and..."
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472e8016461ce0842607c78de804209f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 13
+  y: 17
+  width: 13
+  starsRequired: 1
+  title: "Clear path to pump"
+  timedTaskDescription: 
+  icon: {fileID: 0}
+  id: "2ae2a0d96a31fe549b1e4cd189d413c0"
+  isBuildTask: 0
+  actionType: 0
+--- !u!114 &1790486010696719811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 918}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "YES! I'm a genius! My Super Dough will work this time! I need my
+  notebook. And where did I put that book about the 100 best flavors
+  of pie in the world?"
+  speakerIndex: 1
+  characters:
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 1790486010696719775, guid: 984f240ce542a9a45a921d9855c31587, type: 2}
+    poseId: "Professor_HappyExcited_2"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 94}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  placementLocation:
+    Position: {x: 2068.869, y: 1043.51}
+    Rotation: 333
+--- !u!114 &1790486010696719813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1500}
+  type: 0
+  dontWait: 1
+  Direction: 1
+  zoomTarget:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  duration: 5
+--- !u!114 &1790486010696719814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1160}
+  type: 0
+  dontWait: 0
+  Delay: 1
+--- !u!114 &1790486010696719815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 530}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 0
+--- !u!114 &1790486010696719816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 142}
+  type: 0
+  dontWait: 0
+  moveableId: "2dRwrGdbpUunhFUO"
+  placementLocation:
+    Position: {x: 2234.378, y: 1098.182}
+    Rotation: 222.549

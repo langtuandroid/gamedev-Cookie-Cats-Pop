@@ -1,0 +1,48 @@
+
+Motor.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Propel
+  rotate: false
+  xy: 2, 244
+  size: 266, 266
+  orig: 266, 266
+  offset: 0, 0
+  index: -1
+TailPipe
+  rotate: false
+  xy: 270, 260
+  size: 88, 91
+  orig: 88, 91
+  offset: 0, 0
+  index: -1
+TeethWeel
+  rotate: false
+  xy: 394, 415
+  size: 57, 95
+  orig: 57, 95
+  offset: 0, 0
+  index: -1
+TeethWeel copy
+  rotate: false
+  xy: 360, 307
+  size: 30, 44
+  orig: 30, 44
+  offset: 0, 0
+  index: -1
+ZigZag
+  rotate: true
+  xy: 2, 2
+  size: 240, 246
+  orig: 240, 246
+  offset: 0, 0
+  index: -1
+motor
+  rotate: false
+  xy: 270, 353
+  size: 122, 157
+  orig: 122, 157
+  offset: 0, 0
+  index: -1

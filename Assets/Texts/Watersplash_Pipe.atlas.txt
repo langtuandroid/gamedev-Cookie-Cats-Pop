@@ -1,0 +1,125 @@
+
+Watersplash_Pipe.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BAND_AID
+  rotate: true
+  xy: 371, 48
+  size: 46, 72
+  orig: 46, 72
+  offset: 0, 0
+  index: -1
+Flow1
+  rotate: true
+  xy: 117, 2
+  size: 40, 46
+  orig: 40, 46
+  offset: 0, 0
+  index: -1
+Flow2
+  rotate: false
+  xy: 165, 2
+  size: 42, 40
+  orig: 42, 40
+  offset: 0, 0
+  index: -1
+Puddle
+  rotate: false
+  xy: 2, 148
+  size: 156, 106
+  orig: 156, 106
+  offset: 0, 0
+  index: -1
+Ripple
+  rotate: false
+  xy: 277, 38
+  size: 92, 52
+  orig: 92, 52
+  offset: 0, 0
+  index: -1
+SPLASH
+  rotate: false
+  xy: 2, 4
+  size: 113, 142
+  orig: 113, 142
+  offset: 0, 0
+  index: -1
+Splash1
+  rotate: true
+  xy: 477, 32
+  size: 63, 33
+  orig: 63, 33
+  offset: 0, 0
+  index: -1
+Splash2
+  rotate: true
+  xy: 477, 97
+  size: 64, 33
+  orig: 64, 33
+  offset: 0, 0
+  index: -1
+Splash3
+  rotate: true
+  xy: 445, 29
+  size: 65, 30
+  orig: 65, 30
+  offset: 0, 0
+  index: -1
+foam1
+  rotate: false
+  xy: 277, 92
+  size: 90, 65
+  orig: 90, 65
+  offset: 0, 0
+  index: -1
+foam2
+  rotate: false
+  xy: 385, 96
+  size: 90, 65
+  orig: 90, 65
+  offset: 0, 0
+  index: -1
+foam3
+  rotate: true
+  xy: 214, 63
+  size: 91, 61
+  orig: 91, 61
+  offset: 0, 0
+  index: -1
+hole
+  rotate: true
+  xy: 214, 45
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+rim
+  rotate: false
+  xy: 385, 163
+  size: 112, 91
+  orig: 112, 91
+  offset: 0, 0
+  index: -1
+stream1
+  rotate: false
+  xy: 160, 156
+  size: 110, 98
+  orig: 110, 98
+  offset: 0, 0
+  index: -1
+stream2
+  rotate: true
+  xy: 117, 44
+  size: 102, 95
+  orig: 102, 95
+  offset: 0, 0
+  index: -1
+stream3
+  rotate: false
+  xy: 272, 159
+  size: 111, 95
+  orig: 111, 95
+  offset: 0, 0
+  index: -1

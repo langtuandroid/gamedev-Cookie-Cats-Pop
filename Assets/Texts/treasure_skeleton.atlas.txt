@@ -1,0 +1,188 @@
+
+treasure_skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GFXtreasure_0001
+  rotate: true
+  xy: 2, 152
+  size: 173, 137
+  orig: 173, 137
+  offset: 0, 0
+  index: -1
+GFXtreasure_0002
+  rotate: true
+  xy: 126, 332
+  size: 173, 137
+  orig: 173, 137
+  offset: 0, 0
+  index: -1
+GFXtreasure_0003
+  rotate: true
+  xy: 141, 157
+  size: 173, 137
+  orig: 173, 137
+  offset: 0, 0
+  index: -1
+GFXtreasure_0004
+  rotate: true
+  xy: 265, 332
+  size: 173, 137
+  orig: 173, 137
+  offset: 0, 0
+  index: -1
+GFXtreasure_0005
+  rotate: true
+  xy: 517, 335
+  size: 170, 104
+  orig: 170, 104
+  offset: 0, 0
+  index: -1
+GFXtreasure_0006
+  rotate: true
+  xy: 119, 2
+  size: 148, 114
+  orig: 148, 114
+  offset: 0, 0
+  index: -1
+GFXtreasure_0007
+  rotate: true
+  xy: 816, 388
+  size: 117, 111
+  orig: 117, 111
+  offset: 0, 0
+  index: -1
+GFXtreasure_0008
+  rotate: true
+  xy: 583, 15
+  size: 146, 95
+  orig: 146, 95
+  offset: 0, 0
+  index: -1
+GFXtreasure_0009
+  rotate: true
+  xy: 532, 163
+  size: 170, 94
+  orig: 170, 94
+  offset: 0, 0
+  index: -1
+GFXtreasure_0010
+  rotate: true
+  xy: 235, 7
+  size: 148, 114
+  orig: 148, 114
+  offset: 0, 0
+  index: -1
+GFXtreasure_0011
+  rotate: false
+  xy: 822, 275
+  size: 117, 111
+  orig: 117, 111
+  offset: 0, 0
+  index: -1
+GFXtreasure_0012
+  rotate: true
+  xy: 628, 187
+  size: 146, 95
+  orig: 146, 95
+  offset: 0, 0
+  index: -1
+GFXtreasure_0013
+  rotate: true
+  xy: 623, 335
+  size: 170, 94
+  orig: 170, 94
+  offset: 0, 0
+  index: -1
+GFXtreasure_0014
+  rotate: true
+  xy: 351, 7
+  size: 148, 114
+  orig: 148, 114
+  offset: 0, 0
+  index: -1
+GFXtreasure_0015
+  rotate: false
+  xy: 822, 162
+  size: 117, 111
+  orig: 117, 111
+  offset: 0, 0
+  index: -1
+GFXtreasure_0016
+  rotate: true
+  xy: 719, 359
+  size: 146, 95
+  orig: 146, 95
+  offset: 0, 0
+  index: -1
+GFXtreasure_0017
+  rotate: true
+  xy: 404, 335
+  size: 170, 111
+  orig: 170, 111
+  offset: 0, 0
+  index: -1
+GFXtreasure_0018
+  rotate: true
+  xy: 2, 2
+  size: 148, 115
+  orig: 148, 115
+  offset: 0, 0
+  index: -1
+GFXtreasure_0019
+  rotate: true
+  xy: 777, 43
+  size: 117, 111
+  orig: 117, 111
+  offset: 0, 0
+  index: -1
+GFXtreasure_0020
+  rotate: true
+  xy: 680, 39
+  size: 146, 95
+  orig: 146, 95
+  offset: 0, 0
+  index: -1
+GFXtreasure_0021
+  rotate: true
+  xy: 280, 157
+  size: 173, 137
+  orig: 173, 137
+  offset: 0, 0
+  index: -1
+GFXtreasure_0022
+  rotate: true
+  xy: 419, 163
+  size: 170, 111
+  orig: 170, 111
+  offset: 0, 0
+  index: -1
+GFXtreasure_0023
+  rotate: true
+  xy: 467, 13
+  size: 148, 114
+  orig: 148, 114
+  offset: 0, 0
+  index: -1
+GFXtreasure_0024
+  rotate: false
+  xy: 890, 50
+  size: 117, 110
+  orig: 117, 110
+  offset: 0, 0
+  index: -1
+GFXtreasure_0025
+  rotate: true
+  xy: 725, 211
+  size: 146, 95
+  orig: 146, 95
+  offset: 0, 0
+  index: -1
+GFXtreasure_glow
+  rotate: true
+  xy: 2, 327
+  size: 178, 122
+  orig: 178, 122
+  offset: 0, 0
+  index: -1

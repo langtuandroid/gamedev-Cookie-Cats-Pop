@@ -1,0 +1,20 @@
+
+Flag.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Flag
+  rotate: false
+  xy: 2, 285
+  size: 767, 735
+  orig: 767, 735
+  offset: 0, 0
+  index: -1
+Pole
+  rotate: true
+  xy: 2, 2
+  size: 281, 737
+  orig: 281, 737
+  offset: 0, 0
+  index: -1

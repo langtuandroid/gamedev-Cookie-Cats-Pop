@@ -1,0 +1,216 @@
+
+ColorChange_HelicopterCat.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm1
+  rotate: false
+  xy: 388, 212
+  size: 74, 91
+  orig: 74, 91
+  offset: 0, 0
+  index: -1
+Arm2
+  rotate: false
+  xy: 460, 365
+  size: 48, 87
+  orig: 48, 87
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 294, 356
+  size: 164, 154
+  orig: 164, 154
+  offset: 0, 0
+  index: -1
+Brush
+  rotate: false
+  xy: 2, 76
+  size: 44, 434
+  orig: 44, 434
+  offset: 0, 0
+  index: -1
+BrushDrop_Green
+  rotate: false
+  xy: 376, 10
+  size: 48, 20
+  orig: 48, 20
+  offset: 0, 0
+  index: -1
+BrushHair
+  rotate: true
+  xy: 48, 45
+  size: 113, 130
+  orig: 113, 130
+  offset: 0, 0
+  index: -1
+BrushPaint_Green
+  rotate: true
+  xy: 275, 67
+  size: 112, 62
+  orig: 112, 62
+  offset: 0, 0
+  index: -1
+Ear1
+  rotate: true
+  xy: 2, 40
+  size: 34, 44
+  orig: 34, 44
+  offset: 0, 0
+  index: -1
+Ear2
+  rotate: false
+  xy: 431, 310
+  size: 29, 44
+  orig: 29, 44
+  offset: 0, 0
+  index: -1
+Flash
+  rotate: false
+  xy: 48, 298
+  size: 244, 212
+  orig: 244, 212
+  offset: 0, 0
+  index: -1
+Foot1
+  rotate: false
+  xy: 460, 454
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+Foot2
+  rotate: false
+  xy: 334, 10
+  size: 40, 52
+  orig: 40, 52
+  offset: 0, 0
+  index: -1
+Goggles
+  rotate: true
+  xy: 180, 48
+  size: 110, 93
+  orig: 110, 93
+  offset: 0, 0
+  index: -1
+Hand1
+  rotate: false
+  xy: 468, 312
+  size: 42, 51
+  orig: 42, 51
+  offset: 0, 0
+  index: -1
+Hand2
+  rotate: true
+  xy: 376, 32
+  size: 26, 54
+  orig: 26, 54
+  offset: 0, 0
+  index: -1
+Lamp
+  rotate: false
+  xy: 448, 106
+  size: 47, 66
+  orig: 47, 66
+  offset: 0, 0
+  index: -1
+Leg
+  rotate: true
+  xy: 111, 2
+  size: 41, 56
+  orig: 41, 56
+  offset: 0, 0
+  index: -1
+M_Arm
+  rotate: false
+  xy: 339, 64
+  size: 36, 115
+  orig: 36, 115
+  offset: 0, 0
+  index: -1
+M_Pipe
+  rotate: true
+  xy: 477, 255
+  size: 55, 33
+  orig: 55, 33
+  offset: 0, 0
+  index: -1
+Machine
+  rotate: false
+  xy: 377, 99
+  size: 69, 73
+  orig: 69, 73
+  offset: 0, 0
+  index: -1
+Mund
+  rotate: false
+  xy: 275, 36
+  size: 57, 29
+  orig: 57, 29
+  offset: 0, 0
+  index: -1
+P_Base
+  rotate: false
+  xy: 48, 221
+  size: 338, 75
+  orig: 338, 75
+  offset: 0, 0
+  index: -1
+RecordAni_1
+  rotate: false
+  xy: 250, 181
+  size: 126, 38
+  orig: 126, 38
+  offset: 0, 0
+  index: -1
+RecordAni_2
+  rotate: false
+  xy: 378, 174
+  size: 88, 36
+  orig: 88, 36
+  offset: 0, 0
+  index: -1
+RecordAni_3
+  rotate: false
+  xy: 377, 60
+  size: 98, 37
+  orig: 98, 37
+  offset: 0, 0
+  index: -1
+RecordAni_4
+  rotate: false
+  xy: 2, 2
+  size: 107, 36
+  orig: 107, 36
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 48, 160
+  size: 200, 59
+  orig: 200, 59
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: true
+  xy: 294, 305
+  size: 49, 135
+  orig: 49, 135
+  offset: 0, 0
+  index: -1
+Tongue
+  rotate: true
+  xy: 432, 31
+  size: 27, 30
+  orig: 27, 30
+  offset: 0, 0
+  index: -1
+Y_Nose
+  rotate: false
+  xy: 477, 83
+  size: 33, 21
+  orig: 33, 21
+  offset: 0, 0
+  index: -1

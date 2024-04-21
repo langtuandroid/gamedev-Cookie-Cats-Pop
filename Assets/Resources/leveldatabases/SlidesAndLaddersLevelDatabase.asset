@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d1eb8080c314641b97254e2840d0b1, type: 3}
+  m_Name: "SlidesAndLaddersLevelDatabase"
+  m_EditorClassIdentifier: 
+  EDITOR_levelReferences: []
+  levelStubs:
+  - metaClassType: "DummyLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fSlidesAndLadders\x2fDummyLevelAsset.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 328 Easy.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 10270000204E000050C30000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 687 ME.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: F8240100F0490200E0930400
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 289 Easy.asset"
+    humanNumber: 4
+    index: 3
+    starThresholds: 10270000204E0000409C0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 581 Hard.asset"
+    humanNumber: 5
+    index: 4
+    starThresholds: 3075000060EA0000905F0100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 1134 MH.asset"
+    humanNumber: 6
+    index: 5
+    starThresholds: 8813000010270000A8610000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 354 MH.asset"
+    humanNumber: 7
+    index: 6
+    starThresholds: 8813000010270000204E0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 507 Hard.asset"
+    humanNumber: 8
+    index: 7
+    starThresholds: 409C000080380100580F0200
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 553 Hard.asset"
+    humanNumber: 9
+    index: 8
+    starThresholds: 3075000060EA0000A0860100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 558 MH.asset"
+    humanNumber: 10
+    index: 9
+    starThresholds: 3075000060EA0000B0AD0100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 608 Hard.asset"
+    humanNumber: 11
+    index: 10
+    starThresholds: D8D60000B0AD0100400D0300
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 774 Medium.asset"
+    humanNumber: 12
+    index: 11
+    starThresholds: 401F0000803E0000C05D0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 411 MH.asset"
+    humanNumber: 13
+    index: 12
+    starThresholds: 4C1D0000983A000030750000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 910 Hard.asset"
+    humanNumber: 14
+    index: 13
+    starThresholds: 10270000204E000088900000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 347 Easy.asset"
+    humanNumber: 15
+    index: 14
+    starThresholds: 5C440000B8880000409C0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 987 Hard.asset"
+    humanNumber: 16
+    index: 15
+    starThresholds: 5C440000B8880000E8FD0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 648 Medium.asset"
+    humanNumber: 17
+    index: 16
+    starThresholds: 50C30000A0860100400D0300
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 499 Easy.asset"
+    humanNumber: 18
+    index: 17
+    starThresholds: 983A000030750000E8FD0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 622 Hard.asset"
+    humanNumber: 19
+    index: 18
+    starThresholds: 204E0000409C000060EA0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 282 Easy.asset"
+    humanNumber: 20
+    index: 19
+    starThresholds: 8813000010270000983A0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 243 MH.asset"
+    humanNumber: 21
+    index: 20
+    starThresholds: 983A00003075000050C30000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 541 Hard.asset"
+    humanNumber: 22
+    index: 21
+    starThresholds: 282300005046000030750000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 1039 Easy.asset"
+    humanNumber: 23
+    index: 22
+    starThresholds: F8240100F049020090D00300
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 792 ME.asset"
+    humanNumber: 24
+    index: 23
+    starThresholds: D4300000A861000028A00000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fSNL 1135 Easy.asset"
+    humanNumber: 25
+    index: 24
+    starThresholds: E02E0000C05D0000409C0000
+  - metaClassType: "RewardLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fRewardLevelAsset.asset"
+    humanNumber: 26
+    index: 25
+    starThresholds: 
+  levelDifficultyList: 0000000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000000000000
+  contentHash: "d8c0a0eedf58ca0a7b9f6705c485dd4a"
+  levelConnections:
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 1
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 8
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 1
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: -5
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 1
+  - completedLevelSteps: 10
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 1
+  - completedLevelSteps: 10
+    failedLevelSteps: -7
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 6
+    failedLevelSteps: -8
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 1
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: -8
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 1
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: -8
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 1
+  - completedLevelSteps: 0
+    failedLevelSteps: 0
+    treasureLevel: 0

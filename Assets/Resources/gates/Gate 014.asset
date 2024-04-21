@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b0932b89bc15cf39fc35b9f3e60853, type: 3}
+  m_Name: "Gate 014"
+  m_EditorClassIdentifier: 
+  contentHash: "46739096e49261a991d6719c9676be84"
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fGates\x2fGate HighWay.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 204E0000409C0000B0300100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fGates\x2fGate Series 1.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 10270000204E0000084C0100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fGates\x2fGate Harsh Wings.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: B80B000070170000983A0000

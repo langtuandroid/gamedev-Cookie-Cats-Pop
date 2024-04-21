@@ -1,0 +1,174 @@
+
+Pirate Cat_ToSpine.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm1
+  rotate: true
+  xy: 421, 2
+  size: 41, 33
+  orig: 41, 33
+  offset: 0, 0
+  index: -1
+Arm2
+  rotate: false
+  xy: 960, 93
+  size: 45, 33
+  orig: 45, 33
+  offset: 0, 0
+  index: -1
+Blink
+  rotate: false
+  xy: 774, 73
+  size: 59, 53
+  orig: 59, 53
+  offset: 0, 0
+  index: -1
+Body
+  rotate: true
+  xy: 294, 40
+  size: 86, 125
+  orig: 86, 125
+  offset: 0, 0
+  index: -1
+Ear1
+  rotate: false
+  xy: 127, 14
+  size: 17, 25
+  orig: 17, 25
+  offset: 0, 0
+  index: -1
+Ear2
+  rotate: true
+  xy: 541, 47
+  size: 17, 21
+  orig: 17, 21
+  offset: 0, 0
+  index: -1
+EyePatch
+  rotate: false
+  xy: 640, 78
+  size: 66, 48
+  orig: 66, 48
+  offset: 0, 0
+  index: -1
+Eyes
+  rotate: false
+  xy: 835, 73
+  size: 56, 53
+  orig: 56, 53
+  offset: 0, 0
+  index: -1
+Fether
+  rotate: false
+  xy: 708, 72
+  size: 64, 54
+  orig: 64, 54
+  offset: 0, 0
+  index: -1
+Foot2
+  rotate: false
+  xy: 893, 76
+  size: 33, 21
+  orig: 33, 21
+  offset: 0, 0
+  index: -1
+Hand1_Sword
+  rotate: true
+  xy: 421, 45
+  size: 50, 118
+  orig: 50, 118
+  offset: 0, 0
+  index: -1
+Hat_Back
+  rotate: false
+  xy: 2, 41
+  size: 145, 85
+  orig: 145, 85
+  offset: 0, 0
+  index: -1
+Hat_Front
+  rotate: false
+  xy: 149, 48
+  size: 143, 78
+  orig: 143, 78
+  offset: 0, 0
+  index: -1
+Hook
+  rotate: false
+  xy: 456, 9
+  size: 45, 34
+  orig: 45, 34
+  offset: 0, 0
+  index: -1
+Leg1_wood
+  rotate: false
+  xy: 541, 66
+  size: 27, 29
+  orig: 27, 29
+  offset: 0, 0
+  index: -1
+M_smile
+  rotate: false
+  xy: 2, 10
+  size: 65, 29
+  orig: 65, 29
+  offset: 0, 0
+  index: -1
+M_smile-Open
+  rotate: false
+  xy: 571, 80
+  size: 67, 46
+  orig: 67, 46
+  offset: 0, 0
+  index: -1
+Nose
+  rotate: false
+  xy: 928, 81
+  size: 21, 16
+  orig: 21, 16
+  offset: 0, 0
+  index: -1
+Pupil1
+  rotate: false
+  xy: 1007, 102
+  size: 13, 24
+  orig: 13, 24
+  offset: 0, 0
+  index: -1
+Pupil2
+  rotate: false
+  xy: 1007, 102
+  size: 13, 24
+  orig: 13, 24
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 421, 97
+  size: 148, 29
+  orig: 148, 29
+  offset: 0, 0
+  index: -1
+Sparkle
+  rotate: false
+  xy: 503, 11
+  size: 17, 32
+  orig: 17, 32
+  offset: 0, 0
+  index: -1
+Sword_Highlight
+  rotate: true
+  xy: 69, 14
+  size: 25, 56
+  orig: 25, 56
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: false
+  xy: 893, 99
+  size: 65, 27
+  orig: 65, 27
+  offset: 0, 0
+  index: -1

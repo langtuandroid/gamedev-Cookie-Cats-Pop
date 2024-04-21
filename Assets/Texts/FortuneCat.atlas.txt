@@ -1,0 +1,41 @@
+
+FortuneCat.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FurtuneCat
+  rotate: false
+  xy: 2, 2
+  size: 224, 213
+  orig: 224, 213
+  offset: 0, 0
+  index: -1
+FurtuneCat_WindeUp_01
+  rotate: false
+  xy: 228, 130
+  size: 129, 85
+  orig: 129, 85
+  offset: 0, 0
+  index: -1
+FurtuneCat_WindeUp_02
+  rotate: false
+  xy: 228, 43
+  size: 129, 85
+  orig: 129, 85
+  offset: 0, 0
+  index: -1
+FurtuneCat_WindeUp_03
+  rotate: false
+  xy: 359, 130
+  size: 129, 85
+  orig: 129, 85
+  offset: 0, 0
+  index: -1
+FurtuneCat_WindeUp_04
+  rotate: false
+  xy: 359, 43
+  size: 129, 85
+  orig: 129, 85
+  offset: 0, 0
+  index: -1

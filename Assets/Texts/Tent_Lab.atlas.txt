@@ -1,0 +1,62 @@
+
+Tent_Lab.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BUBBLES_GR_1
+  rotate: false
+  xy: 396, 231
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+BUBBLES_GR_2
+  rotate: false
+  xy: 212, 177
+  size: 91, 33
+  orig: 91, 33
+  offset: 0, 0
+  index: -1
+BUBBLES_GR_3
+  rotate: false
+  xy: 306, 219
+  size: 88, 29
+  orig: 88, 29
+  offset: 0, 0
+  index: -1
+BUBBLES_GR_4
+  rotate: false
+  xy: 212, 212
+  size: 92, 36
+  orig: 92, 36
+  offset: 0, 0
+  index: -1
+BUBBLE_red
+  rotate: false
+  xy: 260, 160
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+COOKIE1
+  rotate: false
+  xy: 212, 126
+  size: 46, 49
+  orig: 46, 49
+  offset: 0, 0
+  index: -1
+COOKIE2
+  rotate: true
+  xy: 212, 74
+  size: 50, 40
+  orig: 50, 40
+  offset: 0, 0
+  index: -1
+OL
+  rotate: false
+  xy: 2, 2
+  size: 208, 246
+  orig: 208, 246
+  offset: 0, 0
+  index: -1

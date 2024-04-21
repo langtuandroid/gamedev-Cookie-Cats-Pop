@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabba7cd58c586e064debd2c0c543f9, type: 3}
+  m_Name: "BoosterExtraMoves"
+  m_EditorClassIdentifier: 
+  title: "Extra Bubbles"
+  description: "Get 10 extra bubbles!"
+  iconSpriteName: "ui_buyMoreBubbles__01"
+  quantityFormat: 0
+  unlockAtLevelIndex: 0
+  unlockPrefab: {fileID: 0}
+  preGame: 0
+  preGameShopItemIdentifier:
+    value: 
+  inGameShopItemIdentifier:
+    value: "ShopItemExtraMoves"
+  logicPrefab: {fileID: 1790486010696719799, guid: a972bd97d826b42aca3a50d00ef702a7, type: 2}
+  pregame: 0
+  isThrownAsBall: 0

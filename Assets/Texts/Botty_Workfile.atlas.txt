@@ -1,0 +1,209 @@
+
+Botty_Workfile.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm_L
+  rotate: false
+  xy: 866, 86
+  size: 56, 40
+  orig: 56, 40
+  offset: 0, 0
+  index: -1
+B__Arm_R
+  rotate: false
+  xy: 726, 19
+  size: 44, 51
+  orig: 44, 51
+  offset: 0, 0
+  index: -1
+B__Body
+  rotate: true
+  xy: 489, 59
+  size: 67, 89
+  orig: 67, 89
+  offset: 0, 0
+  index: -1
+B__Leg_L
+  rotate: false
+  xy: 544, 15
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+B__Leg_R
+  rotate: false
+  xy: 397, 54
+  size: 90, 72
+  orig: 90, 72
+  offset: 0, 0
+  index: -1
+B__Mouth
+  rotate: true
+  xy: 966, 61
+  size: 23, 12
+  orig: 23, 12
+  offset: 0, 0
+  index: -1
+B__Shadow
+  rotate: false
+  xy: 2, 57
+  size: 190, 69
+  orig: 190, 69
+  offset: 0, 0
+  index: -1
+Bulp_Fixed
+  rotate: false
+  xy: 317, 34
+  size: 78, 92
+  orig: 78, 92
+  offset: 0, 0
+  index: -1
+Ear_L
+  rotate: true
+  xy: 866, 49
+  size: 35, 49
+  orig: 35, 49
+  offset: 0, 0
+  index: -1
+Ear_R
+  rotate: true
+  xy: 588, 14
+  size: 44, 47
+  orig: 44, 47
+  offset: 0, 0
+  index: -1
+Electricity_1
+  rotate: false
+  xy: 743, 77
+  size: 57, 49
+  orig: 57, 49
+  offset: 0, 0
+  index: -1
+Electricity_2
+  rotate: false
+  xy: 802, 85
+  size: 62, 41
+  orig: 62, 41
+  offset: 0, 0
+  index: -1
+Electricity_3
+  rotate: false
+  xy: 671, 27
+  size: 53, 43
+  orig: 53, 43
+  offset: 0, 0
+  index: -1
+F__Arm_R
+  rotate: false
+  xy: 671, 72
+  size: 70, 54
+  orig: 70, 54
+  offset: 0, 0
+  index: -1
+F__Body
+  rotate: true
+  xy: 580, 60
+  size: 66, 89
+  orig: 66, 89
+  offset: 0, 0
+  index: -1
+F__Foot_R
+  rotate: false
+  xy: 924, 86
+  size: 54, 40
+  orig: 54, 40
+  offset: 0, 0
+  index: -1
+F__Hand_R
+  rotate: false
+  xy: 857, 2
+  size: 43, 45
+  orig: 43, 45
+  offset: 0, 0
+  index: -1
+F__Leg_L
+  rotate: true
+  xy: 917, 51
+  size: 33, 47
+  orig: 33, 47
+  offset: 0, 0
+  index: -1
+F__Leg_R
+  rotate: true
+  xy: 802, 45
+  size: 38, 53
+  orig: 38, 53
+  offset: 0, 0
+  index: -1
+F__Shadow
+  rotate: false
+  xy: 2, 4
+  size: 160, 51
+  orig: 160, 51
+  offset: 0, 0
+  index: -1
+Foot_L
+  rotate: false
+  xy: 489, 18
+  size: 53, 39
+  orig: 53, 39
+  offset: 0, 0
+  index: -1
+Hand_L
+  rotate: false
+  xy: 980, 80
+  size: 42, 46
+  orig: 42, 46
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 194, 28
+  size: 121, 98
+  orig: 121, 98
+  offset: 0, 0
+  index: -1
+Lid_L
+  rotate: false
+  xy: 637, 48
+  size: 16, 10
+  orig: 16, 10
+  offset: 0, 0
+  index: -1
+Lid_R
+  rotate: false
+  xy: 164, 30
+  size: 19, 25
+  orig: 19, 25
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: false
+  xy: 397, 29
+  size: 59, 23
+  orig: 59, 23
+  offset: 0, 0
+  index: -1
+Neck
+  rotate: true
+  xy: 458, 20
+  size: 32, 29
+  orig: 32, 29
+  offset: 0, 0
+  index: -1
+Pupil_L
+  rotate: true
+  xy: 655, 48
+  size: 10, 14
+  orig: 10, 14
+  offset: 0, 0
+  index: -1
+Pupil_R
+  rotate: false
+  xy: 902, 32
+  size: 9, 15
+  orig: 9, 15
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633dfa9ce20d085302ee4f50dc88ffff, type: 3}
+  m_Name: "Spider_Web_SkeletonData"
+  m_EditorClassIdentifier: 
+  atlasAssets:
+  - {fileID: 11400000, guid: 8a5425411c3d4faea5e9d6e3f9b06ab9, type: 2}
+  scale: 0.5
+  skeletonJSON: {fileID: 4900000, guid: 7fbce878162e48e0aeb24dcf400a1b3f, type: 3}
+  fromAnimation: []
+  toAnimation: []
+  duration: 
+  defaultMix: 0
+  controller: {fileID: 0}

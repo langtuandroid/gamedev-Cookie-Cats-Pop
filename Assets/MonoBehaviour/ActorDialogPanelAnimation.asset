@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb8b62f7a9424dec50e72e1115656fe, type: 3}
+  m_Name: "ActorDialogPanelAnimation"
+  m_EditorClassIdentifier: 
+  characterRevealCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.2666587
+      value: 1.048465
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.3
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  speechBoxScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.5
+      inSlope: 8.631907
+      outSlope: 8.631907
+    - serializedVersion: 2
+      time: 0.1659907
+      value: 1.010808
+      inSlope: 1.011491
+      outSlope: 1.011491
+    - serializedVersion: 2
+      time: 0.2
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  speechBoxAlphaCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.001666311
+      value: 0
+      inSlope: 12.83935
+      outSlope: 12.83935
+    - serializedVersion: 2
+      time: 0.2
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  characterFocusScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.9
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 0.2403056
+      value: 1.007695
+      inSlope: 0.205934
+      outSlope: 0.205934
+    - serializedVersion: 2
+      time: 0.3
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  CharacterUnfocusedColor: {r: 0.7794118, g: 0.7794118, b: 0.7794118, a: 1}

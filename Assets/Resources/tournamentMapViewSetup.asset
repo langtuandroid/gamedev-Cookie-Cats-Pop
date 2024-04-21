@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373782a833ca21affb0c7a8ac068dc1, type: 3}
+  m_Name: "tournamentMapViewSetup"
+  m_EditorClassIdentifier: 
+  mapElementData:
+  - prefabName: "TournamentLevelDot"
+    position: {x: 293, y: 488, z: -20}
+    topEdge: 552.3246
+    bottomEdge: 423.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":null,\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"LevelId\":0,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TournamentLevelDot"
+    position: {x: 177, y: 520, z: -19.99}
+    topEdge: 584.3246
+    bottomEdge: 455.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":null,\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"LevelId\":1,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "BottomAnimations"
+    position: {x: 320, y: 552, z: 0}
+    topEdge: 602
+    bottomEdge: 502
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 0
+  - prefabName: "TournamentLevelDot"
+    position: {x: 68, y: 589, z: -19.98}
+    topEdge: 653.3246
+    bottomEdge: 524.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":null,\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"LevelId\":2,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TournamentLevelDot"
+    position: {x: 202, y: 677, z: -19.97}
+    topEdge: 741.3246
+    bottomEdge: 612.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":null,\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"LevelId\":3,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TopAnimations"
+    position: {x: 320, y: 692, z: 0}
+    topEdge: 742
+    bottomEdge: 642
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 0
+  - prefabName: "TournamentLevelDot"
+    position: {x: 359, y: 700, z: -19.96}
+    topEdge: 764.3246
+    bottomEdge: 635.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":null,\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"LevelId\":4,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TournamentLevelDot"
+    position: {x: 513, y: 731, z: -19.95}
+    topEdge: 795.3246
+    bottomEdge: 666.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":null,\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"LevelId\":5,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TopCloudsBasic"
+    position: {x: 320, y: 1365, z: 0.04}
+    topEdge: 1665
+    bottomEdge: 1065
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 0
+  dotPositions:
+  - {x: 293, y: 488}
+  - {x: 177, y: 520}
+  - {x: 68, y: 589}
+  - {x: 202, y: 677}
+  - {x: 359, y: 700}
+  - {x: 513, y: 731}
+  totalContentSize: {x: 640, y: 1228}
+  mapIdentifier:
+    ID: "Tournament"
+  optionalLowResSegmentsPaths: []

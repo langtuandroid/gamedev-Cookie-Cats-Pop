@@ -1,0 +1,1039 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!4 &1790486008851226014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1790486008800894365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790486008851226014}
+  - component: {fileID: 1790486010696719816}
+  - component: {fileID: 1790486010696719794}
+  - component: {fileID: 1790486010696719788}
+  - component: {fileID: 1790486010696719803}
+  - component: {fileID: 1790486010696719814}
+  - component: {fileID: 1790486010696719790}
+  - component: {fileID: 1790486010696719822}
+  - component: {fileID: 1790486010696719789}
+  - component: {fileID: 1790486010696719801}
+  - component: {fileID: 1790486010696719812}
+  - component: {fileID: 1790486010696719792}
+  - component: {fileID: 1790486010696719778}
+  - component: {fileID: 1790486010696719815}
+  - component: {fileID: 1790486010696719780}
+  - component: {fileID: 1790486010696719798}
+  - component: {fileID: 1790486010696719787}
+  - component: {fileID: 1790486010696719793}
+  - component: {fileID: 1790486010696719797}
+  - component: {fileID: 1790486010696719783}
+  - component: {fileID: 1790486010696719804}
+  - component: {fileID: 1790486010696719782}
+  - component: {fileID: 1790486010696719809}
+  - component: {fileID: 1790486010696719786}
+  - component: {fileID: 1790486010696719799}
+  - component: {fileID: 1790486010696719802}
+  - component: {fileID: 1790486010696719791}
+  - component: {fileID: 1790486010696719819}
+  - component: {fileID: 1790486010696719823}
+  - component: {fileID: 1790486010696719779}
+  - component: {fileID: 1790486010696719810}
+  - component: {fileID: 1790486010696719817}
+  - component: {fileID: 1790486010696719813}
+  - component: {fileID: 1790486010696719805}
+  - component: {fileID: 1790486010696719784}
+  - component: {fileID: 1790486010696719808}
+  - component: {fileID: 1790486010696719795}
+  - component: {fileID: 1790486010696719796}
+  - component: {fileID: 1790486010696719785}
+  - component: {fileID: 1790486010696719821}
+  - component: {fileID: 1790486010696719818}
+  - component: {fileID: 1790486010696719775}
+  - component: {fileID: 1790486010696719820}
+  - component: {fileID: 1790486010696719776}
+  - component: {fileID: 1790486010696719777}
+  - component: {fileID: 1790486010696719811}
+  - component: {fileID: 1790486010696719800}
+  - component: {fileID: 1790486010696719807}
+  - component: {fileID: 1790486010696719806}
+  - component: {fileID: 1790486010696719781}
+  m_Layer: 0
+  m_Name: "Clear Dough from Lake"
+  m_TagString:
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1790486010696719775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077783757aee2715459c7d1c65ada0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1586}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  direction: {x: -0.8910065, y: -0.4539907}
+--- !u!114 &1790486010696719776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1392}
+  type: 0
+  dontWait: 0
+  Delay: 1
+--- !u!114 &1790486010696719777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1562}
+  type: 0
+  dontWait: 0
+  Delay: 1
+--- !u!114 &1790486010696719778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 578}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "I guess you're defying me after all. That's fine. No hard feelings."
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1102}
+  type: 0
+  dontWait: 1
+  moveableId: "2dRwrGdbpUunhFUO"
+  targetLocation:
+    Position: {x: 1142.506, y: 1677.523}
+    Rotation: 0
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 0.5
+--- !u!114 &1790486010696719780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 870}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4022439f13b56ec43d2f0aafdad1fd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 214}
+  type: 0
+  dontWait: 1
+--- !u!114 &1790486010696719782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1150}
+  type: 0
+  dontWait: 0
+  Delay: 0.5
+--- !u!114 &1790486010696719783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986f5623bb0faf2d6c4f735895b25f4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1006}
+  type: 0
+  dontWait: 0
+  message: "A bit of dough later..."
+  duration: 2
+--- !u!114 &1790486010696719784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 700}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1682}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Hm... wait, what is this? A plug?"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ScepticalQuestioning_2"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1950}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 918}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 0
+--- !u!114 &1790486010696719788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 94}
+  type: 0
+  dontWait: 0
+  Delay: 1
+--- !u!114 &1790486010696719789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 262}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  targetLocation:
+    Position: {x: 943.1654, y: 1766.243}
+    Rotation: 325.9775
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 1
+--- !u!114 &1790486010696719790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 166}
+  type: 0
+  dontWait: 0
+  Direction: 0
+  zoomTarget:
+    x: 1254.753
+    y: 971.0293
+    width: 373.6094
+    height: 1026.498
+  duration: 0.1
+--- !u!114 &1790486010696719791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1030}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  placementLocation:
+    Position: {x: 911.7923, y: 1776.837}
+    Rotation: 333.7657
+--- !u!114 &1790486010696719792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 456}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "..."
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a175a425f07085044fb0184d89a5951c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 942}
+  type: 0
+  dontWait: 0
+  decorationObjectId: "oA9QAHO0Mki03VT1"
+  decorationID: 1
+--- !u!114 &1790486010696719794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 70}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 0
+--- !u!114 &1790486010696719795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1344}
+  type: 0
+  dontWait: 1
+  Direction: 1
+  zoomTarget:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  duration: 1
+--- !u!114 &1790486010696719796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1368}
+  type: 0
+  dontWait: 0
+  moveableId: "2dRwrGdbpUunhFUO"
+  targetLocation:
+    Position: {x: 1453.773, y: 1391.971}
+    Rotation: 0
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 1
+--- !u!114 &1790486010696719797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e8b1aeffa7e81117a89cf5dc7e2600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 966}
+  type: 0
+  dontWait: 0
+  soundDefinition:
+    sound:
+      Clip: {fileID: 8300000, guid: d97abec22db2449ea17bfc26da88b2ac, type: 3}
+      Volume: 1
+      Probability: 1
+      Loop: 0
+    Additional: []
+    cooldownTime: 0
+    pitchVariance: 0.5
+    pitchForAllVariations: 1
+    sharedPool: 0
+    sequentialPitch: 0
+--- !u!114 &1790486010696719798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 894}
+  type: 0
+  dontWait: 0
+  Delay: 0.5
+--- !u!114 &1790486010696719799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1974}
+  type: 0
+  dontWait: 0
+  Direction: 1
+  zoomTarget:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  duration: 1
+--- !u!114 &1790486010696719800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1320}
+  type: 0
+  dontWait: 0
+  Delay: 0.5
+--- !u!114 &1790486010696719801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 286}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Come on, you little sticky things, this place does not belong to
+  you. Leave now by your own will or you'll face the fury of the master
+  cleaner here!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892d4c5cd892d9d545fb502b5549b580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1998}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 118}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  placementLocation:
+    Position: {x: 727.6148, y: 1889.076}
+    Rotation: 333
+--- !u!114 &1790486010696719804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1078}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 1
+--- !u!114 &1790486010696719805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 432}
+  type: 0
+  dontWait: 0
+  Delay: 1
+--- !u!114 &1790486010696719806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1804}
+  type: 0
+  dontWait: 0
+  Delay: 1
+--- !u!114 &1790486010696719807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1610}
+  type: 0
+  dontWait: 0
+  Delay: 0.5
+--- !u!114 &1790486010696719808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 724}
+  type: 0
+  dontWait: 0
+  Delay: 1
+--- !u!114 &1790486010696719809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1174}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Aaand... done! Lookin' great now, huh?"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1416}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Well... except that I'm not done yet. There is still a lot of dough
+  left!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ScepticalQuestioning_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1538}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 238}
+  type: 0
+  dontWait: 1
+  moveableId: "2dRwrGdbpUunhFUO"
+  targetLocation:
+    Position: {x: 1167.117, y: 1674.944}
+    Rotation: 325.9775
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 0.5
+--- !u!114 &1790486010696719813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 408}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 142}
+  type: 0
+  dontWait: 0
+  moveableId: "2dRwrGdbpUunhFUO"
+  placementLocation:
+    Position: {x: 1800.379, y: 1615.091}
+    Rotation: 222.549
+--- !u!114 &1790486010696719815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 748}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Gosh... you're determined to stay!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ScepticalQuestioning_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472e8016461ce0842607c78de804209f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 13
+  y: 11
+  width: 13
+  starsRequired: 1
+  title: "Clean the lake"
+  timedTaskDescription: 
+  icon: {fileID: 0}
+  id: "c456b0b71646e694cb2c3193e5965cf5"
+  isBuildTask: 0
+  actionType: 0
+--- !u!114 &1790486010696719817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1828}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Oh, I can use it to get rid of the dirty water!"
+  speakerIndex: 1
+  characters:
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_2"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1634}
+  type: 0
+  dontWait: 1
+  Direction: 0
+  zoomTarget:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  duration: 1
+--- !u!114 &1790486010696719819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1126}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  targetLocation:
+    Position: {x: 1082.646, y: 1696.864}
+    Rotation: 330.2704
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 1
+--- !u!114 &1790486010696719820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1296}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1658}
+  type: 0
+  dontWait: 0
+  moveableId: "2dRwrGdbpUunhFUO"
+  targetLocation:
+    Position: {x: 965.6697, y: 1624.12}
+    Rotation: 0
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 1
+--- !u!114 &1790486010696719822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 190}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 1
+--- !u!114 &1790486010696719823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1054}
+  type: 0
+  dontWait: 0
+  moveableId: "2dRwrGdbpUunhFUO"
+  placementLocation:
+    Position: {x: 1800.379, y: 1615.091}
+    Rotation: 222.549

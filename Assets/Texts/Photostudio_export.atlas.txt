@@ -1,0 +1,272 @@
+
+Photostudio_export.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BLUE_Fingers_Hand
+  rotate: false
+  xy: 464, 301
+  size: 45, 37
+  orig: 45, 37
+  offset: 0, 0
+  index: -1
+BLUE_Foot_L
+  rotate: false
+  xy: 354, 264
+  size: 49, 28
+  orig: 49, 28
+  offset: 0, 0
+  index: -1
+BLUE_Foot_R
+  rotate: true
+  xy: 2, 2
+  size: 47, 28
+  orig: 47, 28
+  offset: 0, 0
+  index: -1
+BLUE__Blink_L_3_Closed
+  rotate: false
+  xy: 169, 52
+  size: 46, 58
+  orig: 46, 58
+  offset: 0, 0
+  index: -1
+BLUE__Blink_L_3_Closed_pain
+  rotate: true
+  xy: 32, 3
+  size: 46, 58
+  orig: 46, 58
+  offset: 0, 0
+  index: -1
+BLUE__Blink_R_3_Closed
+  rotate: false
+  xy: 308, 196
+  size: 44, 49
+  orig: 44, 49
+  offset: 0, 0
+  index: -1
+BLUE__Blink_R_3_Closed_pain
+  rotate: true
+  xy: 368, 294
+  size: 44, 49
+  orig: 44, 49
+  offset: 0, 0
+  index: -1
+BLUE__Ear_L
+  rotate: true
+  xy: 468, 340
+  size: 45, 40
+  orig: 45, 40
+  offset: 0, 0
+  index: -1
+BLUE__Ear_R
+  rotate: true
+  xy: 169, 20
+  size: 30, 45
+  orig: 30, 45
+  offset: 0, 0
+  index: -1
+BLUE__Eyeball_L
+  rotate: false
+  xy: 217, 59
+  size: 44, 51
+  orig: 44, 51
+  offset: 0, 0
+  index: -1
+BLUE__Eyeball_R
+  rotate: false
+  xy: 419, 295
+  size: 43, 43
+  orig: 43, 43
+  offset: 0, 0
+  index: -1
+BLUE__Hair_L
+  rotate: false
+  xy: 405, 227
+  size: 28, 23
+  orig: 28, 23
+  offset: 0, 0
+  index: -1
+BLUE__Lid_L_Open_Lower
+  rotate: false
+  xy: 354, 203
+  size: 43, 29
+  orig: 43, 29
+  offset: 0, 0
+  index: -1
+BLUE__Lid_L_Open_Upper
+  rotate: false
+  xy: 308, 156
+  size: 39, 38
+  orig: 39, 38
+  offset: 0, 0
+  index: -1
+BLUE__Lid_R_Open_Lower
+  rotate: true
+  xy: 405, 252
+  size: 40, 28
+  orig: 40, 28
+  offset: 0, 0
+  index: -1
+BLUE__Lid_R_Open_Upper
+  rotate: false
+  xy: 468, 387
+  size: 42, 22
+  orig: 42, 22
+  offset: 0, 0
+  index: -1
+BLUE__Nose
+  rotate: false
+  xy: 288, 145
+  size: 18, 11
+  orig: 18, 11
+  offset: 0, 0
+  index: -1
+BLUE__NoseLine
+  rotate: false
+  xy: 435, 231
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+BLUE__Pupil_L
+  rotate: false
+  xy: 465, 243
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+BLUE__Pupil_R
+  rotate: false
+  xy: 399, 201
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+BLUE__Snout_happy
+  rotate: true
+  xy: 468, 411
+  size: 47, 42
+  orig: 47, 42
+  offset: 0, 0
+  index: -1
+BLUE__Snout_surprised
+  rotate: true
+  xy: 468, 460
+  size: 50, 42
+  orig: 50, 42
+  offset: 0, 0
+  index: -1
+BLUE__Spec_L
+  rotate: false
+  xy: 92, 2
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+BLUE__Spec_R
+  rotate: false
+  xy: 498, 287
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+BLUE_arm1
+  rotate: false
+  xy: 308, 247
+  size: 44, 51
+  orig: 44, 51
+  offset: 0, 0
+  index: -1
+BLUE_arm2
+  rotate: false
+  xy: 306, 300
+  size: 60, 38
+  orig: 60, 38
+  offset: 0, 0
+  index: -1
+BLUE_ball_shadow
+  rotate: true
+  xy: 106, 17
+  size: 107, 61
+  orig: 107, 61
+  offset: 0, 0
+  index: -1
+BLUE_beach_ball
+  rotate: false
+  xy: 169, 158
+  size: 137, 138
+  orig: 137, 138
+  offset: 0, 0
+  index: -1
+BLUE_body
+  rotate: false
+  xy: 2, 126
+  size: 165, 170
+  orig: 165, 170
+  offset: 0, 0
+  index: -1
+BLUE_hand1
+  rotate: false
+  xy: 465, 273
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+BLUE_mouth_happy
+  rotate: true
+  xy: 92, 19
+  size: 30, 12
+  orig: 30, 12
+  offset: 0, 0
+  index: -1
+BLUE_mouth_surprised
+  rotate: true
+  xy: 435, 261
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+BLUE_side_shadow
+  rotate: false
+  xy: 306, 340
+  size: 160, 170
+  orig: 160, 170
+  offset: 0, 0
+  index: -1
+BLUE_tail
+  rotate: false
+  xy: 2, 51
+  size: 102, 73
+  orig: 102, 73
+  offset: 0, 0
+  index: -1
+BLUE_under_shadow
+  rotate: false
+  xy: 169, 112
+  size: 117, 44
+  orig: 117, 44
+  offset: 0, 0
+  index: -1
+Berry_FLASH
+  rotate: false
+  xy: 2, 298
+  size: 302, 212
+  orig: 302, 212
+  offset: 0, 0
+  index: -1
+_Mouth_Teeth
+  rotate: false
+  xy: 354, 234
+  size: 49, 28
+  orig: 49, 28
+  offset: 0, 0
+  index: -1
+cross
+  rotate: true
+  xy: 263, 51
+  size: 59, 25
+  orig: 59, 25
+  offset: 0, 0
+  index: -1

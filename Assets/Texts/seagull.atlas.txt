@@ -1,0 +1,118 @@
+
+seagull.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Beak_top
+  rotate: false
+  xy: 473, 77
+  size: 91, 44
+  orig: 91, 44
+  offset: 0, 0
+  index: -1
+Beak_under
+  rotate: false
+  xy: 473, 49
+  size: 58, 26
+  orig: 58, 26
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 143, 35
+  size: 128, 86
+  orig: 128, 86
+  offset: 0, 0
+  index: -1
+Eye_apple
+  rotate: false
+  xy: 783, 91
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+Eyelid
+  rotate: false
+  xy: 533, 60
+  size: 31, 15
+  orig: 31, 15
+  offset: 0, 0
+  index: -1
+Feather_head
+  rotate: false
+  xy: 52, 7
+  size: 22, 15
+  orig: 22, 15
+  offset: 0, 0
+  index: -1
+Foot
+  rotate: false
+  xy: 737, 80
+  size: 44, 41
+  orig: 44, 41
+  offset: 0, 0
+  index: -1
+Layer 28
+  rotate: true
+  xy: 2, 24
+  size: 97, 139
+  orig: 97, 139
+  offset: 0, 0
+  index: -1
+Layer 29
+  rotate: true
+  xy: 273, 27
+  size: 94, 104
+  orig: 94, 104
+  offset: 0, 0
+  index: -1
+Layer 30 copy
+  rotate: false
+  xy: 379, 37
+  size: 92, 84
+  orig: 92, 84
+  offset: 0, 0
+  index: -1
+Leg
+  rotate: false
+  xy: 2, 2
+  size: 48, 20
+  orig: 48, 20
+  offset: 0, 0
+  index: -1
+Neck
+  rotate: false
+  xy: 566, 60
+  size: 72, 61
+  orig: 72, 61
+  offset: 0, 0
+  index: -1
+Pupil
+  rotate: false
+  xy: 143, 24
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+Tailfeather
+  rotate: false
+  xy: 690, 68
+  size: 45, 53
+  orig: 45, 53
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 640, 60
+  size: 48, 61
+  orig: 48, 61
+  offset: 0, 0
+  index: -1
+speck
+  rotate: false
+  xy: 379, 28
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1

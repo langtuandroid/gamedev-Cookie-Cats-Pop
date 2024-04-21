@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba3cbb1331bdde15006050903770af5, type: 3}
+  m_Name: "MainFont"
+  m_EditorClassIdentifier: 
+  embeddedSprites:
+  - spriteName: "Coin"
+    encoding: "[C]"
+    scaleModifier: 0
+  - spriteName: "PlayIcon"
+    encoding: "[P]"
+    scaleModifier: 0
+  - spriteName: "continueAds_Enabled"
+    encoding: "[W]"
+    scaleModifier: 0
+  - spriteName: "continueAds_Disabled"
+    encoding: "[NW]"
+    scaleModifier: 0
+  lineSpacingModifier: 0
+  unityFont: {fileID: 12800000, guid: 16bafaac342b4a69963fdc3e590203e3, type: 3}
+  baselineAdjust: 0
+  sizeModifier: 0
+  renderSizes: 140000003C000000
+  requiresEmojiSafeEncoding: 0

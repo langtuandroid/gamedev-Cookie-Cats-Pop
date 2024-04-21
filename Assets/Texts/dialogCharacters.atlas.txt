@@ -1,0 +1,55 @@
+
+dialogCharacters.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/Gary_Beesmoker
+  rotate: false
+  xy: 2, 1291
+  size: 918, 743
+  orig: 918, 743
+  offset: 0, 0
+  index: -1
+images/Gary_ConfidentGoGetter
+  rotate: false
+  xy: 922, 1444
+  size: 686, 590
+  orig: 686, 590
+  offset: 0, 0
+  index: -1
+images/Gary_HappyExcited
+  rotate: true
+  xy: 1415, 265
+  size: 594, 570
+  orig: 594, 570
+  offset: 0, 0
+  index: -1
+images/Gary_ScepticalQuestioning
+  rotate: false
+  xy: 807, 288
+  size: 606, 571
+  orig: 606, 571
+  offset: 0, 0
+  index: -1
+images/Gary_Shovel
+  rotate: false
+  xy: 2, 548
+  size: 803, 741
+  orig: 803, 741
+  offset: 0, 0
+  index: -1
+images/Gary_SurprisedAmazed
+  rotate: false
+  xy: 922, 861
+  size: 629, 581
+  orig: 629, 581
+  offset: 0, 0
+  index: -1
+images/Gary_TiredGoodnight
+  rotate: true
+  xy: 2, 2
+  size: 544, 572
+  orig: 544, 572
+  offset: 0, 0
+  index: -1

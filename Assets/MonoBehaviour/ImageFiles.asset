@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 981961332, guid: 937c5e6be638bd4acafc071b984d9483, type: 3}
+  m_Name: "ImageFiles"
+  m_EditorClassIdentifier: 
+  _ActiveGradient: {fileID: 2800000, guid: 167c209f11a14005a368aa2577da4dbc, type: 3}
+  _BackgroundGradient: {fileID: 2800000, guid: 9f74b24e0e304868b3053bea183c8e71, type: 3}
+  _CheckboxChecked: {fileID: 2800000, guid: 8fda1931adac4fbf88a068e77a3eb25d, type: 3}
+  _CheckboxUnchecked: {fileID: 2800000, guid: 3cb76458390b4d149a5c0a92171fe006, type: 3}
+  _ClearIcon: {fileID: 2800000, guid: 204d8508c0ca4332af4d566254c679f7, type: 3}
+  _CloseButton: {fileID: 2800000, guid: 0d9711ce622b4d8bad34f3a505ed91b5, type: 3}
+  _ConsoleInputIcon: {fileID: 2800000, guid: e6f9070b62df4000810cab1fb6512516, type: 3}
+  _SettingsPopupBackground: {fileID: 2800000, guid: 34d7cbdf22d947ccbc106f5cf4faa7ed, type: 3}
+  _HighlightGradient: {fileID: 2800000, guid: ca8174882c0e4db9bfa83b3f8a95b077, type: 3}
+  _MaximizeIcon: {fileID: 2800000, guid: a38feda6c6ba478c89820b28235e486f, type: 3}
+  _MinimizeTopIcon: {fileID: 2800000, guid: 9e5a6e5e821d46a59a64a9507f5a996a, type: 3}
+  _RedBackgroundGradient: {fileID: 2800000, guid: 0aff9e618390466e8da1b8b798c67585, type: 3}
+  _FilterActiveIcon: {fileID: 2800000, guid: a20ae39a9b6b441084d041e21eef82da, type: 3}
+  _SearchIcon: {fileID: 2800000, guid: 4d8e0e87cea74b24b6063d0e837cd595, type: 3}
+  _SettingsIcon: {fileID: 2800000, guid: 3a437484be614a38981d8bf507915df3, type: 3}
+  _PreviousHistoryItemIcon: {fileID: 2800000, guid: 2b490cd925fd44abbd967128eb0bf9c8, type: 3}
+  _NextHistoryItemIcon: {fileID: 2800000, guid: cfd91d92229a41e0a1fea90eea27659f, type: 3}
+  _CloseKeyboardIcon: {fileID: 2800000, guid: ca82e98d14e3489587c2f48b9b44b4be, type: 3}
+  _SuggestionButtonBackground: {fileID: 2800000, guid: c4bfe63104b94d4c906a7608dc24e90d, type: 3}
+  _ScrollbarThumb: {fileID: 2800000, guid: 05898e77b1f8482ab2d456e46798f524, type: 3}
+  _HelpIcon: {fileID: 2800000, guid: 640a05cc247e493bb595740be1e1adbb, type: 3}
+  _RunIcon: {fileID: 2800000, guid: 90027802c4984786bbc7eac1f228aa35, type: 3}
+  _InfoIcon: {fileID: 2800000, guid: e20c3319e52e4a858eeec5e3de9b6339, type: 3}
+  _ErrorIcon: {fileID: 2800000, guid: 13e219aad1924c79976d1849b290bacd, type: 3}
+  _WarningIcon: {fileID: 2800000, guid: 2be47d6391ad47bfa65adbf3b37fe45c, type: 3}
+  _ExceptionIcon: {fileID: 2800000, guid: 1d95106a856043f3acde3b4aedf050fe, type: 3}
+  _AssertIcon: {fileID: 2800000, guid: c097a9ca5e72428dba75b64ae78dee94, type: 3}

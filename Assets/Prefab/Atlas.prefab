@@ -1,0 +1,7487 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1790486008800894365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790486008851226014}
+  - component: {fileID: 1790486010696719775}
+  m_Layer: 0
+  m_Name: Atlas
+  m_TagString: 
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790486008851226014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1790486010696719775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233722f3a1eeea5216f7d01f15618f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 0c18fc51e0fc416892a42eb8cb732353, type: 2}
+  - {fileID: 2100000, guid: 6709381656984979998a0a5e05c82d0d, type: 2}
+  - {fileID: 2100000, guid: 79ceb297b9b045ab9461bb5c12c00aae, type: 2}
+  - {fileID: 2100000, guid: 4c287d783aa144f6aa4ee95cc43c3116, type: 2}
+  - {fileID: 2100000, guid: d1312d12785046cbb987c6758623b12a, type: 2}
+  - {fileID: 2100000, guid: ef060c175e9642258e2586a84b91c010, type: 2}
+  paths:
+  - Atlas/Sprites
+  sprites:
+  - name: star_small
+    outer:
+      serializedVersion: 2
+      x: 319
+      y: 4
+      width: 52
+      height: 50
+    inner:
+      serializedVersion: 2
+      x: 319
+      y: 4
+      width: 52
+      height: 50
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: white
+    outer:
+      serializedVersion: 2
+      x: 124
+      y: 696
+      width: 4
+      height: 4
+    inner:
+      serializedVersion: 2
+      x: 126
+      y: 697
+      width: 0
+      height: 2
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FatShimmer
+    outer:
+      serializedVersion: 2
+      x: 994
+      y: 811
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 994
+      y: 811
+      width: 128
+      height: 128
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FireBall
+    outer:
+      serializedVersion: 2
+      x: 1980
+      y: 1918
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 1980
+      y: 1918
+      width: 64
+      height: 64
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Metal
+    outer:
+      serializedVersion: 2
+      x: 1894
+      y: 229
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1894
+      y: 229
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Ice
+    outer:
+      serializedVersion: 2
+      x: 1054
+      y: 454
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1054
+      y: 454
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Spike
+    outer:
+      serializedVersion: 2
+      x: 1702
+      y: 331
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1702
+      y: 331
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Piece_Cookie_Red
+    outer:
+      serializedVersion: 2
+      x: 1341
+      y: 202
+      width: 83
+      height: 78
+    inner:
+      serializedVersion: 2
+      x: 1341
+      y: 202
+      width: 83
+      height: 78
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Piece_Cookie_Yellow
+    outer:
+      serializedVersion: 2
+      x: 1341
+      y: 123
+      width: 80
+      height: 77
+    inner:
+      serializedVersion: 2
+      x: 1341
+      y: 123
+      width: 80
+      height: 77
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Piece_Cookie_Green
+    outer:
+      serializedVersion: 2
+      x: 727
+      y: 14
+      width: 80
+      height: 74
+    inner:
+      serializedVersion: 2
+      x: 727
+      y: 14
+      width: 80
+      height: 74
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Piece_Cookie_Blue
+    outer:
+      serializedVersion: 2
+      x: 1972
+      y: 150
+      width: 74
+      height: 77
+    inner:
+      serializedVersion: 2
+      x: 1972
+      y: 150
+      width: 74
+      height: 77
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: pow
+    outer:
+      serializedVersion: 2
+      x: 1254
+      y: 658
+      width: 120
+      height: 107
+    inner:
+      serializedVersion: 2
+      x: 1254
+      y: 658
+      width: 120
+      height: 107
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ChainLink
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 5
+      width: 99
+      height: 39
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 5
+      width: 99
+      height: 39
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: lock
+    outer:
+      serializedVersion: 2
+      x: 438
+      y: 6
+      width: 95
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 438
+      y: 6
+      width: 95
+      height: 54
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Splash
+    outer:
+      serializedVersion: 2
+      x: 1777
+      y: 433
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1777
+      y: 433
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_green
+    outer:
+      serializedVersion: 2
+      x: 855
+      y: 950
+      width: 160
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 913
+      y: 1013
+      width: 44
+      height: 2
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStar
+    outer:
+      serializedVersion: 2
+      x: 1684
+      y: 991
+      width: 149
+      height: 143
+    inner:
+      serializedVersion: 2
+      x: 1684
+      y: 991
+      width: 149
+      height: 143
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStarFrame
+    outer:
+      serializedVersion: 2
+      x: 394
+      y: 1000
+      width: 149
+      height: 143
+    inner:
+      serializedVersion: 2
+      x: 394
+      y: 1000
+      width: 149
+      height: 143
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Badge
+    outer:
+      serializedVersion: 2
+      x: 1974
+      y: 1722
+      width: 68
+      height: 70
+    inner:
+      serializedVersion: 2
+      x: 1974
+      y: 1722
+      width: 68
+      height: 70
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MorphRed
+    outer:
+      serializedVersion: 2
+      x: 1564
+      y: 203
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1564
+      y: 203
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MorphYellow
+    outer:
+      serializedVersion: 2
+      x: 1768
+      y: 127
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1768
+      y: 95
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MorphPurple
+    outer:
+      serializedVersion: 2
+      x: 1870
+      y: 127
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1870
+      y: 127
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MorphBlue
+    outer:
+      serializedVersion: 2
+      x: 1032
+      y: 352
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1032
+      y: 352
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MorphGreen
+    outer:
+      serializedVersion: 2
+      x: 728
+      y: 254
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 728
+      y: 254
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: WhiteSoftBlob
+    outer:
+      serializedVersion: 2
+      x: 809
+      y: 1372
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 809
+      y: 1372
+      width: 32
+      height: 32
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: WhiteHardBlob
+    outer:
+      serializedVersion: 2
+      x: 1445
+      y: 971
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 1445
+      y: 971
+      width: 32
+      height: 32
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: WhiteGlow
+    outer:
+      serializedVersion: 2
+      x: 809
+      y: 1406
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 809
+      y: 1406
+      width: 32
+      height: 32
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbles_100x100_red
+    outer:
+      serializedVersion: 2
+      x: 626
+      y: 275
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 626
+      y: 275
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbles_100x100_yellow
+    outer:
+      serializedVersion: 2
+      x: 749
+      y: 356
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 749
+      y: 356
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbles_100x100_pink
+    outer:
+      serializedVersion: 2
+      x: 344
+      y: 254
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 344
+      y: 254
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbles_100x100_blue
+    outer:
+      serializedVersion: 2
+      x: 1906
+      y: 331
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1906
+      y: 331
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbles_100x100_green
+    outer:
+      serializedVersion: 2
+      x: 236
+      y: 154
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 236
+      y: 154
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: topBar
+    outer:
+      serializedVersion: 2
+      x: 204
+      y: 1440
+      width: 640
+      height: 73
+    inner:
+      serializedVersion: 2
+      x: 204
+      y: 1440
+      width: 640
+      height: 73
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SpeechBubble
+    outer:
+      serializedVersion: 2
+      x: 1684
+      y: 809
+      width: 174
+      height: 162
+    inner:
+      serializedVersion: 2
+      x: 1739
+      y: 851
+      width: 78
+      height: 35
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: the finger_01
+    outer:
+      serializedVersion: 2
+      x: 412
+      y: 458
+      width: 110
+      height: 135
+    inner:
+      serializedVersion: 2
+      x: 412
+      y: 458
+      width: 110
+      height: 135
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Booster_Icon_Rainbow
+    outer:
+      serializedVersion: 2
+      x: 104
+      y: 44
+      width: 95
+      height: 96
+    inner:
+      serializedVersion: 2
+      x: 104
+      y: 44
+      width: 95
+      height: 96
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Booster_Icon_Shield
+    outer:
+      serializedVersion: 2
+      x: 1750
+      y: 599
+      width: 107
+      height: 99
+    inner:
+      serializedVersion: 2
+      x: 1750
+      y: 599
+      width: 107
+      height: 99
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Booster_Icon_Aim
+    outer:
+      serializedVersion: 2
+      x: 338
+      y: 157
+      width: 103
+      height: 95
+    inner:
+      serializedVersion: 2
+      x: 338
+      y: 157
+      width: 103
+      height: 95
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DialogBox
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1362
+      width: 202
+      height: 247
+    inner:
+      serializedVersion: 2
+      x: 101
+      y: 1460
+      width: 0
+      height: 51
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_close
+    outer:
+      serializedVersion: 2
+      x: 1972
+      y: 77
+      width: 74
+      height: 71
+    inner:
+      serializedVersion: 2
+      x: 1972
+      y: 77
+      width: 74
+      height: 71
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DottedLine
+    outer:
+      serializedVersion: 2
+      x: 1629
+      y: 3
+      width: 32
+      height: 16
+    inner:
+      serializedVersion: 2
+      x: 1629
+      y: 3
+      width: 32
+      height: 16
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MinusGreen
+    outer:
+      serializedVersion: 2
+      x: 930
+      y: 374
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 930
+      y: 374
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MinusPurple
+    outer:
+      serializedVersion: 2
+      x: 1792
+      y: 229
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1792
+      y: 229
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MinusBlue
+    outer:
+      serializedVersion: 2
+      x: 1156
+      y: 454
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1156
+      y: 454
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MinusYellow
+    outer:
+      serializedVersion: 2
+      x: 1384
+      y: 468
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1384
+      y: 468
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MinusRed
+    outer:
+      serializedVersion: 2
+      x: 1486
+      y: 375
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1486
+      y: 375
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlusRed
+    outer:
+      serializedVersion: 2
+      x: 1600
+      y: 407
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1600
+      y: 407
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlusYellow
+    outer:
+      serializedVersion: 2
+      x: 1804
+      y: 331
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1804
+      y: 331
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlusPurple
+    outer:
+      serializedVersion: 2
+      x: 1078
+      y: 556
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1078
+      y: 1078
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlusBlue
+    outer:
+      serializedVersion: 2
+      x: 1690
+      y: 229
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1690
+      y: 229
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlusGreen
+    outer:
+      serializedVersion: 2
+      x: 1588
+      y: 305
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1588
+      y: 305
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FillPowerRed
+    outer:
+      serializedVersion: 2
+      x: 524
+      y: 359
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 524
+      y: 359
+      width: 100
+      height: 0
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FillPowerYellow
+    outer:
+      serializedVersion: 2
+      x: 647
+      y: 377
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 647
+      y: 377
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FillPowerBlue
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 356
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 356
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FillPowerGreen
+    outer:
+      serializedVersion: 2
+      x: 828
+      y: 458
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 828
+      y: 458
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FillPowerPurple
+    outer:
+      serializedVersion: 2
+      x: 952
+      y: 476
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 952
+      y: 476
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CloudPiece
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 241
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 241
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MyProfileBox
+    outer:
+      serializedVersion: 2
+      x: 124
+      y: 574
+      width: 139
+      height: 118
+    inner:
+      serializedVersion: 2
+      x: 124
+      y: 574
+      width: 139
+      height: 118
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FriendProfileBox
+    outer:
+      serializedVersion: 2
+      x: 124
+      y: 455
+      width: 117
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 124
+      y: 455
+      width: 117
+      height: 117
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VIP
+    outer:
+      serializedVersion: 2
+      x: 273
+      y: 593
+      width: 137
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 273
+      y: 593
+      width: 137
+      height: 128
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: progressindicator
+    outer:
+      serializedVersion: 2
+      x: 1996
+      y: 279
+      width: 50
+      height: 50
+    inner:
+      serializedVersion: 2
+      x: 1996
+      y: 279
+      width: 50
+      height: 50
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fb_stencil
+    outer:
+      serializedVersion: 2
+      x: 1777
+      y: 21
+      width: 55
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 1777
+      y: 21
+      width: 55
+      height: 54
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ProfileFrame
+    outer:
+      serializedVersion: 2
+      x: 1282
+      y: 570
+      width: 86
+      height: 86
+    inner:
+      serializedVersion: 2
+      x: 1325
+      y: 613
+      width: 0
+      height: 0
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ListFrame
+    outer:
+      serializedVersion: 2
+      x: 701
+      y: 1187
+      width: 83
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 732
+      y: 1213
+      width: 23
+      height: 6
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_fortunecat
+    outer:
+      serializedVersion: 2
+      x: 581
+      y: 1266
+      width: 59
+      height: 67
+    inner:
+      serializedVersion: 2
+      x: 581
+      y: 1266
+      width: 59
+      height: 67
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_settings
+    outer:
+      serializedVersion: 2
+      x: 765
+      y: 1851
+      width: 58
+      height: 61
+    inner:
+      serializedVersion: 2
+      x: 765
+      y: 1851
+      width: 58
+      height: 61
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_messages
+    outer:
+      serializedVersion: 2
+      x: 1600
+      y: 524
+      width: 52
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 1600
+      y: 524
+      width: 52
+      height: 55
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_blue
+    outer:
+      serializedVersion: 2
+      x: 425
+      y: 1145
+      width: 274
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 425
+      y: 1145
+      width: 274
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: heart
+    outer:
+      serializedVersion: 2
+      x: 1445
+      y: 852
+      width: 134
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1445
+      y: 852
+      width: 134
+      height: 115
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Coin
+    outer:
+      serializedVersion: 2
+      x: 446
+      y: 154
+      width: 97
+      height: 101
+    inner:
+      serializedVersion: 2
+      x: 446
+      y: 154
+      width: 97
+      height: 101
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: cellbg
+    outer:
+      serializedVersion: 2
+      x: 1045
+      y: 18
+      width: 76
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 1069
+      y: 39
+      width: 26
+      height: 20
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShopCoins5
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 343
+      width: 132
+      height: 98
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 343
+      width: 132
+      height: 98
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShopCoins4
+    outer:
+      serializedVersion: 2
+      x: 1503
+      y: 1401
+      width: 132
+      height: 98
+    inner:
+      serializedVersion: 2
+      x: 1503
+      y: 1401
+      width: 132
+      height: 98
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShopCoins2
+    outer:
+      serializedVersion: 2
+      x: 1057
+      y: 263
+      width: 97
+      height: 87
+    inner:
+      serializedVersion: 2
+      x: 1057
+      y: 263
+      width: 97
+      height: 87
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShopCoins3
+    outer:
+      serializedVersion: 2
+      x: 1207
+      y: 1747
+      width: 132
+      height: 98
+    inner:
+      serializedVersion: 2
+      x: 1207
+      y: 1747
+      width: 132
+      height: 98
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShopCoins1
+    outer:
+      serializedVersion: 2
+      x: 1941
+      y: 1333
+      width: 101
+      height: 66
+    inner:
+      serializedVersion: 2
+      x: 1941
+      y: 1333
+      width: 101
+      height: 66
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FreeBanner
+    outer:
+      serializedVersion: 2
+      x: 425
+      y: 1250
+      width: 154
+      height: 83
+    inner:
+      serializedVersion: 2
+      x: 468
+      y: 1250
+      width: 44
+      height: 83
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShopMostPopular
+    outer:
+      serializedVersion: 2
+      x: 1750
+      y: 700
+      width: 106
+      height: 107
+    inner:
+      serializedVersion: 2
+      x: 1750
+      y: 700
+      width: 106
+      height: 107
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShopBestOffer
+    outer:
+      serializedVersion: 2
+      x: 134
+      y: 346
+      width: 106
+      height: 107
+    inner:
+      serializedVersion: 2
+      x: 134
+      y: 346
+      width: 106
+      height: 107
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShopButton
+    outer:
+      serializedVersion: 2
+      x: 1426
+      y: 196
+      width: 86
+      height: 75
+    inner:
+      serializedVersion: 2
+      x: 1426
+      y: 196
+      width: 86
+      height: 75
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlayIcon
+    outer:
+      serializedVersion: 2
+      x: 1452
+      y: 66
+      width: 44
+      height: 50
+    inner:
+      serializedVersion: 2
+      x: 1452
+      y: 66
+      width: 44
+      height: 50
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: checkmark_small
+    outer:
+      serializedVersion: 2
+      x: 1859
+      y: 535
+      width: 108
+      height: 98
+    inner:
+      serializedVersion: 2
+      x: 1859
+      y: 535
+      width: 108
+      height: 98
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: checkmarkbg_small
+    outer:
+      serializedVersion: 2
+      x: 263
+      y: 5
+      width: 54
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 263
+      y: 5
+      width: 54
+      height: 49
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Chest
+    outer:
+      serializedVersion: 2
+      x: 1842
+      y: 973
+      width: 166
+      height: 171
+    inner:
+      serializedVersion: 2
+      x: 1842
+      y: 973
+      width: 166
+      height: 171
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Gift
+    outer:
+      serializedVersion: 2
+      x: 701
+      y: 1008
+      width: 152
+      height: 171
+    inner:
+      serializedVersion: 2
+      x: 701
+      y: 1008
+      width: 152
+      height: 171
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GiftOpen
+    outer:
+      serializedVersion: 2
+      x: 545
+      y: 1006
+      width: 151
+      height: 137
+    inner:
+      serializedVersion: 2
+      x: 545
+      y: 1006
+      width: 151
+      height: 137
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Cross
+    outer:
+      serializedVersion: 2
+      x: 796
+      y: 90
+      width: 85
+      height: 87
+    inner:
+      serializedVersion: 2
+      x: 796
+      y: 90
+      width: 85
+      height: 87
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DailyQuestDotLocked
+    outer:
+      serializedVersion: 2
+      x: 1981
+      y: 436
+      width: 65
+      height: 53
+    inner:
+      serializedVersion: 2
+      x: 1981
+      y: 436
+      width: 65
+      height: 53
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DailyQuestDotCompleted
+    outer:
+      serializedVersion: 2
+      x: 1980
+      y: 1797
+      width: 63
+      height: 53
+    inner:
+      serializedVersion: 2
+      x: 1980
+      y: 1797
+      width: 63
+      height: 53
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DailyQuestSpline
+    outer:
+      serializedVersion: 2
+      x: 1177
+      y: 1140
+      width: 64
+      height: 8
+    inner:
+      serializedVersion: 2
+      x: 1177
+      y: 1140
+      width: 64
+      height: 8
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SoftEdge
+    outer:
+      serializedVersion: 2
+      x: 994
+      y: 944
+      width: 16
+      height: 4
+    inner:
+      serializedVersion: 2
+      x: 994
+      y: 944
+      width: 16
+      height: 4
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ProgressFill_blue
+    outer:
+      serializedVersion: 2
+      x: 460
+      y: 257
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 510
+      y: 307
+      width: 0
+      height: 50
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ProgressFill_green
+    outer:
+      serializedVersion: 2
+      x: 1258
+      y: 366
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1308
+      y: 416
+      width: 0
+      height: 0
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ProgressFill_red
+    outer:
+      serializedVersion: 2
+      x: 1666
+      y: 127
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1716
+      y: 177
+      width: 0
+      height: 0
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ProgressFill_yellow
+    outer:
+      serializedVersion: 2
+      x: 1360
+      y: 366
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1410
+      y: 416
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FillPowerRandom
+    outer:
+      serializedVersion: 2
+      x: 1134
+      y: 352
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1134
+      y: 352
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: messages
+    outer:
+      serializedVersion: 2
+      x: 832
+      y: 685
+      width: 124
+      height: 124
+    inner:
+      serializedVersion: 2
+      x: 832
+      y: 685
+      width: 124
+      height: 124
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ListFrameOverlay
+    outer:
+      serializedVersion: 2
+      x: 1367
+      y: 58
+      width: 83
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 1367
+      y: 58
+      width: 83
+      height: 58
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DialogWoodTopSmall
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1611
+      width: 493
+      height: 138
+    inner:
+      serializedVersion: 2
+      x: 78
+      y: 1685
+      width: 342
+      height: 30
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DialogWoodTopBig
+    outer:
+      serializedVersion: 2
+      x: 902
+      y: 1847
+      width: 501
+      height: 201
+    inner:
+      serializedVersion: 2
+      x: 902
+      y: 1847
+      width: 501
+      height: 201
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DialogEmboss
+    outer:
+      serializedVersion: 2
+      x: 705
+      y: 604
+      width: 122
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 748
+      y: 645
+      width: 40
+      height: 4242
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: key
+    outer:
+      serializedVersion: 2
+      x: 1236
+      y: 287
+      width: 127
+      height: 77
+    inner:
+      serializedVersion: 2
+      x: 1236
+      y: 287
+      width: 127
+      height: 77
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_booster
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 702
+      width: 135
+      height: 139
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 702
+      width: 135
+      height: 139
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_facebook
+    outer:
+      serializedVersion: 2
+      x: 155
+      y: 971
+      width: 160
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 219
+      y: 1034
+      width: 32
+      height: 2
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CellBright
+    outer:
+      serializedVersion: 2
+      x: 1639
+      y: 693
+      width: 109
+      height: 114
+    inner:
+      serializedVersion: 2
+      x: 1685
+      y: 740
+      width: 12
+      height: 25
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: WholeWoodenFrame
+    outer:
+      serializedVersion: 2
+      x: 1380
+      y: 1252
+      width: 295
+      height: 142
+    inner:
+      serializedVersion: 2
+      x: 1405
+      y: 1326
+      width: 244
+      height: 22
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TilingRope
+    outer:
+      serializedVersion: 2
+      x: 1572
+      y: 56
+      width: 18
+      height: 21
+    inner:
+      serializedVersion: 2
+      x: 1572
+      y: 56
+      width: 18
+      height: 21
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Checkmark
+    outer:
+      serializedVersion: 2
+      x: 1390
+      y: 852
+      width: 31
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 1390
+      y: 852
+      width: 31
+      height: 30
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_red
+    outer:
+      serializedVersion: 2
+      x: 1339
+      y: 1005
+      width: 160
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1403
+      y: 1068
+      width: 32
+      height: 2
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ExitIcon
+    outer:
+      serializedVersion: 2
+      x: 1702
+      y: 439
+      width: 73
+      height: 68
+    inner:
+      serializedVersion: 2
+      x: 1702
+      y: 439
+      width: 73
+      height: 68
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RetryIcon
+    outer:
+      serializedVersion: 2
+      x: 825
+      y: 1853
+      width: 59
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 825
+      y: 1853
+      width: 59
+      height: 59
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TracerDot
+    outer:
+      serializedVersion: 2
+      x: 1124
+      y: 907
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 1124
+      y: 907
+      width: 32
+      height: 32
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ProgressBarFrame
+    outer:
+      serializedVersion: 2
+      x: 1545
+      y: 694
+      width: 83
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 1572
+      y: 717
+      width: 29
+      height: 12
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_locked
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 843
+      width: 137
+      height: 148
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 843
+      width: 137
+      height: 148
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Keyhole
+    outer:
+      serializedVersion: 2
+      x: 460
+      y: 369
+      width: 61
+      height: 87
+    inner:
+      serializedVersion: 2
+      x: 460
+      y: 369
+      width: 61
+      height: 87
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RoundGreen
+    outer:
+      serializedVersion: 2
+      x: 693
+      y: 728
+      width: 137
+      height: 139
+    inner:
+      serializedVersion: 2
+      x: 693
+      y: 728
+      width: 137
+      height: 139
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RoundRed
+    outer:
+      serializedVersion: 2
+      x: 139
+      y: 830
+      width: 137
+      height: 139
+    inner:
+      serializedVersion: 2
+      x: 139
+      y: 830
+      width: 137
+      height: 139
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_sound
+    outer:
+      serializedVersion: 2
+      x: 1213
+      y: 50
+      width: 76
+      height: 71
+    inner:
+      serializedVersion: 2
+      x: 1213
+      y: 50
+      width: 76
+      height: 71
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_music
+    outer:
+      serializedVersion: 2
+      x: 1637
+      y: 1421
+      width: 65
+      height: 78
+    inner:
+      serializedVersion: 2
+      x: 1637
+      y: 1421
+      width: 65
+      height: 78
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbleBox_back
+    outer:
+      serializedVersion: 2
+      x: 1507
+      y: 754
+      width: 130
+      height: 96
+    inner:
+      serializedVersion: 2
+      x: 1507
+      y: 754
+      width: 130
+      height: 96
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbleBox_frontSkratched
+    outer:
+      serializedVersion: 2
+      x: 934
+      y: 117
+      width: 109
+      height: 69
+    inner:
+      serializedVersion: 2
+      x: 934
+      y: 117
+      width: 109
+      height: 69
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbleBox_front
+    outer:
+      serializedVersion: 2
+      x: 934
+      y: 188
+      width: 109
+      height: 69
+    inner:
+      serializedVersion: 2
+      x: 934
+      y: 188
+      width: 109
+      height: 69
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_swapArrow
+    outer:
+      serializedVersion: 2
+      x: 201
+      y: 2
+      width: 60
+      height: 52
+    inner:
+      serializedVersion: 2
+      x: 201
+      y: 2
+      width: 60
+      height: 52
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GenericBubble
+    outer:
+      serializedVersion: 2
+      x: 1282
+      y: 468
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1282
+      y: 468
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Piece_FortuneCookie_Yellow
+    outer:
+      serializedVersion: 2
+      x: 851
+      y: 380
+      width: 77
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 851
+      y: 380
+      width: 77
+      height: 76
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Piece_FortuneCookie_Red
+    outer:
+      serializedVersion: 2
+      x: 1514
+      y: 125
+      width: 77
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 1514
+      y: 125
+      width: 77
+      height: 76
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Piece_FortuneCookie_Green
+    outer:
+      serializedVersion: 2
+      x: 1969
+      y: 557
+      width: 77
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 1969
+      y: 557
+      width: 77
+      height: 76
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Piece_FortuneCookie_Blue
+    outer:
+      serializedVersion: 2
+      x: 1423
+      y: 118
+      width: 77
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 1423
+      y: 118
+      width: 77
+      height: 76
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Piece_FortuneCookie_Pink
+    outer:
+      serializedVersion: 2
+      x: 1134
+      y: 45
+      width: 77
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 1134
+      y: 4545
+      width: 0
+      height: 76
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: the finger_02
+    outer:
+      serializedVersion: 2
+      x: 535
+      y: 461
+      width: 110
+      height: 135
+    inner:
+      serializedVersion: 2
+      x: 535
+      y: 461
+      width: 110
+      height: 135
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FortuneCookie
+    outer:
+      serializedVersion: 2
+      x: 966
+      y: 39
+      width: 77
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 966
+      y: 39
+      width: 77
+      height: 76
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Booster_Icon_FinalPower
+    outer:
+      serializedVersion: 2
+      x: 562
+      y: 195
+      width: 128
+      height: 78
+    inner:
+      serializedVersion: 2
+      x: 562
+      y: 195
+      width: 128
+      height: 78
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bumper1
+    outer:
+      serializedVersion: 2
+      x: 134
+      y: 244
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 134
+      y: 244
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bumper2
+    outer:
+      serializedVersion: 2
+      x: 242
+      y: 256
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 242
+      y: 256
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bumper3
+    outer:
+      serializedVersion: 2
+      x: 1180
+      y: 556
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1180
+      y: 556
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FirePiece
+    outer:
+      serializedVersion: 2
+      x: 809
+      y: 12
+      width: 72
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 809
+      y: 12
+      width: 72
+      height: 76
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Booster_Icon_Swap
+    outer:
+      serializedVersion: 2
+      x: 243
+      y: 358
+      width: 113
+      height: 116
+    inner:
+      serializedVersion: 2
+      x: 243
+      y: 358
+      width: 113
+      height: 116
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_buyMoreBubbles__01
+    outer:
+      serializedVersion: 2
+      x: 1405
+      y: 1745
+      width: 315
+      height: 303
+    inner:
+      serializedVersion: 2
+      x: 1405
+      y: 1745
+      width: 315
+      height: 303
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_professorCat_01
+    outer:
+      serializedVersion: 2
+      x: 1842
+      y: 1146
+      width: 165
+      height: 179
+    inner:
+      serializedVersion: 2
+      x: 1842
+      y: 1146
+      width: 165
+      height: 179
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bottomBar_01
+    outer:
+      serializedVersion: 2
+      x: 855
+      y: 1080
+      width: 320
+      height: 68
+    inner:
+      serializedVersion: 2
+      x: 855
+      y: 1080
+      width: 320
+      height: 68
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_currencies_01
+    outer:
+      serializedVersion: 2
+      x: 366
+      y: 1519
+      width: 121
+      height: 90
+    inner:
+      serializedVersion: 2
+      x: 413
+      y: 1566
+      width: 27
+      height: 0
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GateUnlocked
+    outer:
+      serializedVersion: 2
+      x: 545
+      y: 105
+      width: 99
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 545
+      y: 105
+      width: 99
+      height: 88
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GateLocked
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 443
+      width: 114
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 443
+      width: 114
+      height: 120
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SharkBait
+    outer:
+      serializedVersion: 2
+      x: 1141
+      y: 123
+      width: 80
+      height: 77
+    inner:
+      serializedVersion: 2
+      x: 1141
+      y: 123
+      width: 80
+      height: 77
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_buttons_red_01
+    outer:
+      serializedVersion: 2
+      x: 1376
+      y: 570
+      width: 121
+      height: 90
+    inner:
+      serializedVersion: 2
+      x: 1419
+      y: 617
+      width: 35
+      height: 0
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: star_small_frame
+    outer:
+      serializedVersion: 2
+      x: 373
+      y: 4
+      width: 52
+      height: 50
+    inner:
+      serializedVersion: 2
+      x: 373
+      y: 4
+      width: 52
+      height: 50
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_rainbowBubble_100x100
+    outer:
+      serializedVersion: 2
+      x: 1462
+      y: 273
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1462
+      y: 273
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: EventViewCell
+    outer:
+      serializedVersion: 2
+      x: 1860
+      y: 811
+      width: 176
+      height: 160
+    inner:
+      serializedVersion: 2
+      x: 1935
+      y: 886
+      width: 26
+      height: 10
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_tournament
+    outer:
+      serializedVersion: 2
+      x: 1045
+      y: 96
+      width: 87
+      height: 70
+    inner:
+      serializedVersion: 2
+      x: 1045
+      y: 96
+      width: 87
+      height: 70
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VipCalender
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 565
+      width: 122
+      height: 135
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 565
+      width: 122
+      height: 135
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VIC_box
+    outer:
+      serializedVersion: 2
+      x: 1722
+      y: 1794
+      width: 256
+      height: 254
+    inner:
+      serializedVersion: 2
+      x: 1722
+      y: 1794
+      width: 256
+      height: 254
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VIC_boxlid
+    outer:
+      serializedVersion: 2
+      x: 167
+      y: 1223
+      width: 256
+      height: 110
+    inner:
+      serializedVersion: 2
+      x: 167
+      y: 1223
+      width: 256
+      height: 110
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VICLock
+    outer:
+      serializedVersion: 2
+      x: 338
+      y: 56
+      width: 98
+      height: 99
+    inner:
+      serializedVersion: 2
+      x: 338
+      y: 56
+      width: 98
+      height: 99
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VipStanchionPole
+    outer:
+      serializedVersion: 2
+      x: 1065
+      y: 1519
+      width: 118
+      height: 217
+    inner:
+      serializedVersion: 2
+      x: 1065
+      y: 1519
+      width: 118
+      height: 217
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VipStanchionRope
+    outer:
+      serializedVersion: 2
+      x: 1376
+      y: 662
+      width: 167
+      height: 74
+    inner:
+      serializedVersion: 2
+      x: 1376
+      y: 662
+      width: 167
+      height: 74
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VipRibbon
+    outer:
+      serializedVersion: 2
+      x: 204
+      y: 154
+      width: 28
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 204
+      y: 154
+      width: 28
+      height: 88
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_infinity
+    outer:
+      serializedVersion: 2
+      x: 167
+      y: 1101
+      width: 225
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 167
+      y: 1101
+      width: 225
+      height: 120
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: padLock
+    outer:
+      serializedVersion: 2
+      x: 317
+      y: 1002
+      width: 75
+      height: 97
+    inner:
+      serializedVersion: 2
+      x: 317
+      y: 1002
+      width: 75
+      height: 97
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TrophyIcon
+    outer:
+      serializedVersion: 2
+      x: 1390
+      y: 738
+      width: 115
+      height: 112
+    inner:
+      serializedVersion: 2
+      x: 1390
+      y: 738
+      width: 115
+      height: 112
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MedalSilver
+    outer:
+      serializedVersion: 2
+      x: 1722
+      y: 1550
+      width: 250
+      height: 242
+    inner:
+      serializedVersion: 2
+      x: 1722
+      y: 1550
+      width: 250
+      height: 242
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MedalGold
+    outer:
+      serializedVersion: 2
+      x: 1459
+      y: 1501
+      width: 250
+      height: 242
+    inner:
+      serializedVersion: 2
+      x: 1459
+      y: 1501
+      width: 250
+      height: 242
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MedalBronze
+    outer:
+      serializedVersion: 2
+      x: 1207
+      y: 1501
+      width: 250
+      height: 242
+    inner:
+      serializedVersion: 2
+      x: 1207
+      y: 1501
+      width: 250
+      height: 242
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TicketBronze
+    outer:
+      serializedVersion: 2
+      x: 974
+      y: 1276
+      width: 82
+      height: 94
+    inner:
+      serializedVersion: 2
+      x: 974
+      y: 1276
+      width: 82
+      height: 94
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TicketSilver
+    outer:
+      serializedVersion: 2
+      x: 1057
+      y: 168
+      width: 82
+      height: 93
+    inner:
+      serializedVersion: 2
+      x: 1057
+      y: 168
+      width: 82
+      height: 93
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TicketGold
+    outer:
+      serializedVersion: 2
+      x: 456
+      y: 905
+      width: 82
+      height: 93
+    inner:
+      serializedVersion: 2
+      x: 456
+      y: 905
+      width: 82
+      height: 93
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: WhiteSoftBlobSliced
+    outer:
+      serializedVersion: 2
+      x: 646
+      y: 161
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 662
+      y: 177
+      width: 0
+      height: 0
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_booster_disabled
+    outer:
+      serializedVersion: 2
+      x: 278
+      y: 723
+      width: 135
+      height: 134
+    inner:
+      serializedVersion: 2
+      x: 278
+      y: 723
+      width: 135
+      height: 134
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStarFrame2
+    outer:
+      serializedVersion: 2
+      x: 846
+      y: 1372
+      width: 217
+      height: 207
+    inner:
+      serializedVersion: 2
+      x: 846
+      y: 1372
+      width: 217
+      height: 207
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStar2
+    outer:
+      serializedVersion: 2
+      x: 495
+      y: 1515
+      width: 228
+      height: 221
+    inner:
+      serializedVersion: 2
+      x: 495
+      y: 1515
+      width: 228
+      height: 221
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStarFrame3
+    outer:
+      serializedVersion: 2
+      x: 1860
+      y: 635
+      width: 154
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 1860
+      y: 635
+      width: 154
+      height: 174
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStar1
+    outer:
+      serializedVersion: 2
+      x: 809
+      y: 1181
+      width: 163
+      height: 189
+    inner:
+      serializedVersion: 2
+      x: 809
+      y: 1181
+      width: 163
+      height: 189
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStar3
+    outer:
+      serializedVersion: 2
+      x: 642
+      y: 1247
+      width: 165
+      height: 191
+    inner:
+      serializedVersion: 2
+      x: 642
+      y: 1247
+      width: 165
+      height: 191
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStarFrame1
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 993
+      width: 153
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 993
+      width: 153
+      height: 174
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FacebookButtonBanner
+    outer:
+      serializedVersion: 2
+      x: 1258
+      y: 123
+      width: 81
+      height: 78
+    inner:
+      serializedVersion: 2
+      x: 1258
+      y: 123
+      width: 81
+      height: 78
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FacebookButtonBannerBack
+    outer:
+      serializedVersion: 2
+      x: 883
+      y: 40
+      width: 81
+      height: 75
+    inner:
+      serializedVersion: 2
+      x: 883
+      y: 40
+      width: 81
+      height: 75
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BoosterBar
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1751
+      width: 521
+      height: 161
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1751
+      width: 521
+      height: 161
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HighscorePlank
+    outer:
+      serializedVersion: 2
+      x: 523
+      y: 1738
+      width: 682
+      height: 107
+    inner:
+      serializedVersion: 2
+      x: 523
+      y: 1738
+      width: 682
+      height: 107
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MapMenuButton
+    outer:
+      serializedVersion: 2
+      x: 1499
+      y: 477
+      width: 99
+      height: 102
+    inner:
+      serializedVersion: 2
+      x: 1499
+      y: 477
+      width: 99
+      height: 102
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_VIP
+    outer:
+      serializedVersion: 2
+      x: 1572
+      y: 33
+      width: 55
+      height: 50
+    inner:
+      serializedVersion: 2
+      x: 1572
+      y: 3
+      width: 55
+      height: 50
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: InventoryFrame
+    outer:
+      serializedVersion: 2
+      x: 1656
+      y: 509
+      width: 119
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 1699
+      y: 550
+      width: 33
+      height: 3
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: coinstack
+    outer:
+      serializedVersion: 2
+      x: 1306
+      y: 884
+      width: 137
+      height: 119
+    inner:
+      serializedVersion: 2
+      x: 1306
+      y: 884
+      width: 137
+      height: 119
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: cellFrame
+    outer:
+      serializedVersion: 2
+      x: 974
+      y: 1150
+      width: 277
+      height: 108
+    inner:
+      serializedVersion: 2
+      x: 1017
+      y: 1204
+      width: 184
+      height: 2
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GateLocked2
+    outer:
+      serializedVersion: 2
+      x: 137
+      y: 694
+      width: 134
+      height: 134
+    inner:
+      serializedVersion: 2
+      x: 137
+      y: 694
+      width: 134
+      height: 134
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GateLocked1
+    outer:
+      serializedVersion: 2
+      x: 265
+      y: 476
+      width: 121
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 265
+      y: 476
+      width: 121
+      height: 115
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: twitter_stencil
+    outer:
+      serializedVersion: 2
+      x: 647
+      y: 481
+      width: 55
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 647
+      y: 481
+      width: 55
+      height: 54
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: instagram_stencil
+    outer:
+      serializedVersion: 2
+      x: 1834
+      y: 21
+      width: 55
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 1834
+      y: 21
+      width: 55
+      height: 54
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: youtube_stencil
+    outer:
+      serializedVersion: 2
+      x: 1301
+      y: 10
+      width: 55
+      height: 39
+    inner:
+      serializedVersion: 2
+      x: 1301
+      y: 10
+      width: 55
+      height: 39
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UnlimitedLivesBanner
+    outer:
+      serializedVersion: 2
+      x: 535
+      y: 57
+      width: 190
+      height: 38
+    inner:
+      serializedVersion: 2
+      x: 547
+      y: 57
+      width: 167
+      height: 38
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BadgeGreen
+    outer:
+      serializedVersion: 2
+      x: 700
+      y: 1852
+      width: 63
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 700
+      y: 1852
+      width: 63
+      height: 60
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BadgeBlue
+    outer:
+      serializedVersion: 2
+      x: 1777
+      y: 537
+      width: 63
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 1777
+      y: 537
+      width: 63
+      height: 60
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_pause
+    outer:
+      serializedVersion: 2
+      x: 635
+      y: 1849
+      width: 63
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 635
+      y: 1849
+      width: 63
+      height: 63
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: cell_beige
+    outer:
+      serializedVersion: 2
+      x: 204
+      y: 1335
+      width: 436
+      height: 103
+    inner:
+      serializedVersion: 2
+      x: 204
+      y: 1335
+      width: 436
+      height: 103
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: cell_green
+    outer:
+      serializedVersion: 2
+      x: 1065
+      y: 1396
+      width: 436
+      height: 103
+    inner:
+      serializedVersion: 2
+      x: 1065
+      y: 1396
+      width: 436
+      height: 103
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: StarTournament_icon
+    outer:
+      serializedVersion: 2
+      x: 585
+      y: 747
+      width: 104
+      height: 118
+    inner:
+      serializedVersion: 2
+      x: 585
+      y: 747
+      width: 104
+      height: 118
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: AvatarFrame_Blue
+    outer:
+      serializedVersion: 2
+      x: 1365
+      y: 282
+      width: 81
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1365
+      y: 282
+      width: 81
+      height: 82
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: AvatarFrame_Orange
+    outer:
+      serializedVersion: 2
+      x: 1258
+      y: 203
+      width: 81
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1258
+      y: 203
+      width: 81
+      height: 82
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Trophy_icons_silver
+    outer:
+      serializedVersion: 2
+      x: 1593
+      y: 55
+      width: 68
+      height: 72
+    inner:
+      serializedVersion: 2
+      x: 1593
+      y: 55
+      width: 68
+      height: 72
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Trophy_icons_gold
+    outer:
+      serializedVersion: 2
+      x: 1502
+      y: 51
+      width: 68
+      height: 72
+    inner:
+      serializedVersion: 2
+      x: 1502
+      y: 51
+      width: 68
+      height: 72
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Trophy_icons_bronze
+    outer:
+      serializedVersion: 2
+      x: 1593
+      y: 129
+      width: 68
+      height: 72
+    inner:
+      serializedVersion: 2
+      x: 1593
+      y: 129
+      width: 68
+      height: 72
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: smallframe_beige
+    outer:
+      serializedVersion: 2
+      x: 629
+      y: 19
+      width: 92
+      height: 36
+    inner:
+      serializedVersion: 2
+      x: 629
+      y: 19
+      width: 92
+      height: 36
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: smallframe_green
+    outer:
+      serializedVersion: 2
+      x: 535
+      y: 19
+      width: 92
+      height: 36
+    inner:
+      serializedVersion: 2
+      x: 535
+      y: 19
+      width: 92
+      height: 36
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlacementTile_Gold
+    outer:
+      serializedVersion: 2
+      x: 1663
+      y: 16
+      width: 55
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 1663
+      y: 16
+      width: 55
+      height: 59
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlacementTile_Bronze
+    outer:
+      serializedVersion: 2
+      x: 1720
+      y: 16
+      width: 55
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 1720
+      y: 16
+      width: 55
+      height: 59
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlacementTile_Silver
+    outer:
+      serializedVersion: 2
+      x: 647
+      y: 537
+      width: 55
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 647
+      y: 537
+      width: 55
+      height: 59
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TimerIcon
+    outer:
+      serializedVersion: 2
+      x: 1078
+      y: 768
+      width: 42
+      height: 41
+    inner:
+      serializedVersion: 2
+      x: 1078
+      y: 768
+      width: 42
+      height: 41
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ribbon_Levelrush
+    outer:
+      serializedVersion: 2
+      x: 1213
+      y: 8
+      width: 86
+      height: 40
+    inner:
+      serializedVersion: 2
+      x: 1213
+      y: 8
+      width: 86
+      height: 40
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MyProfileBoxBackground
+    outer:
+      serializedVersion: 2
+      x: 1165
+      y: 885
+      width: 139
+      height: 118
+    inner:
+      serializedVersion: 2
+      x: 1165
+      y: 885
+      width: 139
+      height: 118
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: heart_infinity
+    outer:
+      serializedVersion: 2
+      x: 1254
+      y: 767
+      width: 134
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1254
+      y: 767
+      width: 134
+      height: 115
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SoffLine
+    outer:
+      serializedVersion: 2
+      x: 1078
+      y: 762
+      width: 32
+      height: 4
+    inner:
+      serializedVersion: 2
+      x: 1078
+      y: 762
+      width: 32
+      height: 4
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: new_leveldot_complete
+    outer:
+      serializedVersion: 2
+      x: 692
+      y: 161
+      width: 102
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 692
+      y: 161
+      width: 102
+      height: 91
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: new_leveldot_unlocked
+    outer:
+      serializedVersion: 2
+      x: 830
+      y: 179
+      width: 102
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 830
+      y: 179
+      width: 102
+      height: 91
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: new_leveldot_locked
+    outer:
+      serializedVersion: 2
+      x: 953
+      y: 259
+      width: 102
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 953
+      y: 259
+      width: 102
+      height: 91
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: new_leveldot_hard
+    outer:
+      serializedVersion: 2
+      x: 438
+      y: 62
+      width: 95
+      height: 90
+    inner:
+      serializedVersion: 2
+      x: 438
+      y: 62
+      width: 95
+      height: 90
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: new_leveldot_hard_locked
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 46
+      width: 102
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 46
+      width: 102
+      height: 91
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_gray
+    outer:
+      serializedVersion: 2
+      x: 1177
+      y: 1005
+      width: 160
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1241
+      y: 1068
+      width: 32
+      height: 2
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RibbonBlueSmall
+    outer:
+      serializedVersion: 2
+      x: 1065
+      y: 1260
+      width: 313
+      height: 134
+    inner:
+      serializedVersion: 2
+      x: 1065
+      y: 1260
+      width: 313
+      height: 134
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShimmerWhite
+    outer:
+      serializedVersion: 2
+      x: 1124
+      y: 761
+      width: 128
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 1124
+      y: 761
+      width: 128
+      height: 122
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BlurBlue
+    outer:
+      serializedVersion: 2
+      x: 1629
+      y: 21
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 1629
+      y: 21
+      width: 32
+      height: 32
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: heartTournament
+    outer:
+      serializedVersion: 2
+      x: 1156
+      y: 202
+      width: 100
+      height: 83
+    inner:
+      serializedVersion: 2
+      x: 1156
+      y: 202
+      width: 100
+      height: 83
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbleBox_dropShadow
+    outer:
+      serializedVersion: 2
+      x: 883
+      y: 3
+      width: 130
+      height: 34
+    inner:
+      serializedVersion: 2
+      x: 883
+      y: 3
+      width: 130
+      height: 34
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: OneLifeChallengeIcon
+    outer:
+      serializedVersion: 2
+      x: 204
+      y: 1531
+      width: 160
+      height: 78
+    inner:
+      serializedVersion: 2
+      x: 204
+      y: 1531
+      width: 160
+      height: 78
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Music
+    outer:
+      serializedVersion: 2
+      x: 1032
+      y: 454
+      width: 20
+      height: 20
+    inner:
+      serializedVersion: 2
+      x: 1032
+      y: 454
+      width: 20
+      height: 20
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStarGlow
+    outer:
+      serializedVersion: 2
+      x: 1451
+      y: 7
+      width: 49
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 1451
+      y: 7
+      width: 49
+      height: 49
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_deathBubbles
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 139
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 139
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_bubbleBox_inked
+    outer:
+      serializedVersion: 2
+      x: 523
+      y: 1849
+      width: 110
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 523
+      y: 1849
+      width: 110
+      height: 63
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: splatterDrop
+    outer:
+      serializedVersion: 2
+      x: 1941
+      y: 1401
+      width: 74
+      height: 147
+    inner:
+      serializedVersion: 2
+      x: 1941
+      y: 1401
+      width: 74
+      height: 147
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_deathBubble_skull
+    outer:
+      serializedVersion: 2
+      x: 1291
+      y: 51
+      width: 74
+      height: 70
+    inner:
+      serializedVersion: 2
+      x: 1291
+      y: 51
+      width: 74
+      height: 70
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_deathBubbles_reflection
+    outer:
+      serializedVersion: 2
+      x: 1054
+      y: 558
+      width: 20
+      height: 18
+    inner:
+      serializedVersion: 2
+      x: 1054
+      y: 558
+      width: 20
+      height: 18
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: InkHat
+    outer:
+      serializedVersion: 2
+      x: 1581
+      y: 866
+      width: 100
+      height: 101
+    inner:
+      serializedVersion: 2
+      x: 1581
+      y: 866
+      width: 100
+      height: 101
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Squid
+    outer:
+      serializedVersion: 2
+      x: 456
+      y: 720
+      width: 127
+      height: 145
+    inner:
+      serializedVersion: 2
+      x: 456
+      y: 720
+      width: 127
+      height: 145
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: QuestionMark
+    outer:
+      serializedVersion: 2
+      x: 1879
+      y: 433
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1879
+      y: 433
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_yellow
+    outer:
+      serializedVersion: 2
+      x: 725
+      y: 1581
+      width: 295
+      height: 155
+    inner:
+      serializedVersion: 2
+      x: 725
+      y: 1581
+      width: 295
+      height: 155
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Banner
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1914
+      width: 900
+      height: 134
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1914
+      width: 900
+      height: 134
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: counter_partition
+    outer:
+      serializedVersion: 2
+      x: 1572
+      y: 79
+      width: 16
+      height: 44
+    inner:
+      serializedVersion: 2
+      x: 1572
+      y: 79
+      width: 16
+      height: 44
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_rainbowBubble_bowl_100x100
+    outer:
+      serializedVersion: 2
+      x: 102
+      y: 142
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 102
+      y: 142
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: paintbrush
+    outer:
+      serializedVersion: 2
+      x: 851
+      y: 272
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 851
+      y: 272
+      width: 100
+      height: 100
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: dot_yellow
+    outer:
+      serializedVersion: 2
+      x: 545
+      y: 867
+      width: 146
+      height: 137
+    inner:
+      serializedVersion: 2
+      x: 545
+      y: 867
+      width: 146
+      height: 137
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: dot_Red
+    outer:
+      serializedVersion: 2
+      x: 1017
+      y: 941
+      width: 146
+      height: 137
+    inner:
+      serializedVersion: 2
+      x: 1017
+      y: 941
+      width: 146
+      height: 137
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: dotGreen
+    outer:
+      serializedVersion: 2
+      x: 846
+      y: 811
+      width: 146
+      height: 137
+    inner:
+      serializedVersion: 2
+      x: 846
+      y: 811
+      width: 146
+      height: 137
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: dot_GreenRed
+    outer:
+      serializedVersion: 2
+      x: 698
+      y: 869
+      width: 146
+      height: 137
+    inner:
+      serializedVersion: 2
+      x: 698
+      y: 869
+      width: 146
+      height: 137
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: user_support_speech_bubble_user
+    outer:
+      serializedVersion: 2
+      x: 585
+      y: 598
+      width: 118
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 635
+      y: 638
+      width: 8
+      height: 8
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: user_support_speech_bubble_support
+    outer:
+      serializedVersion: 2
+      x: 958
+      y: 681
+      width: 118
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1018
+      y: 721
+      width: 8
+      height: 8
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: user_support_dialogue_icon_green
+    outer:
+      serializedVersion: 2
+      x: 204
+      y: 56
+      width: 97
+      height: 96
+    inner:
+      serializedVersion: 2
+      x: 204
+      y: 56
+      width: 97
+      height: 96
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: user_support_inputfield_background
+    outer:
+      serializedVersion: 2
+      x: 1656
+      y: 601
+      width: 83
+      height: 90
+    inner:
+      serializedVersion: 2
+      x: 1696
+      y: 639
+      width: 3
+      height: 3
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: user_support_background
+    outer:
+      serializedVersion: 2
+      x: 728
+      y: 357
+      width: 18
+      height: 18
+    inner:
+      serializedVersion: 2
+      x: 729
+      y: 358
+      width: 16
+      height: 16
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: user_support_background_bottom
+    outer:
+      serializedVersion: 2
+      x: 1376
+      y: 753
+      width: 12
+      height: 12
+    inner:
+      serializedVersion: 2
+      x: 1377
+      y: 754
+      width: 10
+      height: 10
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: user_support_background_top
+    outer:
+      serializedVersion: 2
+      x: 139
+      y: 979
+      width: 12
+      height: 12
+    inner:
+      serializedVersion: 2
+      x: 140
+      y: 980
+      width: 10
+      height: 10
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: user_support_horizontal_divider
+    outer:
+      serializedVersion: 2
+      x: 1112
+      y: 764
+      width: 10
+      height: 2
+    inner:
+      serializedVersion: 2
+      x: 1113
+      y: 765
+      width: 8
+      height: 0
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: user_support_backbutton
+    outer:
+      serializedVersion: 2
+      x: 1253
+      y: 1135
+      width: 255
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1253
+      y: 1135
+      width: 255
+      height: 115
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: continueAds_Disabled
+    outer:
+      serializedVersion: 2
+      x: 952
+      y: 578
+      width: 124
+      height: 101
+    inner:
+      serializedVersion: 2
+      x: 952
+      y: 578
+      width: 124
+      height: 101
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: continueAds_Enabled
+    outer:
+      serializedVersion: 2
+      x: 1078
+      y: 658
+      width: 124
+      height: 101
+    inner:
+      serializedVersion: 2
+      x: 1078
+      y: 658
+      width: 124
+      height: 101
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStar2_Diamond
+    outer:
+      serializedVersion: 2
+      x: 1711
+      y: 1327
+      width: 228
+      height: 221
+    inner:
+      serializedVersion: 2
+      x: 1711
+      y: 1327
+      width: 228
+      height: 221
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStar3_Diamond
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1169
+      width: 165
+      height: 191
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1169
+      width: 165
+      height: 191
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BigStar1_Diamond
+    outer:
+      serializedVersion: 2
+      x: 1677
+      y: 1136
+      width: 163
+      height: 189
+    inner:
+      serializedVersion: 2
+      x: 1677
+      y: 1136
+      width: 163
+      height: 189
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: star_small_Diamond
+    outer:
+      serializedVersion: 2
+      x: 1891
+      y: 75
+      width: 52
+      height: 50
+    inner:
+      serializedVersion: 2
+      x: 1891
+      y: 75
+      width: 52
+      height: 50
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GoalGreen
+    outer:
+      serializedVersion: 2
+      x: 1974
+      y: 1656
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 1974
+      y: 1656
+      width: 64
+      height: 64
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GoalYellow
+    outer:
+      serializedVersion: 2
+      x: 1974
+      y: 1590
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 1974
+      y: 1590
+      width: 64
+      height: 64
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GoalRed
+    outer:
+      serializedVersion: 2
+      x: 1980
+      y: 1984
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 1980
+      y: 1984
+      width: 64
+      height: 64
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GoalPurple
+    outer:
+      serializedVersion: 2
+      x: 1981
+      y: 491
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 1981
+      y: 491
+      width: 64
+      height: 64
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GoalBlue
+    outer:
+      serializedVersion: 2
+      x: 1980
+      y: 1852
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 1980
+      y: 1852
+      width: 64
+      height: 64
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RoundYellow
+    outer:
+      serializedVersion: 2
+      x: 317
+      y: 859
+      width: 137
+      height: 139
+    inner:
+      serializedVersion: 2
+      x: 317
+      y: 859
+      width: 137
+      height: 139
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RetryIconYellow
+    outer:
+      serializedVersion: 2
+      x: 1341
+      y: 1785
+      width: 59
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 1341
+      y: 1785
+      width: 59
+      height: 60
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CheckmarkIcon
+    outer:
+      serializedVersion: 2
+      x: 562
+      y: 297
+      width: 59
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 562
+      y: 297
+      width: 59
+      height: 60
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Share_icon
+    outer:
+      serializedVersion: 2
+      x: 1545
+      y: 581
+      width: 109
+      height: 110
+    inner:
+      serializedVersion: 2
+      x: 1545
+      y: 581
+      width: 109
+      height: 110
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_tasks
+    outer:
+      serializedVersion: 2
+      x: 1510
+      y: 969
+      width: 172
+      height: 165
+    inner:
+      serializedVersion: 2
+      x: 1510
+      y: 969
+      width: 172
+      height: 165
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: StoryPage
+    outer:
+      serializedVersion: 2
+      x: 1510
+      y: 1140
+      width: 119
+      height: 110
+    inner:
+      serializedVersion: 2
+      x: 1510
+      y: 1140
+      width: 119
+      height: 110
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: dialog_triangle
+    outer:
+      serializedVersion: 2
+      x: 1156
+      y: 295
+      width: 73
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 1156
+      y: 295
+      width: 73
+      height: 55
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: InfinityIcon_Blue
+    outer:
+      serializedVersion: 2
+      x: 725
+      y: 1516
+      width: 119
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 725
+      y: 1516
+      width: 119
+      height: 63
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Ribbon_WrapAround_Gray
+    outer:
+      serializedVersion: 2
+      x: 1123
+      y: 3
+      width: 86
+      height: 40
+    inner:
+      serializedVersion: 2
+      x: 1123
+      y: 3
+      width: 86
+      height: 40
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Booster_Icon_Swap_Unlimited
+    outer:
+      serializedVersion: 2
+      x: 705
+      y: 479
+      width: 121
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 705
+      y: 479
+      width: 121
+      height: 123
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Booster_Icon_Shield_Unlimited
+    outer:
+      serializedVersion: 2
+      x: 412
+      y: 595
+      width: 121
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 412
+      y: 595
+      width: 121
+      height: 123
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Booster_Icon_Aim_Unlimited
+    outer:
+      serializedVersion: 2
+      x: 829
+      y: 560
+      width: 121
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 829
+      y: 560
+      width: 121
+      height: 123
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: gradient w alpha
+    outer:
+      serializedVersion: 2
+      x: 2045
+      y: 1350
+      width: 1
+      height: 500
+    inner:
+      serializedVersion: 2
+      x: 2045
+      y: 1350
+      width: 1
+      height: 500
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: InfinityIcon_White
+    outer:
+      serializedVersion: 2
+      x: 646
+      y: 97
+      width: 119
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 646
+      y: 97
+      width: 119
+      height: 62
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: InfiniteCheckmark
+    outer:
+      serializedVersion: 2
+      x: 1367
+      y: 10
+      width: 82
+      height: 46
+    inner:
+      serializedVersion: 2
+      x: 1367
+      y: 10
+      width: 82
+      height: 46
+    rotated: 0
+    pixelSizeFactor: 1
+    halfSpriteX: 0
+    halfSpriteY: 0
+    adjustments:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mPadding: 2
+  mTrimming: 0
+  mUseUnityPacker: 0
+  mForceSquare: 0

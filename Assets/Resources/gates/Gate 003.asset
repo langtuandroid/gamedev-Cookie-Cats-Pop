@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b0932b89bc15cf39fc35b9f3e60853, type: 3}
+  m_Name: "Gate 003"
+  m_EditorClassIdentifier: 
+  contentHash: "59b1caa73778c94ba1c6088724f8e57c"
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fGates\x2fGate Tropical Marauder 3x.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 3075000060EA0000A0860100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fGates\x2fGate Skullottery 1x.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 384A00007094000050C30000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fGates\x2fGate A Mix 3x.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: 10270000204E000030750000

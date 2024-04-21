@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d0a1aa5136641e3f7fe51a656b1018, type: 3}
+  m_Name: "MenuTutorialDatabase"
+  m_EditorClassIdentifier: 
+  tutorials:
+  - levelRequired: 0
+    unfolded: 1
+    steps:
+    - viewGUID: "12c21999873584214af61a20ef2dabf4"
+      viewName: "StoryMapButtonsView"
+      message: "You can access your task list by pressing this button."
+      messagePosition: {x: 0, y: -140}
+      messageSize: {x: 480, y: 260}
+      messageLayouting: 0
+      dimissType: 0
+      highlight:
+        oval: 1
+        position: {x: 246, y: -414, z: -100}
+        size: {x: 160, y: 160}
+        layouting: 40
+    - viewGUID: "99e20d171c20c4dcb98dba5c5ba1d120"
+      viewName: "BrowseTasksView"
+      message: "This is your task list. Here you can view and complete the current
+      tasks."
+      messagePosition: {x: 4, y: -217}
+      messageSize: {x: 480, y: 250}
+      messageLayouting: 0
+      dimissType: 1
+      highlight:
+        oval: 0
+        position: {x: 0, y: 0, z: -100}
+        size: {x: 800, y: 1100}
+        layouting: 63
+    - viewGUID: "99e20d171c20c4dcb98dba5c5ba1d120"
+      viewName: "BrowseTasksView"
+      message: "To complete tasks, you will need to collect pages by completing levels."
+      messagePosition: {x: 4, y: -217}
+      messageSize: {x: 480, y: 250}
+      messageLayouting: 0
+      dimissType: 0
+      highlight:
+        oval: 0
+        position: {x: 3, y: -5, z: -100}
+        size: {x: 502, y: 100}
+        layouting: 0
+  - levelRequired: 1
+    unfolded: 1
+    steps:
+    - viewGUID: "99e20d171c20c4dcb98dba5c5ba1d120"
+      viewName: "BrowseTasksView"
+      message: "Now you have enough pages to complete the next task. Go ahead!"
+      messagePosition: {x: 0, y: -217}
+      messageSize: {x: 480, y: 250}
+      messageLayouting: 0
+      dimissType: 0
+      highlight:
+        oval: 0
+        position: {x: 3, y: -5, z: -100}
+        size: {x: 502, y: 100}
+        layouting: 0

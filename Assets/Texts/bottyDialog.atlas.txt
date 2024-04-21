@@ -1,0 +1,20 @@
+
+bottyDialog.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/Botty_Broken
+  rotate: false
+  xy: 2, 2
+  size: 243, 236
+  orig: 243, 236
+  offset: 0, 0
+  index: -1
+images/Botty_Fixed
+  rotate: false
+  xy: 2, 240
+  size: 300, 257
+  orig: 300, 257
+  offset: 0, 0
+  index: -1

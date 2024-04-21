@@ -1,0 +1,265 @@
+
+TournamentCatRun.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm1_Blue
+  rotate: false
+  xy: 887, 450
+  size: 116, 60
+  orig: 116, 60
+  offset: 0, 0
+  index: -1
+Arm1_Green
+  rotate: false
+  xy: 2, 14
+  size: 116, 60
+  orig: 116, 60
+  offset: 0, 0
+  index: -1
+Arm1_Orange
+  rotate: false
+  xy: 887, 388
+  size: 116, 60
+  orig: 116, 60
+  offset: 0, 0
+  index: -1
+Arm2_Blue
+  rotate: false
+  xy: 267, 73
+  size: 160, 61
+  orig: 160, 61
+  offset: 0, 0
+  index: -1
+Arm2_Green
+  rotate: false
+  xy: 429, 73
+  size: 160, 61
+  orig: 160, 61
+  offset: 0, 0
+  index: -1
+Arm2_Orange
+  rotate: false
+  xy: 591, 73
+  size: 160, 61
+  orig: 160, 61
+  offset: 0, 0
+  index: -1
+Blink_Blue
+  rotate: false
+  xy: 753, 90
+  size: 72, 44
+  orig: 72, 44
+  offset: 0, 0
+  index: -1
+Blink_Green
+  rotate: false
+  xy: 753, 44
+  size: 72, 44
+  orig: 72, 44
+  offset: 0, 0
+  index: -1
+Blink_Orange
+  rotate: true
+  xy: 827, 62
+  size: 72, 44
+  orig: 72, 44
+  offset: 0, 0
+  index: -1
+Body_Blue
+  rotate: false
+  xy: 2, 294
+  size: 133, 216
+  orig: 133, 216
+  offset: 0, 0
+  index: -1
+Body_Green
+  rotate: false
+  xy: 2, 76
+  size: 133, 216
+  orig: 133, 216
+  offset: 0, 0
+  index: -1
+Body_Orange
+  rotate: false
+  xy: 137, 294
+  size: 133, 216
+  orig: 133, 216
+  offset: 0, 0
+  index: -1
+Ear2_Blue
+  rotate: false
+  xy: 254, 2
+  size: 30, 22
+  orig: 30, 22
+  offset: 0, 0
+  index: -1
+Ear2_Green
+  rotate: false
+  xy: 286, 2
+  size: 30, 22
+  orig: 30, 22
+  offset: 0, 0
+  index: -1
+Ear2_Orange
+  rotate: false
+  xy: 318, 2
+  size: 30, 22
+  orig: 30, 22
+  offset: 0, 0
+  index: -1
+Ear_Blue
+  rotate: false
+  xy: 858, 221
+  size: 41, 33
+  orig: 41, 33
+  offset: 0, 0
+  index: -1
+Ear_Green
+  rotate: false
+  xy: 858, 186
+  size: 41, 33
+  orig: 41, 33
+  offset: 0, 0
+  index: -1
+Ear_Orange
+  rotate: false
+  xy: 858, 151
+  size: 41, 33
+  orig: 41, 33
+  offset: 0, 0
+  index: -1
+Eye
+  rotate: true
+  xy: 872, 308
+  size: 72, 43
+  orig: 72, 43
+  offset: 0, 0
+  index: -1
+Hand1
+  rotate: false
+  xy: 978, 335
+  size: 39, 51
+  orig: 39, 51
+  offset: 0, 0
+  index: -1
+Hand2
+  rotate: false
+  xy: 872, 256
+  size: 45, 50
+  orig: 45, 50
+  offset: 0, 0
+  index: -1
+Pupil
+  rotate: false
+  xy: 731, 41
+  size: 19, 30
+  orig: 19, 30
+  offset: 0, 0
+  index: -1
+RoadRunner1_Blue
+  rotate: false
+  xy: 267, 136
+  size: 195, 121
+  orig: 195, 121
+  offset: 0, 0
+  index: -1
+RoadRunner1_Green
+  rotate: false
+  xy: 464, 136
+  size: 195, 121
+  orig: 195, 121
+  offset: 0, 0
+  index: -1
+RoadRunner1_Orange
+  rotate: false
+  xy: 661, 136
+  size: 195, 121
+  orig: 195, 121
+  offset: 0, 0
+  index: -1
+RoadRunner2_Blue
+  rotate: false
+  xy: 272, 259
+  size: 198, 121
+  orig: 198, 121
+  offset: 0, 0
+  index: -1
+RoadRunner2_Green
+  rotate: false
+  xy: 472, 259
+  size: 198, 121
+  orig: 198, 121
+  offset: 0, 0
+  index: -1
+RoadRunner2_Orange
+  rotate: false
+  xy: 672, 259
+  size: 198, 121
+  orig: 198, 121
+  offset: 0, 0
+  index: -1
+RoadRunner3_Blue
+  rotate: true
+  xy: 137, 84
+  size: 208, 128
+  orig: 208, 128
+  offset: 0, 0
+  index: -1
+RoadRunner3_Green
+  rotate: false
+  xy: 692, 382
+  size: 193, 128
+  orig: 193, 128
+  offset: 0, 0
+  index: -1
+RoadRunner3_Green1
+  rotate: false
+  xy: 272, 382
+  size: 208, 128
+  orig: 208, 128
+  offset: 0, 0
+  index: -1
+RoadRunner3_Orange
+  rotate: false
+  xy: 482, 382
+  size: 208, 128
+  orig: 208, 128
+  offset: 0, 0
+  index: -1
+Tail_Blue
+  rotate: false
+  xy: 254, 26
+  size: 157, 45
+  orig: 157, 45
+  offset: 0, 0
+  index: -1
+Tail_Green
+  rotate: false
+  xy: 413, 26
+  size: 157, 45
+  orig: 157, 45
+  offset: 0, 0
+  index: -1
+Tail_Orange
+  rotate: false
+  xy: 572, 26
+  size: 157, 45
+  orig: 157, 45
+  offset: 0, 0
+  index: -1
+Teeth
+  rotate: true
+  xy: 137, 2
+  size: 80, 115
+  orig: 80, 115
+  offset: 0, 0
+  index: -1
+tung
+  rotate: false
+  xy: 917, 331
+  size: 59, 55
+  orig: 59, 55
+  offset: 0, 0
+  index: -1

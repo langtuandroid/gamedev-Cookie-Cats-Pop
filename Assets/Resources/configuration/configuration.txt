@@ -1,0 +1,3787 @@
+{
+    "AchievementsConfig": {
+        "LevelRequiredForNotification": 2,
+        "Rewards": [
+            {
+                "ID": "A1",
+                "Rewards": [
+                    {
+                        "Amount": 3,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A2",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A3",
+                "Rewards": [
+                    {
+                        "Amount": 3,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A4",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A5",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A6",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A7",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A8",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A9",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A10",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A11",
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "TicketSilver"
+                    }
+                ]
+            },
+            {
+                "ID": "A12",
+                "Rewards": [
+                    {
+                        "Amount": 3,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A13",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A14",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A15",
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "TicketSilver"
+                    }
+                ]
+            },
+            {
+                "ID": "A16",
+                "Rewards": [
+                    {
+                        "Amount": 3,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A17",
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "TicketBronze"
+                    }
+                ]
+            },
+            {
+                "ID": "A18",
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "TicketBronze"
+                    }
+                ]
+            },
+            {
+                "ID": "A19",
+                "Rewards": [
+                    {
+                        "Amount": 45,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A20",
+                "Rewards": [
+                    {
+                        "Amount": 3,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A21",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A22",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A23",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A24",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A25",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A26",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A27",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A28",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A29",
+                "Rewards": [
+                    {
+                        "Amount": 15,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A30",
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A31",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A32",
+                "Rewards": [
+                    {
+                        "Amount": 15,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A33",
+                "Rewards": [
+                    {
+                        "Amount": 20,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A34",
+                "Rewards": [
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A35",
+                "Rewards": [
+                    {
+                        "Amount": 15,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A36",
+                "Rewards": [
+                    {
+                        "Amount": 20,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "ID": "A37",
+                "Rewards": [
+                    {
+                        "Amount": 25,
+                        "Type": "Coin"
+                    }
+                ]
+            }
+        ]
+    },
+    "AdConfig": {
+        "Default": {
+            "AquisitionChannels": [],
+            "Countries": {
+                "CountryCodes": []
+            },
+            "ID": "Default",
+            "InterstitialConfiguration": {
+                "LevelRequiredForInterstitials": 15,
+                "MinimumSecondsBeforeFirstAd": 604800,
+                "MinimumSecondsBetweenInterstitials": 180
+            },
+            "RewardedVideoConfiguration": {
+                "RewardedVideoContextConfiguration": [
+                    {
+                        "CoolDownInSeconds": 900,
+                        "IsActive": true,
+                        "LevelRequired": 4,
+                        "RewardedVideoContext": "OutOfLives"
+                    },
+                    {
+                        "CoolDownInSeconds": 0,
+                        "IsActive": true,
+                        "LevelRequired": 4,
+                        "RewardedVideoContext": "Shop"
+                    },
+                    {
+                        "CoolDownInSeconds": 0,
+                        "IsActive": true,
+                        "LevelRequired": 10,
+                        "RewardedVideoContext": "LevelObjective"
+                    },
+                    {
+                        "CoolDownInSeconds": 1,
+                        "IsActive": true,
+                        "LevelRequired": 0,
+                        "RewardedVideoContext": "Debug"
+                    },
+                    {
+                        "CoolDownInSeconds": 1200,
+                        "IsActive": false,
+                        "LevelRequired": 10,
+                        "RewardedVideoContext": "OutOfMoves"
+                    }
+                ]
+            }
+        }
+    },
+    "AgeInfoConfig": {
+        "countryFilter": {
+            "CountryConsentRequirements": [
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "US",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "BE",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "BG",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "CZ",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "DK",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "DE",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "EE",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "IE",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "EL",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "ES",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "FR",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "HR",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "IT",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "CY",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "LV",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "LT",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "LU",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "HU",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "MT",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "NL",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "AT",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "PL",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "PT",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "RO",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "SI",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "SK",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "FI",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "SE",
+                    "RequireAge": false
+                },
+                {
+                    "AgeThreshold": 0,
+                    "CountryCode": "UK",
+                    "RequireAge": false
+                }
+            ]
+        },
+        "isActive": true,
+        "privacyPolicyURL": "https://tactilegames.com/legal/privacy.html",
+        "termsOfServiceURL": "https://tactilegames.com/legal/tos.html"
+    },
+    "AnalyticsConfig": {
+        "SendToStagingModulo": 10
+    },
+    "AppLovinMAXConfig": {
+        "interstitialProviderPriority": 0,
+        "rewardedVideoProviderPriority": 0
+    },
+    "AskForNotifications": {
+        "LevelRequired": 2,
+        "RepeatStep": 10
+    },
+    "BackupConfiguration": {
+        "BackupInterval": 300,
+        "BackupOnFullSync": true,
+        "Enabled": true,
+        "LevelRequired": 10,
+        "RetryInterval": -1
+    },
+    "BonusDropConfig": {
+        "LevelRequiredForPresents": 10,
+        "PresentsRequiredForBonus": 25,
+        "PresentsSpawnIntervalInMoves": 50,
+        "RewardPool": [
+            {
+                "Amount": 1,
+                "Type": "BoosterRainbow"
+            },
+            {
+                "Amount": 1,
+                "Type": "BoosterSuperQueue"
+            },
+            {
+                "Amount": 1,
+                "Type": "BoosterFinalPower"
+            },
+            {
+                "Amount": 1,
+                "Type": "BoosterShield"
+            },
+            {
+                "Amount": 1,
+                "Type": "BoosterSuperAim"
+            }
+        ]
+    },
+    "BoosterConfig": {
+        "CustomLimitedBoosterConfig": {
+            "PaintbrushRows": 12
+        },
+        "ShowSuggestionOnFail": true,
+        "SuggestionNeedToFailXTimes": 3,
+        "UnlockAmounts": [
+            {
+                "Amount": 2,
+                "BoosterId": "BoosterRainbow"
+            },
+            {
+                "Amount": 2,
+                "BoosterId": "BoosterSuperQueue"
+            },
+            {
+                "Amount": 2,
+                "BoosterId": "BoosterFinalPower"
+            },
+            {
+                "Amount": 2,
+                "BoosterId": "BoosterShield"
+            },
+            {
+                "Amount": 2,
+                "BoosterId": "BoosterSuperAim"
+            }
+        ],
+        "UseSuperAimMonocular": true
+    },
+    "ChallengeConfig": {
+        "ExpirationDates": [
+            {
+                "ExpirationDate": "2017-05-30",
+                "Version": 0
+            },
+            {
+                "ExpirationDate": "2017-05-31",
+                "Version": 1
+            },
+            {
+                "ExpirationDate": "2017-07-10",
+                "Version": 4
+            },
+            {
+                "ExpirationDate": "2017-08-07",
+                "Version": 5
+            },
+            {
+                "ExpirationDate": "2017-08-28",
+                "Version": 6
+            },
+            {
+                "ExpirationDate": "2017-09-18",
+                "Version": 7
+            },
+            {
+                "ExpirationDate": "2017-10-09",
+                "Version": 8
+            },
+            {
+                "ExpirationDate": "2017-10-30",
+                "Version": 9
+            },
+            {
+                "ExpirationDate": "2017-11-26",
+                "Version": 10
+            },
+            {
+                "ExpirationDate": "2017-12-25",
+                "Version": 11
+            },
+            {
+                "ExpirationDate": "2018-01-14",
+                "Version": 12
+            },
+            {
+                "ExpirationDate": "2018-02-04",
+                "Version": 13
+            },
+            {
+                "ExpirationDate": "2018-02-25",
+                "Version": 14
+            },
+            {
+                "ExpirationDate": "2018-03-20",
+                "Version": 15
+            }
+        ],
+        "IsAvailable": true,
+        "LevelNrRequiredForChallenge": 101,
+        "PeriodId": 0,
+        "Rewards": [
+            {
+                "Rank": 1,
+                "RequiredFriends": 20,
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    }
+                ]
+            },
+            {
+                "Rank": 2,
+                "RequiredFriends": 15,
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    }
+                ]
+            },
+            {
+                "Rank": 3,
+                "RequiredFriends": 10,
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterShield"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    }
+                ]
+            }
+        ]
+    },
+    "CrossPromotionConfig": {
+        "LevelNrRequired": 40,
+        "PopupInterval": 3600,
+        "Promotions": [
+            {
+                "DecisionPoint": "",
+                "HideInHUB": false,
+                "ID": "CCB_RitaPowerPieces",
+                "IgnoreBadge": false,
+                "IsActive": true,
+                "MaxViews": 1,
+                "Priority": 12,
+                "SchemeURLGoogle": "dk.tactile.cookiecatsblast",
+                "SchemeURLWebGL": "",
+                "SchemeURLiOS": "tactilecookiecatsblast://",
+                "StoreURLAmazon": "https://www.amazon.com/Tactile-Entertainment-Cookie-Cats-Blast/dp/B07CG7DMS7",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=dk.tactile.cookiecatsblast&hl=en",
+                "StoreURLiOS": "https://itunes.apple.com/us/app/cookie-cats-blast/id1358111232?mt=8",
+                "TrackerAmazon": "i3bgpu",
+                "TrackerGoogle": "jjavd1",
+                "TrackeriOS": "uzzpxz"
+            },
+            {
+                "DecisionPoint": "",
+                "HideInHUB": false,
+                "ID": "BBB_014",
+                "IgnoreBadge": false,
+                "IsActive": true,
+                "MaxViews": 1,
+                "Priority": 11,
+                "SchemeURLGoogle": "dk.tactile.beebrilliantblast",
+                "SchemeURLWebGL": "1071434639640620",
+                "SchemeURLiOS": "tactilebeebrilliantblast://",
+                "StoreURLAmazon": "https://www.amazon.com/Tactile-Entertainment-Bee-Brilliant-Blast/dp/B076CKNMJP",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=dk.tactile.beebrilliantblast&hl=en",
+                "StoreURLiOS": "https://itunes.apple.com/us/app/bee-brilliant-blast/id1159703497?mt=8",
+                "TrackerAmazon": "gdibt6",
+                "TrackerGoogle": "skumn5",
+                "TrackeriOS": "h6vltb"
+            },
+            {
+                "DecisionPoint": "",
+                "FacebookAppLink": "https://apps.facebook.com/bee-brilliant-blast",
+                "HideInHUB": false,
+                "ID": "BBB_BusyBeeGameplay",
+                "IgnoreBadge": false,
+                "IsActive": false,
+                "MaxViews": 1,
+                "Priority": 11,
+                "SchemeURLGoogle": "dk.tactile.beebrilliantblast",
+                "SchemeURLWebGL": "1071434639640620",
+                "SchemeURLiOS": "tactilebeebrilliantblast://",
+                "StoreURLAmazon": "https://www.amazon.com/Tactile-Entertainment-Bee-Brilliant-Blast/dp/B076CKNMJP",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=dk.tactile.beebrilliantblast&hl=en",
+                "StoreURLiOS": "https://itunes.apple.com/us/app/bee-brilliant-blast/id1159703497?mt=8",
+                "TrackerAmazon": "gdibt6",
+                "TrackerGoogle": "skumn5",
+                "TrackeriOS": "h6vltb"
+            },
+            {
+                "DecisionPoint": "",
+                "FacebookAppLink": "https://apps.facebook.com/bee-brilliant-blast",
+                "HideInHUB": false,
+                "ID": "BBB_HiveAndSpider",
+                "IgnoreBadge": false,
+                "IsActive": false,
+                "MaxViews": 1,
+                "Priority": 11,
+                "SchemeURLGoogle": "dk.tactile.beebrilliantblast",
+                "SchemeURLWebGL": "1071434639640620",
+                "SchemeURLiOS": "tactilebeebrilliantblast://",
+                "StoreURLAmazon": "https://www.amazon.com/Tactile-Entertainment-Bee-Brilliant-Blast/dp/B076CKNMJP",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=dk.tactile.beebrilliantblast&hl=en",
+                "StoreURLiOS": "https://itunes.apple.com/us/app/bee-brilliant-blast/id1159703497?mt=8",
+                "TrackerAmazon": "gdibt6",
+                "TrackerGoogle": "skumn5",
+                "TrackeriOS": "h6vltb"
+            },
+            {
+                "DecisionPoint": "",
+                "FacebookAppLink": "https://apps.facebook.com/bee-brilliant",
+                "HideInHUB": false,
+                "ID": "BB_BeeBrilliant",
+                "IgnoreBadge": true,
+                "IsActive": true,
+                "MaxViews": 1,
+                "Priority": 10,
+                "SchemeURLGoogle": "dk.tactile.beebrilliant",
+                "SchemeURLWebGL": "511158632350299",
+                "SchemeURLiOS": "tactilebeebrilliant://",
+                "StoreLinkAmazon": "https://app.adjust.com/n8wx57?campaign=CCP&adgroup=MainMap&creative=Vanilla",
+                "StoreLinkGoogle": "https://app.adjust.com/mwpvt7?campaign=CCP&adgroup=MainMap&creative=Vanilla",
+                "StoreLinkiOS": "https://app.adjust.com/6llnj1?campaign=CCP&adgroup=MainMap&creative=Vanilla",
+                "StoreURLAmazon": "https://www.amazon.com/Tactile-Entertainment-Bee-Brilliant/dp/B00SYZDSXO",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=dk.tactile.beebrilliant&hl=en",
+                "StoreURLiOS": "https://itunes.apple.com/us/app/bee-brilliant/id888251661?ls=1&mt=8",
+                "TrackerAmazon": "n8wx57",
+                "TrackerGoogle": "mwpvt7",
+                "TrackeriOS": "6llnj1"
+            },
+            {
+                "DecisionPoint": "",
+                "FacebookAppLink": "https://apps.facebook.com/cookie-cats",
+                "HideInHUB": false,
+                "ID": "CC_CookieCats",
+                "IgnoreBadge": true,
+                "IsActive": true,
+                "MaxViews": 1,
+                "Priority": 9,
+                "SchemeURLGoogle": "dk.tactile.cookiecats",
+                "SchemeURLWebGL": "1707436886156281",
+                "SchemeURLiOS": "tactilecookiecats://",
+                "StoreLinkAmazon": "https://app.adjust.com/94wjtb?campaign=CCP&adgroup=MainMap&creative=Vanilla",
+                "StoreLinkGoogle": "https://app.adjust.com/7ff7rt?campaign=CCP&adgroup=MainMap&creative=Vanilla",
+                "StoreLinkiOS": "https://app.adjust.com/84obwu?campaign=CCP&adgroup=MainMap&creative=Vanilla",
+                "StoreURLAmazon": "https://www.amazon.com/Tactile-Entertainment-Cookie-Cats/dp/B01ET0PEN4",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=dk.tactile.cookiecats&hl=en",
+                "StoreURLiOS": "https://itunes.apple.com/us/app/cookie-cats/id1078297893?mt=8",
+                "TrackerAmazon": "94wjtb",
+                "TrackerGoogle": "7ff7rt",
+                "TrackeriOS": "84obwu"
+            },
+            {
+                "DecisionPoint": "",
+                "FacebookAppLink": "https://apps.facebook.com/disco-ducks",
+                "HideInHUB": false,
+                "ID": "DD_DiscoDucks",
+                "IgnoreBadge": true,
+                "IsActive": true,
+                "MaxViews": 1,
+                "Priority": 8,
+                "SchemeURLGoogle": "dk.tactile.discoducks",
+                "SchemeURLWebGL": "873862112672485",
+                "SchemeURLiOS": "tactilediscoducks://",
+                "StoreLinkAmazon": "https://app.adjust.com/94wjtb?campaign=CCP&adgroup=MainMap&creative=Vanilla",
+                "StoreLinkGoogle": "https://app.adjust.com/7ff7rt?campaign=CCP&adgroup=MainMap&creative=Vanilla",
+                "StoreLinkiOS": "https://app.adjust.com/84obwu?campaign=CCP&adgroup=MainMap&creative=Vanilla",
+                "StoreURLAmazon": "https://www.amazon.com/Tactile-Entertainment-Disco-Ducks/dp/B0148R2R42",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=dk.tactile.discoducks&hl=en",
+                "StoreURLiOS": "https://itunes.apple.com/us/app/disco-ducks/id922830533?mt=8",
+                "TrackerAmazon": "fh9fow",
+                "TrackerGoogle": "fh9fow",
+                "TrackeriOS": "h3176k"
+            },
+            {
+                "DecisionPoint": "",
+                "HideInHUB": false,
+                "ID": "",
+                "IgnoreBadge": true,
+                "IsActive": true,
+                "MaxViews": 0,
+                "Priority": 0,
+                "SchemeURLGoogle": "com.strawdogstudios.simonscatpoptime",
+                "SchemeURLWebGL": "",
+                "SchemeURLiOS": "tactilesimonscatpoptime://",
+                "StoreURLAmazon": "https://www.amazon.com/Strawdog-Publishing-Limited-Simons-Cat/dp/B07CK8P14F",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=com.strawdogstudios.simonscatpoptime",
+                "StoreURLiOS": "https://itunes.apple.com/dk/app/simons-cat-pop-time/id1340819732?mt=8",
+                "TrackerAmazon": "y2c7m65",
+                "TrackerGoogle": "h4rprjb",
+                "TrackeriOS": "m8mhnlg"
+            },
+            {
+                "DecisionPoint": "",
+                "HideInHUB": false,
+                "ID": "",
+                "IgnoreBadge": true,
+                "IsActive": true,
+                "MaxViews": 0,
+                "Priority": 0,
+                "SchemeURLGoogle": "com.strawdogstudios.simonscatcrunchtime",
+                "SchemeURLWebGL": "",
+                "SchemeURLiOS": "strawdogsimonscat://",
+                "StoreURLAmazon": "https://www.amazon.com/Strawdog-Publishing-Limited-Simons-Cat/dp/B071LPSQSD",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=com.strawdogstudios.simonscatcrunchtime",
+                "StoreURLiOS": "https://itunes.apple.com/us/app/simons-cat-crunch-time/id1239458501?mt=8",
+                "TrackerAmazon": "nev3j55",
+                "TrackerGoogle": "yd3m3wp",
+                "TrackeriOS": "h1o2545"
+            },
+            {
+                "DecisionPoint": "",
+                "HideInHUB": false,
+                "ID": "LG_CP_Int003",
+                "IgnoreBadge": false,
+                "IsActive": true,
+                "MaxViews": 3,
+                "Priority": 13,
+                "SchemeURLGoogle": "dk.tactile.lilysgarden",
+                "SchemeURLWebGL": "TEMP",
+                "SchemeURLiOS": "tactilelilysgarden",
+                "StoreURLAmazon": "https://www.amazon.com/gp/product/B07LB2P3RC",
+                "StoreURLGoogle": "https://play.google.com/store/apps/details?id=dk.tactile.lilysgarden",
+                "StoreURLiOS": "https://itunes.apple.com/us/app/lilys-garden/id1437783446?ls=1&mt=8",
+                "TrackerAmazon": "pmywgf2",
+                "TrackerGoogle": "ytrho2l",
+                "TrackeriOS": "nq5uy0z"
+            }
+        ],
+        "RewardedVideo": {
+            "Enabled": false
+        }
+    },
+    "DailyQuestConfig": {
+        "DailyQuestSkipPrice": 25,
+        "DailyQuests": [
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 1"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 2"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 3"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 4"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 5"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 2,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 6"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 2,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 7"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "TicketBronze"
+                    }
+                ],
+                "Title": "Day 8"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 2,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 9"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    },
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 10"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 11"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 12"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 13"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 14"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperAim"
+                    },
+                    {
+                        "Amount": 25,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 15"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 16"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 17"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "TicketBronze"
+                    }
+                ],
+                "Title": "Day 18"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 19"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperAim"
+                    },
+                    {
+                        "Amount": 70,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 20"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 21"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 22"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 23"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 5,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 24"
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "TicketSilver"
+                    },
+                    {
+                        "Amount": 65,
+                        "Type": "Coin"
+                    }
+                ],
+                "Title": "Day 25"
+            }
+        ],
+        "DaysToEndNotification": 10,
+        "HeadStartAmountInDays": 3,
+        "InUse": true,
+        "LevelRequiredForDailyQuests": 12
+    },
+    "DifficultyConfig": {
+        "ShowLevelDifficulty": true
+    },
+    "EndlessChallengeConfig": {
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "IsActive": true,
+        "LevelRequiredForEndlessChallenge": 45
+    },
+    "ExperienceConfig": {
+        "FixedFirstFreebies": false,
+        "HighSpeedAtLevel": 100,
+        "MediumSpeedAtLevel": 15
+    },
+    "ExtraAdConfig": {
+        "CoinsForWatchingAd": 1
+    },
+    "FacebookNotification": {
+        "LevelRequiredForPlayWithFriendsView": 25
+    },
+    "GameSessionConfig": {
+        "PlayPauseForNewSession": 3600
+    },
+    "GateConfig": {
+        "QuestRegenerationTime": 14400
+    },
+    "HotStreakConfig": {
+        "Enabled": true,
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "LevelRequiredGlobal": 37,
+        "LevelRequiredLocal": 35,
+        "MaxPlayTimeDuration": 86400,
+        "Tiers": [
+            {
+                "Bonuses": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperAim"
+                    }
+                ],
+                "RequiredWins": 1
+            },
+            {
+                "Bonuses": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperAim"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    }
+                ],
+                "RequiredWins": 3
+            },
+            {
+                "Bonuses": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperAim"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    }
+                ],
+                "RequiredWins": 6
+            }
+        ]
+    },
+    "IAPConfig": {
+        "InAppProducts": [
+            {
+                "CurrencyCode": "USD",
+                "Description": "Stack of Coins",
+                "FormattedPrice": "$1.99",
+                "Identifier": "coin_pack_1",
+                "Price": 1.99,
+                "ProductType": "Consumable",
+                "Title": "Stack of Coins"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Pile of Coins",
+                "FormattedPrice": "$9.99",
+                "Identifier": "coin_pack_2",
+                "Price": 9.99,
+                "ProductType": "Consumable",
+                "Title": "Pile of Coins"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Bag of Coins",
+                "FormattedPrice": "$19.99",
+                "Identifier": "coin_pack_3",
+                "Price": 19.99,
+                "ProductType": "Consumable",
+                "Title": "Bag of Coins"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Chest of Coins",
+                "FormattedPrice": "$49.99",
+                "Identifier": "coin_pack_4",
+                "Price": 49.99,
+                "ProductType": "Consumable",
+                "Title": "Chest of Coins"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Vault of Coins",
+                "FormattedPrice": "$99.99",
+                "Identifier": "coin_pack_5",
+                "Price": 99.99,
+                "ProductType": "Consumable",
+                "Title": "Vault of Coins"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Vip",
+                "FormattedPrice": "$9.99",
+                "Identifier": "vip_pack",
+                "Price": 9.99,
+                "ProductType": "Consumable",
+                "Title": "Vip"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer 1",
+                "FormattedPrice": "$0.99",
+                "Identifier": "special_offer_1",
+                "Price": 0.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer 1"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Small Bronze Ticket Pack",
+                "FormattedPrice": "$1.99",
+                "Identifier": "bronze_ticket_pack_1",
+                "Price": 1.99,
+                "ProductType": "Consumable",
+                "Title": "Small Bronze Ticket Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Medium Bronze Ticket Pack",
+                "FormattedPrice": "$2.99",
+                "Identifier": "bronze_ticket_pack_2",
+                "Price": 2.99,
+                "ProductType": "Consumable",
+                "Title": "Medium Bronze Ticket Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Large Bronze Ticket Pack",
+                "FormattedPrice": "$4.99",
+                "Identifier": "bronze_ticket_pack_3",
+                "Price": 4.99,
+                "ProductType": "Consumable",
+                "Title": "Large Bronze Ticket Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Small Silver Ticket Pack",
+                "FormattedPrice": "$5.99",
+                "Identifier": "silver_ticket_pack_1",
+                "Price": 5.99,
+                "ProductType": "Consumable",
+                "Title": "Small Silver Ticket Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Medium Silver Ticket Pack",
+                "FormattedPrice": "$9.99",
+                "Identifier": "silver_ticket_pack_2",
+                "Price": 9.99,
+                "ProductType": "Consumable",
+                "Title": "Medium Silver Ticket Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Large Silver Ticket Pack",
+                "FormattedPrice": "$19.99",
+                "Identifier": "silver_ticket_pack_3",
+                "Price": 19.99,
+                "ProductType": "Consumable",
+                "Title": "Large Silver Ticket Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Small Gold Ticket Pack",
+                "FormattedPrice": "$9.99",
+                "Identifier": "gold_ticket_pack_1",
+                "Price": 9.99,
+                "ProductType": "Consumable",
+                "Title": "Small Gold Ticket Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Medium Gold Ticket Pack",
+                "FormattedPrice": "$49.99",
+                "Identifier": "gold_ticket_pack_2",
+                "Price": 49.99,
+                "ProductType": "Consumable",
+                "Title": "Medium Gold Ticket Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Large Gold Ticket Pack",
+                "FormattedPrice": "$99.99",
+                "Identifier": "gold_ticket_pack_3",
+                "Price": 99.99,
+                "ProductType": "Consumable",
+                "Title": "Large Gold Ticket Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Welcome Pack",
+                "FormattedPrice": "$0.99",
+                "Identifier": "welcome_pack",
+                "Price": 0.99,
+                "ProductType": "Consumable",
+                "Title": "Welcome Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "AdFreePeriodEndPack",
+                "FormattedPrice": "$0.99",
+                "Identifier": "ad_free_period_end_pack",
+                "Price": 0.99,
+                "ProductType": "Consumable",
+                "Title": "Ad Free Period End Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer 2_1",
+                "FormattedPrice": "$4.99",
+                "Identifier": "special_offer_2_1",
+                "Price": 4.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer 2_1"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Recommended Pack",
+                "FormattedPrice": "$10.99",
+                "Identifier": "recommended_pack",
+                "Price": 10.99,
+                "ProductType": "Consumable",
+                "Title": "Recommended Pack"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer 1_1",
+                "FormattedPrice": "$0.99",
+                "Identifier": "special_offer_1_1",
+                "Price": 0.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer 1_1"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer tier_4",
+                "FormattedPrice": "$3.99",
+                "Identifier": "tier_4",
+                "Price": 3.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer tier_4"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer tier_7",
+                "FormattedPrice": "$6.99",
+                "Identifier": "tier_7",
+                "Price": 6.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer tier_7"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer tier_8",
+                "FormattedPrice": "$7.99",
+                "Identifier": "tier_8",
+                "Price": 7.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer tier_8"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer tier_12",
+                "FormattedPrice": "$11.99",
+                "Identifier": "tier_12",
+                "Price": 11.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer tier_12"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer tier_15",
+                "FormattedPrice": "$14.99",
+                "Identifier": "tier_15",
+                "Price": 14.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer tier_15"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer Tier_10",
+                "FormattedPrice": "$9.99",
+                "Identifier": "special_offer_tier_10",
+                "Price": 9.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer Tier_10"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer Tier_20",
+                "FormattedPrice": "$19.99",
+                "Identifier": "special_offer_tier_20",
+                "Price": 19.99,
+                "ProductType": "Consumable",
+                "Title": "Special Offer Tier_20"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer tier_48",
+                "FormattedPrice": "$47.99",
+                "Identifier": "special_offer_tier_48",
+                "Price": 47.99,
+                "Title": "Special Offer tier_48"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer",
+                "FormattedPrice": "$21.99",
+                "Identifier": "special_offer_tier_22",
+                "Price": 21.99,
+                "Title": "special_offer_tier_22"
+            },
+            {
+                "Amount": 0,
+                "CurrencyCode": "USD",
+                "Description": "Piggy Bank",
+                "FormattedPrice": "$3.99",
+                "Identifier": "piggy_bank",
+                "OnSale": {
+                    "Amount": 0,
+                    "PercentageOff": 0
+                },
+                "Price": 3.99,
+                "ProductType": "Consumable",
+                "Title": "Piggy Bank"
+            },
+            {
+                "Amount": 0,
+                "CurrencyCode": "USD",
+                "Description": "Piggy Bank Offer",
+                "FormattedPrice": "$1.99",
+                "Identifier": "piggy_bank_offer",
+                "OnSale": {
+                    "Amount": 0,
+                    "PercentageOff": 0
+                },
+                "Price": 1.99,
+                "ProductType": "Consumable",
+                "Title": "Piggy Bank Offer"
+            },
+            {
+                "Amount": 0,
+                "CurrencyCode": "USD",
+                "Description": "Special Offer",
+                "FormattedPrice": "$6.99",
+                "Identifier": "special_offer_tier_7",
+                "OnSale": {
+                    "Amount": 0,
+                    "PercentageOff": 0
+                },
+                "Price": 6.99,
+                "ProductType": "Consumable",
+                "Title": "special_offer_tier_7"
+            },
+            {
+                "CurrencyCode": "USD",
+                "Description": "Special Offer",
+                "FormattedPrice": "$1.99",
+                "Identifier": "special_offer_tier_2_1",
+                "Price": 1.99,
+                "ProductType": "Consumable",
+                "Title": "special_offer_tier_2_1"
+            }
+        ]
+    },
+    "LevelDashConfig": {
+        "Enabled": true,
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "LevelRequired": 35,
+        "MinimumRequiredLevels": 15,
+        "Rewards": [
+            {
+                "Items": [
+                    {
+                        "Amount": 140,
+                        "Type": "Coin"
+                    },
+                    {
+                        "Amount": 7200,
+                        "Type": "UnlimitedLives"
+                    }
+                ],
+                "Rank": 1
+            },
+            {
+                "Items": [
+                    {
+                        "Amount": 70,
+                        "Type": "Coin"
+                    },
+                    {
+                        "Amount": 3600,
+                        "Type": "UnlimitedLives"
+                    }
+                ],
+                "Rank": 2
+            },
+            {
+                "Items": [
+                    {
+                        "Amount": 70,
+                        "Type": "Coin"
+                    }
+                ],
+                "Rank": 3
+            }
+        ]
+    },
+    "LevelRushConfig": {
+        "Enabled": true,
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "LevelRequired": 35,
+        "MaxPlayTimeDuration": 172800,
+        "Rewards": [
+            {
+                "Items": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 7200,
+                        "Type": "UnlimitedLives"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    }
+                ],
+                "LevelIndex": 2
+            },
+            {
+                "Items": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 14400,
+                        "Type": "UnlimitedLives"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperAim"
+                    }
+                ],
+                "LevelIndex": 8
+            },
+            {
+                "Items": [
+                    {
+                        "Amount": 2,
+                        "Type": "BoosterSuperAim"
+                    },
+                    {
+                        "Amount": 86400,
+                        "Type": "UnlimitedLives"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    }
+                ],
+                "LevelIndex": 20
+            }
+        ],
+        "TriggerLevels": [
+            17
+        ],
+        "UseTriggerLevels": true
+    },
+    "LimitedAvailabilityBoosterConfig": {
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                3600
+            ],
+            "NotificationsEnabled": true
+        }
+    },
+    "LiveVersionConfig": {
+        "VersionNumber": 158714
+    },
+    "LivesConfig": {
+        "InfiniteLivesDurationInSeconds": 7200,
+        "InfiniteLivesPopupInterval": 86400,
+        "LevelRequiredForInfiniteLivesPopup": 40,
+        "LifeRegenerationTime": 1200,
+        "LoggedInMaxlives": 5,
+        "MinSecondsBetweenShowSendLivesAtStart": 21600,
+        "NotLoggedInMaxlives": 4
+    },
+    "OneLifeChallengeConfig": {
+        "Enabled": true,
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "LevelRequired": 35,
+        "Rewards": [
+            {
+                "Amount": 1,
+                "Type": "BoosterRainbow"
+            },
+            {
+                "Amount": 3600,
+                "Type": "BoosterShield_Unlimited"
+            },
+            {
+                "Amount": 7200,
+                "Type": "BoosterSuperAim_Unlimited"
+            },
+            {
+                "Amount": 300,
+                "Type": "Coin"
+            },
+            {
+                "Amount": 7200,
+                "Type": "UnlimitedLives"
+            }
+        ]
+    },
+    "PiggyBankConfig": {
+        "CapacityIncrease": 50,
+        "CoinsPerBooster": 5,
+        "CoinsPerLevel": 3,
+        "CoinsRequiredForPaidOpening": 300,
+        "Enabled": true,
+        "InitialCapacity": 500,
+        "InitialInterval": 20,
+        "Interval": 50,
+        "LevelRequired": 50,
+        "MaximumCapacity": 1000,
+        "OfferItems": [
+            {
+                "Amount": 3,
+                "Type": "BoosterFinalPower"
+            },
+            {
+                "Amount": 3,
+                "Type": "BoosterRainbow"
+            },
+            {
+                "Amount": 3,
+                "Type": "BoosterSuperAim"
+            },
+            {
+                "Amount": 3,
+                "Type": "BoosterSuperQueue"
+            },
+            {
+                "Amount": 3,
+                "Type": "BoosterShield"
+            }
+        ]
+    },
+    "Placements": {
+        "LevelStartShown": {
+            "Skippable": [],
+            "Unskippable": [],
+            "ViewLimit": 0
+        },
+        "MapIdle": {
+            "Skippable": [],
+            "Unskippable": [],
+            "ViewLimit": 0
+        },
+        "PostAnimateAvatar": {
+            "Skippable": [],
+            "Unskippable": [],
+            "ViewLimit": 0
+        },
+        "PreAnimateAvatar": {
+            "Skippable": [],
+            "Unskippable": [],
+            "ViewLimit": 0
+        },
+        "SessionStart": {
+            "Skippable": [
+                {
+                    "Enabled": true,
+                    "ID": "SendLivesToFriends"
+                },
+                {
+                    "Enabled": true,
+                    "ID": "PlayWithFriends"
+                }
+            ],
+            "Unskippable": [],
+            "ViewLimit": 0
+        }
+    },
+    "PlayablePostcardConfig": {
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "LevelRequired": 40
+    },
+    "PopupConfig": {
+        "maxPopupSequence": 10,
+        "popupConfigDatas": [
+            {
+                "enabled": false,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "LivesManager",
+                "priority": 0,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "AdFreePeriodEndManager",
+                "priority": 1,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "SessionStart",
+                "popupClassName": "SpecialOfferStartSessionPopup",
+                "priority": 2,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "PlayWithFriendsManager",
+                "priority": 3,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "SendLivesToFriendsManager",
+                "priority": 3,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "TreasureHuntSessionStartPopup",
+                "priority": 4,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "LevelRushStartupPopup",
+                "priority": 4,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "StarTournamentStartSessionPopup",
+                "priority": 4,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "CrossPromotionManager",
+                "priority": 6,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "SessionStart",
+                "popupClassName": "LiveVersionUpdateManager",
+                "priority": 7,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "SessionStart",
+                "popupClassName": "WhatsNewManager",
+                "priority": 8,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "SessionStart",
+                "popupClassName": "XperiaGiftPopupManager",
+                "priority": 9,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "PostProgress",
+                "popupClassName": "VipReminderPopup",
+                "priority": 25,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "DailyQuestManager",
+                "priority": 50,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "BonusDropManager",
+                "priority": 50,
+                "type": "BlockStartView"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "SpecialOfferNewOfferPopup",
+                "priority": 0,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "VipUnlockedPopup",
+                "priority": 50,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "TournamentManager",
+                "priority": 95,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "BoosterManager",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "LevelRushStartedPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "LevelRushEndedPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "ThemeHuntStartPopup",
+                "priority": 100,
+                "type": "BlockStartView"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "ThemeHuntEndPopup",
+                "priority": 100,
+                "type": "BlockStartView"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "ReengagementRewardManager",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "ReengagementRewardPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "TreasureHuntStartPopup",
+                "priority": 100,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "TreasureHuntEndPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "StarTournamentStartedPopup",
+                "priority": 100,
+                "type": "BlockStartView"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "LastLevelCompletedManager",
+                "priority": 100,
+                "type": "BlockOtherPopups"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "LevelRushLocalStartedPopup",
+                "priority": 110,
+                "type": "BlockStartView"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "LevelRushRewardPopup",
+                "priority": 110,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "StarTournamentOldEndedPopup",
+                "priority": 110,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "StarTournamentStarsRewardPopup",
+                "priority": 110,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "OneLifeChallengeStartPopup",
+                "priority": 120,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "OneLifeChallengeEndPopup",
+                "priority": 120,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "OneLifeChallengeSessionStartPopup",
+                "priority": 5,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "SessionStart",
+                "popupClassName": "StarterPackManager",
+                "priority": 0,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "AskForNotificationManager",
+                "priority": 0,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "MainMapHardLevelsReachedPopup",
+                "priority": 115,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "MainMapHardLevelsCompletedPopup",
+                "priority": 115,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "MainMapHardLevelsExpiredPopup",
+                "priority": 115,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "SessionStart",
+                "popupClassName": "MainMapHardLevelsReminderPopup",
+                "priority": 4,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "StarTournamentEndedPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "SurveyNormalPopup",
+                "priority": 50,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "LevelDashStartPopup",
+                "priority": 100,
+                "type": "BlockStartView"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "LevelDashStartSessionPopup",
+                "priority": 4,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "LevelDashEndPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "SessionStart",
+                "popupClassName": "LevelDashPreviousEndPopup",
+                "priority": 110,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "HotStreakStartPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "HotStreakSessionPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "HotStreakProgressPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "EndlessChallengeStartPopup",
+                "priority": 100,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "EndlessChallengeReminderPopup",
+                "priority": 100,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "EndlessChallengeEndPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "SlidesAndLaddersStartPopup",
+                "priority": 100,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "SlidesAndLaddersSessionStartPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "SlidesAndLaddersEndPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "PiggyBankTutorialPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "PiggyBankFreeOpenPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PostProgress",
+                "popupClassName": "PlayablePostcardStartPopup",
+                "priority": 100,
+                "type": "BlockFlow"
+            },
+            {
+                "enabled": true,
+                "isUrgent": false,
+                "location": "SessionStart",
+                "popupClassName": "PlayablePostcardSessionStartPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "PlayablePostcardEndPopup",
+                "priority": 100,
+                "type": "Normal"
+            },
+            {
+                "enabled": true,
+                "isUrgent": true,
+                "location": "PreProgress",
+                "popupClassName": "UserSupportNewMessagesPopup",
+                "priority": 125,
+                "type": "Normal"
+            }
+        ]
+    },
+    "PushNotificationConfig": {
+        "LevelRequiredForRegistration": 2
+    },
+    "ReengagementRewardsConfig": {
+        "DaysAwayRequired": 7,
+        "Items": [
+            {
+                "Amount": 7200,
+                "Type": "UnlimitedLives"
+            },
+            {
+                "Amount": 5,
+                "Type": "BoosterRainbow"
+            },
+            {
+                "Amount": 2,
+                "Type": "BoosterFinalPower"
+            }
+        ]
+    },
+    "ReviewConfig": {
+        "AskForReviewEveryNthRun": 20,
+        "AskForReviewMinInterval": 86400,
+        "Layout": 0
+    },
+    "SeagullConfig": {
+        "IsActive": true,
+        "Rewards": [
+            {
+                "Amount": 10,
+                "Type": "Coin"
+            }
+        ],
+        "SpawnIntervalInLevelEnds": 10
+    },
+    "ShopConfig": {
+        "MinimumVersionToShowAdRemovalTextIOS": "1.36.0",
+        "RewardForWatchingAd": [
+            {
+                "Amount": 1,
+                "Type": "Coin"
+            }
+        ],
+        "ShopItems": [
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "coin_pack_1",
+                "Identifier": "ShopItemCoinPack1",
+                "InventoryItems": [
+                    {
+                        "Amount": 140,
+                        "Type": "Coin"
+                    }
+                ],
+                "Tag": "coins"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "coin_pack_2",
+                "Identifier": "ShopItemCoinPack2",
+                "InventoryItems": [
+                    {
+                        "Amount": 800,
+                        "Type": "Coin"
+                    }
+                ],
+                "Tag": "unlimitedLives,popular"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "coin_pack_3",
+                "Identifier": "ShopItemCoinPack3",
+                "InventoryItems": [
+                    {
+                        "Amount": 1700,
+                        "Type": "Coin"
+                    }
+                ],
+                "Tag": "unlimitedLives"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "coin_pack_4",
+                "Identifier": "ShopItemCoinPack4",
+                "InventoryItems": [
+                    {
+                        "Amount": 4500,
+                        "Type": "Coin"
+                    }
+                ],
+                "Tag": "unlimitedLives"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "coin_pack_5",
+                "Identifier": "ShopItemCoinPack5",
+                "InventoryItems": [
+                    {
+                        "Amount": 9500,
+                        "Type": "Coin"
+                    }
+                ],
+                "Tag": "unlimitedLives"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "bronze_ticket_pack_1",
+                "Identifier": "ShopItemBronzeTicketPack1",
+                "InventoryItems": [
+                    {
+                        "Amount": 3,
+                        "Type": "TicketBronze"
+                    }
+                ],
+                "Tag": "tickets"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "bronze_ticket_pack_2",
+                "Identifier": "ShopItemBronzeTicketPack2",
+                "InventoryItems": [
+                    {
+                        "Amount": 5,
+                        "Type": "TicketBronze"
+                    }
+                ],
+                "Tag": "tickets"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "bronze_ticket_pack_3",
+                "Identifier": "ShopItemBronzeTicketPack3",
+                "InventoryItems": [
+                    {
+                        "Amount": 9,
+                        "Type": "TicketBronze"
+                    }
+                ],
+                "Tag": "tickets"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "silver_ticket_pack_1",
+                "Identifier": "ShopItemSilverTicketPack1",
+                "InventoryItems": [
+                    {
+                        "Amount": 3,
+                        "Type": "TicketSilver"
+                    }
+                ],
+                "Tag": "tickets"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "silver_ticket_pack_2",
+                "Identifier": "ShopItemSilverTicketPack2",
+                "InventoryItems": [
+                    {
+                        "Amount": 6,
+                        "Type": "TicketSilver"
+                    }
+                ],
+                "Tag": "tickets"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "silver_ticket_pack_3",
+                "Identifier": "ShopItemSilverTicketPack3",
+                "InventoryItems": [
+                    {
+                        "Amount": 14,
+                        "Type": "TicketSilver"
+                    }
+                ],
+                "Tag": "tickets"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "gold_ticket_pack_1",
+                "Identifier": "ShopItemGoldTicketPack1",
+                "InventoryItems": [
+                    {
+                        "Amount": 1,
+                        "Type": "TicketGold"
+                    }
+                ],
+                "Tag": "tickets"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "gold_ticket_pack_2",
+                "Identifier": "ShopItemGoldTicketPack2",
+                "InventoryItems": [
+                    {
+                        "Amount": 6,
+                        "Type": "TicketGold"
+                    }
+                ],
+                "Tag": "tickets"
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "gold_ticket_pack_3",
+                "Identifier": "ShopItemGoldTicketPack3",
+                "InventoryItems": [
+                    {
+                        "Amount": 14,
+                        "Type": "TicketGold"
+                    }
+                ],
+                "Tag": "tickets"
+            },
+            {
+                "CurrencyPrice": 70,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemContinue",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 70,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemExtraLives",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 50,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemSuperAim",
+                "InventoryItems": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperAim"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 140,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemRainbow",
+                "InventoryItems": [
+                    {
+                        "Amount": 3,
+                        "Type": "BoosterRainbow"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 50,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemSuperQueue",
+                "InventoryItems": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 140,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemFinalPower",
+                "InventoryItems": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterFinalPower"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 50,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemShield",
+                "InventoryItems": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterShield"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 70,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemExtraMoves",
+                "InventoryItems": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterExtraMoves"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 30,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemFillRed",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 30,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemFillGreen",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 30,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemFillBlue",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 30,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemFillYellow",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 70,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemUnlockGate",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 25,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemSkipWaitDailyQuest",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 25,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemSkipPlayDailyQuest",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 1,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemFreebie",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 140,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemPreGameSuperAim",
+                "InventoryItems": [
+                    {
+                        "Amount": 3,
+                        "Type": "BoosterSuperAim"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 140,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemPreGameShield",
+                "InventoryItems": [
+                    {
+                        "Amount": 3,
+                        "Type": "BoosterShield"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 140,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemPreGameSuperQueue",
+                "InventoryItems": [
+                    {
+                        "Amount": 3,
+                        "Type": "BoosterSuperQueue"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "vip_pack",
+                "Identifier": "ShopItemVip",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "ad_free_period_end_pack",
+                "Identifier": "ShopItemAdFreePeriodEndPack",
+                "InventoryItems": [
+                    {
+                        "Amount": 140,
+                        "Type": "Coin"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 70,
+                "IAPIdentifier": "",
+                "Identifier": "ContinueAfterDeath",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 70,
+                "IAPIdentifier": "",
+                "Identifier": "ContinueAfterDeathWithBooster",
+                "InventoryItems": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterShield"
+                    }
+                ],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 70,
+                "IAPIdentifier": "",
+                "Identifier": "ShopItemContinueSpecial",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "recommended_pack",
+                "Identifier": "ShopItemRecommendedPack",
+                "InventoryItems": [
+                    {
+                        "Amount": 7200,
+                        "Type": "UnlimitedLives"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterShield"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperAim"
+                    },
+                    {
+                        "Amount": 800,
+                        "Type": "Coin"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterFinalPower"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    }
+                ],
+                "Tag": "unlimitedLives"
+            },
+            {
+                "CurrencyPrice": 100,
+                "IAPIdentifier": "coin_trial_pack",
+                "Identifier": "ShopItemCoinTrial",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "piggy_bank",
+                "Identifier": "PiggyBankOpen",
+                "InventoryItems": [],
+                "Tag": ""
+            },
+            {
+                "CurrencyPrice": 0,
+                "IAPIdentifier": "piggy_bank_offer",
+                "Identifier": "PiggyBankOffer",
+                "InventoryItems": [],
+                "Tag": ""
+            }
+        ],
+        "ShowBestOfferSticker": false,
+        "ShowInfiniteLifeRibbon": true,
+        "ShowMostPopularSticker": true,
+        "ShowOffersInShop": true,
+        "ShowSaveAmountText": false
+    },
+    "SlidesAndLaddersConfig": {
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "LevelRequired": 45,
+        "LevelRewards": [
+            {
+                "Amount": 1,
+                "Type": "BoosterRainbow"
+            },
+            {
+                "Amount": 1,
+                "Type": "BoosterSuperQueue"
+            },
+            {
+                "Amount": 1,
+                "Type": "BoosterFinalPower"
+            },
+            {
+                "Amount": 1,
+                "Type": "BoosterShield"
+            },
+            {
+                "Amount": 1,
+                "Type": "BoosterSuperAim"
+            }
+        ],
+        "SlidesRewards": [
+            {
+                "Amount": 10,
+                "Type": "Coin"
+            }
+        ]
+    },
+    "SocialChallengeConfig": {
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                86400,
+                604800
+            ],
+            "NotificationsEnabled": true
+        },
+        "IsAvailable": true,
+        "LevelNrRequiredForChallenge": 101,
+        "Rewards": [
+            {
+                "Rank": 1,
+                "RequiredFriends": 20,
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    }
+                ]
+            },
+            {
+                "Rank": 2,
+                "RequiredFriends": 15,
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    }
+                ]
+            },
+            {
+                "Rank": 3,
+                "RequiredFriends": 10,
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterShield"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    }
+                ]
+            }
+        ]
+    },
+    "SocialConfig": {
+        "FacebookAppUrl": "fb://profile/557485224461254",
+        "FacebookAppUrlAndroid": "fb://page/557485224461254",
+        "FacebookNormalUrl": "https://www.facebook.com/cookiecatspop",
+        "FacebookRewards": {
+            "Rewards": [
+                {
+                    "Amount": 1,
+                    "Type": "BoosterRainbow"
+                }
+            ]
+        },
+        "GooglePlusTrackUrl": "http://smarturl.it/cookiecats?IQid=googleplus",
+        "InstagramAppUrl": "instagram://user?username=cookiecatsgame",
+        "InstagramNormalUrl": "https://www.instagram.com/cookiecatsgame/",
+        "InstagramRewards": {
+            "Rewards": [
+                {
+                    "Amount": 1,
+                    "Type": "BoosterRainbow"
+                }
+            ]
+        },
+        "RequiredLevel": 15,
+        "TwitterAppUrl": "twitter://user?user_id=3588758673",
+        "TwitterNormalUrl": "https://twitter.com/CookieCatsGame",
+        "TwitterRewards": {
+            "Rewards": [
+                {
+                    "Amount": 1,
+                    "Type": "BoosterSuperAim"
+                }
+            ]
+        },
+        "TwitterTrackUrl": "http://smarturl.it/cookiecats?IQid=twitter",
+        "YouTubeAppUrl": "youtube://www.youtube.com/channel/UC0_bAo4cwYSsuuXdXk432EQ",
+        "YouTubeNormalUrl": "https://www.youtube.com/channel/UC0_bAo4cwYSsuuXdXk432EQ",
+        "YouTubeRewards": {
+            "Rewards": [
+                {
+                    "Amount": 1,
+                    "Type": "BoosterSuperAim"
+                }
+            ]
+        }
+    },
+    "SpecialContinueOfferConfig": {
+        "NeedToFailXTimes": 3,
+        "Probability": 100
+    },
+    "SpecialOffersConfig": {
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [],
+            "NotificationsEnabled": false
+        },
+        "GlobalCooldown": 3600,
+        "LevelPreloadAmount": 2,
+        "MaxDaysAsHours": 2,
+        "TimePreloadAmount": 172800
+    },
+    "StarTournamentConfig": {
+        "Enabled": true,
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "LevelRequired": 35,
+        "Rewards": [
+            {
+                "Items": [
+                    {
+                        "Amount": 700,
+                        "Type": "Coin"
+                    }
+                ],
+                "Rank": 1
+            },
+            {
+                "Items": [
+                    {
+                        "Amount": 280,
+                        "Type": "Coin"
+                    }
+                ],
+                "Rank": 2
+            },
+            {
+                "Items": [
+                    {
+                        "Amount": 140,
+                        "Type": "Coin"
+                    }
+                ],
+                "Rank": 3
+            }
+        ]
+    },
+    "StoryMapEventConfig": {
+        "Enabled": true,
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "LevelRequired": 35,
+        "ReminderCooldown": 86400,
+        "Rewards": [
+            {
+                "Chapter": 1,
+                "Items": [
+                    {
+                        "Amount": 50,
+                        "Type": "Coin"
+                    },
+                    {
+                        "Amount": 1800,
+                        "Type": "BoosterShield_Unlimited"
+                    },
+                    {
+                        "Amount": 3600,
+                        "Type": "BoosterSuperAim_Unlimited"
+                    },
+                    {
+                        "Amount": 3600,
+                        "Type": "BoosterSuperQueue_Unlimited"
+                    }
+                ]
+            },
+            {
+                "Chapter": 2,
+                "Items": [
+                    {
+                        "Amount": 100,
+                        "Type": "Coin"
+                    },
+                    {
+                        "Amount": 7200,
+                        "Type": "UnlimitedLives"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "TicketSilver"
+                    }
+                ]
+            },
+            {
+                "Chapter": 3,
+                "Items": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterFinalPower"
+                    },
+                    {
+                        "Amount": 3600,
+                        "Type": "BoosterShield_Unlimited"
+                    },
+                    {
+                        "Amount": 100,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "Chapter": 4,
+                "Items": [
+                    {
+                        "Amount": 7200,
+                        "Type": "UnlimitedLives"
+                    },
+                    {
+                        "Amount": 100,
+                        "Type": "Coin"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "TicketGold"
+                    }
+                ]
+            },
+            {
+                "Chapter": 5,
+                "Items": [
+                    {
+                        "Amount": 3600,
+                        "Type": "BoosterSuperQueue_Unlimited"
+                    },
+                    {
+                        "Amount": 3600,
+                        "Type": "BoosterSuperAim_Unlimited"
+                    },
+                    {
+                        "Amount": 2,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterFinalPower"
+                    },
+                    {
+                        "Amount": 100,
+                        "Type": "Coin"
+                    }
+                ]
+            }
+        ]
+    },
+    "ThemeHuntConfig": {
+        "Hunts": [
+            {
+                "ID": "1.11.x",
+                "MaxSpawnItems": 3,
+                "Rewards": [
+                    {
+                        "Rewards": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            }
+                        ],
+                        "ThemeItemsRequired": 5
+                    },
+                    {
+                        "Rewards": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterShield"
+                            }
+                        ],
+                        "ThemeItemsRequired": 20
+                    },
+                    {
+                        "Rewards": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterFinalPower"
+                            },
+                            {
+                                "Amount": 25,
+                                "Type": "Coin"
+                            }
+                        ],
+                        "ThemeItemsRequired": 60
+                    }
+                ],
+                "SpawnFrequency": 3600
+            }
+        ],
+        "LevelRequired": 41
+    },
+    "TournamentConfig": {
+        "LevelNrRequiredForGoldTournament": 71,
+        "LevelNrRequiredForSilverTournament": 61,
+        "LevelNrRequiredForTournament": 51,
+        "LifeRegenerationMaxCount": 3,
+        "LifeRegenerationTime": 2700,
+        "Ranks": [
+            {
+                "Identifier": "Bronze",
+                "Prizes": [
+                    {
+                        "RankFrom": 1,
+                        "RankTo": 1,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterShield"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterFinalPower"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketSilver"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 2,
+                        "RankTo": 2,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterFinalPower"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketSilver"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 3,
+                        "RankTo": 3,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketSilver"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 4,
+                        "RankTo": 10,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketBronze"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 11,
+                        "RankTo": 25,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketBronze"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 26,
+                        "RankTo": 50,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "TicketBronze"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 51,
+                        "RankTo": 100,
+                        "Reward": []
+                    }
+                ]
+            },
+            {
+                "Identifier": "Silver",
+                "Prizes": [
+                    {
+                        "RankFrom": 1,
+                        "RankTo": 1,
+                        "Reward": [
+                            {
+                                "Amount": 2,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 2,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 2,
+                                "Type": "BoosterShield"
+                            },
+                            {
+                                "Amount": 2,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterFinalPower"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketGold"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 2,
+                        "RankTo": 2,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterShield"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterFinalPower"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketGold"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 3,
+                        "RankTo": 3,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketGold"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 4,
+                        "RankTo": 7,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketSilver"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 8,
+                        "RankTo": 14,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketSilver"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 15,
+                        "RankTo": 25,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "TicketBronze"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 26,
+                        "RankTo": 50,
+                        "Reward": []
+                    }
+                ]
+            },
+            {
+                "Identifier": "Gold",
+                "Prizes": [
+                    {
+                        "RankFrom": 1,
+                        "RankTo": 1,
+                        "Reward": [
+                            {
+                                "Amount": 3,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 3,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 3,
+                                "Type": "BoosterShield"
+                            },
+                            {
+                                "Amount": 3,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 2,
+                                "Type": "BoosterFinalPower"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketGold"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 2,
+                        "RankTo": 2,
+                        "Reward": [
+                            {
+                                "Amount": 2,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 2,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 2,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 2,
+                                "Type": "BoosterFinalPower"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketGold"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 3,
+                        "RankTo": 3,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterFinalPower"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterShield"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketGold"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 4,
+                        "RankTo": 6,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterShield"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketGold"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 7,
+                        "RankTo": 10,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperAim"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketSilver"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 11,
+                        "RankTo": 15,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterSuperQueue"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketSilver"
+                            }
+                        ]
+                    },
+                    {
+                        "RankFrom": 16,
+                        "RankTo": 25,
+                        "Reward": [
+                            {
+                                "Amount": 1,
+                                "Type": "BoosterRainbow"
+                            },
+                            {
+                                "Amount": 1,
+                                "Type": "TicketSilver"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "TreasureHuntConfig": {
+        "Enabled": true,
+        "FeatureNotificationSettings": {
+            "NotificationTimes": [
+                10800,
+                21600,
+                43200,
+                86400
+            ],
+            "NotificationsEnabled": true
+        },
+        "LevelRequired": 35,
+        "Rewards": [
+            {
+                "Amount": 100,
+                "Type": "Coin"
+            },
+            {
+                "Amount": 7200,
+                "Type": "UnlimitedLives"
+            },
+            {
+                "Amount": 7200,
+                "Type": "BoosterSuperAim_Unlimited"
+            },
+            {
+                "Amount": 7200,
+                "Type": "BoosterSuperQueue_Unlimited"
+            }
+        ]
+    },
+    "Version": "7",
+    "VipProgramConfig": {
+        "DailyRewards": [
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterRainbow"
+                    },
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperQueue"
+                    },
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterSuperAim"
+                    },
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterShield"
+                    },
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "BoosterFinalPower"
+                    },
+                    {
+                        "Amount": 25,
+                        "Type": "Coin"
+                    }
+                ]
+            },
+            {
+                "Rewards": [
+                    {
+                        "Amount": 1,
+                        "Type": "TicketBronze"
+                    },
+                    {
+                        "Amount": 10,
+                        "Type": "Coin"
+                    }
+                ]
+            }
+        ],
+        "LevelRequiredForVip": 25,
+        "StartReward": {
+            "Rewards": [
+                {
+                    "Amount": 1,
+                    "Type": "BoosterRainbow"
+                },
+                {
+                    "Amount": 70,
+                    "Type": "Coin"
+                }
+            ]
+        }
+    },
+    "name": "AppLovinMAX"
+}

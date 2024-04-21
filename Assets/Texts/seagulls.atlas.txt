@@ -1,0 +1,27 @@
+
+seagulls.png
+size: 128,32
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 78, 7
+  size: 25, 17
+  orig: 25, 17
+  offset: 0, 0
+  index: -1
+wing1_L
+  rotate: false
+  xy: 41, 3
+  size: 35, 21
+  orig: 35, 21
+  offset: 0, 0
+  index: -1
+wing2_L
+  rotate: false
+  xy: 2, 2
+  size: 37, 22
+  orig: 37, 22
+  offset: 0, 0
+  index: -1

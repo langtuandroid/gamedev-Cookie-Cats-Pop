@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc9c47fbf154f7ae0c3dbe0513bfae54, type: 3}
+  m_Name: "GardenGameSetup"
+  m_EditorClassIdentifier: 
+  mainBootScene: "Assets\x2fScenes\x2fBoot.unity"
+  dialogCharacterFolder: {fileID: 0}
+  dialogImagesFolder: {fileID: 0}
+  dialogSplitImagesFolder: {fileID: 0}
+  dialogVariantsFolder: {fileID: 0}
+  mapImagesFolder: {fileID: 0}
+  photographsFolder: {fileID: 0}
+  mapImagesIconFolder: {fileID: 0}
+  variationPropsIconFolder: {fileID: 0}
+  mapTilesFolder: {fileID: 0}
+  propJumpCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  propJumpHeight: 10
+  propSquashing: 0.3
+  propSelectCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  propSelectSquashAmount: 0.3
+  mapImageFadeAnimationCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  mapImageFadeAnimationCurveDuration: 1
+  selectionBounceAnimation:
+    bounceCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    scaleCurveX:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    scaleCurveY:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    bounceDistance: 100
+    duration: 0.5
+  camMinOrthoSize: 600
+  camDefaultOrthoSize: 800
+  camMaxOrthoSize: 1000
+  camZoomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  camZoomDuration: 1
+  camLimits: {x: 4800, y: 3600}
+  camRadiusFollowSpeed: 2
+  camRadiusFollowRadius: 150
+  followCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.08986185
+      outSlope: -0.08986185
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  followDuration: 1
+  defaultObjectsPrefab: {fileID: 1790486008800894369, guid: 989bd1dbbd19049178aaa56c758a6ce3, type: 2}
+  chaptersPath: "Assets\x2fScapesEvent\x2fStory\x2fResources\x2fChapters"
+  areaPrefabsPath: "Assets\x2fScapesEvent\x2fAreas"
+  lightingRenderTexture: {fileID: 8400000, guid: 73e69d666c5f4b8e8db407fd62072b7f, type: 2}
+  lightingLayer: 8
+  nightColor: {r: 0, g: 0, b: 0, a: 0}
+  nightColorR: {r: 1, g: 0, b: 0, a: 1}
+  nightColorG: {r: 0, g: 1, b: 0, a: 1}
+  nightColorB: {r: 0, g: 0, b: 1, a: 1}
+  heightMapRenderTexture: {fileID: 8400000, guid: e70df6ac1a9b43a587945886390732f5, type: 2}
+  lightMaterial: {fileID: 2100000, guid: bb633a57d42a41b496afcc4643882236, type: 2}
+  lightMaskMaterial: {fileID: 0}
+  tileMaterial: {fileID: 2100000, guid: 3ccd09e4ca1346048f96800a191b89af, type: 2}
+  characterMaterial: {fileID: 2100000, guid: 55fdfbbad6884ea68e62bda44e45cb84, type: 2}
+  propMaterial: {fileID: 2100000, guid: 1ee847e198f046dd8c6c57f125c5e440, type: 2}
+  propTintedMaterial: {fileID: 0}
+  coverageMaterial: {fileID: 2100000, guid: d205ed0841524ecaa7651279128eec74, type: 2}
+  coverageMaterial_editor: {fileID: 0}
+  revealEffectMaterial: {fileID: 2100000, guid: 4f4d6ff3066b44fba21ba799f406a8b3, type: 2}
+  mapTileEditorShader: {fileID: 4800000, guid: d506eb613a5a420b8f0ccaedb6b69072, type: 3}
+  propHeightMapShader: {fileID: 0}
+  music:
+    sound:
+      Clip: {fileID: 8300000, guid: 02068a1c58ee4efaa31b22f37b824cd5, type: 3}
+      Volume: 1
+      Probability: 1
+      Loop: 1
+    Additional: []
+    cooldownTime: 0
+    pitchVariance: 0
+    pitchForAllVariations: 1
+    sharedPool: 0
+    sequentialPitch: 0
+  pathFindingSetUp:
+    onlyFollowIsometricDirections: 0
+    CardinalDirectionThresholdDirectPaths: 2
+    CardinalDirectionThresholdAIMin: 1
+    CardinalDirectionThresholdAIMax: 2
+    CardinalDirectionThresholdAIBlendMinDistance: 100
+    CardinalDirectionThresholdAIBlendMaxDistance: 500
+  mapAtlasSettings:
+    iOSTextureFormat: 33
+    androidTextureFormat: 34

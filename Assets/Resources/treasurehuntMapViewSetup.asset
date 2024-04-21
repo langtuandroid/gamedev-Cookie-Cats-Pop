@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373782a833ca21affb0c7a8ac068dc1, type: 3}
+  m_Name: "treasurehuntMapViewSetup"
+  m_EditorClassIdentifier: 
+  mapElementData:
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 433, y: 390, z: -10}
+    topEdge: 454.3246
+    bottomEdge: 325.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":0,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "Part1_Knights"
+    position: {x: 243.1, y: 479.6, z: 0}
+    topEdge: 488.514
+    bottomEdge: 475.0804
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 1
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 567, y: 629, z: -9.9999}
+    topEdge: 693.3246
+    bottomEdge: 564.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":1,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 460, y: 838, z: -9.9998}
+    topEdge: 902.3246
+    bottomEdge: 773.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":2,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 242, y: 951, z: -9.9997}
+    topEdge: 1015.325
+    bottomEdge: 886.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":3,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 88, y: 1170, z: -9.9996}
+    topEdge: 1234.325
+    bottomEdge: 1105.675
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":4,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "Part2_Jousting"
+    position: {x: 387, y: 1211.3, z: 0}
+    topEdge: 1227.909
+    bottomEdge: 1202.456
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 1
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 174, y: 1439, z: -9.9995}
+    topEdge: 1503.325
+    bottomEdge: 1374.675
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":5,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 380, y: 1537, z: -9.9994}
+    topEdge: 1601.325
+    bottomEdge: 1472.675
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":6,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 531, y: 1756, z: -9.9993}
+    topEdge: 1820.325
+    bottomEdge: 1691.675
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":7,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "Part3_Apple"
+    position: {x: 202.4, y: 1783.9, z: 0}
+    topEdge: 1792.099
+    bottomEdge: 1771.263
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{}"
+    usingAssetBundle: 1
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 562, y: 1988, z: -9.9992}
+    topEdge: 2052.325
+    bottomEdge: 1923.675
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":8,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TreasureMapLevelDot"
+    position: {x: 441, y: 2111, z: -9.9991}
+    topEdge: 2175.325
+    bottomEdge: 2046.675
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":9,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "TreasureMapChestDot"
+    position: {x: 314, y: 2191, z: -9.999}
+    topEdge: 2273.592
+    bottomEdge: 2108.408
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Receiver\":null,\"PayloadAsInt\":0,\"LevelId\":10,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "RoadAnimations"
+    position: {x: 320, y: 2461.5, z: -35}
+    topEdge: 2462.5
+    bottomEdge: 2460.5
+    scale: {x: 54, y: 54, z: 54}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Flip\":false,\"EnableAtGateIndex\":13}"
+    usingAssetBundle: 1
+  - prefabName: "RoadAnimations"
+    position: {x: 320, y: 2594.1, z: -31}
+    topEdge: 2595.1
+    bottomEdge: 2593.1
+    scale: {x: 54, y: 54, z: 54}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Flip\":true,\"EnableAtGateIndex\":13}"
+    usingAssetBundle: 1
+  - prefabName: "Pedestrians"
+    position: {x: 320, y: 2662.9, z: -24}
+    topEdge: 2663.9
+    bottomEdge: 2661.9
+    scale: {x: 70.00718, y: 70.00719, z: 70.00719}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Flip\":true,\"EnableAtGateIndex\":13}"
+    usingAssetBundle: 1
+  dotPositions:
+  - {x: 433, y: 390}
+  - {x: 567, y: 629}
+  - {x: 460, y: 838}
+  - {x: 242, y: 951}
+  - {x: 88, y: 1170}
+  - {x: 174, y: 1439}
+  - {x: 380, y: 1537}
+  - {x: 531, y: 1756}
+  - {x: 562, y: 1988}
+  - {x: 441, y: 2111}
+  - {x: 314, y: 2191}
+  totalContentSize: {x: 640, y: 2609.8}
+  mapIdentifier:
+    ID: "TreasureHunt"
+  optionalLowResSegmentsPaths: []

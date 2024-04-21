@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398e2d9212baed8ab7aae42fc3b23e9a, type: 3}
+  m_Name: "BossLevelDatabase"
+  m_EditorClassIdentifier: 
+  maxRowsCount: 12
+  delayBetweenStages: 1.5
+  bossVisuals: {fileID: 1790486010696720105, guid: b0a2fcf10baa94f28847b702603115c4, type: 2}
+  bossStageIntroSpeed: 425
+  bossStageMoveSpeed: 250
+  flyingPieceRange: 160
+  bossDestroyPieceRange: 135
+  pathBubblePopDelayMultiplier: 0.0015
+  levelIntroCameraSize: 230
+  railingYOffset: -40
+  allKittensSuckUpDuration: 2
+  singleKittenSuckUpFullDuration: 1.4
+  singleKittenSuckUpMoveDuration: 1.1
+  singleKittenSuckUpFadeOutDelay: 1.2
+  singleKittenSuckedUpScale: 0.3
+  introKittenSurpriseDelay: 1.8
+  introKittenSurpriseDelaySoundDelay: 0.2
+  spawnedBubblesStartScale: 0.3
+  spawnedBubblesStartMoveDistance: 20
+  spawnedBubbleMoveToPositionSpeed: 1200
+  spawnBubblesDuration: 0.85
+  spawnBubblesDelay: 1.05
+  openDoorParticlesDelay: 0.2
+  bossHitSpawnKittenDelay: 0.72
+  useSolidColliderDisc: 1

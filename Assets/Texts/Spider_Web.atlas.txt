@@ -1,0 +1,13 @@
+
+Spider_Web.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Spider_web
+  rotate: false
+  xy: 2, 2
+  size: 455, 260
+  orig: 455, 260
+  offset: 0, 0
+  index: -1

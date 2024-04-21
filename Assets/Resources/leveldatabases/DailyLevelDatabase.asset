@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7306e161181d321dbb93d3afb9492fd, type: 3}
+  m_Name: "DailyLevelDatabase"
+  m_EditorClassIdentifier: 
+  EDITOR_levelReferences: []
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily Cornered Cats 3x 1.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 8813000010270000A8610000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily Christmassy Thing 3x.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 983A00003075000050C30000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily Swing on the spiral 3x
+    1.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: 8813000010270000983A0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily An Extra Moves Piece Is
+    A Terrible Thing To Lose 4x 2.asset"
+    humanNumber: 4
+    index: 3
+    starThresholds: 8813000010270000A8610000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 2508 1 revised x 4.asset"
+    humanNumber: 5
+    index: 4
+    starThresholds: 409C000080380100F0490200
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily ME_RGBY_DBCS_BumperThreat
+    x3.asset"
+    humanNumber: 6
+    index: 5
+    starThresholds: 10270000204E000030750000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily ME_RY_5SMF_RandomQ 2 x
+    3.asset"
+    humanNumber: 7
+    index: 6
+    starThresholds: D4300000A8610000409C0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV  3 0408 revised.asset"
+    humanNumber: 8
+    index: 7
+    starThresholds: 3075000060EA0000C0D40100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 0510 4x.asset"
+    humanNumber: 9
+    index: 8
+    starThresholds: 10270000204E000088900000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 0512 1.asset"
+    humanNumber: 10
+    index: 9
+    starThresholds: 3075000060EA0000C0D40100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 0709 2.asset"
+    humanNumber: 11
+    index: 10
+    starThresholds: 282300005046000088900000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 0902 4.asset"
+    humanNumber: 12
+    index: 11
+    starThresholds: 983A000030750000F8240100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 1112 3.asset"
+    humanNumber: 13
+    index: 12
+    starThresholds: 10270000204E000070110100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 1610 x4.asset"
+    humanNumber: 14
+    index: 13
+    starThresholds: F82A0000F055000058980000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 2010 4.asset"
+    humanNumber: 15
+    index: 14
+    starThresholds: 204E0000409C000080380100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 2108 4.asset"
+    humanNumber: 16
+    index: 15
+    starThresholds: A861000050C30000905F0100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 2310 8 1x.asset"
+    humanNumber: 17
+    index: 16
+    starThresholds: 204E0000409C000058150100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 2602 2.asset"
+    humanNumber: 18
+    index: 17
+    starThresholds: 10270000204E0000C8AF0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 2811 3x.asset"
+    humanNumber: 19
+    index: 18
+    starThresholds: 5C440000B8880000E8FD0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 2901 1.asset"
+    humanNumber: 20
+    index: 19
+    starThresholds: E4570000C8AF000080380100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 2908 1.asset"
+    humanNumber: 21
+    index: 20
+    starThresholds: 3421000068420000D0840000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV 2908 3.asset"
+    humanNumber: 22
+    index: 21
+    starThresholds: 204E0000409C0000084C0100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV August 17.asset"
+    humanNumber: 23
+    index: 22
+    starThresholds: 4C1D0000983A0000B8880000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV June squid 5 colors
+    2 x.asset"
+    humanNumber: 24
+    index: 23
+    starThresholds: E02E0000C05D0000C8AF0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fDaily Quests\x2fDaily MV16 5 colors squid 1.asset"
+    humanNumber: 25
+    index: 24
+    starThresholds: 10270000204E000050C30000
+  levelDifficultyList: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  contentHash: "e2fddec6e98ba7c3807370552cfde9f5"

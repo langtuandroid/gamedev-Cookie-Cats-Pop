@@ -1,0 +1,34 @@
+
+BEE_SHED.png
+size: 128,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DOOR_1
+  rotate: false
+  xy: 2, 347
+  size: 64, 156
+  orig: 64, 156
+  offset: 0, 0
+  index: -1
+DOOR_2
+  rotate: false
+  xy: 2, 189
+  size: 64, 156
+  orig: 64, 156
+  offset: 0, 0
+  index: -1
+DOOR_3
+  rotate: false
+  xy: 68, 262
+  size: 41, 241
+  orig: 41, 241
+  offset: 0, 0
+  index: -1
+Door_cast_S
+  rotate: false
+  xy: 2, 2
+  size: 65, 185
+  orig: 65, 185
+  offset: 0, 0
+  index: -1

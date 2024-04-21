@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300000
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: "FairyTailTreeMask"
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 60
+    topology: 0
+    firstVertex: 0
+    vertexCount: 22
+    localAABB:
+      m_Center: {x: 166.5051, y: -15.6875, z: 0}
+      m_Extent: {x: 199.8005, y: 137.957, z: 0}
+  m_Shapes:
+    vertices:
+    shapes:
+    channels:
+    fullWeights:
+  m_MeshCompression: 0
+  m_StreamCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 03000C000F000F001000030003000B000C00100012000300030005000B00120000000300050008000B00120015000000000001000300050007000800080009000B000C000D000F0012001300150001000200030003000400050005000600070009000A000B000D000E000F00100011001200130014001500
+  m_Skin: []
+  m_BindPose:
+  m_VertexData:
+    m_CurrentChannels: 3
+    m_VertexCount: 22
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 528
+    _typelessdata: F0E1CFC100606E42000000000000000000000000000080BF702E05C2009C7F42000000000000000000000000000080BF70A1FFC1003AEA42000000000000000000000000000080BFE299B243008AF442000000000000000000000000000080BF1E27B74300A519C3000000000000000000000000000080BF407E3CC100369BC2000000000000000000000000000080BFC0FE3BC1003C39C2000000000000000000000000000080BF001EE9C000503BC2000000000000000000000000000080BF805A56C000342FC2000000000000000000000000FFFF7FBF80D542C0002824C2000000000000000000000000000080BF004CF5BE001411C2000000000000000000000000000080BF00EA0540004404C2000000000000000000000000000080BF008621400078F9C1000000000000000000000000000080BF001EDC3F0078CAC1000000000000000000000000000080BF004638400068A0C1000000000000000000000000000080BF8061B84000E051C1000000000000000000000000FFFF7FBF0007B93F00D01541000000000000000000000000000080BF007CA1BF00888C41000000000000000000000000000080BF006C5BC00080CB41000000000000000000000000000080BF807EEDC00090F241000000000000000000000000000080BF40DA36C1002C0E42000000000000000000000000FFFF7FBF605689C100E43842000000000000000000000000FFFF7FBF
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BindPoses:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Colors:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 166.5051, y: -15.6875, z: 0}
+    m_Extent: {x: 199.8005, y: 137.957, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0

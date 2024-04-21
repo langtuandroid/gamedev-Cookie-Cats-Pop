@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373782a833ca21affb0c7a8ac068dc1, type: 3}
+  m_Name: "OneLifeChallengeMapViewSetup"
+  m_EditorClassIdentifier: 
+  mapElementData:
+  - prefabName: "OneLifeChallengeLevelDot"
+    position: {x: 174, y: 204, z: -10}
+    topEdge: 268.3246
+    bottomEdge: 139.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":\"\",\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"Scale\":1.39999997615814,\"LevelId\":0,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "OneLifeChallengeLevelDot"
+    position: {x: 283, y: 363, z: -9.9999}
+    topEdge: 427.3246
+    bottomEdge: 298.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":\"\",\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"Scale\":1.29999995231628,\"LevelId\":1,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "OneLifeChallengeLevelDot"
+    position: {x: 408, y: 490, z: -9.9998}
+    topEdge: 554.3246
+    bottomEdge: 425.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":\"\",\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"Scale\":1.20000004768372,\"LevelId\":2,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "OneLifeChallengeLevelDot"
+    position: {x: 461, y: 692, z: -9.9997}
+    topEdge: 756.3246
+    bottomEdge: 627.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":\"\",\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"Scale\":1.10000002384186,\"LevelId\":3,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  - prefabName: "OneLifeChallengeLevelDot"
+    position: {x: 428, y: 853, z: -9.9996}
+    topEdge: 917.3246
+    bottomEdge: 788.6754
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    instantiatorDataAsJSON: "{\"Disabled\":false,\"Receiver\":\"\",\"Mood\":0,\"PayloadAsInt\":0,\"ConstantWobble\":true,\"Scale\":1,\"LevelId\":4,\"ClickOnEscapeKey\":false}"
+    usingAssetBundle: 0
+  dotPositions:
+  - {x: 174, y: 204}
+  - {x: 283, y: 363}
+  - {x: 408, y: 490}
+  - {x: 461, y: 692}
+  - {x: 428, y: 853}
+  totalContentSize: {x: 640, y: 1138}
+  mapIdentifier:
+    ID: "OneLifeChallenge"
+  optionalLowResSegmentsPaths: []

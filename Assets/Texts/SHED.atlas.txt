@@ -1,0 +1,48 @@
+
+SHED.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: true
+  xy: 150, 128
+  size: 116, 214
+  orig: 116, 214
+  offset: 0, 0
+  index: -1
+CL_DOOR
+  rotate: true
+  xy: 150, 10
+  size: 116, 214
+  orig: 116, 214
+  offset: 0, 0
+  index: -1
+CL_Hinges_cyl
+  rotate: false
+  xy: 366, 131
+  size: 26, 113
+  orig: 26, 113
+  offset: 0, 0
+  index: -1
+CL_Hinges_mount
+  rotate: true
+  xy: 2, 2
+  size: 28, 109
+  orig: 28, 109
+  offset: 0, 0
+  index: -1
+CL_door_handle
+  rotate: true
+  xy: 366, 88
+  size: 41, 21
+  orig: 41, 21
+  offset: 0, 0
+  index: -1
+OP_DOOR
+  rotate: false
+  xy: 2, 32
+  size: 146, 212
+  orig: 146, 212
+  offset: 0, 0
+  index: -1

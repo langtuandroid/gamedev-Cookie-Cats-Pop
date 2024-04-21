@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3b2bc57f3471f17851a860ca014cf6, type: 3}
+  m_Name: "TreasureHunt Squid Island"
+  m_EditorClassIdentifier: 
+  contentHash: "b7ebc357174319282f11a6eb1d394f23"
+  levelStubs:
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fsquid treasure hunt\x2fSquid Tutorial
+    2.asset"
+    humanNumber: 1
+    index: 0
+    starThresholds: 10270000204E000078690000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fsquid treasure hunt\x2fSquid Simple
+    metal level 1.asset"
+    humanNumber: 2
+    index: 1
+    starThresholds: 10270000204E0000C8AF0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fsquid treasure hunt\x2fB_4SDO_I
+    might fool ya but i dont mean to 2.asset"
+    humanNumber: 3
+    index: 2
+    starThresholds: 10270000204E000088900000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fsquid treasure hunt\x2fSquid ice
+    1.asset"
+    humanNumber: 4
+    index: 3
+    starThresholds: 10270000204E0000409C0000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fsquid treasure hunt\x2fG_4O_Boxes
+    1.asset"
+    humanNumber: 5
+    index: 4
+    starThresholds: 10270000204E0000289A0100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fsquid treasure hunt\x2fSquid Morph
+    Ice 1.asset"
+    humanNumber: 6
+    index: 5
+    starThresholds: A861000050C3000080380100
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fsquid treasure hunt\x2fB_4MO_FakeD
+    1.asset"
+    humanNumber: 7
+    index: 6
+    starThresholds: 10270000204E0000905F0100
+  - metaClassType: 
+    metaDataAsJson: 
+    assetResourcePath: 
+    humanNumber: -1
+    index: -1
+    starThresholds: 
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fsquid treasure hunt\x2fY_4SI_Slipperyslope
+    1.asset"
+    humanNumber: 9
+    index: 8
+    starThresholds: 5C440000B888000050C30000
+  - metaClassType: "LevelAsset+MetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fsquid treasure hunt\x2fRB_4O_Lets
+    get to know one another 1.asset"
+    humanNumber: 10
+    index: 9
+    starThresholds: 10270000204E0000D8D60000
+  - metaClassType: "RewardLevelMetaData"
+    metaDataAsJson: "{}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fTreasureHunt\x2fRewardLevelAsset.asset"
+    humanNumber: 11
+    index: 10
+    starThresholds: 

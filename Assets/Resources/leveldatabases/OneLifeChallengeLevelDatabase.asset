@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d00f5b44b5db4ca563bd5ed247ab25, type: 3}
+  m_Name: "OneLifeChallengeLevelDatabase"
+  m_EditorClassIdentifier: 
+  EDITOR_levelReferences: []
+  levelStubs:
+  - metaClassType: "GateMetaData"
+    metaDataAsJson: "{\"gateIndex\":0,\"levelCount\":5}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fOneLifeChallenge\x2fOneLifeChallenge_SkullBubblesToBe.asset"
+    humanNumber: 0
+    index: 0
+    starThresholds: 
+  - metaClassType: "GateMetaData"
+    metaDataAsJson: "{\"gateIndex\":1,\"levelCount\":5}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fOneLifeChallenge\x2fOneLifeChallenge_FiveColours.asset"
+    humanNumber: 0
+    index: 1
+    starThresholds: 
+  - metaClassType: "GateMetaData"
+    metaDataAsJson: "{\"gateIndex\":2,\"levelCount\":5}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fOneLifeChallenge\x2fOneLifeChallenge_PlusMinus.asset"
+    humanNumber: 0
+    index: 2
+    starThresholds: 
+  - metaClassType: "GateMetaData"
+    metaDataAsJson: "{\"gateIndex\":3,\"levelCount\":5}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fOneLifeChallenge\x2fOneLifeChallenge_Random.asset"
+    humanNumber: 0
+    index: 3
+    starThresholds: 
+  - metaClassType: "GateMetaData"
+    metaDataAsJson: "{\"gateIndex\":4,\"levelCount\":5}"
+    assetResourcePath: "Assets\x2fLevels\x2fResources\x2fOneLifeChallenge\x2fOneLifeChallenge_OneTurnBubble.asset"
+    humanNumber: 0
+    index: 4
+    starThresholds: 
+  levelDifficultyList: 0000000000000000000000000000000000000000
+  contentHash: "7aa1d856bd9043a2562159876e6c6d0e"

@@ -1,0 +1,1015 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!4 &1790486008851226014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1790486008800894365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790486008851226014}
+  - component: {fileID: 1790486010696719792}
+  - component: {fileID: 1790486010696719796}
+  - component: {fileID: 1790486010696719793}
+  - component: {fileID: 1790486010696719780}
+  - component: {fileID: 1790486010696719808}
+  - component: {fileID: 1790486010696719777}
+  - component: {fileID: 1790486010696719800}
+  - component: {fileID: 1790486010696719781}
+  - component: {fileID: 1790486010696719791}
+  - component: {fileID: 1790486010696719779}
+  - component: {fileID: 1790486010696719799}
+  - component: {fileID: 1790486010696719794}
+  - component: {fileID: 1790486010696719782}
+  - component: {fileID: 1790486010696719817}
+  - component: {fileID: 1790486010696719814}
+  - component: {fileID: 1790486010696719815}
+  - component: {fileID: 1790486010696719807}
+  - component: {fileID: 1790486010696719821}
+  - component: {fileID: 1790486010696719801}
+  - component: {fileID: 1790486010696719811}
+  - component: {fileID: 1790486010696719820}
+  - component: {fileID: 1790486010696719809}
+  - component: {fileID: 1790486010696719810}
+  - component: {fileID: 1790486010696719797}
+  - component: {fileID: 1790486010696719798}
+  - component: {fileID: 1790486010696719819}
+  - component: {fileID: 1790486010696719784}
+  - component: {fileID: 1790486010696719795}
+  - component: {fileID: 1790486010696719788}
+  - component: {fileID: 1790486010696719786}
+  - component: {fileID: 1790486010696719803}
+  - component: {fileID: 1790486010696719785}
+  - component: {fileID: 1790486010696719789}
+  - component: {fileID: 1790486010696719812}
+  - component: {fileID: 1790486010696719813}
+  - component: {fileID: 1790486010696719818}
+  - component: {fileID: 1790486010696719802}
+  - component: {fileID: 1790486010696719806}
+  - component: {fileID: 1790486010696719787}
+  - component: {fileID: 1790486010696719804}
+  - component: {fileID: 1790486010696719776}
+  - component: {fileID: 1790486010696719816}
+  - component: {fileID: 1790486010696719805}
+  - component: {fileID: 1790486010696719783}
+  - component: {fileID: 1790486010696719775}
+  - component: {fileID: 1790486010696719778}
+  - component: {fileID: 1790486010696719790}
+  m_Layer: 0
+  m_Name: "Fix the House"
+  m_TagString:
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1790486010696719775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1200}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 0
+--- !u!114 &1790486010696719776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1909b47f73b1831054149d0951b4a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 796}
+  type: 0
+  dontWait: 1
+  imagePath: 
+  image:
+    dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+    source:
+      guid: "2cea766f78f7b1346b8f1cd2dc8be321"
+--- !u!114 &1790486010696719777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 70}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 0
+--- !u!114 &1790486010696719778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6813c6495d3a1a9e43d7e2689d74f342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1224}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4022439f13b56ec43d2f0aafdad1fd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 214}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 118}
+  type: 1
+  dontWait: 1
+  moveableId: "2dRwrGdbpUunhFUO"
+  targetLocation:
+    Position: {x: 1496.457, y: 2785.146}
+    Rotation: 0
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 1
+--- !u!114 &1790486010696719781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 142}
+  type: 0
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  placementLocation:
+    Position: {x: 1253.857, y: 2570.955}
+    Rotation: 333
+--- !u!114 &1790486010696719782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 262}
+  type: 0
+  dontWait: 1
+  moveableId: "2dRwrGdbpUunhFUO"
+  targetLocation:
+    Position: {x: 1403.309, y: 2700.451}
+    Rotation: 0
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 1
+--- !u!114 &1790486010696719783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1176}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1360}
+  type: 0
+  dontWait: 0
+  Delay: 1
+--- !u!114 &1790486010696719785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1676}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1272}
+  type: 0
+  dontWait: 0
+  Delay: 0.5
+--- !u!114 &1790486010696719787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e8b1aeffa7e81117a89cf5dc7e2600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 892}
+  type: 0
+  dontWait: 0
+  soundDefinition:
+    sound:
+      Clip: {fileID: 8300000, guid: 60e6e8534a074f1c8d2588ec8ba680b4, type: 3}
+      Volume: 1
+      Probability: 1
+      Loop: 0
+    Additional: []
+    cooldownTime: 0
+    pitchVariance: 0
+    pitchForAllVariations: 1
+    sharedPool: 0
+    sequentialPitch: 0
+--- !u!114 &1790486010696719788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a175a425f07085044fb0184d89a5951c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1700}
+  type: 0
+  dontWait: 0
+  decorationObjectId: "g4zcO6fvZkiiA2mB"
+  decorationID: 1
+--- !u!114 &1790486010696719789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1554}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "And the house is still standing! PHEW!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_TiredGoodnight_1"
+  - character: {fileID: 0}
+    poseId: "Dog_Idle"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1054}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Luckily, with only a handful of accidents along the way!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 9197e0e13dd3542459d879c5736e93b3, type: 2}
+    poseId: "Rita_Book_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 190}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 1
+--- !u!114 &1790486010696719792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472e8016461ce0842607c78de804209f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 1
+  y: 18
+  width: 7
+  starsRequired: 3
+  title: "Fix the house"
+  timedTaskDescription: 
+  icon: {fileID: 0}
+  id: "65dbe3d1e2629a6488cfeaa3728c5fbf"
+  isBuildTask: 0
+  actionType: 0
+--- !u!114 &1790486010696719793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 142}
+  type: 1
+  dontWait: 0
+  Direction: 1
+  zoomTarget:
+    x: 331.7384
+    y: 2068.188
+    width: 947.8551
+    height: 1058.167
+  duration: 1
+--- !u!114 &1790486010696719794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e0786a7b43254ac2b0c81c47f2cb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 238}
+  type: 0
+  dontWait: 0
+  Delay: 0.5
+--- !u!114 &1790486010696719795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a175a425f07085044fb0184d89a5951c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1336}
+  type: 0
+  dontWait: 0
+  decorationObjectId: "g4zcO6fvZkiiA2mB"
+  decorationID: 4
+--- !u!114 &1790486010696719796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 166}
+  type: 1
+  dontWait: 0
+  imagePath: 
+  text: "Now I can use the tools and materials from the shed to fix the house!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_1"
+  - character: {fileID: 0}
+    poseId: "Dog_Idle"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1432}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Aaaand it's done!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_1"
+  - character: {fileID: 0}
+    poseId: "Dog_Idle"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 432}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Though, I did fail shop class..."
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ScepticalQuestioning_1"
+  - character: {fileID: 0}
+    poseId: "Dog_Idle"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 94}
+  type: 0
+  dontWait: 0
+  Direction: 1
+  zoomTarget:
+    x: 331.7384
+    y: 2068.188
+    width: 947.8551
+    height: 1058.167
+  duration: 0.1
+--- !u!114 &1790486010696719800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 118}
+  type: 0
+  dontWait: 0
+  moveableId: "2dRwrGdbpUunhFUO"
+  placementLocation:
+    Position: {x: 1633.262, y: 2793.905}
+    Rotation: 0
+--- !u!114 &1790486010696719801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a175a425f07085044fb0184d89a5951c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 724}
+  type: 0
+  dontWait: 0
+  decorationObjectId: "g4zcO6fvZkiiA2mB"
+  decorationID: 1
+--- !u!114 &1790486010696719802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 166}
+  type: 0
+  dontWait: 1
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  targetLocation:
+    Position: {x: 1348.642, y: 2626.47}
+    Rotation: 0
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 1
+--- !u!114 &1790486010696719803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1724}
+  type: 0
+  dontWait: 0
+  Direction: 1
+  zoomTarget:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  duration: 1
+--- !u!114 &1790486010696719804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e8b1aeffa7e81117a89cf5dc7e2600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1296}
+  type: 0
+  dontWait: 0
+  soundDefinition:
+    sound:
+      Clip: {fileID: 8300000, guid: e38831fc906b4860abbc467f1e0a858e, type: 3}
+      Volume: 1
+      Probability: 1
+      Loop: 0
+    Additional: []
+    cooldownTime: 0
+    pitchVariance: 0
+    pitchForAllVariations: 1
+    sharedPool: 0
+    sequentialPitch: 0
+--- !u!114 &1790486010696719805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 932}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "And with his sparse knowledge of woodworking (and only a few hours),
+  Gary toiled to restore the Professor's house."
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 9197e0e13dd3542459d879c5736e93b3, type: 2}
+    poseId: "Rita_Book_1"
+  - character: {fileID: 0}
+    poseId: 
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 288}
+  type: 1
+  dontWait: 0
+--- !u!114 &1790486010696719807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 700}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 0
+--- !u!114 &1790486010696719808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077783757aee2715459c7d1c65ada0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 94}
+  type: 1
+  dontWait: 0
+  moveableId: "\x2f8F8QCwlUUaE6mlX"
+  direction: {x: 0.8910066, y: -0.4539904}
+--- !u!114 &1790486010696719809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4eb98eb56e74b143e519c6a4b44d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1384}
+  type: 0
+  dontWait: 1
+  moveableId: "2dRwrGdbpUunhFUO"
+  targetLocation:
+    Position: {x: 1403.309, y: 2700.451}
+    Rotation: 0
+  moveType: 0
+  forceDirectPath: 0
+  speedMultiplier: 1
+--- !u!114 &1790486010696719810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1408}
+  type: 0
+  dontWait: 0
+  Direction: 0
+  zoomTarget:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  duration: 1
+--- !u!114 &1790486010696719811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1248}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 1
+--- !u!114 &1790486010696719812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892d4c5cd892d9d545fb502b5549b580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 1748}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4022439f13b56ec43d2f0aafdad1fd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 70}
+  type: 1
+  dontWait: 0
+--- !u!114 &1790486010696719814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 310}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Okay, Gary! You can do this. It's just like shop class."
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_SurprisedAmazed_1"
+  - character: {fileID: 0}
+    poseId: "Dog_Idle"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea927aef2aa507dcf5b219b44f3dc00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 554}
+  type: 0
+  dontWait: 0
+  imagePath: 
+  text: "Well. Toes crossed!"
+  speakerIndex: 0
+  characters:
+  - character: {fileID: 1790486010696719775, guid: 3a1bf4a765841294fa0a1fa01f90d71b, type: 2}
+    poseId: "Gary_ConfidentGoGetter_1"
+  - character: {fileID: 0}
+    poseId: "Dog_Idle"
+  - character: {fileID: 0}
+    poseId: 
+  splitScreenImagePath: 
+  dialogOverlayViewPrefab: {fileID: 0}
+--- !u!114 &1790486010696719816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3c52c1abf065405e7886620d35066d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 868}
+  type: 0
+  dontWait: 0
+  fadeBehaviour: 1
+--- !u!114 &1790486010696719817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 286}
+  type: 0
+  dontWait: 0
+  Direction: 0
+  zoomTarget:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  duration: 1
+--- !u!114 &1790486010696719818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892d4c5cd892d9d545fb502b5549b580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 312}
+  type: 1
+  dontWait: 0
+--- !u!114 &1790486010696719819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46208efbe60c479312f400d2241895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 676}
+  type: 0
+  dontWait: 0
+--- !u!114 &1790486010696719820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff962e48fcf6a221a62a8eb1eb883d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 772}
+  type: 0
+  dontWait: 0
+  Direction: 1
+  zoomTarget:
+    x: 938.1803
+    y: 1218.346
+    width: 2070.1
+    height: 3879.81
+  duration: 0.1
+--- !u!114 &1790486010696719821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790486008800894365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb46bf40475a2b040a9571603eec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 748}
+  type: 0
+  dontWait: 0
+  moveableId: "2dRwrGdbpUunhFUO"
+  placementLocation:
+    Position: {x: 1631.027, y: 2790.544}
+    Rotation: 0

@@ -1,0 +1,223 @@
+
+FortuneCookie.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FortuneCookie_back_blue
+  rotate: false
+  xy: 147, 136
+  size: 150, 118
+  orig: 150, 118
+  offset: 0, 0
+  index: -1
+FortuneCookie_back_green
+  rotate: false
+  xy: 299, 136
+  size: 150, 118
+  orig: 150, 118
+  offset: 0, 0
+  index: -1
+FortuneCookie_back_pink
+  rotate: false
+  xy: 451, 136
+  size: 150, 118
+  orig: 150, 118
+  offset: 0, 0
+  index: -1
+FortuneCookie_back_red
+  rotate: false
+  xy: 603, 136
+  size: 150, 118
+  orig: 150, 118
+  offset: 0, 0
+  index: -1
+FortuneCookie_back_yellow
+  rotate: false
+  xy: 755, 136
+  size: 150, 118
+  orig: 150, 118
+  offset: 0, 0
+  index: -1
+FortuneCookie_front_blue
+  rotate: true
+  xy: 2, 13
+  size: 97, 139
+  orig: 97, 139
+  offset: 0, 0
+  index: -1
+FortuneCookie_front_green
+  rotate: false
+  xy: 907, 115
+  size: 97, 139
+  orig: 97, 139
+  offset: 0, 0
+  index: -1
+FortuneCookie_front_pink
+  rotate: true
+  xy: 147, 37
+  size: 97, 139
+  orig: 97, 139
+  offset: 0, 0
+  index: -1
+FortuneCookie_front_red
+  rotate: true
+  xy: 288, 37
+  size: 97, 139
+  orig: 97, 139
+  offset: 0, 0
+  index: -1
+FortuneCookie_front_yellow
+  rotate: true
+  xy: 429, 37
+  size: 97, 139
+  orig: 97, 139
+  offset: 0, 0
+  index: -1
+blue_debree_01
+  rotate: false
+  xy: 1006, 236
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+blue_debree_02
+  rotate: false
+  xy: 753, 57
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+blue_debree_03
+  rotate: true
+  xy: 681, 47
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+fortune_ribbon_01
+  rotate: true
+  xy: 681, 80
+  size: 54, 112
+  orig: 54, 112
+  offset: 0, 0
+  index: -1
+fortune_ribbon_02
+  rotate: false
+  xy: 260, 4
+  size: 51, 31
+  orig: 51, 31
+  offset: 0, 0
+  index: -1
+fortune_ribbon_03
+  rotate: false
+  xy: 143, 2
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+green_debree_01
+  rotate: false
+  xy: 1006, 216
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+green_debree_02
+  rotate: false
+  xy: 861, 113
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+green_debree_03
+  rotate: false
+  xy: 795, 100
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+pink_debree_01
+  rotate: false
+  xy: 1006, 196
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+pink_debree_02
+  rotate: false
+  xy: 380, 14
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+pink_debree_03
+  rotate: true
+  xy: 313, 4
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+red_debree_01
+  rotate: false
+  xy: 1006, 176
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+red_debree_02
+  rotate: false
+  xy: 774, 57
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+red_debree_03
+  rotate: true
+  xy: 717, 47
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 349, 6
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+shimmer
+  rotate: false
+  xy: 2, 112
+  size: 143, 142
+  orig: 143, 142
+  offset: 0, 0
+  index: -1
+sparkle
+  rotate: false
+  xy: 570, 47
+  size: 109, 87
+  orig: 109, 87
+  offset: 0, 0
+  index: -1
+yellow_debree_01
+  rotate: false
+  xy: 1006, 156
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+yellow_debree_02
+  rotate: false
+  xy: 795, 77
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+yellow_debree_03
+  rotate: false
+  xy: 828, 100
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1

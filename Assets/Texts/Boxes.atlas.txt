@@ -1,0 +1,244 @@
+
+Boxes.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bow
+  rotate: false
+  xy: 268, 105
+  size: 102, 63
+  orig: 102, 63
+  offset: 0, 0
+  index: -1
+bow Xmas
+  rotate: true
+  xy: 291, 2
+  size: 101, 63
+  orig: 101, 63
+  offset: 0, 0
+  index: -1
+box Gold back
+  rotate: false
+  xy: 2, 373
+  size: 139, 137
+  orig: 139, 137
+  offset: 0, 0
+  index: -1
+box Gold front
+  rotate: false
+  xy: 143, 270
+  size: 138, 101
+  orig: 138, 101
+  offset: 0, 0
+  index: -1
+box Regular back
+  rotate: false
+  xy: 2, 234
+  size: 139, 137
+  orig: 139, 137
+  offset: 0, 0
+  index: -1
+box Regular front
+  rotate: false
+  xy: 409, 409
+  size: 138, 101
+  orig: 138, 101
+  offset: 0, 0
+  index: -1
+box Silver back
+  rotate: false
+  xy: 143, 373
+  size: 139, 137
+  orig: 139, 137
+  offset: 0, 0
+  index: -1
+box Silver front
+  rotate: false
+  xy: 549, 409
+  size: 138, 101
+  orig: 138, 101
+  offset: 0, 0
+  index: -1
+box Xmas back
+  rotate: false
+  xy: 2, 96
+  size: 138, 136
+  orig: 138, 136
+  offset: 0, 0
+  index: -1
+box Xmas front
+  rotate: false
+  xy: 689, 409
+  size: 138, 101
+  orig: 138, 101
+  offset: 0, 0
+  index: -1
+box shadow
+  rotate: false
+  xy: 142, 101
+  size: 124, 72
+  orig: 124, 72
+  offset: 0, 0
+  index: -1
+inside shimmer
+  rotate: false
+  xy: 284, 387
+  size: 123, 123
+  orig: 123, 123
+  offset: 0, 0
+  index: -1
+lid Gold
+  rotate: false
+  xy: 829, 417
+  size: 143, 93
+  orig: 143, 93
+  offset: 0, 0
+  index: -1
+lid Regular
+  rotate: false
+  xy: 143, 175
+  size: 143, 93
+  orig: 143, 93
+  offset: 0, 0
+  index: -1
+lid Silver
+  rotate: false
+  xy: 146, 6
+  size: 143, 93
+  orig: 143, 93
+  offset: 0, 0
+  index: -1
+lid Xmas
+  rotate: false
+  xy: 2, 2
+  size: 142, 92
+  orig: 142, 92
+  offset: 0, 0
+  index: -1
+ribbon broken box 13
+  rotate: true
+  xy: 974, 423
+  size: 87, 42
+  orig: 87, 42
+  offset: 0, 0
+  index: -1
+ribbon broken box 13 Xmas
+  rotate: true
+  xy: 482, 70
+  size: 87, 42
+  orig: 87, 42
+  offset: 0, 0
+  index: -1
+ribbon broken box 23
+  rotate: true
+  xy: 976, 309
+  size: 112, 31
+  orig: 112, 31
+  offset: 0, 0
+  index: -1
+ribbon broken box 23 Xmas
+  rotate: false
+  xy: 854, 275
+  size: 111, 30
+  orig: 111, 30
+  offset: 0, 0
+  index: -1
+ribbon broken box 33
+  rotate: false
+  xy: 409, 371
+  size: 122, 36
+  orig: 122, 36
+  offset: 0, 0
+  index: -1
+ribbon broken box 33 Xmas
+  rotate: false
+  xy: 533, 372
+  size: 122, 35
+  orig: 122, 35
+  offset: 0, 0
+  index: -1
+ribbon broken lid
+  rotate: false
+  xy: 409, 280
+  size: 105, 89
+  orig: 105, 89
+  offset: 0, 0
+  index: -1
+ribbon broken lid Shadow Gold
+  rotate: true
+  xy: 779, 299
+  size: 108, 73
+  orig: 108, 73
+  offset: 0, 0
+  index: -1
+ribbon broken lid Shadow regular
+  rotate: true
+  xy: 779, 299
+  size: 108, 73
+  orig: 108, 73
+  offset: 0, 0
+  index: -1
+ribbon broken lid Shadow Xmas
+  rotate: false
+  xy: 372, 85
+  size: 108, 72
+  orig: 108, 72
+  offset: 0, 0
+  index: -1
+ribbon broken lid Shadow silver
+  rotate: false
+  xy: 356, 10
+  size: 108, 73
+  orig: 108, 73
+  offset: 0, 0
+  index: -1
+ribbon broken lid Xmas
+  rotate: false
+  xy: 516, 280
+  size: 105, 89
+  orig: 105, 89
+  offset: 0, 0
+  index: -1
+ribbon whole
+  rotate: true
+  xy: 288, 280
+  size: 105, 119
+  orig: 105, 119
+  offset: 0, 0
+  index: -1
+ribbon whole Shadow Gold
+  rotate: true
+  xy: 657, 299
+  size: 108, 120
+  orig: 108, 120
+  offset: 0, 0
+  index: -1
+ribbon whole Shadow Regular
+  rotate: true
+  xy: 657, 299
+  size: 108, 120
+  orig: 108, 120
+  offset: 0, 0
+  index: -1
+ribbon whole Shadow Silver
+  rotate: true
+  xy: 854, 307
+  size: 108, 120
+  orig: 108, 120
+  offset: 0, 0
+  index: -1
+ribbon whole Shadow Xmas
+  rotate: true
+  xy: 288, 170
+  size: 108, 120
+  orig: 108, 120
+  offset: 0, 0
+  index: -1
+ribbon whole Xmas
+  rotate: false
+  xy: 410, 159
+  size: 105, 119
+  orig: 105, 119
+  offset: 0, 0
+  index: -1

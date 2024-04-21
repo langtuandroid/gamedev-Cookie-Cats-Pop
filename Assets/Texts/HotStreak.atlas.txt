@@ -1,0 +1,34 @@
+
+HotStreak.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coffee_Main
+  rotate: true
+  xy: 2, 2
+  size: 159, 220
+  orig: 159, 220
+  offset: 0, 0
+  index: -1
+Coffee_Top
+  rotate: true
+  xy: 224, 4
+  size: 157, 38
+  orig: 157, 38
+  offset: 0, 0
+  index: -1
+Jug_Back
+  rotate: false
+  xy: 2, 163
+  size: 261, 344
+  orig: 261, 344
+  offset: 0, 0
+  index: -1
+Jug_Front
+  rotate: false
+  xy: 265, 198
+  size: 209, 309
+  orig: 209, 309
+  offset: 0, 0
+  index: -1

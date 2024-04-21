@@ -1,0 +1,62 @@
+
+PUMPKIN_FENCE.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Fence_Gate_Cast_S
+  rotate: true
+  xy: 153, 56
+  size: 194, 125
+  orig: 194, 125
+  offset: 0, 0
+  index: -1
+Fence_OL
+  rotate: true
+  xy: 280, 2
+  size: 63, 164
+  orig: 63, 164
+  offset: 0, 0
+  index: -1
+GATE_Closed
+  rotate: false
+  xy: 2, 37
+  size: 149, 213
+  orig: 149, 213
+  offset: 0, 0
+  index: -1
+GATE_Closed_handle
+  rotate: false
+  xy: 32, 3
+  size: 27, 32
+  orig: 27, 32
+  offset: 0, 0
+  index: -1
+Gate_OPEN
+  rotate: false
+  xy: 280, 67
+  size: 187, 183
+  orig: 187, 183
+  offset: 0, 0
+  index: -1
+Gate_open_handle
+  rotate: false
+  xy: 2, 2
+  size: 28, 33
+  orig: 28, 33
+  offset: 0, 0
+  index: -1
+HINGES
+  rotate: true
+  xy: 61, 14
+  size: 21, 89
+  orig: 21, 89
+  offset: 0, 0
+  index: -1
+Hinge
+  rotate: true
+  xy: 152, 19
+  size: 16, 101
+  orig: 16, 101
+  offset: 0, 0
+  index: -1

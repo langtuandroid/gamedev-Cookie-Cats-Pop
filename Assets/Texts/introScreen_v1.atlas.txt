@@ -1,0 +1,139 @@
+
+introScreen_v1.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CaptainCat_Blue
+  rotate: true
+  xy: 1908, 1714
+  size: 163, 130
+  orig: 163, 130
+  offset: 0, 0
+  index: -1
+CaptainCat_Green
+  rotate: false
+  xy: 1006, 695
+  size: 172, 156
+  orig: 172, 156
+  offset: 0, 0
+  index: -1
+CaptainCat_Pink
+  rotate: false
+  xy: 1006, 547
+  size: 169, 146
+  orig: 169, 146
+  offset: 0, 0
+  index: -1
+CaptainCat_Red
+  rotate: false
+  xy: 736, 730
+  size: 160, 121
+  orig: 160, 121
+  offset: 0, 0
+  index: -1
+CaptainCat_Yellow
+  rotate: true
+  xy: 1908, 1879
+  size: 167, 138
+  orig: 167, 138
+  offset: 0, 0
+  index: -1
+baloon_back
+  rotate: false
+  xy: 2, 724
+  size: 732, 600
+  orig: 732, 600
+  offset: 0, 0
+  index: -1
+baloon_front
+  rotate: false
+  xy: 2, 440
+  size: 1002, 282
+  orig: 1002, 282
+  offset: 0, 0
+  index: -1
+cabinBase
+  rotate: false
+  xy: 1423, 1213
+  size: 503, 399
+  orig: 503, 399
+  offset: 0, 0
+  index: -1
+cloud2
+  rotate: false
+  xy: 1423, 1614
+  size: 483, 432
+  orig: 483, 432
+  offset: 0, 0
+  index: -1
+cloud4
+  rotate: true
+  xy: 1423, 932
+  size: 279, 595
+  orig: 279, 595
+  offset: 0, 0
+  index: -1
+cloud5
+  rotate: false
+  xy: 736, 853
+  size: 442, 471
+  orig: 442, 471
+  offset: 0, 0
+  index: -1
+railing
+  rotate: true
+  xy: 1180, 677
+  size: 478, 128
+  orig: 478, 128
+  offset: 0, 0
+  index: -1
+railing_back
+  rotate: false
+  xy: 2, 121
+  size: 1176, 74
+  orig: 1176, 74
+  offset: 0, 0
+  index: -1
+ribbon front copy 3
+  rotate: true
+  xy: 249, 24
+  size: 95, 242
+  orig: 95, 242
+  offset: 0, 0
+  index: -1
+ribbon front copy 4
+  rotate: true
+  xy: 2, 2
+  size: 117, 245
+  orig: 117, 245
+  offset: 0, 0
+  index: -1
+ribbon1
+  rotate: true
+  xy: 2, 197
+  size: 241, 889
+  orig: 241, 889
+  offset: 0, 0
+  index: -1
+ribbon2
+  rotate: false
+  xy: 1180, 1157
+  size: 241, 889
+  orig: 241, 889
+  offset: 0, 0
+  index: -1
+shipFront
+  rotate: false
+  xy: 2, 1326
+  size: 1176, 720
+  orig: 1176, 720
+  offset: 0, 0
+  index: -1
+steeringWheel
+  rotate: true
+  xy: 1177, 547
+  size: 128, 134
+  orig: 128, 134
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab368c54cb1f84f6b2c73fb2b0e71c1, type: 3}
+  m_Name: "MapTileDatabase"
+  m_EditorClassIdentifier: 
+  numX: 5
+  numY: 4
+  tiles:
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "b513c173dec614014b7b41168cfd7cb2"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "82c5cbda1467c4fc088baf43a22bf397"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "1931f04230afc460fbf2f771340622fb"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "245298bc2102d4f2e86c2e461b4ae9f3"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "4f3f6f4c069d54a51994c2222965e985"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "f45e7807609b549ebaf1c9f79826e5d9"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "664abf5583c194f909674e186561009d"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "33f56aef4c2c34ba5bb1919a106c0db1"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "cd9aeaf87f6384e66817506ffd05c1da"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "8f53977f85c134699b5738ac0b854ba6"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "02c2a3bee8ac642fd84d60e5b5684ef4"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "2decf73e8c40249ca97002670da6d577"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "f0d71f24f09154ae19107dfd5190291f"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "3783e9064d89c4646b29e146d7d02884"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "5009ffd460e5945fb803df40306ad897"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "6a8e4c98340fd4651bdc53b39c8749ee"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "d00e4123d5f734eedabb8912cfe4bb78"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "3261b0dc1e52e4e5086ba3cdd405ea01"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "b536623204c4a4da6b6e9260556ab961"
+  - Texture:
+      dependencies: {fileID: 11400000, guid: 14eae5672828444e9bfc760369509d22, type: 2}
+      source:
+        guid: "32543805684d7440899563015ff5b46d"

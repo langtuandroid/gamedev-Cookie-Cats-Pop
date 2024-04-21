@@ -1,0 +1,48 @@
+
+dialogCharacters.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/Professor_Dough
+  rotate: false
+  xy: 822, 746
+  size: 699, 619
+  orig: 699, 619
+  offset: 0, 0
+  index: -1
+images/Professor_EatingCookies
+  rotate: false
+  xy: 2, 686
+  size: 765, 672
+  orig: 765, 672
+  offset: 0, 0
+  index: -1
+images/Professor_Giggling
+  rotate: false
+  xy: 822, 1367
+  size: 719, 665
+  orig: 719, 665
+  offset: 0, 0
+  index: -1
+images/Professor_HappyExcited
+  rotate: false
+  xy: 2, 2
+  size: 682, 682
+  orig: 682, 682
+  offset: 0, 0
+  index: -1
+images/Professor_NeutralTalking
+  rotate: false
+  xy: 2, 1360
+  size: 818, 672
+  orig: 818, 672
+  offset: 0, 0
+  index: -1
+images/Professor_TiredOfGary
+  rotate: false
+  xy: 686, 7
+  size: 634, 677
+  orig: 634, 677
+  offset: 0, 0
+  index: -1
