@@ -298,8 +298,10 @@ public class LevelProxy : ILevelProxy
 
 	public bool IsCompleted
 	{
+		
 		get
 		{
+			return true; //TODO remove
 			return this.Points > 0;
 		}
 	}
@@ -308,6 +310,7 @@ public class LevelProxy : ILevelProxy
 	{
 		get
 		{
+			return true; //TODO remove
 			return this.Index == 0 || this.PreviousLevel.IsCompleted;
 		}
 	}

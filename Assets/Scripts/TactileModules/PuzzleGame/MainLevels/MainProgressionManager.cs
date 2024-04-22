@@ -222,6 +222,7 @@ namespace TactileModules.PuzzleGame.MainLevels
 
 		public int GetFarthestUnlockedLevelHumanNumber()
 		{
+			return 150;//TODO remove
 			return this.GetDatabase().LevelStubs[this.GetFarthestUnlockedLevelIndex()].humanNumber;
 		}
 

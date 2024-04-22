@@ -76,7 +76,7 @@ public class LevelDot : MapDot
 		{
 			gameObject2.SetActive(base.Level.LevelDifficulty == LevelDifficulty.Hard);
 		}
-		this.enabledRoot.SetActive(base.Level.IsUnlocked);
+		this.enabledRoot.SetActive(base.Level.IsUnlocked); 
 		this.disabledRoot.SetActive(!this.enabledRoot.activeSelf);
 		this.stars.SetStars(base.Level.Stars, base.Level.GetHardStars());
 	}

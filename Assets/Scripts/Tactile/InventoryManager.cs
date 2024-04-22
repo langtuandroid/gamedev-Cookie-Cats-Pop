@@ -17,7 +17,8 @@ namespace Tactile
 		{
 			get
 			{
-				return this.GetAmount("Life");
+				return 4;
+				//return this.GetAmount("Life"); //TODO unkoment
 			}
 		}
 
@@ -25,7 +26,8 @@ namespace Tactile
 		{
 			get
 			{
-				return this.GetAmount("Coin");
+				return 1000000; //TODO unkoment
+				//return this.GetAmount("Coin");
 			}
 		}
 
