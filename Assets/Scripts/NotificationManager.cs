@@ -24,17 +24,9 @@ public class NotificationManager
 		set
 		{
 			LocalNotificationManager.Enabled = !value;
-			this.OneSignalManager.SetSubscription(!value);
 		}
 	}
-
-	private OneSignalManager OneSignalManager
-	{
-		get
-		{
-			return ManagerRepository.Get<OneSignalManager>();
-		}
-	}
+	
 
 	private ConfigurationManager ConfigurationManager
 	{

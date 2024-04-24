@@ -16,14 +16,7 @@ public class CloudClient : CloudClientBase, ICloudUserSettingsProvider
 		this.cachedFriends = CloudClient.PersistedCachedFriends;
 		this.cachedFriendsSettings = CloudClient.PersistedCachedFriendsSettings;
 	}
-
-	private OneSignalManager OneSignalManager
-	{
-		get
-		{
-			return ManagerRepository.Get<OneSignalManager>();
-		}
-	}
+	
 
 	~CloudClient()
 	{
@@ -78,6 +71,8 @@ public class CloudClient : CloudClientBase, ICloudUserSettingsProvider
 		}
 		yield break;
 	}
+
+	protected override string OneSignalPlayerId { get; }
 
 	public IEnumerator UpdateCachedFriendsAndSettings(Action<object> callback)
 	{
@@ -580,14 +575,7 @@ public class CloudClient : CloudClientBase, ICloudUserSettingsProvider
 		string bundleShortVersion = SystemInfoHelper.BundleShortVersion;
 		return new CloudInterface(host, bundleIdentifier, versionCode, bundleShortVersion, Constants.SHARED_GAME_SECRET, SystemInfoHelper.DeviceID, Constants.APS_ENVIRONMENT, requestMetaDataProviderRegistry);
 	}
-
-	protected override string OneSignalPlayerId
-	{
-		get
-		{
-			return this.OneSignalManager.OneSignalPlayerId;
-		}
-	}
+	
 
 	private static List<CloudUser> PersistedCachedFriends
 	{

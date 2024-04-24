@@ -80,7 +80,6 @@ public class Boot : BootBase
      
         RequestMetaDataProviderRegistry requestMetaDataProviderRegistry = new RequestMetaDataProviderRegistry();
         CloudClient cloudClient = repository.Register<CloudClient>(new CloudClient(requestMetaDataProviderRegistry), null);
-        OneSignalManager oneSignalManager = repository.Register<OneSignalManager>(new OneSignalManager(Constants.ONESIGNAL_APP_ID, Constants.GCM_SENDER_ID, cloudClient), null);
         ConfigurationManager configurationManager = repository.Register<ConfigurationManager>(new ConfigurationManager(cloudClient), null);
         GameSessionManager gameSessionManager = repository.Register<GameSessionManager>(GameSessionManager.CreateInstance(new GameSessionManagerProvider()), null);
         MapPopupManager mapPopupManager = repository.Register<MapPopupManager>(MapPopupManager.CreateInstance(gameSessionManager, null), null);
@@ -142,7 +141,7 @@ public class Boot : BootBase
         SupportedAttachments supportedAttachments = new SupportedAttachments();
         BackupRestorer backupRestorer = new BackupRestorer(userSettingsManager);
         UserSettingsBackupSummaryProvider userSettingsDetailsProvider = new UserSettingsBackupSummaryProvider(userSettingsManager, inventoryManager);
-        UserSupportSystem userSupportSystem = UserSupportSystemBuilder.Build(attachmentsListener, oneSignalManager, messageMetaDataProvider, cloudClient, mapPopupManager, uiViewManager, supportedAttachments, backupRestorer, userSettingsDetailsProvider, tactileAnalytics);
+        UserSupportSystem userSupportSystem = UserSupportSystemBuilder.Build(attachmentsListener, messageMetaDataProvider, cloudClient, mapPopupManager, uiViewManager, supportedAttachments, backupRestorer, userSettingsDetailsProvider, tactileAnalytics);
         repository.Register<UserSupportSystem>(userSupportSystem, null);
         CloudSynchronizer cloudSynchronizer = repository.Register<CloudSynchronizer>(new CloudSynchronizer(userSettingsManager, cloudClient, userSettingsBackupManager, configurationManager, assetBundleManager, leaderboardManager, featureManager, userSupportSystem.Synchronizer, () => Boot.IsRequestsBlocked), null);
         repository.Register<BonusDropManager>(Singleton<BonusDropManager>.CreateInstance(), null);

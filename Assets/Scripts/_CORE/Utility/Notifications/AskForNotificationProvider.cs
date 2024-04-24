@@ -11,12 +11,4 @@ public class AskForNotificationProvider : AskForNotificationManager.IAskForNotif
 			return ConfigurationManager.Get<AskForNotificationManager.AskForNotificationConfig>();
 		}
 	}
-
-	public OneSignalManager OneSignalManager
-	{
-		get
-		{
-			return ManagerRepository.Get<OneSignalManager>();
-		}
-	}
 }

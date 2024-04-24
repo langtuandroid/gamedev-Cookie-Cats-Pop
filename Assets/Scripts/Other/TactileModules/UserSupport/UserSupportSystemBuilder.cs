@@ -9,7 +9,7 @@ namespace TactileModules.UserSupport
 {
 	public static class UserSupportSystemBuilder
 	{
-		public static UserSupportSystem Build(IAttachmentsListener attachmentsListener, OneSignalManager oneSignalManager, IClientMessageMetaDataProvider messageMessageMetaDataProvider, CloudClientBase cloudClient, MapPopupManager mapPopupManager, IUIViewManager viewManager, ISupportedAttachments clientSupportedAttachments, IUserSupportBackupRestorer backupRestorer, IUserSupportBackupDetailsProvider userSettingsDetailsProvider, IAnalytics analytics)
+		public static UserSupportSystem Build(IAttachmentsListener attachmentsListener, IClientMessageMetaDataProvider messageMessageMetaDataProvider, CloudClientBase cloudClient, MapPopupManager mapPopupManager, IUIViewManager viewManager, ISupportedAttachments clientSupportedAttachments, IUserSupportBackupRestorer backupRestorer, IUserSupportBackupDetailsProvider userSettingsDetailsProvider, IAnalytics analytics)
 		{
 			MessageMetaData messageMetaDataProvider = new MessageMetaData(cloudClient, messageMessageMetaDataProvider);
 			UserSupportCloud cloud = new UserSupportCloud(cloudClient, messageMetaDataProvider);
@@ -17,7 +17,7 @@ namespace TactileModules.UserSupport
 			User user = new User(storageFactory);
 			DefaultSupportedAttachments supportedAttachments = new DefaultSupportedAttachments(clientSupportedAttachments);
 			Conversations conversations = new Conversations(attachmentsListener, supportedAttachments);
-			PushNoficationsHandler pushNotificationHandler = new PushNoficationsHandler(oneSignalManager);
+			PushNoficationsHandler pushNotificationHandler = new PushNoficationsHandler();
 			CloudRequestFactory requestFactory = new CloudRequestFactory(conversations, cloud);
 			UserSupportSynchronizer cloudSynchronizable = new UserSupportSynchronizer(requestFactory, pushNotificationHandler);
 			ConversationRequests conversationRequests = new ConversationRequests(requestFactory, conversations, user);

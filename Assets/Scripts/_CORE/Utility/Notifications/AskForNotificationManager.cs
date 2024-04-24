@@ -46,7 +46,6 @@ public class AskForNotificationManager : MapPopupManager.IMapPopup
 		if ((int)vs.ClosingResult > 0)
 		{
 			this.PersistedUserAcceptNotification = true;
-			this.provider.OneSignalManager.RegisterForPush();
 			yield return null;
 		}
 		yield break;
@@ -54,7 +53,7 @@ public class AskForNotificationManager : MapPopupManager.IMapPopup
 
 	private bool ShouldShowPopup(int unlockedLevelIndex)
 	{
-		if (this.IsUserAccept() || this.provider.OneSignalManager.IsRegisteredForNotifications)
+		if (this.IsUserAccept() || false)
 		{
 			return false;
 		}
@@ -77,8 +76,6 @@ public class AskForNotificationManager : MapPopupManager.IMapPopup
 	public interface IAskForNotificationManagerProvider
 	{
 		AskForNotificationManager.AskForNotificationConfig Config { get; }
-
-		OneSignalManager OneSignalManager { get; }
 	}
 
 	[ConfigProvider("AskForNotifications")]

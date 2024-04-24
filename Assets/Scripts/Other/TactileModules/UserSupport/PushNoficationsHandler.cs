@@ -6,17 +6,9 @@ namespace TactileModules.UserSupport
 {
 	public class PushNoficationsHandler : IPushNotificationHandler
 	{
-		public PushNoficationsHandler(OneSignalManager notificationManager)
-		{
-			this.notificationManager = notificationManager;
-			this.notificationManager.NotificationRecieved += this.OnNotificationReceived;
-		}
-
-		////[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+		
 		public event Action<PushNotificationPayload> NotificationReceived;
-
-
-
+		
 		private void OnNotificationReceived(OSNotification notification)
 		{
 			this.PrintNotification(notification.payload);
@@ -68,6 +60,5 @@ namespace TactileModules.UserSupport
 			return text;
 		}
 
-		private OneSignalManager notificationManager;
 	}
 }
