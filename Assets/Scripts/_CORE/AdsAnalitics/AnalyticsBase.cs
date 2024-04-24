@@ -17,19 +17,11 @@ public abstract class AnalyticsBase : SingleInstance<AnalyticsBase>
 	//[DebuggerBrowsable(DebuggerBrowsableState.Never)]
 	public event Action AdjustAttributionChanged;
 
-	
 
-	public static AnalyticsBase Instance
-	{
-		get
-		{
-			return SingleInstance<AnalyticsBase>.instance;
-		}
-	}
+	protected static AnalyticsBase Instance => instance;
 
-   
 
-    private IEnumerator TriggerGameServerRegistered()
+	private IEnumerator TriggerGameServerRegistered()
 	{
 		while (this.cloudClient.LastReceivedServerTimeUnixEpocUTC == 0)
 		{

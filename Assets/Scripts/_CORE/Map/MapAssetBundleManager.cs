@@ -15,11 +15,7 @@ public class MapAssetBundleManager
 	}
 
 	public static MapAssetBundleManager Instance { get; private set; }
-
-	public void UpdateData()
-	{
-	}
-
+	
 	public static MapQuadrant GetMapImageQuadrant(string imageName)
 	{
 		if (imageName.Contains("L1"))

@@ -47,42 +47,27 @@ public class UIViewManager : MonoBehaviour, IUIViewManager, IViewStack, IViewPre
 
     public float BottomViewZoneHeight { get; private set; }
 
-    ////[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+
     public event Action<IUIView> ViewWillAppear = delegate (IUIView A_0)
     {
     };
 
-
-
-    ////[DebuggerBrowsable(DebuggerBrowsableState.Never)]
     public event Action<IUIView> ViewDidDisappear = delegate (IUIView A_0)
     {
     };
-
-
-
-    ////[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    
     public event Action<IUIView> ViewWillDisappear = delegate (IUIView A_0)
     {
     };
-
-
-
-
-    ////[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    
     public event Action<IUIView> OnViewStackPush = delegate (IUIView A_0)
     {
     };
 
-
-
-    ////[DebuggerBrowsable(DebuggerBrowsableState.Never)]
     public event Action<IUIView> OnViewStackPop = delegate (IUIView A_0)
     {
     };
-
-
-
+    
     public int StackCount
     {
         
@@ -160,9 +145,6 @@ public class UIViewManager : MonoBehaviour, IUIViewManager, IViewStack, IViewPre
 
     public static UIViewManager CreateInstance(Func<string, string> localizationFunction = null, bool recordDebugData = false, int actionQueueSize = 10, float backQuadAlpha = 0.3f)
     {
-        if (UIViewManager.Instance != null)
-        {
-        }
         if (recordDebugData)
         {
             NinjaUIDebugData.Init(actionQueueSize);

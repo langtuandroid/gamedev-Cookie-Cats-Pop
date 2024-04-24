@@ -36,13 +36,7 @@ public class Analytics : AnalyticsBase
 		}
 	}
 
-	public new static Analytics Instance
-	{
-		get
-		{
-			return AnalyticsBase.Instance as Analytics;
-		}
-	}
+	public new static Analytics Instance => AnalyticsBase.Instance as Analytics;
 
 	private void HandleGameEvent(GameEvent e)
 	{

@@ -78,10 +78,6 @@ public class Boot : BootBase
         GameSessionManager gameSessionManager = repository.Register<GameSessionManager>(GameSessionManager.CreateInstance(new GameSessionManagerProvider()), null);
         MapPopupManager mapPopupManager = repository.Register<MapPopupManager>(MapPopupManager.CreateInstance(gameSessionManager, null), null);
         TimeStampManager timeStampManager = repository.Register<TimeStampManager>(new TimeStampManager(), null);
-
-        Analytics analytics = repository.Register<Analytics>(new Analytics(cloudClient, configurationManager), null);
-
-
         TactileAnalytics tactileAnalytics = TactileAnalytics.Instance;
         ICloudUserSettingsProvider cloudClient2 = cloudClient;
         Action<UserSettingsManager> defaultSettingsHandler = new Action<UserSettingsManager>(this.DefaultSettingsHandler);
