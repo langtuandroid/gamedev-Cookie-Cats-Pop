@@ -9,7 +9,7 @@ public static class ActivityAndroid
 		{
 			return;
 		}
-		//ActivityAndroid._plugin = AndroidPluginManager.GetPlugin("dk.tactile.activity.ActivityPlugin");
+		
 	}
 
 	public static string getManufacturer()
