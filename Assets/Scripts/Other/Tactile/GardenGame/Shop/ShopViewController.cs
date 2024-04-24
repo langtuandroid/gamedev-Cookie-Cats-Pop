@@ -11,20 +11,16 @@ namespace Tactile.GardenGame.Shop
 {
 	public class ShopViewController : IFiberRunnable
 	{
-		public ShopViewController(ShopManager shopManager, InAppPurchaseManager inAppPurchaseManager, IUIController uiController, IAssetModel assets, ConfigGetter<ShopConfig> shopConfigProvider, ConfigGetter<LivesConfig> livesConfigProvider)
+		public ShopViewController(ShopManager shopManager, IUIController uiController, IAssetModel assets, ConfigGetter<ShopConfig> shopConfigProvider, ConfigGetter<LivesConfig> livesConfigProvider)
 		{
 			this.shopManager = shopManager;
-			this.inAppPurchaseManager = inAppPurchaseManager;
 			this.uiController = uiController;
 			this.assets = assets;
 			this.shopConfigProvider = shopConfigProvider;
 			this.livesConfigProvider = livesConfigProvider;
 		}
-
-		////[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+		
 		public event Action<ShopViewItem> ItemClickedForPurchase;
-
-
 
 		public IEnumerator Run()
 		{
@@ -57,7 +53,7 @@ namespace Tactile.GardenGame.Shop
 			shopViewItemData.shopItem = shopItem;
 			ShopItemMetaData metaData = ShopManager.Instance.GetMetaData<ShopItemMetaData>(shopItem.Type);
 			shopViewItemData.coinAmount = shopItem.CoinAmount;
-			shopViewItemData.priceText = shopItem.FormattedPricePreferIAP(this.inAppPurchaseManager);
+			shopViewItemData.priceText = "";
 			shopViewItemData.saveAmountText = ((shopItem.CurrencyPrice <= 0) ? null : string.Format("{0}%", shopItem.CurrencyPrice));
 			shopViewItemData.spriteName = metaData.ImageSpriteName;
 			shopViewItemData.isBestOffer = false;
@@ -84,8 +80,6 @@ namespace Tactile.GardenGame.Shop
 		private readonly IUIController uiController;
 
 		private readonly IAssetModel assets;
-
-		private readonly InAppPurchaseManager inAppPurchaseManager;
 
 		private readonly ConfigGetter<ShopConfig> shopConfigProvider;
 

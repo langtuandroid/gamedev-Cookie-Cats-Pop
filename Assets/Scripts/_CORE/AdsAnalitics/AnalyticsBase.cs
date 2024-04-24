@@ -3,7 +3,7 @@ using System.Collections;
 using System.Diagnostics;
 
 
-public abstract class AnalyticsBase : SingleInstance<AnalyticsBase>, IAnalyticsAdjustAttribution
+public abstract class AnalyticsBase : SingleInstance<AnalyticsBase>
 {
 	protected AnalyticsBase(CloudClientBase cloudClient, AnalyticsBase.AdjustSettings adjust, string tactileAnalyticsAppId, TactileAnalytics.Config tactileAnalyticsConfig)
 	{

@@ -18,7 +18,7 @@ public class TicketShopItem : MonoBehaviour
 		this.tier = tier;
 		this.ticketIcon.SpriteName = "Honeyhex" + (int)rank;
 		this.amountOfTickets.text = shopItem.Rewards[0].Amount.ToString();
-		this.price.text = shopItem.FormattedPricePreferIAP(ManagerRepository.Get<InAppPurchaseManager>());
+		this.price.text = "0";
 		TournamentSetup.RankSetup rankSetup = SingletonAsset<TournamentSetup>.Instance.GetRankSetup(rank);
 		UIFontStyle fontStyle = rankSetup.fontStyle;
 		if (fontStyle)

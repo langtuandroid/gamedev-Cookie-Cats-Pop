@@ -23,13 +23,7 @@ public class OutOfMovesView : UIView
 		}
 	}
 
-	private IRewardedVideoPresenter RewardedVideoPresenter
-	{
-		get
-		{
-			return ManagerRepository.Get<RewardedVideoPresenter>();
-		}
-	}
+
 
 	protected override void ViewLoad(object[] parameters)
 	{
@@ -52,9 +46,8 @@ public class OutOfMovesView : UIView
 		{
 			this.scheduledBoosterButtonSwitcher.ShowScheduledBooster((bool)parameters[1]);
 		}
-		bool active = this.RewardedVideoPresenter.IsPlacementEnabled(this.rewardedVideoPlacement);
-		this.ButtonWithSpinner.gameObject.SetActive(active);
-		this.RewardedVideoPresenter.RequestVideo();
+		
+		this.ButtonWithSpinner.gameObject.SetActive(false);
 	}
 
 	private string GetDescriptionText()
@@ -94,46 +87,11 @@ public class OutOfMovesView : UIView
 		base.Close(0);
 	}
 
-	private void WatchAdClicked(UIEvent e)
-	{
-		FiberCtrl.Pool.Run(this.WatchAdCr(), false);
-	}
 
-	private IEnumerator WatchAdCr()
-	{
-		RewardedVideoParameters videoParameters = new RewardedVideoParameters(this.rewardedVideoPlacement, "Continue", 10);
-		yield return this.RewardedVideoPresenter.ShowRewardedVideo(videoParameters, delegate(bool didComplete)
-		{
-			if (didComplete)
-			{
-				base.Close(1);
-			}
-			this.RewardedVideoPresenter.RequestVideo();
-		});
-		yield break;
-	}
 
-	private void Update()
-	{
-		this.UpdateWatchVideoButton();
-	}
 
-	private void UpdateWatchVideoButton()
-	{
-		if (this.RewardedVideoPresenter.IsInCooldown(this.rewardedVideoPlacement))
-		{
-			this.ButtonWithSpinner.Disabled = true;
-			this.ButtonWithSpinner.Spinning = false;
-			this.ButtonWithSpinner.LoadingTitle = this.RewardedVideoPresenter.GetTimeLeftString(this.rewardedVideoPlacement) + " [NW]";
-		}
-		else
-		{
-			bool flag = !this.RewardedVideoPresenter.IsRequestingVideo() && this.RewardedVideoPresenter.CanShowRewardedVideo(this.rewardedVideoPlacement);
-			this.ButtonWithSpinner.Disabled = !flag;
-			this.ButtonWithSpinner.Spinning = this.RewardedVideoPresenter.IsRequestingVideo();
-			this.ButtonWithSpinner.LoadingTitle = ((!this.RewardedVideoPresenter.IsRequestingVideo()) ? L.Get("No Video available") : L.Get("Loading..."));
-		}
-	}
+
+
 
 	protected override void ViewWillAppear()
 	{

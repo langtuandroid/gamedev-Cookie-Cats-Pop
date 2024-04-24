@@ -9,9 +9,9 @@ namespace TactileModules.UserSupport
 {
 	public static class UserSupportSystemBuilder
 	{
-		public static UserSupportSystem Build(IAttachmentsListener attachmentsListener, FacebookClient facebookClient, OneSignalManager oneSignalManager, IClientMessageMetaDataProvider messageMessageMetaDataProvider, CloudClientBase cloudClient, InAppPurchaseManagerBase iapManager, MapPopupManager mapPopupManager, IUIViewManager viewManager, ISupportedAttachments clientSupportedAttachments, IUserSupportBackupRestorer backupRestorer, IUserSupportBackupDetailsProvider userSettingsDetailsProvider, IAnalytics analytics)
+		public static UserSupportSystem Build(IAttachmentsListener attachmentsListener, FacebookClient facebookClient, OneSignalManager oneSignalManager, IClientMessageMetaDataProvider messageMessageMetaDataProvider, CloudClientBase cloudClient, MapPopupManager mapPopupManager, IUIViewManager viewManager, ISupportedAttachments clientSupportedAttachments, IUserSupportBackupRestorer backupRestorer, IUserSupportBackupDetailsProvider userSettingsDetailsProvider, IAnalytics analytics)
 		{
-			MessageMetaData messageMetaDataProvider = new MessageMetaData(iapManager, facebookClient, cloudClient, messageMessageMetaDataProvider);
+			MessageMetaData messageMetaDataProvider = new MessageMetaData(facebookClient, cloudClient, messageMessageMetaDataProvider);
 			UserSupportCloud cloud = new UserSupportCloud(cloudClient, messageMetaDataProvider);
 			UserStorageFactory storageFactory = new UserStorageFactory();
 			User user = new User(storageFactory, facebookClient);

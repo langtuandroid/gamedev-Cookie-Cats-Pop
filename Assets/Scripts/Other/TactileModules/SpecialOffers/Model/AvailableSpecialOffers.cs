@@ -1,18 +1,15 @@
-using System;
 using System.Collections.Generic;
 using TactileModules.FeatureManager.DataClasses;
 using TactileModules.FeatureManager.Interfaces;
-using TactileModules.InAppPurchase;
 
 namespace TactileModules.SpecialOffers.Model
 {
 	public class AvailableSpecialOffers : IAvailableSpecialOffers
 	{
-		public AvailableSpecialOffers(IFeatureManager featureManager, IFeatureTypeHandler featureTypeHandler, IInAppPurchaseManager inAppPurchaseManager)
+		public AvailableSpecialOffers(IFeatureManager featureManager, IFeatureTypeHandler featureTypeHandler)
 		{
 			this.featureManager = featureManager;
 			this.featureTypeHandler = featureTypeHandler;
-			this.inAppPurchaseManager = inAppPurchaseManager;
 		}
 
 		public List<ISpecialOffer> GetOffers()
@@ -21,7 +18,7 @@ namespace TactileModules.SpecialOffers.Model
 			List<string> allFeatureIds = this.GetAllFeatureIds();
 			foreach (string featureInstanceId in allFeatureIds)
 			{
-				SpecialOffer specialOffer = new SpecialOffer(this.featureManager, this.featureTypeHandler, this.inAppPurchaseManager, featureInstanceId);
+				SpecialOffer specialOffer = new SpecialOffer(this.featureManager, this.featureTypeHandler, featureInstanceId);
 				if (specialOffer.IsValid())
 				{
 					list.Add(specialOffer);
@@ -53,7 +50,5 @@ namespace TactileModules.SpecialOffers.Model
 		private readonly IFeatureManager featureManager;
 
 		private readonly IFeatureTypeHandler featureTypeHandler;
-
-		private readonly IInAppPurchaseManager inAppPurchaseManager;
 	}
 }

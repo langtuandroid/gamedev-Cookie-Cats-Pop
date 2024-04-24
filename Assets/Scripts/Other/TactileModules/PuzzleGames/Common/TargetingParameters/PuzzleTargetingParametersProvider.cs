@@ -9,17 +9,16 @@ namespace TactileModules.PuzzleGames.Common.TargetingParameters
 {
 	public class PuzzleTargetingParametersProvider : ITargetingParametersProvider
 	{
-		public PuzzleTargetingParametersProvider(IMainProgression mainProgression, IUserSettings userSettings, IInterstitialPresenterDataProvider interstitialPresenterDataProvider, IAnalyticsAdjustAttribution analyticsAdjustAttribution)
+		public PuzzleTargetingParametersProvider(IMainProgression mainProgression, IUserSettings userSettings)
 		{
 			this.mainProgression = mainProgression;
-			this.interstitialPresenterDataProvider = interstitialPresenterDataProvider;
-			this.analyticsAdjustAttribution = analyticsAdjustAttribution;
+			
 			this.userSettings = userSettings;
 		}
 
 		protected virtual bool IsPayingUser()
 		{
-			return this.userSettings.GetSettings<InAppPurchaseManager.PersistableState>().IsPayingUser;
+			return true;
 		}
 
 		public Hashtable GetAdditionalTargetingParameters()
@@ -33,10 +32,6 @@ namespace TactileModules.PuzzleGames.Common.TargetingParameters
 				{
 					"isPayingUser",
 					this.IsPayingUser()
-				},
-				{
-					"totalInterstitialsShown",
-					this.interstitialPresenterDataProvider.TotalInterstitialsShown
 				}
 			};
 			
@@ -44,10 +39,6 @@ namespace TactileModules.PuzzleGames.Common.TargetingParameters
 		}
 
 		private readonly IMainProgression mainProgression;
-
-		private readonly IInterstitialPresenterDataProvider interstitialPresenterDataProvider;
-
-		private readonly IAnalyticsAdjustAttribution analyticsAdjustAttribution;
 
 		private readonly IUserSettings userSettings;
 	}

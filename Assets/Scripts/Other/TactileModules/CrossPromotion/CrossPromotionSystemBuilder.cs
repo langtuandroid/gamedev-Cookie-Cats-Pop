@@ -12,12 +12,8 @@ using TactileModules.CrossPromotion.General.Ads.AdModels;
 using TactileModules.CrossPromotion.General.LimitedUrlCaching;
 using TactileModules.CrossPromotion.General.LimitedUrlCaching.Data;
 using TactileModules.CrossPromotion.General.PromotedGameUtility;
-using TactileModules.CrossPromotion.Interstitials;
-using TactileModules.CrossPromotion.Interstitials.ViewControllers;
-using TactileModules.CrossPromotion.RewardedVideos;
 using TactileModules.CrossPromotion.TactileHub;
 using TactileModules.CrossPromotion.TactileHub.Models;
-using TactileModules.CrossPromotion.TemplateAssets.GeneratedScript;
 using TactileModules.NinjaUi.SharedViewControllers;
 using TactileModules.RuntimeTools;
 using TactileModules.RuntimeTools.Orientation;
@@ -29,7 +25,7 @@ namespace TactileModules.CrossPromotion
 {
 	public static class CrossPromotionSystemBuilder
 	{
-		public static CrossPromotionSystem Build(string currentGameId, IInterstitialPresenter interstitialPresenter, IRewardedVideoPresenter rewardedVideoPresenter, IGameSessionManager gameSessionManager, IUIViewManager uiViewManager, SideMapButtonSystem sideButtonsSystem, IAnalytics analytics, ISpinnerViewController spinnerViewController, IBasicDialogViewController basicDialogViewController, IUserProgressProvider userProgressProvider)
+		public static void Build(string currentGameId, IGameSessionManager gameSessionManager, IUIViewManager uiViewManager, SideMapButtonSystem sideButtonsSystem, IAnalytics analytics, ISpinnerViewController spinnerViewController, IBasicDialogViewController basicDialogViewController, IUserProgressProvider userProgressProvider)
 		{
 			PromotedGameUtilityFactory promotedGameUtilityFactory = new PromotedGameUtilityFactory();
 			IPromotedGameUtility promotedGameUtility = promotedGameUtilityFactory.Create(currentGameId);
@@ -58,10 +54,6 @@ namespace TactileModules.CrossPromotion
 			AdCreativeSelector adCreativeSelector = new AdCreativeSelector(screenOrientationGetter);
 			CrossPromotionAnalyticsDataFactory analyticsDataFactory = new CrossPromotionAnalyticsDataFactory(screenOrientationGetter, adCreativeSelector);
 			CrossPromotionAdFactory crossPromotionAdFactory = new CrossPromotionAdFactory(adCacherRetriever, adCreativeSelector, promotedGameLauncher, generalDataRetriever, dateTimeGetter, textureLoader, analytics);
-			ViewFactory viewFactory = new ViewFactory();
-			IInterstitialControllerFactory interstitialControllerFactory = TactileModules.CrossPromotion.Interstitials.InterstitialSystemBuilder.InitializeAndRegisterRewardedInterstitialProvider(interstitialPresenter, cloudInterface, cloudResponseParser, crossPromotionAdFactory, generalDataRetriever, gameSessionManager, dateTimeGetter, viewFactory, uiViewManager, sideButtonsSystem, analyticsDataFactory, spinnerViewController, userProgressProvider);
-			TactileModules.CrossPromotion.RewardedVideos.RewardedVideoSystemBuilder.InitializeAndRegisterRewardedVideoProvider(rewardedVideoPresenter, cloudInterface, cloudResponseParser, crossPromotionAdFactory, generalDataRetriever, gameSessionManager, dateTimeGetter, viewFactory, uiViewManager, analyticsDataFactory, analytics, spinnerViewController, basicDialogViewController, userProgressProvider);
-			return new CrossPromotionSystem(interstitialControllerFactory);
 		}
 
 		private const string CROSS_PROMOTION_DOMAIN = "CrossPromotion";

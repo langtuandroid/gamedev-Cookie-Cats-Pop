@@ -52,16 +52,16 @@ public class TicketShopView : ExtensibleView<TicketShopView.IExtension>
 		ShopItem shopItem3 = list[0];
 		foreach (ShopItem shopItem4 in list)
 		{
-			if (shopItem4.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()) < shopItem2.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()))
+			if (shopItem4.CalculatePricePerItem() < shopItem2.CalculatePricePerItem())
 			{
 				shopItem2 = shopItem4;
 			}
-			if (shopItem4.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()) > shopItem3.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()))
+			if (shopItem4.CalculatePricePerItem() > shopItem3.CalculatePricePerItem())
 			{
 				shopItem3 = shopItem4;
 			}
 		}
-		string discount = this.MakeNiceDiscountNumber(1f - shopItem2.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()) / shopItem3.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()));
+		string discount = this.MakeNiceDiscountNumber(1f - shopItem2.CalculatePricePerItem() / shopItem3.CalculatePricePerItem());
 		for (int i = 0; i < this.ticketTiers; i++)
 		{
 			GameObject gameObject = UnityEngine.Object.Instantiate<GameObject>(this.ticketElementPrefab);
@@ -99,16 +99,16 @@ public class TicketShopView : ExtensibleView<TicketShopView.IExtension>
 			ShopItem shopItem3 = list[0];
 			foreach (ShopItem shopItem4 in list)
 			{
-				if (shopItem4.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()) < shopItem2.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()))
+				if (shopItem4.CalculatePricePerItem() < shopItem2.CalculatePricePerItem())
 				{
 					shopItem2 = shopItem4;
 				}
-				if (shopItem4.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()) > shopItem3.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()))
+				if (shopItem4.CalculatePricePerItem() > shopItem3.CalculatePricePerItem())
 				{
 					shopItem3 = shopItem4;
 				}
 			}
-			string discount = this.MakeNiceDiscountNumber(shopItem2.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()) / shopItem3.CalculatePricePerItem(ManagerRepository.Get<InAppPurchaseManager>()));
+			string discount = this.MakeNiceDiscountNumber(shopItem2.CalculatePricePerItem() / shopItem3.CalculatePricePerItem());
 			for (int i = 0; i < this.ticketElements.Count; i++)
 			{
 				this.ticketElements[i].Init(list[i], list[i] == shopItem2, discount, this.selectedRank, i, new Action<TicketShopItem>(this.HandleTicketButtonClicked));
@@ -136,35 +136,10 @@ public class TicketShopView : ExtensibleView<TicketShopView.IExtension>
 
 	private void HandleTicketButtonClicked(TicketShopItem item)
 	{
-		this.purchaseFiber.Start(this.Purchase(item));
+		
 	}
 
-	private IEnumerator Purchase(TicketShopItem item)
-	{
-		ShopItem shopItem = item.GetShopItem();
-		InAppProduct product = ManagerRepository.Get<InAppPurchaseManager>().GetProductForIdentifier(shopItem.FullIAPIdentifier);
-		bool success = false;
-		if (product != null)
-		{
-			yield return ManagerRepository.Get<InAppPurchaseManager>().DoInAppPurchase(product, delegate(string receivedPurchaseSessionId, string receivedTransactionId, InAppPurchaseStatus resultStatus)
-			{
-				success = (resultStatus == InAppPurchaseStatus.Succeeded);
-			});
-		}
-		if (success)
-		{
-			if (base.Extension != null)
-			{
-				base.Extension.PurchaseSuccessful();
-			}
-			yield return this.AnimateTicketOnPurchase(shopItem.Rewards[0].Amount, item.rank, item.gameObject.transform.position);
-		}
-		if (this.requiredRank == item.rank)
-		{
-			base.Close(1);
-		}
-		yield break;
-	}
+
 
 	private IEnumerator AnimateTicketOnPurchase(int amount, TournamentRank rank, Vector3 source)
 	{

@@ -8,16 +8,10 @@ using Tactile;
 
 public class ShopManager : ManagerWithMetaData<ShopItemIdentifier, ShopItemMetaData>, IShopManager
 {
-	private ShopManager(ShopManager.IShopManagerInterface managerInterface, [NotNull] InAppPurchaseManagerBase inAppPurchaseManagerBase, IUserSettings userSettings)
+	private ShopManager(ShopManager.IShopManagerInterface managerInterface,  IUserSettings userSettings)
 	{
-		if (inAppPurchaseManagerBase == null)
-		{
-			throw new ArgumentNullException("inAppPurchaseManagerBase");
-		}
 		this.managerInterface = managerInterface;
 		this.userSettings = userSettings;
-		this.inAppPurchaseManagerBase = inAppPurchaseManagerBase;
-		this.inAppPurchaseManagerBase.PurchaseSuccessfulEvent += this.HandleIapSuccess;
 	}
 
 	//[DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -25,9 +19,9 @@ public class ShopManager : ManagerWithMetaData<ShopItemIdentifier, ShopItemMetaD
 
 	public static ShopManager Instance { get; private set; }
 
-	public static ShopManager CreateInstance(ShopManager.IShopManagerInterface managerInterface, InAppPurchaseManagerBase inAppPurchaseManagerBase, IUserSettings userSettings)
+	public static ShopManager CreateInstance(ShopManager.IShopManagerInterface managerInterface,  IUserSettings userSettings)
 	{
-		ShopManager.Instance = new ShopManager(managerInterface, inAppPurchaseManagerBase, userSettings);
+		ShopManager.Instance = new ShopManager(managerInterface, userSettings);
 		return ShopManager.Instance;
 	}
 
@@ -55,10 +49,7 @@ public class ShopManager : ManagerWithMetaData<ShopItemIdentifier, ShopItemMetaD
 	{
 		foreach (ShopItem shopItem in ShopManager.Config.ShopItems)
 		{
-			if (shopItem.FullIAPIdentifier == iapIdentifier)
-			{
-				return shopItem;
-			}
+			
 		}
 		return null;
 	}
@@ -100,35 +91,8 @@ public class ShopManager : ManagerWithMetaData<ShopItemIdentifier, ShopItemMetaD
 		yield break;
 	}
 
-	private void HandleIapSuccess(InAppPurchaseManagerBase.PurchaseSuccessfulEventData purchaseEventData)
-	{
-		ShopItem shopItemFromFullIapIdentifier = ShopManager.Instance.GetShopItemFromFullIapIdentifier(purchaseEventData.ProductId);
-		this.HandleShopItemBought(shopItemFromFullIapIdentifier, purchaseEventData);
-	}
 
-	public void HandleShopItemBought(ShopItem shopItem, InAppPurchaseManagerBase.PurchaseSuccessfulEventData inAppPurchaseEventDataOrNull)
-	{
-		if (shopItem != null)
-		{
-			string transactionId = null;
-			string purchaseSessionId = null;
-			if (inAppPurchaseEventDataOrNull != null)
-			{
-				transactionId = inAppPurchaseEventDataOrNull.TransactionId;
-				purchaseSessionId = inAppPurchaseEventDataOrNull.PurchaseSessionId;
-			}
-			foreach (ItemAmount itemAmount in shopItem.Rewards)
-			{
-				InventoryManager.Instance.Add(itemAmount.ItemId, itemAmount.Amount, shopItem.Type, purchaseSessionId, transactionId);
-			}
-			if (this.ShopItemBought != null)
-			{
-				this.ShopItemBought(shopItem);
-				this.userSettings.SaveLocalSettings();
-				this.userSettings.SyncUserSettings();
-			}
-		}
-	}
+	
 
 	public void TrySpendCoins(ShopItemIdentifier shopItemIdentifier, object context, Action<bool> onComplete)
 	{
@@ -164,15 +128,12 @@ public class ShopManager : ManagerWithMetaData<ShopItemIdentifier, ShopItemMetaD
 			UserSettingsManager.Instance.SaveLocalSettings();
 			yield return this.managerInterface.TrySpendingCoins(canAfford, shopItem, context);
 			this.managerInterface.LogCoinsSpentToAnalytics(shopItem, context);
-			this.HandleShopItemBought(shopItem, null);
 		}
 		onComplete(canAfford);
 		yield break;
 	}
 
 	private ShopManager.IShopManagerInterface managerInterface;
-
-	private readonly InAppPurchaseManagerBase inAppPurchaseManagerBase;
 
 	private readonly IUserSettings userSettings;
 

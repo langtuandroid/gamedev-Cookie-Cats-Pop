@@ -1,7 +1,6 @@
 using System;
 using Tactile;
 using TactileModules.SpecialOffers.Analytics;
-using TactileModules.SpecialOffers.InAppPurchasing;
 using TactileModules.SpecialOffers.Model;
 using TactileModules.SpecialOffers.Views;
 
@@ -9,10 +8,9 @@ namespace TactileModules.SpecialOffers.Controllers
 {
 	public class SpecialOfferControllerFactory : ISpecialOfferControllerFactory
 	{
-		public SpecialOfferControllerFactory(ISpecialOfferViewFactory specialOfferViewFactory, IIapPurchaser iapPurchaser, ISpecialOffersGlobalCoolDown specialOffersGlobalCoolDown, IShopManager shopManager, IInventoryManager inventoryManager, IAnalyticsReporter analyticsReporter)
+		public SpecialOfferControllerFactory(ISpecialOfferViewFactory specialOfferViewFactory, ISpecialOffersGlobalCoolDown specialOffersGlobalCoolDown, IShopManager shopManager, IInventoryManager inventoryManager, IAnalyticsReporter analyticsReporter)
 		{
 			this.specialOfferViewFactory = specialOfferViewFactory;
-			this.iapPurchaser = iapPurchaser;
 			this.specialOffersGlobalCoolDown = specialOffersGlobalCoolDown;
 			this.shopManager = shopManager;
 			this.inventoryManager = inventoryManager;
@@ -44,7 +42,7 @@ namespace TactileModules.SpecialOffers.Controllers
 
 		private ISpecialOfferViewController CreateIapViewController(IViewPresenter placementViewMediator, ISpecialOffer specialOffer)
 		{
-			return new SpecialOfferIapViewController(placementViewMediator, this.specialOfferViewFactory, this.analyticsReporter, specialOffer, this.iapPurchaser);
+			return new SpecialOfferIapViewController(placementViewMediator, this.specialOfferViewFactory, this.analyticsReporter, specialOffer);
 		}
 
 		private ISpecialOfferViewController CreateCoinViewController(IViewPresenter placementViewMediator, ISpecialOffer specialOffer)
@@ -58,8 +56,6 @@ namespace TactileModules.SpecialOffers.Controllers
 		}
 
 		private readonly ISpecialOfferViewFactory specialOfferViewFactory;
-
-		private readonly IIapPurchaser iapPurchaser;
 
 		private readonly ISpecialOffersGlobalCoolDown specialOffersGlobalCoolDown;
 

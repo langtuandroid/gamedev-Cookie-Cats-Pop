@@ -21,11 +21,7 @@ public static class AdjustUtils
 	{
 		
 	}
-
-	public static void LogValidatedPurchase(InAppProduct p)
-	{
-		
-	}
+	
 
 	private static string userRegisteredToken;
 

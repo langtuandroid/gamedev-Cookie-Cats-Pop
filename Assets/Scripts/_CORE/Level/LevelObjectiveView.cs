@@ -8,21 +8,12 @@ using UnityEngine;
 
 public class LevelObjectiveView : UIView
 {
-	private IRewardedVideoPresenter RewardedVideoPresenter
-	{
-		get
-		{
-			return ManagerRepository.Get<RewardedVideoPresenter>();
-		}
-	}
-
 	protected override void ViewLoad(object[] parameters)
 	{
 		this.session = (LevelSession)parameters[0];
 		this.amountLabel.text = "x " + this.session.TotalGoalPieces.ToString();
 		this.spinnerButtonWatchAd = this.freeBoostButtonAd.GetInstance<ButtonWithSpinner>();
 		this.buyButton = this.freeBoostButtonWithCoins.GetInstance<ButtonWithTitle>();
-		this.RequestVideo();
 		this.animFiber.Start(this.WaitForUserInputAndAnimateOffScreen(5f));
 		this.isTimerPaused = false;
 		this.goalLabel.text = L.Get("Save the Kittens!");
@@ -38,7 +29,6 @@ public class LevelObjectiveView : UIView
 	protected override void ViewWillAppear()
 	{
 		this.slideIn.gameObject.SetActive(true);
-		this.freeBoostPivot.SetActive(this.RewardedVideoPresenter.CanShowRewardedVideo(this.rewardedVideoPlacement));
 		ShopItem shopItem = ShopManager.Instance.GetShopItem("ShopItemFreebie");
 		this.buyButton.Title = shopItem.CurrencyPrice + " [C]";
 		this.spinnerButtonWatchAd.PrimaryTitle = L.Get("Watch Ad");
@@ -81,43 +71,14 @@ public class LevelObjectiveView : UIView
 			this.currencyOverlay.OnCoinButtonClicked = null;
 		}
 	}
-
-	private void RequestVideo()
-	{
-		this.RewardedVideoPresenter.RequestVideo();
-		this.requestingVideoFiber.Start(this.WhileIsRequestingVideo());
-	}
-
-	private IEnumerator WhileIsRequestingVideo()
-	{
-		this.spinnerButtonWatchAd.Disabled = this.RewardedVideoPresenter.IsRequestingVideo();
-		this.spinnerButtonWatchAd.Spinning = this.RewardedVideoPresenter.IsRequestingVideo();
-		this.spinnerButtonWatchAd.LoadingTitle = L.Get("Loading...");
-		while (this.RewardedVideoPresenter.IsRequestingVideo())
-		{
-			yield return null;
-		}
-		this.spinnerButtonWatchAd.Disabled = !this.RewardedVideoPresenter.CanShowRewardedVideo(this.rewardedVideoPlacement);
-		this.spinnerButtonWatchAd.Spinning = this.RewardedVideoPresenter.IsRequestingVideo();
-		this.spinnerButtonWatchAd.LoadingTitle = L.Get("No Video available");
-		yield break;
-	}
-
+	
 	private void OnDisable()
 	{
 		this.animFiber.Terminate();
 		this.requestingVideoFiber.Terminate();
 	}
 
-	[UsedImplicitly]
-	private void OnWatchAdButtonClick(UIEvent e)
-	{
-		if (this.userInputBlocked)
-		{
-			return;
-		}
-		this.animFiber.Start(this.ShowVideo());
-	}
+
 
 	[UsedImplicitly]
 	private void OnBuyButtonClick(UIEvent e)
@@ -148,27 +109,7 @@ public class LevelObjectiveView : UIView
 		yield return this.WaitForUserInputAndAnimateOffScreen((float)((!this.gotFreeBee) ? 3 : 0));
 		yield break;
 	}
-
-	private IEnumerator ShowVideo()
-	{
-		this.userInputBlocked = true;
-		RewardedVideoParameters videoParameters = new RewardedVideoParameters(this.rewardedVideoPlacement, "FreeBee", 1);
-		if (this.RewardedVideoPresenter.CanShowRewardedVideo(this.rewardedVideoPlacement))
-		{
-			this.isTimerPaused = true;
-			yield return this.RewardedVideoPresenter.ShowRewardedVideo(videoParameters, delegate(bool completedVideo)
-			{
-				this.gotFreeBee = completedVideo;
-			});
-			this.isTimerPaused = false;
-		}
-		if (this.gotFreeBee)
-		{
-			GameEventManager.Instance.Emit(31);
-		}
-		yield return this.WaitForUserInputAndAnimateOffScreen((float)((!this.gotFreeBee) ? 3 : 0));
-		yield break;
-	}
+	
 
 	[UsedImplicitly]
 	private void DismissClicked(UIEvent e)

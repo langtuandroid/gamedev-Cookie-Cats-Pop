@@ -16,23 +16,7 @@ public class ShopViewItem : MonoBehaviour
 			return ManagerRepository.Get<ConfigurationManager>();
 		}
 	}
-
-	private InAppPurchaseManager InAppPurchaseManager
-	{
-		get
-		{
-			return ManagerRepository.Get<InAppPurchaseManager>();
-		}
-	}
-
-	private void Awake()
-	{
-	}
-
-	private void OnDestroy()
-	{
-	}
-
+	
 	public void Initialize(ShopItem item, bool bestOffer)
 	{
 		this.mostPopularOfferSticker.gameObject.SetActive(false);
@@ -47,7 +31,7 @@ public class ShopViewItem : MonoBehaviour
 		this.shopItem = item;
 		ShopItemMetaData metaData = ShopManager.Instance.GetMetaData<ShopItemMetaData>(item.Type);
 		this.amount.text = this.shopItem.CoinAmount.ToString();
-		this.price.text = this.shopItem.FormattedPricePreferIAP(this.InAppPurchaseManager);
+		this.price.text = "0";
 		this.coinSprite.SpriteName = metaData.ImageSpriteName;
 		this.GetElement().DoLayout();
 		this.coinSprite.CorrectAspect(AspectCorrection.Fit);

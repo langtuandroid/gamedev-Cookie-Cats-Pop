@@ -9,14 +9,6 @@ using UnityEngine;
 
 public class NoMoreLivesView : UIView
 {
-	private IRewardedVideoPresenter RewardedVideoPresenter
-	{
-		get
-		{
-			return ManagerRepository.Get<RewardedVideoPresenter>();
-		}
-	}
-
 	private FacebookLoginManager FacebookLoginManager
 	{
 		get
@@ -34,9 +26,7 @@ public class NoMoreLivesView : UIView
 	{
 		this.playingTournament = (parameters.Length > 0 && (bool)parameters[0]);
 		this.rewardItem = ((!this.playingTournament) ? "Life" : "TournamentLife");
-		this.RewardedVideoPresenter.RequestVideo();
-		bool active = this.RewardedVideoPresenter.IsPlacementEnabled(this.rewardedVideoPlacement);
-		this.watchVideoPivot.gameObject.SetActive(active);
+		this.watchVideoPivot.gameObject.SetActive(false);
 	}
 
 	protected override void ViewWillAppear()
@@ -107,11 +97,10 @@ public class NoMoreLivesView : UIView
 		{
 			return;
 		}
-		if (this.RewardedVideoPresenter.IsInCooldown(this.rewardedVideoPlacement))
+		if (true)
 		{
 			this.watchVideoButton.SetActive(false);
 			this.watchVideoTimer.SetActive(true);
-			this.watchVideoTimerLabel.text = this.RewardedVideoPresenter.GetTimeLeftString(this.rewardedVideoPlacement);
 		}
 		else
 		{
@@ -172,24 +161,7 @@ public class NoMoreLivesView : UIView
 		});
 	}
 
-	private void WatchVideoGetFreeLives(UIEvent e)
-	{
-		this.watchFiber.Start(this.WatchVideoGetFreeLivesCr());
-	}
-
-	private IEnumerator WatchVideoGetFreeLivesCr()
-	{
-		RewardedVideoParameters videoParameters = new RewardedVideoParameters(this.rewardedVideoPlacement, this.rewardItem, 1);
-		yield return this.RewardedVideoPresenter.ShowRewardedVideo(videoParameters, delegate(bool didComplete)
-		{
-			if (didComplete)
-			{
-				this.WatchedVideoSuccessful();
-			}
-		});
-		yield break;
-	}
-
+	
 	private void WatchedVideoSuccessful()
 	{
 		InventoryManager.Instance.Add(this.rewardItem, 1, "WatchedVideo");

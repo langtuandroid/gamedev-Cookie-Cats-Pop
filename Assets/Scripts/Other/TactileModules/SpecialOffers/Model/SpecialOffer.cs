@@ -1,19 +1,16 @@
-using System;
 using System.Collections.Generic;
 using TactileModules.FeatureManager.DataClasses;
 using TactileModules.FeatureManager.Interfaces;
-using TactileModules.InAppPurchase;
 using UnityEngine;
 
 namespace TactileModules.SpecialOffers.Model
 {
 	public class SpecialOffer : ISpecialOffer
 	{
-		public SpecialOffer(IFeatureManager featureManager, IFeatureTypeHandler handler, IInAppPurchaseManager inAppPurchaseManager, string featureInstanceId)
+		public SpecialOffer(IFeatureManager featureManager, IFeatureTypeHandler handler, string featureInstanceId)
 		{
 			this.featureManager = featureManager;
 			this.handler = handler;
-			this.inAppPurchaseManager = inAppPurchaseManager;
 			this.FeatureInstanceId = featureInstanceId;
 		}
 
@@ -67,6 +64,11 @@ namespace TactileModules.SpecialOffers.Model
 			return this.GetMetaData().Reward;
 		}
 
+		public string GetIAPIdentifier()
+		{
+			return "0";
+		}
+
 		public Texture2D LoadTexture()
 		{
 			return this.featureManager.LoadTextureFromCache(this.handler, this.GetMetaData().TextureURL);
@@ -96,12 +98,12 @@ namespace TactileModules.SpecialOffers.Model
 
 		public string GetPriceNow()
 		{
-			return this.GetOfferFormatedPrice(this.GetIAPIdentifier());
+			return "0";
 		}
 
 		public string GetPriceBefore()
 		{
-			return this.GetOfferFormatedPrice(this.GetIAPIdentifierBefore());
+			return "0";
 		}
 
 		public new SpecialOfferTypeEnum GetType()
@@ -183,24 +185,12 @@ namespace TactileModules.SpecialOffers.Model
 			return string.IsNullOrEmpty(iapidentifierBefore);
 		}
 
-		public string GetIAPIdentifier()
-		{
-			return InAppProductTactileInfo.IdentifierPrefix + this.GetMetaData().IAPIdentifier;
-		}
-
-		private string GetIAPIdentifierBefore()
-		{
-			return InAppProductTactileInfo.IdentifierPrefix + this.GetMetaData().IAPIdentifierBefore;
-		}
+	
 
 		private string GetOfferFormatedPrice(string iapIdentifier)
 		{
-			InAppProduct productForIdentifier = this.inAppPurchaseManager.GetProductForIdentifier(iapIdentifier);
-			if (productForIdentifier != null)
-			{
-				return productForIdentifier.FormattedPrice;
-			}
-			return string.Empty;
+		
+			return "";
 		}
 
 		private FeatureData GetFeatureData()
@@ -241,7 +231,5 @@ namespace TactileModules.SpecialOffers.Model
 		private readonly IFeatureManager featureManager;
 
 		private readonly IFeatureTypeHandler handler;
-
-		private readonly IInAppPurchaseManager inAppPurchaseManager;
 	}
 }

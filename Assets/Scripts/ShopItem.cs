@@ -31,28 +31,7 @@ public class ShopItem
 		}
 	}
 
-	public string FullIAPIdentifier
-	{
-		get
-		{
-			if (!string.IsNullOrEmpty(this.IAPIdentifier))
-			{
-				return InAppProductTactileInfo.IdentifierPrefix + this.IAPIdentifier;
-			}
-			return this.IAPIdentifier;
-		}
-	}
-
-	public InAppProduct GetInAppProduct(InAppPurchaseManagerBase inAppPurchaseManager)
-	{
-		return inAppPurchaseManager.GetProductForIdentifier(this.FullIAPIdentifier);
-	}
-
-	public string FormattedPricePreferIAP(InAppPurchaseManagerBase inAppPurchaseManager)
-	{
-		InAppProduct inAppProduct = this.GetInAppProduct(inAppPurchaseManager);
-		return (inAppProduct != null) ? inAppProduct.FormattedPrice : "-";
-	}
+	
 
 	public int Amount(string inventoryItemId)
 	{
@@ -74,7 +53,7 @@ public class ShopItem
 		}
 	}
 
-	public float CalculatePricePerItem(InAppPurchaseManagerBase inAppPurchaseManager)
+	public float CalculatePricePerItem()
 	{
 		int num = 0;
 		foreach (ItemAmount itemAmount in this.Rewards)
@@ -85,11 +64,7 @@ public class ShopItem
 		{
 			num = 1;
 		}
-		InAppProduct inAppProduct = this.GetInAppProduct(inAppPurchaseManager);
-		if (inAppProduct != null)
-		{
-			return (float)inAppProduct.TactileInfo.Price / (float)num;
-		}
+		
 		return (float)this.CurrencyPrice / (float)num;
 	}
 
@@ -103,7 +78,6 @@ public class ShopItem
 			this.CustomTag,
 			this.Rewards,
 			this.PartialIAPIdentifier,
-			this.FullIAPIdentifier,
 			this.CoinAmount
 		});
 	}

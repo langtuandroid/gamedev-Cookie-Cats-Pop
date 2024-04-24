@@ -8,15 +8,12 @@ using CookieCatsPop.FrameworkImplementation.NinjaUi;
 using CookieCatsPop.UserSupport;
 using NinjaUI;
 using Shared.OneLifeChallenge;
-using Shared.UserSettings.Module;
 using Tactile;
 using Tactile.GardenGame.MapSystem;
 using Tactile.GardenGame.Shop;
 using Tactile.GardenGame.Story;
 using Tactile.SagaCore;
 using Tactile.XperiaGamesClub;
-using TactileModules.Ads;
-using TactileModules.Ads.Configuration;
 using TactileModules.AgeInfo;
 using TactileModules.CrossPromotion;
 using TactileModules.FacebookExtras;
@@ -35,8 +32,6 @@ using TactileModules.Inventory;
 using TactileModules.Placements;
 using TactileModules.Portraits;
 using TactileModules.PuzzleCore.LevelPlaying;
-using TactileModules.PuzzleGame.Ads;
-using TactileModules.PuzzleGame.HotStreak;
 using TactileModules.PuzzleGame.MainLevels;
 using TactileModules.PuzzleGame.PiggyBank;
 using TactileModules.PuzzleGame.PiggyBank.Models;
@@ -92,7 +87,6 @@ public class Boot : BootBase
         GameSessionManager gameSessionManager = repository.Register<GameSessionManager>(GameSessionManager.CreateInstance(new GameSessionManagerProvider()), null);
         MapPopupManager mapPopupManager = repository.Register<MapPopupManager>(MapPopupManager.CreateInstance(gameSessionManager, null), null);
         TimeStampManager timeStampManager = repository.Register<TimeStampManager>(new TimeStampManager(), null);
-        InAppPurchaseManager iapManager = repository.Register<InAppPurchaseManager>(new InAppPurchaseManager(new DialogViewProvider(), facebookClient, cloudClient, configurationManager), null);
 
         Analytics analytics = repository.Register<Analytics>(new Analytics(cloudClient, configurationManager), null);
 
@@ -111,18 +105,14 @@ public class Boot : BootBase
         AudioManager audioManager = repository.Register<AudioManager>(AudioManager.CreateInstance(), null);
         GateManager gateManager = repository.Register<GateManager>(GateManager.CreateInstance(new GateManagerHelper()), null);
         MainProgressionManager mainProgressionManager = repository.Register<MainProgressionManager>(MainProgressionManager.CreateInstance(gateManager, new MainProgressionProvider(), levelDatabaseCollection, int.MaxValue), null);
-        AdConfigurationProvider adConfigurationProvider = repository.Register<AdConfigurationProvider>(new AdConfigurationProvider(cloudClient, configurationManager, analytics), null);
         IInstallTime installTime = InstallTimeBuilder.Build();
-        RewardedVideoPresenter rewardedVideoPresenter = repository.Register<RewardedVideoPresenter>(RewardedVideoSystemBuilder.Build(new MusicControlProvider(audioManager), adConfigurationProvider, tactileAnalytics), null);
-        InterstitialPresenter interstitialPresenter = repository.Register<InterstitialPresenter>(InterstitialSystemBuilder.Build(adConfigurationProvider, new PayingUserProvider(new UserSettingsGetter<InAppPurchaseManager.PersistableState>(userSettingsManager)), installTime), null);
-        AdManagerSystemBuilder.Build(adConfigurationProvider, mainProgressionManager, rewardedVideoPresenter, interstitialPresenter);
 
         SideMapButtonSystem sideButtonsSystem = SideMapButtonsSystemBuilder.Build();
         SpinnerViewController spinnerViewController = new SpinnerViewController(uiViewManager);
         BasicDialogViewController basicDialogViewController = new BasicDialogViewController(uiViewManager);
         UserProgressProvider userProgressProvider = new UserProgressProvider(mainProgressionManager);
-        CrossPromotionSystemBuilder.Build(Constants.CROSS_PROMOTION_CAMPAIGN_CONTEXT, interstitialPresenter, rewardedVideoPresenter, gameSessionManager, uiViewManager, sideButtonsSystem, tactileAnalytics, spinnerViewController, basicDialogViewController, userProgressProvider);
-        PuzzleTargetingParametersProvider puzzleTargetingParametersProvider = new PuzzleTargetingParametersProvider(mainProgressionManager, userSettingsManager, interstitialPresenter, analytics);
+        CrossPromotionSystemBuilder.Build(Constants.CROSS_PROMOTION_CAMPAIGN_CONTEXT, gameSessionManager, uiViewManager, sideButtonsSystem, tactileAnalytics, spinnerViewController, basicDialogViewController, userProgressProvider);
+        PuzzleTargetingParametersProvider puzzleTargetingParametersProvider = new PuzzleTargetingParametersProvider(mainProgressionManager, userSettingsManager);
         EndlessChallengeTargetingParameters endlessChallengeTargetingParameters = new EndlessChallengeTargetingParameters(mainProgressionManager);
         TargetingParameterFactory targetingParameterFactory = new TargetingParameterFactory(cloudClient, installTime, new ITargetingParametersProvider[]
         {
@@ -154,7 +144,7 @@ public class Boot : BootBase
         SupportedAttachments supportedAttachments = new SupportedAttachments();
         BackupRestorer backupRestorer = new BackupRestorer(userSettingsManager);
         UserSettingsBackupSummaryProvider userSettingsDetailsProvider = new UserSettingsBackupSummaryProvider(userSettingsManager, inventoryManager);
-        UserSupportSystem userSupportSystem = UserSupportSystemBuilder.Build(attachmentsListener, facebookClient, oneSignalManager, messageMetaDataProvider, cloudClient, iapManager, mapPopupManager, uiViewManager, supportedAttachments, backupRestorer, userSettingsDetailsProvider, tactileAnalytics);
+        UserSupportSystem userSupportSystem = UserSupportSystemBuilder.Build(attachmentsListener, facebookClient, oneSignalManager, messageMetaDataProvider, cloudClient, mapPopupManager, uiViewManager, supportedAttachments, backupRestorer, userSettingsDetailsProvider, tactileAnalytics);
         repository.Register<UserSupportSystem>(userSupportSystem, null);
         CloudSynchronizer cloudSynchronizer = repository.Register<CloudSynchronizer>(new CloudSynchronizer(userSettingsManager, cloudClient, facebookClient, userSettingsBackupManager, configurationManager, assetBundleManager, leaderboardManager, featureManager, userSupportSystem.Synchronizer, () => Boot.IsRequestsBlocked), null);
         repository.Register<BonusDropManager>(Singleton<BonusDropManager>.CreateInstance(), null);
@@ -191,7 +181,7 @@ public class Boot : BootBase
         RewardAreaModel rewardAreaModel = new RewardAreaModel();
         VisualInventory visualInventory = new VisualInventory(rewardAreaModel, audio, InventoryManager.Instance);
         IButtonAreaSystem buttonAreaSystem = ButtonAreaSystemBuilder.Build(uiController);
-        ShopSystem shop = ShopSystemBuilder.Build((FlowStack)puzzleCoreCommon.FlowStack, uiController, buttonAreaSystem.Model, visualInventory, iapManager, configurationManager, userSettingsManager);
+        ShopSystem shop = ShopSystemBuilder.Build((FlowStack)puzzleCoreCommon.FlowStack, uiController, buttonAreaSystem.Model, visualInventory, configurationManager, userSettingsManager);
         ShopManager shopManager = shop.ShopManager;
 
         shopManager.ShopItemBought += new Action<ShopItem>(Boot.HandleShopItemBought);
@@ -212,7 +202,7 @@ public class Boot : BootBase
         new AdjustProgressionEventsLogger(levelPlayingSystem.PlayFlowEvents, adjustEventConstants, adjustTracking, gateManager);
         new BoosterSuggester(levelPlayingSystem.PlayFlowEvents);
         MusicSystemBuilder.Build(audioManager, puzzleCoreCommon.FlowStack);
-        PiggyBankSystem piggyBankSystem = repository.Register<PiggyBankSystem>(PiggyBankSystemBuilder.Build(sagaCore.MapFacade, mainProgressionManager, new PiggyBankIAPProvider(shop.ShopManager, iapManager, new ConfigProvider<PiggyBankConfig>(configurationManager)), new PiggyBankMapProvider(), new ItemsProvider(), new PiggyBankProvider(userSettingsManager), userSettingsManager, configurationManager, iapManager, mapPopupManager), null);
+        PiggyBankSystem piggyBankSystem = repository.Register<PiggyBankSystem>(PiggyBankSystemBuilder.Build(sagaCore.MapFacade, mainProgressionManager, new PiggyBankMapProvider(), new ItemsProvider(), new PiggyBankProvider(userSettingsManager), userSettingsManager, configurationManager, mapPopupManager), null);
         PlayablePostcardSystem playablePostcardSystem = repository.Register<PlayablePostcardSystem>(PlayablePostcardSystemBuilder.Build(featureManager, configurationManager, levelDatabaseCollection, mainProgressionManager, assetBundleManager, assetBundleSystem.AssetBundleDownloader, uiViewManager, tactileAnalytics, new PlayablePostcardProvider(), sagaCore.MapFacade, puzzleCoreCommon.FlowStack, puzzleCoreCommon.FullScreenManager, levelPlayingSystem.PlayFlowFactory), null);
         SideMapButtonSystem sideMapButtonSystem = SideMapButtonsSystemBuilder.Build();
         HotStreakManager hotStreakManager = new HotStreakManager(featureManager, new HotStreakProvider(), levelPlayingSystem.PlayFlowEvents);
@@ -240,7 +230,7 @@ public class Boot : BootBase
         StreamingAssetsSystemBuilder.Build(assetBundleSystem.AssetBundleManager, assetBundleSystem.AssetBundleDownloader);
         IStoryMapEventSystem storyMapEventSystem = StoryMapEventSystemBuilder.Build(levelPlayingSystem, storySystem.StoryManager, storySystem.BrowseTasksFactory, inventoryManager, mainMapStateFactory, sideMapButtonSystem, configurationManager, featureManager, placementsSystem.PlacementRunnableRegistry, puzzleCoreCommon.FlowStack, mainProgressionManager, uiViewManager, tactileAnalytics, new StoryMapEventNotificationProvider());
         NinjaUISystem ninjaUiSystem = NinjaUISystemBuilder.Build(tactileAnalytics);
-        SpecialOffersSystem specialOffersSystem = SpecialOffersSystemBuilder.Build(iapManager, featureManager, tactileAnalytics, new SpecialOffersMainProgressionProvider(mainProgressionManager), configurationManager, placementsSystem.PlacementRunnableRegistry, inventoryManager, shop.ShopManager, PlacementIdentifier.PostAnimateAvatar);
+        SpecialOffersSystem specialOffersSystem = SpecialOffersSystemBuilder.Build(featureManager, tactileAnalytics, new SpecialOffersMainProgressionProvider(mainProgressionManager), configurationManager, placementsSystem.PlacementRunnableRegistry, inventoryManager, shop.ShopManager, PlacementIdentifier.PostAnimateAvatar);
         SpecialOffersForSideMapButtonsSystemBuilder.Build(specialOffersSystem, sideMapButtonSystem, uiViewManager);
         List<IFeatureTypeHandler> featureHandlers = new List<IFeatureTypeHandler>();
         featureHandlers.Add(levelRushSystem.LevelRushFeatureHandler);

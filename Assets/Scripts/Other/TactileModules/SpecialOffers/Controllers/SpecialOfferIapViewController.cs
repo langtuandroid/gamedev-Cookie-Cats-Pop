@@ -3,7 +3,6 @@ using System.Collections;
 using Fibers;
 using TactileModules.RuntimeTools;
 using TactileModules.SpecialOffers.Analytics;
-using TactileModules.SpecialOffers.InAppPurchasing;
 using TactileModules.SpecialOffers.Model;
 using TactileModules.SpecialOffers.Views;
 
@@ -11,11 +10,10 @@ namespace TactileModules.SpecialOffers.Controllers
 {
 	public class SpecialOfferIapViewController : SpecialOfferViewController
 	{
-		public SpecialOfferIapViewController(IViewPresenter viewPresenter, ISpecialOfferViewFactory specialOfferViewFactory, IAnalyticsReporter analyticsReporter, ISpecialOffer specialOffer, IIapPurchaser iapPurchaser)
+		public SpecialOfferIapViewController(IViewPresenter viewPresenter, ISpecialOfferViewFactory specialOfferViewFactory, IAnalyticsReporter analyticsReporter, ISpecialOffer specialOffer)
 		{
 			this.viewPresenter = viewPresenter;
 			this.specialOfferViewFactory = specialOfferViewFactory;
-			this.iapPurchaser = iapPurchaser;
 			this.specialOffer = specialOffer;
 			this.analyticsReporter = analyticsReporter;
 		}
@@ -26,7 +24,6 @@ namespace TactileModules.SpecialOffers.Controllers
 			this.SetupView(this.view);
 			this.view.OnAcceptButtonClicked += this.OnPurchaseClicked;
 			this.view.OnDismissButtonClicked += this.OnCloseClicked;
-			this.iapPurchaser.OnPurchaseCompleted += this.OnPurchaseCompleted;
 			this.viewPresenter.ShowViewInstance<ISpecialOfferIapView>(this.view, new object[0]);
 			while (!this.closeView)
 			{
@@ -34,14 +31,12 @@ namespace TactileModules.SpecialOffers.Controllers
 			}
 			purchaseDataResult.value = this.purchaseData;
 			this.view.Close((!purchaseDataResult.value.purchaseSuccessful) ? 0 : 1);
-			this.iapPurchaser.OnPurchaseCompleted -= this.OnPurchaseCompleted;
 			yield break;
 		}
 
 		private void OnPurchaseClicked()
 		{
 			this.analyticsReporter.LogSpecialOfferBuyStarted(this.specialOffer.FeatureInstanceId);
-			this.iapPurchaser.Purchase(this.specialOffer);
 		}
 
 		private void OnPurchaseCompleted(PurchaseData purchaseData)
@@ -81,8 +76,6 @@ namespace TactileModules.SpecialOffers.Controllers
 		private readonly IViewPresenter viewPresenter;
 
 		private readonly ISpecialOfferViewFactory specialOfferViewFactory;
-
-		private readonly IIapPurchaser iapPurchaser;
 
 		private readonly ISpecialOffer specialOffer;
 

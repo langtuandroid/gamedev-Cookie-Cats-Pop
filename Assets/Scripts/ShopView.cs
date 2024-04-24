@@ -10,22 +10,7 @@ using UnityEngine;
 
 public class ShopView : UIView
 {
-	private InAppPurchaseManager InAppPurchaseManager
-	{
-		get
-		{
-			return ManagerRepository.Get<InAppPurchaseManager>();
-		}
-	}
-
-	private IRewardedVideoPresenter RewardedVideoPresenter
-	{
-		get
-		{
-			return ManagerRepository.Get<RewardedVideoPresenter>();
-		}
-	}
-
+	
 	protected override void ViewLoad(object[] parameters)
 	{
 		this.neededCoinsForPurchase = (int)parameters[0];
@@ -35,7 +20,7 @@ public class ShopView : UIView
 
 	protected override void ViewWillAppear()
 	{
-		bool active = !UserSettingsManager.Get<InAppPurchaseManager.PersistableState>().IsPayingUser;
+		bool active = !true;
 		this.anyPurchaseRemovesAdsLabel.gameObject.SetActive(active);
 		this.currencyOverlay = base.ObtainOverlay<CurrencyOverlay>();
 		this.spinnerButtonWatchAd.PrimaryTitle = L.Get("1 [C] Watch Ad!");
@@ -76,28 +61,9 @@ public class ShopView : UIView
 
 	private void RequestVideo()
 	{
-		this.RewardedVideoPresenter.RequestVideo();
-		this.requestingVideoFiber.Start(this.WhileIsRequestingVideo());
+		
 	}
 
-	private IEnumerator WhileIsRequestingVideo()
-	{
-		this.spinnerButtonWatchAd.Disabled = this.RewardedVideoPresenter.IsRequestingVideo();
-		this.spinnerButtonWatchAd.Spinning = this.RewardedVideoPresenter.IsRequestingVideo();
-		this.spinnerButtonWatchAd.LoadingTitle = L.Get("Loading...");
-		while (this.RewardedVideoPresenter.IsRequestingVideo())
-		{
-			yield return null;
-		}
-		if (this.spinnerButtonWatchAd == null)
-		{
-			yield break;
-		}
-		this.spinnerButtonWatchAd.Disabled = !this.RewardedVideoPresenter.CanShowRewardedVideo(this.rewardedVideoPlacement);
-		this.spinnerButtonWatchAd.Spinning = this.RewardedVideoPresenter.IsRequestingVideo();
-		this.spinnerButtonWatchAd.LoadingTitle = "No Video available";
-		yield break;
-	}
 
 	private void UpdateCoinItemsUI()
 	{
@@ -141,68 +107,16 @@ public class ShopView : UIView
 	[UsedImplicitly]
 	private void WatchAdClicked(UIEvent e)
 	{
-		this.videoFiber.Start(this.WatchAdCr());
+		
 	}
 
 	private void HandleCoinItemClicked(ShopViewItem item)
 	{
-		FiberCtrl.Pool.Run(this.PurchaseShopItem(item), false);
+		
 	}
 
-	private IEnumerator WatchAdCr()
-	{
-		RewardedVideoParameters videoParameters = new RewardedVideoParameters(this.rewardedVideoPlacement, "Coin", 1);
-		yield return this.RewardedVideoPresenter.ShowRewardedVideo(videoParameters, delegate(bool didComplete)
-		{
-			if (didComplete)
-			{
-				this.currencyOverlay.coinButton.PauseRefreshingCoins(true);
-				foreach (ItemAmount itemAmount in ConfigurationManager.Get<ShopConfig>().RewardForWatchingAd)
-				{
-					InventoryManager.Instance.Add(itemAmount.ItemId, itemAmount.Amount, "shopViewVideoAd");
-					if (itemAmount.ItemId == "Coin")
-					{
-						this.AnimatePurchaseSuccess(itemAmount.Amount, this.spinnerButtonWatchAd.transform.position + Vector3.back * 50f);
-					}
-				}
-				GameEventManager.Instance.Emit(31);
-			}
-			this.RequestVideo();
-		});
-		yield break;
-	}
 
-	private IEnumerator PurchaseShopItem(ShopViewItem item)
-	{
-		this.currencyOverlay.coinButton.PauseRefreshingCoins(true);
-		ShopItem shopItem = item.GetShopItem();
-		InAppProduct inAppProduct = this.InAppPurchaseManager.GetProductForIdentifier(shopItem.FullIAPIdentifier);
-		bool success = false;
-		if (inAppProduct != null)
-		{
-			yield return this.InAppPurchaseManager.DoInAppPurchase(inAppProduct, delegate(string purchaseSessionId, string transactionId, InAppPurchaseStatus resultStatus)
-			{
-				success = (resultStatus == InAppPurchaseStatus.Succeeded);
-			});
-		}
-		if (success)
-		{
-			SingletonAsset<UISetup>.Instance.purchaseSuccessful.Play();
-			UICamera.DisableInput();
-			if (ShopView._003C_003Ef__mg_0024cache0 == null)
-			{
-				ShopView._003C_003Ef__mg_0024cache0 = new Fiber.OnExitHandler(UICamera.EnableInput);
-			}
-			yield return new Fiber.OnExit(ShopView._003C_003Ef__mg_0024cache0);
-			yield return this.AnimateCoins(5, item.GetCoinSpawnPos());
-			UIViewManager.UIViewStateGeneric<PurchaseAcknowledgementView> acknowledgementvs = UIViewManager.Instance.ShowView<PurchaseAcknowledgementView>(new object[0]);
-			yield return acknowledgementvs.WaitForClose();
-			this.UpdateCoinItemsUI();
-			UICamera.EnableInput();
-		}
-		this.currencyOverlay.coinButton.PauseRefreshingCoins(false);
-		yield break;
-	}
+	
 
 	private void AnimatePurchaseSuccess(int numCoins, Vector3 spawnPos)
 	{

@@ -1,15 +1,12 @@
-using System;
-using Fibers;
+
 using Tactile;
 using TactileModules.Analytics.Interfaces;
 using TactileModules.FeatureManager.Interfaces;
-using TactileModules.InAppPurchase;
 using TactileModules.Placements;
 using TactileModules.PuzzleGames.Configuration;
 using TactileModules.PuzzleGames.SpecialOffers;
 using TactileModules.SpecialOffers.Analytics;
 using TactileModules.SpecialOffers.Controllers;
-using TactileModules.SpecialOffers.InAppPurchasing;
 using TactileModules.SpecialOffers.Model;
 using TactileModules.SpecialOffers.Placements;
 using TactileModules.SpecialOffers.Views;
@@ -19,20 +16,17 @@ namespace TactileModules.SpecialOffers
 {
 	public static class SpecialOffersSystemBuilder
 	{
-		public static SpecialOffersSystem Build(IInAppPurchaseManager inAppPurchaseManager, IFeatureManager featureManager, IAnalytics analytics, ISpecialOffersMainProgressionProvider mainProgression, IConfigurationManager configurationManager, IPlacementRunnableRegistry placementSystemPlacementRunnableRegistry, IInventoryManager inventoryManager, IShopManager shopManager, PlacementIdentifier placementIdentifier)
+		public static SpecialOffersSystem Build(IFeatureManager featureManager, IAnalytics analytics, ISpecialOffersMainProgressionProvider mainProgression, IConfigurationManager configurationManager, IPlacementRunnableRegistry placementSystemPlacementRunnableRegistry, IInventoryManager inventoryManager, IShopManager shopManager, PlacementIdentifier placementIdentifier)
 		{
 			string domainNamespace = "TactileModules.SpecialOffers.Model";
 			string key = "PendingPurchases";
-			LocalStorageJSONObject<PendingPurchases> localStorageObject = new LocalStorageJSONObject<PendingPurchases>(new PlayerPrefsSignedString(domainNamespace, key));
-			PersistedPendingPurchases persistedPendingPurchases = new PersistedPendingPurchases(localStorageObject);
 			SpecialOffersHandler specialOffersHandler = new SpecialOffersHandler(configurationManager);
 			SpecialOffersGlobalCoolDown specialOffersGlobalCoolDown = new SpecialOffersGlobalCoolDown(featureManager, specialOffersHandler, configurationManager);
 			AnalyticsReporter analyticsReporter = new AnalyticsReporter(analytics, featureManager, specialOffersHandler, specialOffersGlobalCoolDown);
-			IapPurchaser iapPurchaser = new IapPurchaser(inAppPurchaseManager, featureManager, specialOffersHandler, persistedPendingPurchases, inventoryManager, analyticsReporter, new Fiber());
 			ITemplateAssetFactory templateAssetFactory = new TemplateAssetFactory();
 			SpecialOfferViewFactory specialOfferViewFactory = new SpecialOfferViewFactory(templateAssetFactory);
-			SpecialOfferControllerFactory specialOfferControllerFactory = new SpecialOfferControllerFactory(specialOfferViewFactory, iapPurchaser, specialOffersGlobalCoolDown, shopManager, inventoryManager, analyticsReporter);
-			AvailableSpecialOffers availableSpecialOffers = new AvailableSpecialOffers(featureManager, specialOffersHandler, inAppPurchaseManager);
+			SpecialOfferControllerFactory specialOfferControllerFactory = new SpecialOfferControllerFactory(specialOfferViewFactory, specialOffersGlobalCoolDown, shopManager, inventoryManager, analyticsReporter);
+			AvailableSpecialOffers availableSpecialOffers = new AvailableSpecialOffers(featureManager, specialOffersHandler);
 			SpecialOfferSelector specialOfferSelector = new SpecialOfferSelector(mainProgression, availableSpecialOffers, specialOffersGlobalCoolDown, analyticsReporter);
 			ExpiredOffersDeactivator expiredOffersDeactivator = new ExpiredOffersDeactivator(featureManager, specialOffersHandler, analyticsReporter);
 			SpecialOfferPopupController popupController = new SpecialOfferPopupController(specialOfferSelector, specialOfferControllerFactory, expiredOffersDeactivator);

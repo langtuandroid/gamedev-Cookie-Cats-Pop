@@ -15,7 +15,7 @@ namespace TactileModules.PuzzleGame.PiggyBank.UI
 
 
 
-		public void Initialize(IIAPProvider iapProvider, int capacity, int maxCapacity, int availableCapacityIncrease)
+		public void Initialize(int capacity, int maxCapacity, int availableCapacityIncrease)
 		{
 			IPiggyBankOfferViewText component = base.GetComponent<IPiggyBankOfferViewText>();
 			GameObject instance = this.closeButtonUIInstantiator.GetInstance();
@@ -26,13 +26,13 @@ namespace TactileModules.PuzzleGame.PiggyBank.UI
 			this.DisableBuyButton(false);
 			if (base.Extension != null)
 			{
-				base.Extension.Initialize(iapProvider.GetOfferItems());
+				base.Extension.Initialize(new List<ItemAmount>());
 			}
-			this.SetBuyButtonLabelText(iapProvider.GetFormattedOfferPrice());
+			this.SetBuyButtonLabelText("0");
 			this.capacityIncreaseBadge.SetActive(capacity < maxCapacity);
 			this.capacityIncreaseLabel.text = "+" + availableCapacityIncrease;
 			bool flag = component != null;
-			this.descriptionLabel.text = ((!flag) ? this.GenericDescriptionLabelText(iapProvider.GetOfferItems(), availableCapacityIncrease) : component.GetDescriptionLabelText(iapProvider.GetOfferItems(), availableCapacityIncrease));
+			this.descriptionLabel.text = ((!flag) ? this.GenericDescriptionLabelText(new List<ItemAmount>(), availableCapacityIncrease) : component.GetDescriptionLabelText(new List<ItemAmount>(), availableCapacityIncrease));
 		}
 
 		private void CloseButtonClickedHandler(UIButton uiButton)

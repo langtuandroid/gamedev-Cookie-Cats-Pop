@@ -13,15 +13,7 @@ public class VipProgramNotSubscriberView : UIView
 			return ManagerRepository.Get<ConfigurationManager>();
 		}
 	}
-
-	private InAppPurchaseManager InAppPurchaseManager
-	{
-		get
-		{
-			return ManagerRepository.Get<InAppPurchaseManager>();
-		}
-	}
-
+	
 	protected override void ViewLoad(object[] parameters)
 	{
 		this.pivot_locked.SetActive(!VipManager.Instance.IsVipProgramUnlocked());
@@ -48,19 +40,14 @@ public class VipProgramNotSubscriberView : UIView
 	private void initializeReadyView()
 	{
 		ShopItem shopItem = ShopManager.Instance.GetShopItem("ShopItemVip");
-		this.buyButton.GetInstance<ButtonWithTitle>().Title = shopItem.FormattedPricePreferIAP(this.InAppPurchaseManager);
+		//this.buyButton.GetInstance<ButtonWithTitle>().Title = shopItem.FormattedPricePreferIAP(this.InAppPurchaseManager);
 	}
 
 	private void ButtonCloseClicked(UIEvent e)
 	{
 		this.DismissView("close");
 	}
-
-	private void ButtonBuyClicked(UIEvent e)
-	{
-		FiberCtrl.Pool.Run(this.Purchase(), false);
-	}
-
+	
 	private void DismissView(string button)
 	{
 		if (this.processingPurchase)
@@ -73,36 +60,7 @@ public class VipProgramNotSubscriberView : UIView
 			UIViewManager.Instance.ShowView<VipProgramSubscriberView>(new object[0]);
 		}
 	}
-
-	private IEnumerator Purchase()
-	{
-		if (this.processingPurchase)
-		{
-			yield break;
-		}
-		this.processingPurchase = true;
-		ShopItem shopItem = ShopManager.Instance.GetShopItem("ShopItemVip");
-		InAppProduct product = this.InAppPurchaseManager.GetProductForIdentifier(shopItem.FullIAPIdentifier);
-		bool success = false;
-		if (product != null)
-		{
-			yield return this.InAppPurchaseManager.DoInAppPurchase(product, delegate(string purchaseSessionId, string transactionId, InAppPurchaseStatus resultStatus)
-			{
-				success = (resultStatus == InAppPurchaseStatus.Succeeded);
-			});
-		}
-		this.processingPurchase = false;
-		if (success)
-		{
-			SingletonAsset<UISetup>.Instance.purchaseSuccessful.Play();
-			UICamera.DisableInput();
-			UIViewManager.UIViewStateGeneric<PurchaseAcknowledgementView> acknowledgementvs = UIViewManager.Instance.ShowView<PurchaseAcknowledgementView>(new object[0]);
-			yield return acknowledgementvs.WaitForClose();
-			UICamera.EnableInput();
-			this.DismissView("buy");
-		}
-		yield break;
-	}
+	
 
 	public GameObject pivot_locked;
 

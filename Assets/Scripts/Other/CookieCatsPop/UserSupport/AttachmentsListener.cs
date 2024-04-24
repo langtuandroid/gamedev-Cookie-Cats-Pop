@@ -36,7 +36,7 @@ namespace CookieCatsPop.UserSupport
 
 		public void AdsOffClaimed()
 		{
-			this.userSettings.GetSettings<InAppPurchaseManager.PersistableState>().IsPayingUser = true;
+			
 		}
 
 		private readonly UIViewManager uiViewManager;

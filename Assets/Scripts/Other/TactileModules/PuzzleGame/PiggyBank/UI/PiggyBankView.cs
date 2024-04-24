@@ -21,11 +21,10 @@ namespace TactileModules.PuzzleGame.PiggyBank.UI
 
 
 
-		public void Initialize(PiggyBankStateController.PiggyBankState state, IPiggyBankProgression progression, IPiggyBankRewards rewards, IIAPProvider iapProvider)
+		public void Initialize(PiggyBankStateController.PiggyBankState state, IPiggyBankProgression progression, IPiggyBankRewards rewards)
 		{
 			this.progression = progression;
 			this.rewards = rewards;
-			this.iapProvider = iapProvider;
 			this.piggyBankViewText = base.GetComponent<IPiggyBankViewText>();
 			if (base.Extension != null)
 			{
@@ -128,7 +127,7 @@ namespace TactileModules.PuzzleGame.PiggyBank.UI
 
 		private void ShowPaidOpeningState()
 		{
-			this.SetOpenButtonLabelText(string.Format(L.Get("Open now {0}"), this.iapProvider.GetFormattedOpenPrice()));
+			//this.SetOpenButtonLabelText(string.Format(L.Get("Open now {0}"), this.iapProvider.GetFormattedOpenPrice()));
 			this.DisableOpenButton(false);
 			this.closeButton.gameObject.SetActive(true);
 			this.capacityIncreaseBadge.gameObject.SetActive(this.ShouldShowCapacityIncreaseBadge());
@@ -298,8 +297,6 @@ namespace TactileModules.PuzzleGame.PiggyBank.UI
 		private IPiggyBankProgression progression;
 
 		private IPiggyBankRewards rewards;
-
-		private IIAPProvider iapProvider;
 
 		private UIButton tutorialButton;
 

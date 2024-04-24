@@ -14,12 +14,11 @@ namespace TactileModules.SagaGame.AdsForSagaGame
         {
             if (info.NextOwner is MainMapFlow)
             {
-
-                this.interstitialPresenter.RequestInterstitial();
+                
             }
             yield break;
         }
 
-        private readonly IInterstitialPresenter interstitialPresenter;
+        
     }
 }

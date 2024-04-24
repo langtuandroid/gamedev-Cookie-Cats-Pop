@@ -10,14 +10,13 @@ namespace TactileModules.PuzzleGame.PiggyBank.Controllers
 {
 	public class PiggyBankStateController
 	{
-		public PiggyBankStateController(PiggyBankControllerFactory controllerFactory, IPiggyBankViewFactory viewFactory, IPiggyBankProgression progression, IPiggyBankRewards rewards, IIAPProvider iapProvider, IMainProgression mainProgression)
+		public PiggyBankStateController(PiggyBankControllerFactory controllerFactory, IPiggyBankViewFactory viewFactory, IPiggyBankProgression progression, IPiggyBankRewards rewards, IMainProgression mainProgression)
 		{
 			this.controllerFactory = controllerFactory;
 			this.mainProgression = mainProgression;
 			this.progression = progression;
 			this.rewards = rewards;
 			this.viewFactory = viewFactory;
-			this.iapProvider = iapProvider;
 			this.Initialize();
 		}
 
@@ -76,7 +75,7 @@ namespace TactileModules.PuzzleGame.PiggyBank.Controllers
 			this.view = (PiggyBankView)vs.View;
 			this.view.OpenButtonClicked += this.OpenButtonClickedHandler;
 			this.view.TutorialButtonClicked += this.TutorialClickedHandler;
-			this.view.Initialize(this.GetCurrentState(), this.progression, this.rewards, this.iapProvider);
+			this.view.Initialize(this.GetCurrentState(), this.progression, this.rewards);
 			yield return vs.WaitForClose();
 			yield break;
 		}
@@ -89,7 +88,7 @@ namespace TactileModules.PuzzleGame.PiggyBank.Controllers
 			}
 			else
 			{
-				this.BuyClickedHandler();
+				
 			}
 		}
 
@@ -121,18 +120,7 @@ namespace TactileModules.PuzzleGame.PiggyBank.Controllers
 			yield return this.controllerFactory.CreateTutorialController();
 			yield break;
 		}
-
-		private void BuyClickedHandler()
-		{
-			this.coinsToAnimate = this.rewards.CollectedCoins;
-			PiggyBankIAPController piggyBankIAPController = this.controllerFactory.CreateIAPController();
-			InAppProduct buyOpenInAppProduct = this.iapProvider.GetBuyOpenInAppProduct();
-			PiggyBankIAPController piggyBankIAPController2 = piggyBankIAPController;
-			piggyBankIAPController2.OnClaimedContent = (PiggyBankIAPController.ClaimedContentEvent)Delegate.Combine(piggyBankIAPController2.OnClaimedContent, new PiggyBankIAPController.ClaimedContentEvent(this.ClaimPurchasedContent));
-			PiggyBankIAPController piggyBankIAPController3 = piggyBankIAPController;
-			piggyBankIAPController3.OnInAppPurchaseCancelled = (PiggyBankIAPController.InAppPurchaseCancelledEvent)Delegate.Combine(piggyBankIAPController3.OnInAppPurchaseCancelled, new PiggyBankIAPController.InAppPurchaseCancelledEvent(this.PurchaseCancelledHandler));
-			this.fiber.Start(piggyBankIAPController.Buy(buyOpenInAppProduct));
-		}
+		
 
 		private void PurchaseCancelledHandler()
 		{
@@ -184,8 +172,6 @@ namespace TactileModules.PuzzleGame.PiggyBank.Controllers
 		private readonly IPiggyBankProgression progression;
 
 		private readonly IPiggyBankRewards rewards;
-
-		private readonly IIAPProvider iapProvider;
 
 		private readonly IMainProgression mainProgression;
 

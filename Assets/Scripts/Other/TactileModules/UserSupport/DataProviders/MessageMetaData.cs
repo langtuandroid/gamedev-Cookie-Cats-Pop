@@ -7,9 +7,8 @@ namespace TactileModules.UserSupport.DataProviders
 {
     public class MessageMetaData : IMessageMetaData
     {
-        public MessageMetaData(InAppPurchaseManagerBase inAppPurchaseManagerBase, FacebookClient facebookClient, CloudClientBase cloudClient, IClientMessageMetaDataProvider clientMessageMetaDataProvider)
+        public MessageMetaData( FacebookClient facebookClient, CloudClientBase cloudClient, IClientMessageMetaDataProvider clientMessageMetaDataProvider)
         {
-            this.iapManager = inAppPurchaseManagerBase;
             this.facebookClient = facebookClient;
             this.cloudClient = cloudClient;
             this.clientMessageMetaDataProvider = clientMessageMetaDataProvider;
@@ -64,7 +63,6 @@ namespace TactileModules.UserSupport.DataProviders
 
         private void AddUserParameters(Dictionary<string, string> parameters)
         {
-            parameters.Add("UserCheated", this.iapManager.UserIsCheating.ToString());
             parameters.Add("UserIsPaying", PuzzleGameData.PlayerState.IsPayingUser.ToString());
         }
 
@@ -124,8 +122,6 @@ namespace TactileModules.UserSupport.DataProviders
             this.clientMessageMetaDataProvider.AddCustomData(out json);
             metaData["customData"] = MiniJSON.jsonEncode(json, false, 0);
         }
-
-        private readonly InAppPurchaseManagerBase iapManager;
 
         private readonly FacebookClient facebookClient;
 

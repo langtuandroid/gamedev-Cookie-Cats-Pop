@@ -49,7 +49,7 @@ public class PuzzleGameImplementation : PuzzleGame.IPuzzleGame
         {
             get
             {
-                return UserSettingsManager.Get<InAppPurchaseManager.PersistableState>().IsPayingUser;
+                return true;
             }
         }
 

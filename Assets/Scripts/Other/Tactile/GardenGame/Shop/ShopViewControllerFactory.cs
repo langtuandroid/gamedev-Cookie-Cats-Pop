@@ -7,10 +7,9 @@ namespace Tactile.GardenGame.Shop
 {
 	public class ShopViewControllerFactory : IShopViewControllerFactory
 	{
-		public ShopViewControllerFactory(ShopManager shopManager, InAppPurchaseManager inAppPurchaseManager, IUIController uiController, IAssetModel assets, ConfigGetter<ShopConfig> shopConfigProvider, ConfigGetter<LivesConfig> livesConfigProvider)
+		public ShopViewControllerFactory(ShopManager shopManager, IUIController uiController, IAssetModel assets, ConfigGetter<ShopConfig> shopConfigProvider, ConfigGetter<LivesConfig> livesConfigProvider)
 		{
 			this.shopManager = shopManager;
-			this.inAppPurchaseManager = inAppPurchaseManager;
 			this.uiController = uiController;
 			this.assets = assets;
 			this.shopConfigProvider = shopConfigProvider;
@@ -19,7 +18,7 @@ namespace Tactile.GardenGame.Shop
 
 		public ShopViewController Create()
 		{
-			return new ShopViewController(this.shopManager, this.inAppPurchaseManager, this.uiController, this.assets, this.shopConfigProvider, this.livesConfigProvider);
+			return new ShopViewController(this.shopManager, this.uiController, this.assets, this.shopConfigProvider, this.livesConfigProvider);
 		}
 
 		private readonly ShopManager shopManager;
@@ -27,8 +26,6 @@ namespace Tactile.GardenGame.Shop
 		private readonly IUIController uiController;
 
 		private readonly IAssetModel assets;
-
-		private readonly InAppPurchaseManager inAppPurchaseManager;
 
 		private readonly ConfigGetter<ShopConfig> shopConfigProvider;
 
