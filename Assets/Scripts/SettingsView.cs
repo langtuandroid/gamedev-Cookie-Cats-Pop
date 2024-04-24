@@ -72,15 +72,6 @@ public class SettingsView : UIView
 		this.musicToggleButton.GetInstance<ButtonToggle>().IsOn = AudioManager.Instance.MusicActive;
 		this.soundToggleButton.GetInstance<ButtonToggle>().IsOn = AudioManager.Instance.SoundEffectsActive;
 		this.notificationToggleButton.GetInstance<ButtonToggle>().IsOn = !NotificationManager.Instance.LocalNotificationsBlocked;
-		ButtonWithTitle instance = this.facebookButton.GetInstance<ButtonWithTitle>();
-		if (false)
-		{
-			instance.Title = L.Get("Log Out");
-		}
-		else
-		{
-			instance.Title = L.Get("Log In");
-		}
 		this.notificationToggleButton.GetInstance<ButtonToggle>().Title = this.GetNotificationsButtonText(NotificationManager.Instance.LocalNotificationsBlocked);
 	}
 
@@ -162,12 +153,6 @@ public class SettingsView : UIView
 
 	[SerializeField]
 	private UILabel configVersionLabel;
-
-	[SerializeField]
-	private UIInstantiator facebookButton;
-
-	[SerializeField]
-	private GameObject helpButton;
 
 	public class StartScreenFlow : IFlow, IFullScreenOwner, IFiberRunnable
 	{

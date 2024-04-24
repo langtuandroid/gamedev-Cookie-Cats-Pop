@@ -37,16 +37,5 @@ public class SlidesAndLaddersMapViewProvider : ISlidesAndLaddersMapViewProvider
 	{
 		this.CloudClient.FriendsAndSettingsSynced -= callback;
 	}
-
-	public void SubscribeToVIPStateChange(Action<bool> callback)
-	{
-		VipManager instance = VipManager.Instance;
-		instance.VipStateChanged = (Action<bool>)Delegate.Combine(instance.VipStateChanged, callback);
-	}
-
-	public void UnsubscribeToVIPStateChange(Action<bool> callback)
-	{
-		VipManager instance = VipManager.Instance;
-		instance.VipStateChanged = (Action<bool>)Delegate.Remove(instance.VipStateChanged, callback);
-	}
+	
 }

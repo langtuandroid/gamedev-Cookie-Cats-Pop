@@ -12,22 +12,7 @@ using UnityEngine;
 
 public class MainMapButtonsViewExtension : MonoBehaviour
 {
-	private ButtonWithBadge inboxButtonRef
-	{
-		get
-		{
-			return this.inboxButton.GetInstance<ButtonWithBadge>();
-		}
-	}
-
-	private ButtonWithBadge vipButtonRef
-	{
-		get
-		{
-			return this.vipButton.GetInstance<ButtonWithBadge>();
-		}
-	}
-
+	
 	private ButtonWithBadge achievementsButtonRef
 	{
 		get
@@ -35,14 +20,7 @@ public class MainMapButtonsViewExtension : MonoBehaviour
 			return this.achievementsButton.GetInstance<ButtonWithBadge>();
 		}
 	}
-
-	private ButtonWithBadge eventsButtonRef
-	{
-		get
-		{
-			return this.eventsButton.GetInstance<ButtonWithBadge>();
-		}
-	}
+	
 
 	private MainMapButtonsView mainMapButtonsView
 	{
@@ -203,49 +181,7 @@ public class MainMapButtonsViewExtension : MonoBehaviour
 	{
 		UIViewManager.Instance.ShowView<SettingsView>(new object[0]);
 	}
-
-	[UsedImplicitly]
-	private void ClickedInbox(UIEvent e)
-	{
-		UIViewManager.Instance.ShowView<InboxView>(new object[0]);
-	}
-
-	[UsedImplicitly]
-	private void ClickedEvents(UIEvent e)
-	{
-		UIViewManager.Instance.ShowView<EventsView>(new object[0]);
-	}
-
-	[UsedImplicitly]
-	private void ClickedTournament(UIEvent e)
-	{
-		if (UICamera.InputDisabled)
-		{
-			return;
-		}
-		if (TournamentManager.Instance.IsTournamentRankUnlocked(TournamentRank.Bronze))
-		{
-			ITournamentSystem tournamentSystem = ManagerRepository.Get<ITournamentSystem>();
-			tournamentSystem.ControllerFactory.CreateAndPushMapFlow();
-		}
-		else
-		{
-			UIViewManager.Instance.ShowView<TournamentLockedView>(new object[0]);
-		}
-	}
-
-	[UsedImplicitly]
-	private void ClickedVIP(UIEvent e)
-	{
-		if (!VipManager.Instance.UserIsVip())
-		{
-			UIViewManager.Instance.ShowView<VipProgramNotSubscriberView>(new object[0]);
-		}
-		else
-		{
-			UIViewManager.Instance.ShowView<VipProgramSubscriberView>(new object[0]);
-		}
-	}
+	
 
 	[UsedImplicitly]
 	private void ClickedAchievements(UIEvent e)
@@ -266,21 +202,6 @@ public class MainMapButtonsViewExtension : MonoBehaviour
 	{
 		for (;;)
 		{
-			if (this.inboxButtonRef != null)
-			{
-				
-			}
-			if (this.vipButtonRef != null)
-			{
-				if (VipManager.Instance.IsBonusPending())
-				{
-					this.vipButtonRef.BadgeText = "!";
-				}
-				else
-				{
-					this.vipButtonRef.BadgeText = string.Empty;
-				}
-			}
 			if (this.achievementsButtonRef != null)
 			{
 				int totalUnclaimedAchievements = this.AchievementsManager.GetTotalUnclaimedAchievements();
@@ -291,19 +212,6 @@ public class MainMapButtonsViewExtension : MonoBehaviour
 				else
 				{
 					this.achievementsButtonRef.BadgeText = string.Empty;
-				}
-			}
-			if (this.eventsButtonRef != null)
-			{
-				bool flag = TournamentManager.Instance.Cloud.TournamentEnded && TournamentManager.Instance.Cloud.TournamentJoined;
-				bool wantAttention = DailyQuestManager.Instance.WantAttention;
-				if (flag || wantAttention)
-				{
-					this.eventsButtonRef.BadgeText = "!";
-				}
-				else
-				{
-					this.eventsButtonRef.BadgeText = string.Empty;
 				}
 			}
 			yield return FiberHelper.Wait(1f, (FiberHelper.WaitFlag)0);
@@ -353,14 +261,9 @@ public class MainMapButtonsViewExtension : MonoBehaviour
 	}
 
 	[Header("Bottom Buttons")]
-	public UIInstantiator inboxButton;
-
-	public UIInstantiator vipButton;
-
+	
 	public UIInstantiator achievementsButton;
-
-	public UIInstantiator eventsButton;
-
+	
 	private readonly Dictionary<GameObject, Vector2> buttonSizes = new Dictionary<GameObject, Vector2>();
 
 	[SerializeField]

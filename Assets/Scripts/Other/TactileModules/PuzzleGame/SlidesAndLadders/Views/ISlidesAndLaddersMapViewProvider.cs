@@ -11,9 +11,5 @@ namespace TactileModules.PuzzleGame.SlidesAndLadders.Views
 		void SubscribeToFriendsAndSettingsSynced(Action callback);
 
 		void UnsubscribeToFriendsAndSettingsSynced(Action callback);
-
-		void SubscribeToVIPStateChange(Action<bool> callback);
-
-		void UnsubscribeToVIPStateChange(Action<bool> callback);
 	}
 }

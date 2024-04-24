@@ -92,8 +92,6 @@ public abstract class MapViewBase : UIView
     protected override void ViewWillAppear()
     {
         base.ViewWillAppear();
-        this.SubscribeToFriendsAndSettingsSynced(new Action(this.UpdateAll));
-        this.SubscribeToVIPStateChange(new Action<bool>(this.OnVipStateChanged));
         this.UpdateDots();
         this.ShowMapButtonViewInternal();
         this.ScrollPanel.pixelPerfectCamera = base.ViewCamera;
@@ -114,8 +112,6 @@ public abstract class MapViewBase : UIView
     protected override void ViewWillDisappear()
     {
         base.ViewWillDisappear();
-        this.UnsubscribeToFriendsAndSettingsSynced(new Action(this.UpdateAll));
-        this.UnsubscribeToVIPStateChange(new Action<bool>(this.OnVipStateChanged));
         this.mapStreamer.MapDotClicked -= this.HandleScrollPanelClicked;
         if (!this.startupSequenceFiber.IsTerminated)
         {
@@ -123,11 +119,7 @@ public abstract class MapViewBase : UIView
         }
         ActivityManager.onResumeEvent -= this.OnApplicationWillEnterForeground;
     }
-
-    private void OnVipStateChanged(bool b)
-    {
-        this.mapAvatarController.playerAvatar.SetVIP(b);
-    }
+    
 
     public override Vector2 CalculateViewSizeForScreen(Vector2 screenSize)
     {
@@ -353,10 +345,6 @@ public abstract class MapViewBase : UIView
             return null;
         }
     }
-
-    protected abstract void SubscribeToFriendsAndSettingsSynced(Action callback);
-
-    protected abstract void UnsubscribeToFriendsAndSettingsSynced(Action callback);
 
     protected abstract void SubscribeToVIPStateChange(Action<bool> callback);
 

@@ -212,26 +212,17 @@ namespace TactileModules.PuzzleGame.SlidesAndLadders.Views
 		{
 			return UIViewManager.Instance.ShowView<SlidesAndLaddersMapButtonView>(new object[0]);
 		}
-
-		protected override void SubscribeToFriendsAndSettingsSynced(Action callback)
-		{
-			this.SlidesAndLaddersHandler.MapViewProvider.SubscribeToFriendsAndSettingsSynced(callback);
-		}
-
-		protected override void UnsubscribeToFriendsAndSettingsSynced(Action callback)
-		{
-			this.SlidesAndLaddersHandler.MapViewProvider.UnsubscribeToFriendsAndSettingsSynced(callback);
-		}
-
+		
 		protected override void SubscribeToVIPStateChange(Action<bool> callback)
 		{
-			this.SlidesAndLaddersHandler.MapViewProvider.SubscribeToVIPStateChange(callback);
+			throw new NotImplementedException();
 		}
 
 		protected override void UnsubscribeToVIPStateChange(Action<bool> callback)
 		{
-			this.SlidesAndLaddersHandler.MapViewProvider.UnsubscribeToVIPStateChange(callback);
+			throw new NotImplementedException();
 		}
+
 
 		protected override UIViewManager.UIViewState ShowNoMoreLivesView()
 		{

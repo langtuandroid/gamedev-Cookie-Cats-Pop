@@ -8,7 +8,5 @@ public interface IPlayerState
 
 	bool IsPayingUser { get; }
 
-	bool IsVIP { get; }
-
 	int Lives { get; }
 }

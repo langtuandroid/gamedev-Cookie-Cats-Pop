@@ -11,10 +11,9 @@ namespace TactileModules.SagaCore
 {
 	public class SagaAvatarController : MapAvatar.IDataRetriever
 	{
-		public SagaAvatarController(CloudClient cloudClient, VipManager vipManager, MapFacade mapFacade)
+		public SagaAvatarController(CloudClient cloudClient, MapFacade mapFacade)
 		{
 			this.cloudClient = cloudClient;
-			this.vipManager = vipManager;
 			this.mapFacade = mapFacade;
 		}
 
@@ -318,13 +317,7 @@ namespace TactileModules.SagaCore
 			}
 		}
 
-		public bool IsPlayerVIP
-		{
-			get
-			{
-				return this.vipManager.UserIsVip();
-			}
-		}
+		public bool IsPlayerVIP { get; }
 
 		bool MapAvatar.IDataRetriever.GetVIPStatusForCloudUser(CloudUser cloudUser)
 		{
@@ -352,8 +345,6 @@ namespace TactileModules.SagaCore
 		public const string ME_ID = "me";
 
 		private readonly CloudClient cloudClient;
-
-		private readonly VipManager vipManager;
 
 		private readonly MapFacade mapFacade;
 

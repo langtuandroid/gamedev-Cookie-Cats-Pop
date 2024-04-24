@@ -22,16 +22,6 @@ public interface ICloudInterface
 	IEnumerator LeaderboardsSubmitScore(string userId, int score, int leaderboard, int videoId, Response result);
 
 	IEnumerator LeaderboardsGetScores(string userId, int leaderboard, Response result);
-
-	IEnumerator TournamentStatus(string userId, Response result);
-
-	IEnumerator TournamentJoin(string userId, TournamentCloudManager.Type tournamentType, Response result);
-
-	IEnumerator TournamentSubmitScore(string userId, int periodId, int tournamentId, int leaderboard, int score, Response result);
-
-	IEnumerator TournamentGetEntries(string userId, int periodId, int tournamentId, Response result);
-
-	IEnumerator TournamentPresent(string userId, int periodId, int tournamentId, Response result);
-
+	
 	IEnumerator PatchUserSettings(string userId, Hashtable objPathsToSet, Hashtable objPathsToUnset, int version, Response result);
 }

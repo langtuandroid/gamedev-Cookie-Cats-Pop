@@ -16,14 +16,14 @@ public class LivesOverlay : UIView
 		this.animFiber.Start(this.Animate());
 	}
 
-	public void GiveLife(Vector3 position, int visibleLives, bool isTournament, float duration, Action callback = null)
+	public void GiveLife(Vector3 position, int visibleLives, float duration, Action callback = null)
 	{
 		this.UpdateAnimatorSprite();
-		int num = (!isTournament) ? InventoryManager.Instance.Lives : TournamentManager.Instance.Lives;
+		int num = InventoryManager.Instance.Lives;
 		this.lifeBar.lifeCounterLabel.text = (num - visibleLives).ToString();
 		this.heartAnimator.GiveCoins(position, visibleLives, duration, null, delegate
 		{
-			this.lifeBar.lifeCounterLabel.text = ((!isTournament) ? InventoryManager.Instance.Lives : TournamentManager.Instance.Lives).ToString();
+			this.lifeBar.lifeCounterLabel.text = InventoryManager.Instance.Lives.ToString();
 			if (callback != null)
 			{
 				callback();

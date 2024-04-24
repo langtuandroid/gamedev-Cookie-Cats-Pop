@@ -6,10 +6,9 @@ namespace TactileModules.SagaCore
 {
 	public class MapFacade
 	{
-		public MapFacade(CloudClient cloudClient, VipManager vipManager)
+		public MapFacade(CloudClient cloudClient)
 		{
 			this.cloudClient = cloudClient;
-			this.vipManager = vipManager;
 			this.MapPlugins = new List<IMapPlugin>();
 		}
 
@@ -40,11 +39,9 @@ namespace TactileModules.SagaCore
 
 		public MapContentController CreateMapContentController(MapIdentifier mapIdentifier)
 		{
-			return new MapContentController(mapIdentifier, this.cloudClient, this.vipManager, this);
+			return new MapContentController(mapIdentifier, this.cloudClient, this);
 		}
 
 		private readonly CloudClient cloudClient;
-
-		private readonly VipManager vipManager;
 	}
 }

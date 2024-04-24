@@ -8,11 +8,6 @@ public class NotificationManager
 	{
 		this.ScheduleNotifications();
 		ActivityManager.onResumeEvent += this.ApplicationWillEnterForeground;
-		UserSettingsManager.Instance.SettingsSaved += this.HandleSettingsSaved;
-		DailyQuestManager.Instance.OnChallengeReset += this.HandleDailyQuestChallengeReset;
-		DailyQuestManager.Instance.OnQuestCompleted += this.ScheduleNotificationsForDailyQuests;
-		VipManager instance = VipManager.Instance;
-		instance.BonusClaimed = (Action)Delegate.Combine(instance.BonusClaimed, new Action(this.HandleVipBonusClaimed));
 	}
 
 	public bool LocalNotificationsBlocked
@@ -49,43 +44,18 @@ public class NotificationManager
 	{
 		this.ScheduleNotifications();
 	}
-
-	private void HandleSettingsSaved()
-	{
-		NotificationManager.Instance.UpdateDailyQuestNotifications();
-	}
-
-	private void HandleDailyQuestCompleted()
-	{
-		this.ScheduleNotificationsForDailyQuests();
-	}
-
+	
 	private void HandleVipBonusClaimed()
 	{
 		this.CancelNotfication(NotificationManager.NotificationType.VipReward);
 	}
-
-	public void UpdateDailyQuestNotifications()
-	{
-		this.ScheduleNotificationsForDailyQuests();
-	}
-
+	
 	private void ScheduleNotifications()
 	{
-		this.ScheduleNotificationsForDailyQuests();
-		if (VipManager.Instance.UserIsVip() && VipManager.Instance.IsBonusPending())
-		{
-			this.ScheduleNotificationsForVIP();
-			return;
-		}
 		this.ScheduleNotificationsForReturn();
 	}
 
-	private void ScheduleNotificationsForVIP()
-	{
-		DateTime after = DateTime.Today.AddDays(0.0);
-		this.ScheduleNotification(NotificationManager.NotificationType.VipReward, after);
-	}
+
 
 	private void ScheduleNotificationsForReturn()
 	{
@@ -93,26 +63,8 @@ public class NotificationManager
 		this.ScheduleNotification(NotificationManager.NotificationType.ReturnToGame, after);
 	}
 
-	private void ScheduleNotificationsForDailyQuests()
-	{
-		if (!DailyQuestManager.Instance.IsChallengeAvailable)
-		{
-			return;
-		}
-		this.CancelNotfication(NotificationManager.NotificationType.DailyQuest3HoursLeft);
-		if (DailyQuestManager.Instance.DaysLeftInChallenge <= this.ConfigurationManager.GetConfig<DailyQuestConfig>().DaysToEndNotification && DailyQuestManager.Instance.DaysLeftInChallenge != 0)
-		{
-			DateTime after = DailyQuestManager.Instance.CurrentQuestExpiryEnd.AddDays(-1.0);
-			this.ScheduleNotification(NotificationManager.NotificationType.DailyQuest3HoursLeft, after);
-		}
-	}
-
-	private void HandleDailyQuestChallengeReset()
-	{
-		this.ScheduleNotificationsForDailyQuests();
-	}
-
-	private NotificationManager.NotificationInfo GetNotificationInfo(NotificationManager.NotificationType notification)
+	
+	private NotificationInfo GetNotificationInfo(NotificationManager.NotificationType notification)
 	{
 		switch (notification)
 		{

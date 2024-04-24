@@ -104,14 +104,6 @@ public class Analytics : AnalyticsBase
 		{
 			this.SetMasterContext(Analytics.MasterContext.Gate);
 		}
-		else if (newFlow is TournamentMapFlow)
-		{
-			this.SetMasterContext(Analytics.MasterContext.Tournament);
-		}
-		else if (newFlow is DailyQuestMapFlow)
-		{
-			this.SetMasterContext(Analytics.MasterContext.DailyQuest);
-		}
 		else if (newFlow is TreasureHuntMapFlow)
 		{
 			this.SetMasterContext(Analytics.MasterContext.TreasureHunt);
@@ -177,7 +169,7 @@ public class Analytics : AnalyticsBase
 
 	public void LogTournamentCompleted(int placement)
 	{
-		TactileAnalytics.Instance.LogEvent(new Analytics.TournamentCompletedEvent(placement), -1.0, null);
+		
 	}
 
 	public void LogThemeHuntItemCollected(string huntId, int huntTotalItems, int huntItemId)
@@ -216,33 +208,7 @@ public class Analytics : AnalyticsBase
 		private TactileAnalytics.RequiredParam<bool> WasHit { get; set; }
 	}
 
-	protected class TournamentBasicEvent : BasicEvent
-	{
-		public TournamentBasicEvent()
-		{
-			this.TournamentBucket = ManagerRepository.Get<TournamentCloudManager>().TournamentId;
-			this.TournamentPeriod = ManagerRepository.Get<TournamentCloudManager>().PeriodId;
-			this.TournamentRank = TournamentManager.Instance.Cloud.GetJoinedRank.ToString();
-		}
-
-		private TactileAnalytics.RequiredParam<int> TournamentBucket { get; set; }
-
-		private TactileAnalytics.RequiredParam<int> TournamentPeriod { get; set; }
-
-		private TactileAnalytics.RequiredParam<string> TournamentRank { get; set; }
-	}
-
-	[TactileAnalytics.EventAttribute("tournamentCompleted", true)]
-	protected class TournamentCompletedEvent : Analytics.TournamentBasicEvent
-	{
-		public TournamentCompletedEvent(int placement)
-		{
-			this.TournamentPlacement = placement;
-		}
-
-		private TactileAnalytics.RequiredParam<int> TournamentPlacement { get; set; }
-	}
-
+	
 	[TactileAnalytics.EventAttribute("themeHuntItemCollected", true)]
 	protected class ThemeHuntItemCollectedEvent
 	{

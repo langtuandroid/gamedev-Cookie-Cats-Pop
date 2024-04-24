@@ -7,7 +7,7 @@ public class GetMoreLivesView : UIView
 	
 	protected override void ViewLoad(object[] parameters)
 	{
-		this.playingTournament = (parameters.Length > 0 && (bool)parameters[0]);
+		
 	}
 
 	private void UpdateUI()
@@ -15,26 +15,7 @@ public class GetMoreLivesView : UIView
 		this.showSendLivesTimer = false;
 		bool isLoggedInAndUserRegistered = false;
 		this.sendLivesPivot.SetActive(isLoggedInAndUserRegistered);
-		if (!isLoggedInAndUserRegistered)
-		{
-			this.askFriendsButton.localPosition = this.askFriendsNotLoggedInLocation.localPosition;
-		}
-		else
-		{
-			if (this.playingTournament)
-			{
-				this.sendLivesPivot.SetActive(false);
-				this.askFriendsButton.localPosition = this.askFriendsNotLoggedInLocation.localPosition;
-			}
-			this.askFriendsButton.localPosition = this.askFriendsLoggedInLocation.localPosition;
-			this.showSendLivesTimer = !ManagerRepository.Get<SendLivesAtStartManager>().CanShowSendLivesAtStart();
-			this.sendLivesButton.SetActive(!this.showSendLivesTimer);
-			this.sendLivesTimer.SetActive(this.showSendLivesTimer);
-			if (this.showSendLivesTimer)
-			{
-				this.UpdateTimerLabel();
-			}
-		}
+		
 	}
 
 	protected override void ViewWillAppear()
@@ -56,7 +37,7 @@ public class GetMoreLivesView : UIView
 		this.UpdateUI();
 	}
 
-	private void ButtonCloseClicked(UIEvent e)
+	private void ButtonCloseClicked(UIEvent e) //TODO Fix
 	{
 		base.Close(0);
 	}
@@ -91,23 +72,11 @@ public class GetMoreLivesView : UIView
 
 	public GameObject sendLivesPivot;
 
-	public GameObject sendLivesButton;
-
-	public GameObject sendLivesTimer;
-
 	public UILabel timerLabel;
-
-	public Transform askFriendsButton;
-
-	public Transform askFriendsLoggedInLocation;
-
-	public Transform askFriendsNotLoggedInLocation;
-
+	
 	private LivesOverlay livesOverlay;
 
 	private bool showSendLivesTimer;
 
 	private float timer;
-
-	private bool playingTournament;
 }

@@ -9,14 +9,6 @@ using UnityEngine;
 
 public class HighscorePanel : MonoBehaviour
 {
-    private TournamentCloudManager TournamentCloudManager
-    {
-        get
-        {
-            return ManagerRepository.Get<TournamentCloudManager>();
-        }
-    }
-
     private CloudClient CloudClient
     {
         get
@@ -41,11 +33,6 @@ public class HighscorePanel : MonoBehaviour
             {
                 this.fiber.Start(this.FetchScores());
             }
-        }
-        else if (level.LevelCollection is TournamentLevelDatabase)
-        {
-            this.playWithFriendsPivot.SetActive(false);
-            this.fiber.Start(this.FetchScores());
         }
     }
 
@@ -73,27 +60,7 @@ public class HighscorePanel : MonoBehaviour
         {
             scores = LeaderboardManager.Instance.GetCachedCloudScores(this.level.Index);
         }
-        else if (this.level.LevelCollection is TournamentLevelDatabase)
-        {
-            yield return this.TournamentCloudManager.Update();
-            List<TournamentCloudManager.Score> tScores = this.TournamentCloudManager.GetSortedLeaderboardScores(this.level.Index);
-            foreach (TournamentCloudManager.Score score in tScores)
-            {
-                if (score.score > 0)
-                {
-                    CloudScore cloudScore = new CloudScore();
-                    cloudScore.Score = score.score;
-                    cloudScore.UserId = score.userId;
-                    if (this.CloudClient.CachedMe == null || this.CloudClient.CachedMe.CloudId != cloudScore.UserId)
-                    {
-                        cloudScore.facebookId = score.facebookId;
-                    }
-                    cloudScore.displayName = score.displayName;
-                    cloudScore.deviceId = score.deviceId;
-                    scores.Add(cloudScore);
-                }
-            }
-        }
+        
         if (scores != null && scores.Count > 0)
         {
             this.UpdateUI(scores);
@@ -112,11 +79,7 @@ public class HighscorePanel : MonoBehaviour
             this.loadingPivot.SetActive(false);
             this.UpdateUI(scores);
         }
-        else if (this.level.LevelCollection is TournamentLevelDatabase && scores.Count == 0)
-        {
-            this.loadingPivot.SetActive(false);
-            this.noScoresYet.SetActive(true);
-        }
+      
         yield break;
     }
 

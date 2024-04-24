@@ -83,11 +83,6 @@ public class CCPLevelStartView : LevelStartView
             LevelStartDialog.levelLabel.text = L.Get("Gate level");
             LevelStartDialog.nextGoalLabel.text = string.Empty;
         }
-        else if (levelToPlay.LevelCollection is DailyQuestLevelDatabase)
-        {
-            LevelStartDialog.levelLabel.text = L.Get("Daily Quest");
-            LevelStartDialog.nextGoalLabel.text = string.Empty;
-        }
         else if (levelToPlay.LevelCollection is SlidesAndLaddersLevelDatabase)
         {
             this.SlidesAndLaddersIsActive(levelToPlay.LevelCollection as SlidesAndLaddersLevelDatabase, levelToPlay.Index, LevelStartDialog);

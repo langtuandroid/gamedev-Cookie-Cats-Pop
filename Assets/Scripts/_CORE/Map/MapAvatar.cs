@@ -17,29 +17,14 @@ public class MapAvatar : MonoBehaviour
 			return this.pivot;
 		}
 	}
-
-	private void Awake()
-	{
-		if (this.vipPivot != null)
-		{
-			this.SetVIP(false);
-		}
-	}
-
+	
 	public void Initialize(MapAvatar.IDataRetriever dataRetriever, CloudUser cloudUser, string deviceId = null)
 	{
 		this.retriever = dataRetriever;
 		this.CloudUser = cloudUser;
 		this.DeviceId = deviceId;
-		this.UpdatePortrait();
-		this.SetVIP((!this.IsMe()) ? dataRetriever.GetVIPStatusForCloudUser(this.CloudUser) : dataRetriever.IsPlayerVIP);
 	}
-
-	private void OnEnable()
-	{
-		
-	}
-
+	
 	protected bool IsMe()
 	{
 		return this.retriever.GetCloudDeviceId != null && this.retriever.GetCloudDeviceId == this.DeviceId;
@@ -92,14 +77,7 @@ public class MapAvatar : MonoBehaviour
 		this.SetFrameFromSide(newSide);
 		yield break;
 	}
-
-	public virtual void UpdatePortrait()
-	{
-		if (this.retriever == null)
-		{
-			return;
-		}
-	}
+	
 
 	public void AddAdditionalIcon(string iconType, GameObject iconObjectPrefab)
 	{
@@ -130,19 +108,7 @@ public class MapAvatar : MonoBehaviour
 		}
 		this.additionalIcons.Clear();
 	}
-
-	public void SetVIP(bool isVIP)
-	{
-		if (this.vipPivot == null)
-		{
-			return;
-		}
-		if (this.vipPivot.activeSelf != isVIP)
-		{
-			this.vipPivot.SetActive(isVIP);
-		}
-	}
-
+	
 	public void SetFrameFromSide(MapAvatar.BackgroundSide side)
 	{
 		if (this.backgroundLeft != null)

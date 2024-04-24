@@ -52,6 +52,7 @@ public class PuzzleGameImplementation : PuzzleGame.IPuzzleGame
                 return true;
             }
         }
+        
 
         int IPlayerState.FarthestUnlockedLevelIndex
         {
@@ -68,15 +69,7 @@ public class PuzzleGameImplementation : PuzzleGame.IPuzzleGame
                 return MainProgressionManager.Instance.GetFarthestUnlockedLevelHumanNumber();
             }
         }
-
-        bool IPlayerState.IsVIP
-        {
-            get
-            {
-                return VipManager.Instance.UserIsVip();
-            }
-        }
-
+        
         int IPlayerState.Lives
         {
             get

@@ -20,14 +20,7 @@ public class LifeBar : MonoBehaviour
 			return ManagerRepository.Get<InventoryManager>();
 		}
 	}
-
-	private TournamentManager TournamentManager
-	{
-		get
-		{
-			return TournamentManager.Instance;
-		}
-	}
+	
 
 	public InventoryItem LivesType
 	{
@@ -76,15 +69,12 @@ public class LifeBar : MonoBehaviour
 			this.timeCounterLabel.text = string.Format("{0:D2}:{1:D2}:{2:D2}", (int)timeSpan.TotalHours, timeSpan.Minutes, timeSpan.Seconds);
 			return;
 		}
-		int num;
-		if (this.livesType == "TournamentLife")
-		{
-			num = this.TournamentManager.GetSecondsUntilLifeHasRegenerated();
-		}
-		else
+		int num = 0;
+		if (this.livesType != "TournamentLife")
 		{
 			num = Mathf.RoundToInt((float)this.LivesManager.GetRegenerationTimeLeft());
 		}
+		
 		if (num > 0)
 		{
 			TimeSpan timeSpan2 = TimeSpan.FromSeconds((double)num);

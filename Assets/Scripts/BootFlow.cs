@@ -24,7 +24,6 @@ public class BootFlow : Flow
 		{
 			Boot.IsRequestsBlocked += false;
 		});
-		yield return ManagerRepository.Get<AgeInfoManager>().TryShowPopup();
 		LevelProxy firstLevel = this.LevelDatabaseCollection.GetLevelDatabase<MainLevelDatabase>("Main").GetLevel(0);
         if (firstLevel.IsCompleted)
         {

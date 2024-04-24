@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using Code.Providers;
 using CookieCatsPop.FrameworkImplementation.CrossPromotion;
 using CookieCatsPop.FrameworkImplementation.NinjaUi;
@@ -13,8 +12,6 @@ using Tactile.GardenGame.MapSystem;
 using Tactile.GardenGame.Shop;
 using Tactile.GardenGame.Story;
 using Tactile.SagaCore;
-using Tactile.XperiaGamesClub;
-using TactileModules.AgeInfo;
 using TactileModules.CrossPromotion;
 using TactileModules.FeatureManager;
 using TactileModules.FeatureManager.Interfaces;
@@ -33,14 +30,12 @@ using TactileModules.Portraits;
 using TactileModules.PuzzleCore.LevelPlaying;
 using TactileModules.PuzzleGame.MainLevels;
 using TactileModules.PuzzleGame.PiggyBank;
-using TactileModules.PuzzleGame.PiggyBank.Models;
 using TactileModules.PuzzleGame.PiggyBank.Templates;
 using TactileModules.PuzzleGame.PlayablePostcard.Model;
 using TactileModules.PuzzleGame.ReengagementRewards;
 using TactileModules.PuzzleGame.ReengagementRewards.Popups;
 using TactileModules.PuzzleGame.ScheduledBooster;
 using TactileModules.PuzzleGame.SlidesAndLadders;
-using TactileModules.PuzzleGame.ThemeHunt;
 using TactileModules.PuzzleGames.Common.TargetingParameters;
 using TactileModules.PuzzleGames.EndlessChallenge;
 using TactileModules.PuzzleGames.GameCore;
@@ -51,7 +46,6 @@ using TactileModules.PuzzleGames.StarTournament;
 using TactileModules.PuzzleGames.StoryMapEvent;
 using TactileModules.PuzzleGames.TreasureHunt;
 using TactileModules.SagaCore;
-using TactileModules.SagaGame.AdsForSagaGame;
 using TactileModules.SideMapButtons;
 using TactileModules.SpecialOffers;
 using TactileModules.SpecialOffers.Model;
@@ -93,7 +87,6 @@ public class Boot : BootBase
         Action<UserSettingsManager> defaultSettingsHandler = new Action<UserSettingsManager>(this.DefaultSettingsHandler);
 
         UserSettingsManager userSettingsManager = repository.Register<UserSettingsManager>(UserSettingsManager.CreateInstance(cloudClient2, defaultSettingsHandler, new Action<Hashtable, Hashtable>(UserSettingsUpgrader.Upgrade)), null);
-        repository.Register<AgeInfoManager>(new AgeInfoManager(uiViewManager, tactileAnalytics, new AgeInfoManagerProvider()), null);
         AssetBundleSystem assetBundleSystem = repository.Register<AssetBundleSystem>(AssetBundleSystemBuilder.Build(cloudClient, tactileAnalytics, new AssetBundleManager.PauseLoadingCheck(this.AreRequestsBlocked)), null);
         AssetBundleManager assetBundleManager = assetBundleSystem.AssetBundleManager;
         LevelDatabaseCollection levelDatabaseCollection = repository.Register<LevelDatabaseCollection>(new LevelDatabaseCollection(assetBundleManager, tactileAnalytics), null);
@@ -152,20 +145,13 @@ public class Boot : BootBase
         mapPopupManager.RegisterPopupObject(new ReengagementRewardPopup(reengagementRewardManager, uiViewManager, reengagementRewardProvider));
         repository.Register<MapAssetBundleManager>(new MapAssetBundleManager(assetBundleManager, assetBundleSystem.AssetBundleDownloader), null);
         repository.Register<GameStatsManager>(new GameStatsManager(), null);
-        repository.Register<DailyQuestManager>(DailyQuestManager.CreateInstance(new DailyQuestManagerProvider(), levelDatabaseCollection), null);
         SendLivesAtStartManager sendLivesAtStartManager = repository.Register<SendLivesAtStartManager>(new SendLivesAtStartManager(), null);
-        repository.Register<VipManager>(VipManager.CreateInstance(), null);
-        repository.Register<LikeUsManager>(LikeUsManager.CreateInstance(), null);
-        repository.Register<ReviewManager>(new ReviewManager(configurationManager), null);
         repository.Register<LiveVersionUpdateManager>(new LiveVersionUpdateManager(), null);
         repository.Register<NotificationManager>(NotificationManager.CreateInstance(), null);
         AchievementsManager achievementsManager = repository.Register<AchievementsManager>(new AchievementsManager(GameEventManager.Instance, new AchievementsHelper(), null), null);
         AchievementsManager achievementsManager2 = achievementsManager;
 
         achievementsManager2.OnAchievementCompleted += new Action<AchievementAsset>(AchievementsHelper.HandleMissionComplete);
-        repository.Register<ThemeHuntManager>(ThemeHuntManagerBase.CreateInstance<ThemeHuntManager>(), null);
-        XperiaGamesClubManager xperiaGamesClubManager = repository.Register<XperiaGamesClubManager>(new XperiaGamesClubManager(), null);
-        repository.Register<XperiaGiftPopupManager>(new XperiaGiftPopupManager(xperiaGamesClubManager, new XperiaClubProvider()), null);
         repository.Register<BoosterManager>(BoosterManagerBase<BoosterManager>.CreateInstance(), null);
         repository.Register<UserCareManager>(UserCareManager.CreateInstance(), null);
         repository.Register<SeagullManager>(Singleton<SeagullManager>.CreateInstance(), null);
@@ -179,8 +165,7 @@ public class Boot : BootBase
         IButtonAreaSystem buttonAreaSystem = ButtonAreaSystemBuilder.Build(uiController);
         ShopSystem shop = ShopSystemBuilder.Build((FlowStack)puzzleCoreCommon.FlowStack, uiController, buttonAreaSystem.Model, visualInventory, configurationManager, userSettingsManager);
         ShopManager shopManager = shop.ShopManager;
-
-        shopManager.ShopItemBought += new Action<ShopItem>(Boot.HandleShopItemBought);
+        
         LivesManager livesManager = LivesManager.CreateInstance();
         Analytics.Instance.HookIntoGameCore(puzzleCoreCommon.FlowStack);
         LevelPlayingSystem levelPlayingSystem = LevelPlayingSystemBuilder.Build(livesManager, puzzleCoreCommon.FullScreenManager, new PlayLevelFactory(), uiViewManager);
@@ -190,7 +175,7 @@ public class Boot : BootBase
         PlacementSystem placementsSystem = PlacementSystemBuilder.Build(configurationManager, UIViewManager.Instance, tactileAnalytics);
         repository.Register<PlacementSystem>(placementsSystem, null);
 
-        ISagaCoreSystem sagaCore = SagaCoreSystemBuilder.Build(puzzleCoreCommon.FlowStack, puzzleCoreCommon.FullScreenManager, levelPlayingSystem.PlayFlowFactory, mainProgressionManager, leaderboardManager, gateManager, cloudClient, VipManager.Instance, mapPopupManager, GameSessionManager.Instance, new StoryFlowProvider(), placementsSystem.PlacementRunner, tactileAnalytics, levelDatabaseCollection, mapStreamerCollection, hardLevelsManager);
+        ISagaCoreSystem sagaCore = SagaCoreSystemBuilder.Build(puzzleCoreCommon.FlowStack, puzzleCoreCommon.FullScreenManager, levelPlayingSystem.PlayFlowFactory, mainProgressionManager, leaderboardManager, gateManager, cloudClient, mapPopupManager, GameSessionManager.Instance, new StoryFlowProvider(), placementsSystem.PlacementRunner, tactileAnalytics, levelDatabaseCollection, mapStreamerCollection, hardLevelsManager);
         repository.Register<IMainMapFlowFactory>(sagaCore.MainMapFlowFactory, null);
         new LevelSessionIdPatchup(levelPlayingSystem.PlayFlowEvents);
         repository.Register<MainLeaderBoardScoresRecorder>(new MainLeaderBoardScoresRecorder(levelPlayingSystem.PlayFlowEvents, leaderboardManager), null);
@@ -202,11 +187,6 @@ public class Boot : BootBase
         PlayablePostcardSystem playablePostcardSystem = repository.Register<PlayablePostcardSystem>(PlayablePostcardSystemBuilder.Build(featureManager, configurationManager, levelDatabaseCollection, mainProgressionManager, assetBundleManager, assetBundleSystem.AssetBundleDownloader, uiViewManager, tactileAnalytics, new PlayablePostcardProvider(), sagaCore.MapFacade, puzzleCoreCommon.FlowStack, puzzleCoreCommon.FullScreenManager, levelPlayingSystem.PlayFlowFactory), null);
         SideMapButtonSystem sideMapButtonSystem = SideMapButtonsSystemBuilder.Build();
         HotStreakManager hotStreakManager = new HotStreakManager(featureManager, new HotStreakProvider(), levelPlayingSystem.PlayFlowEvents);
-        ITournamentSystem tournamentSystem = TournamentSystemBuilder.Build(sagaCore, levelPlayingSystem.PlayFlowFactory, puzzleCoreCommon.FullScreenManager, puzzleCoreCommon.FlowStack, cloudClient, levelDatabaseCollection, mapStreamerCollection, timeStampManager, new TournamentUI(), mapPopupManager, LivesManager.Instance);
-        repository.Register<ITournamentSystem>(tournamentSystem, typeof(ITournamentSystem));
-        repository.Register<TournamentCloudManager>(tournamentSystem.CloudManager, null);
-        IDailyQuestSystem dailyQuestSystem = DailyQuestSystemBuilder.Build(DailyQuestManager.Instance, levelPlayingSystem.PlayFlowFactory, sagaCore.MapFacade);
-        repository.Register<IDailyQuestSystem>(dailyQuestSystem, typeof(IDailyQuestSystem));
         ILevelDashSystem levelDashSystem = LevelDashSystemBuilder.Build(featureManager, cloudClient, mapPopupManager, sagaCore, gameSessionManager, new LevelDashDataProvider(), new LevelDashMapAvatarModifierProvider(), new LevelDashViewProvider());
         repository.Register<ILevelDashSystem>(levelDashSystem, typeof(ILevelDashSystem));
         ILevelRushSystem levelRushSystem = LevelRushSystemBuilder.Build(featureManager, new LevelRushNotificationProvider(), sagaCore.MapFacade, mainProgressionManager, mapPopupManager, configurationManager, InventoryManager.Instance);
@@ -270,7 +250,6 @@ public class Boot : BootBase
     {
         InventoryManager.PersistableState settings = mgr.GetSettings<InventoryManager.PersistableState>();
         settings.items["Life"] = ConfigurationManager.Get<LivesConfig>().NotLoggedInMaxlives;
-        settings.items["TournamentLife"] = ConfigurationManager.Get<TournamentConfig>().LifeRegenerationMaxCount;
     }
 
     public static string ConstructCrashData()
@@ -283,17 +262,7 @@ public class Boot : BootBase
         return hashtable.toJson();
     }
 
-    private static void HandleShopItemBought(ShopItem shopItem)
-    {
-        string type = shopItem.Type;
-        if (type != null)
-        {
-            if (type == "ShopItemVip")
-            {
-                VipManager.Instance.UserBoughtVipSubscription();
-            }
-        }
-    }
+  
     
     private bool AreRequestsBlocked()
     {

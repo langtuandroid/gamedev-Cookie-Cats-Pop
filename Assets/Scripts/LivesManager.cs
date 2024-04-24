@@ -66,11 +66,6 @@ public class LivesManager : MapPopupManager.IMapPopup, ILivesManager
 		{
 			InventoryManager.Instance.SetAmount("Life", num, null);
 		}
-		int lifeRegenerationMaxCount = this.ConfigurationManager.GetConfig<TournamentConfig>().LifeRegenerationMaxCount;
-		if (TournamentManager.Instance.Lives < lifeRegenerationMaxCount)
-		{
-			InventoryManager.Instance.SetAmount("TournamentLife", lifeRegenerationMaxCount, null);
-		}
 	}
 
 	public void TryShowPopup(int levelUnlocked, MapPopupManager.PopupFlow popupFlow)
@@ -158,11 +153,6 @@ public class LivesManager : MapPopupManager.IMapPopup, ILivesManager
 	private void EnableUnlimitedLives(int seconds = -1)
 	{
 		InventoryManager.Instance.SetAmount("Life", Mathf.Max(this.ConfigurationManager.GetConfig<LivesConfig>().LifeRegenerationMaxCount, InventoryManager.Instance.Lives), "unlimited lives");
-		int lifeRegenerationMaxCount = this.ConfigurationManager.GetConfig<TournamentConfig>().LifeRegenerationMaxCount;
-		if (TournamentManager.Instance.Lives < lifeRegenerationMaxCount)
-		{
-			InventoryManager.Instance.SetAmount("TournamentLife", lifeRegenerationMaxCount, null);
-		}
 		if (seconds == -1)
 		{
 			seconds = this.ConfigurationManager.GetConfig<LivesConfig>().InfiniteLivesDurationInSeconds;

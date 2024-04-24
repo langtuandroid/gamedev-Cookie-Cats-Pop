@@ -79,10 +79,6 @@ public class AchievementsLevelSessionListener
 				int totalEarnedStars = MainProgressionManager.Instance.GetTotalEarnedStars();
 				GameEventManager.Instance.Emit(21, null, totalEarnedStars);
 			}
-			else if (levelSession.Level.LevelCollection is DailyQuestLevelDatabase)
-			{
-				GameEventManager.Instance.Emit(6);
-			}
 			this.ResetLevelFailCounter();
 		}
 		else if (levelSession.SessionState == LevelSessionState.Failed)

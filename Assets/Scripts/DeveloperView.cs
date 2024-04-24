@@ -55,14 +55,4 @@ public class DeveloperView : UIView
 			InventoryManager.Instance.Add(boosterMetaData.Id, 5, "cheat");
 		}
 	}
-
-	private void ShowGimme(UIEvent e)
-	{
-		UIViewManager.Instance.ShowView<GimmeView>(new object[0]);
-	}
-
-	private void ResetGateTimer(UIEvent e)
-	{
-		GateManager.Instance.Developer_SetTimerNow();
-	}
 }

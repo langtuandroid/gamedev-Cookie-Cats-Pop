@@ -67,15 +67,7 @@ public class MapAvatarControllerDataRetriever : MapAvatarController.IDataRetriev
 			return (!this.CloudClient.HasValidDevice) ? string.Empty : this.CloudClient.CachedDevice.CloudId;
 		}
 	}
-
-	public bool IsPlayerVIP
-	{
-		get
-		{
-			return VipManager.Instance.UserIsVip();
-		}
-	}
-
+	
 	public AnimationCurve GetMovementCurve
 	{
 		get

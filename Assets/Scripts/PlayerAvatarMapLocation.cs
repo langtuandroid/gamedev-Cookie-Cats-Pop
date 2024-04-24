@@ -55,13 +55,7 @@ public class PlayerAvatarMapLocation : MonoBehaviour
 		this.avatarOnHud.Initialize(avatarController, meAvatar.CloudUser, null);
 		this.avatarTransformOnMap = meAvatar.transform;
 	}
-
-	public void UpdatePlayerAvatar()
-	{
-		this.avatarOnHud.UpdatePortrait();
-		this.avatarOnHud.SetVIP(this.avatarController.IsPlayerVIP);
-	}
-
+	
 	private void OnDestroy()
 	{
 		this.avatarController.AvatarsChanged -= this.AvatarControllerOnAvatarsChanged;

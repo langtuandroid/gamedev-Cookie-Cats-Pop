@@ -14,16 +14,7 @@ public class OutOfMovesView : UIView
 			return this.dialog.GetInstance();
 		}
 	}
-
-	private ButtonWithSpinner ButtonWithSpinner
-	{
-		get
-		{
-			return this.buttonWithSpinnerInstantiator.GetInstance<ButtonWithSpinner>();
-		}
-	}
-
-
+	
 
 	protected override void ViewLoad(object[] parameters)
 	{
@@ -46,8 +37,6 @@ public class OutOfMovesView : UIView
 		{
 			this.scheduledBoosterButtonSwitcher.ShowScheduledBooster((bool)parameters[1]);
 		}
-		
-		this.ButtonWithSpinner.gameObject.SetActive(false);
 	}
 
 	private string GetDescriptionText()
@@ -141,9 +130,7 @@ public class OutOfMovesView : UIView
 
 	[SerializeField]
 	private Instantiator dialog;
-
-	[SerializeField]
-	private UIInstantiator buttonWithSpinnerInstantiator;
+	
 
 	private Fiber requestingVideoFiber = new Fiber();
 

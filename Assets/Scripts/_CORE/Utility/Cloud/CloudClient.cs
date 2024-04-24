@@ -318,106 +318,8 @@ public class CloudClient : CloudClientBase, ICloudUserSettingsProvider
 		yield break;
 	}
 
-	public IEnumerator TournamentStatus(CloudClient.TournamentResultDelegate callback)
-	{
-		if (!base.HasValidDevice)
-		{
-			callback("No valid cloud device!", null, null, 0, 0, 0, 0, DateTime.UtcNow);
-			yield break;
-		}
-		CloudInterface.TournamentResponse response = new CloudInterface.TournamentResponse();
-		yield return this.CloudInterfaceInstance.TournamentStatus((!base.HasValidUser) ? null : base.CachedMe.CloudId, response);
-		if (response.Success)
-		{
-			callback(null, response.Entries, response.Users, response.PeriodId, response.TournamentId, response.TournamentEndsInSeconds, response.TournamentClosesInSeconds, response.utcReceived);
-		}
-		else
-		{
-			callback("Failed to receive tournament status: " + response.ErrorInfo, null, null, 0, 0, 0, 0, DateTime.UtcNow);
-		}
-		yield break;
-	}
-
-	public IEnumerator TournamentJoin(TournamentCloudManager.Type tournamentType, CloudClient.TournamentResultDelegate callback)
-	{
-		if (!base.HasValidDevice)
-		{
-			callback("No valid cloud device!", null, null, 0, 0, 0, 0, DateTime.UtcNow);
-			yield break;
-		}
-		CloudInterface.TournamentResponse response = new CloudInterface.TournamentResponse();
-		yield return this.CloudInterfaceInstance.TournamentJoin((!base.HasValidUser) ? null : base.CachedMe.CloudId, tournamentType, response);
-		if (response.Success)
-		{
-			callback(null, response.Entries, response.Users, response.PeriodId, response.TournamentId, response.TournamentEndsInSeconds, response.TournamentClosesInSeconds, response.utcReceived);
-		}
-		else
-		{
-			callback("Failed to join tournament: " + response.ErrorInfo, null, null, 0, 0, 0, 0, DateTime.UtcNow);
-		}
-		yield break;
-	}
-
-	public IEnumerator TournamentSubmitScore(int periodId, int tournamentId, int leaderboard, int score, CloudClient.TournamentResultDelegate callback)
-	{
-		if (!base.HasValidDevice)
-		{
-			callback("No valid cloud device!", null, null, 0, 0, 0, 0, DateTime.UtcNow);
-			yield break;
-		}
-		CloudInterface.TournamentResponse response = new CloudInterface.TournamentResponse();
-		yield return this.CloudInterfaceInstance.TournamentSubmitScore((!base.HasValidUser) ? null : base.CachedMe.CloudId, periodId, tournamentId, leaderboard, score, response);
-		if (response.Success)
-		{
-			callback(null, response.Entries, response.Users, response.PeriodId, response.TournamentId, response.TournamentEndsInSeconds, response.TournamentClosesInSeconds, response.utcReceived);
-		}
-		else
-		{
-			callback("Failed to submit score to server: " + response.ErrorInfo, null, null, 0, 0, 0, 0, DateTime.UtcNow);
-		}
-		yield break;
-	}
-
-	public IEnumerator TournamentGetEntries(int periodId, int tournamentId, CloudClient.TournamentResultDelegate callback)
-	{
-		if (!base.HasValidDevice)
-		{
-			callback("No valid cloud device!", null, null, 0, 0, 0, 0, DateTime.UtcNow);
-			yield break;
-		}
-		CloudInterface.TournamentResponse response = new CloudInterface.TournamentResponse();
-		yield return this.CloudInterfaceInstance.TournamentGetEntries((!base.HasValidUser) ? null : base.CachedMe.CloudId, periodId, tournamentId, response);
-		if (response.Success)
-		{
-			callback(null, response.Entries, response.Users, response.PeriodId, response.TournamentId, response.TournamentEndsInSeconds, response.TournamentClosesInSeconds, response.utcReceived);
-		}
-		else
-		{
-			callback("Failed to receive tournament entries from server: " + response.ErrorInfo, null, null, 0, 0, 0, 0, DateTime.UtcNow);
-		}
-		yield break;
-	}
-
-	public IEnumerator TournamentPresent(int periodId, int tournamentId, CloudClient.TournamentPresentResultDelegate callback)
-	{
-		if (!base.HasValidDevice)
-		{
-			callback("No valid cloud device!", null, null, 0, 0, 0, 0, DateTime.UtcNow, TournamentCloudManager.PresentResult.Unknown);
-			yield break;
-		}
-		CloudInterface.TournamentPresentResponse response = new CloudInterface.TournamentPresentResponse();
-		yield return this.CloudInterfaceInstance.TournamentPresent((!base.HasValidUser) ? null : base.CachedMe.CloudId, periodId, tournamentId, response);
-		if (response.Success)
-		{
-			callback(null, response.Entries, response.Users, response.PeriodId, response.TournamentId, response.TournamentEndsInSeconds, response.TournamentClosesInSeconds, response.utcReceived, response.PresentResult);
-		}
-		else
-		{
-			callback("Failed to present tournament entries: " + response.ErrorInfo, null, null, 0, 0, 0, 0, DateTime.UtcNow, TournamentCloudManager.PresentResult.Unknown);
-		}
-		yield break;
-	}
-
+	
+	
 	public IEnumerator ReportPurchase(string base64EncodedTransactionReceipt, Dictionary<string, string> eventParams, Action<object, Hashtable, bool> callback)
 	{
 		CloudInterface.PurchaseResponse response = new CloudInterface.PurchaseResponse();
@@ -651,8 +553,4 @@ public class CloudClient : CloudClientBase, ICloudUserSettingsProvider
 	private List<CloudUser> cachedFriends;
 
 	private List<CloudUserSettings> cachedFriendsSettings;
-	
-	public delegate void TournamentResultDelegate(object error, List<TournamentCloudManager.Entry> entries, List<CloudUser> users, int periodId, int tournamentId, int endsInSeconds, int closesInSeconds, DateTime utcReceived);
-
-	public delegate void TournamentPresentResultDelegate(object error, List<TournamentCloudManager.Entry> entries, List<CloudUser> users, int periodId, int tournamentId, int endsInSeconds, int closesInSeconds, DateTime utcReceived, TournamentCloudManager.PresentResult presentResult);
 }
