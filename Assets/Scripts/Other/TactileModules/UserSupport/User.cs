@@ -5,9 +5,8 @@ namespace TactileModules.UserSupport
 {
 	public class User : IUser
 	{
-		public User(IUserStorageFactory storageFactory, FacebookClient facebookClient = null)
+		public User(IUserStorageFactory storageFactory)
 		{
-			this.facebookClient = facebookClient;
 			this.storageFactory = storageFactory;
 			this.LoadStoredUser();
 		}
@@ -38,17 +37,12 @@ namespace TactileModules.UserSupport
 
 		private void LoadStoredUser()
 		{
-			this.storage = this.storageFactory.GetStorage("UserSupport", this.GetFacebookId() + "_User");
+			this.storage = this.storageFactory.GetStorage("UserSupport", "_User");
 			this.userData = this.storage.Load();
 		}
 
 		private string GetName()
 		{
-			FacebookUser facebookUser = this.GetFacebookUser();
-			if (facebookUser != null)
-			{
-				return facebookUser.Name;
-			}
 			return this.userData.Name;
 		}
 
@@ -66,25 +60,7 @@ namespace TactileModules.UserSupport
 		private void SetEmail(string e)
 		{
 		}
-
-		public string GetFacebookId()
-		{
-			FacebookUser facebookUser = this.GetFacebookUser();
-			if (facebookUser == null)
-			{
-				return string.Empty;
-			}
-			return facebookUser.Id;
-		}
-
-		private FacebookUser GetFacebookUser()
-		{
-			if (this.facebookClient == null)
-			{
-				return null;
-			}
-			return this.facebookClient.CachedMe;
-		}
+		
 
 		public void Clear()
 		{
@@ -130,7 +106,5 @@ namespace TactileModules.UserSupport
 		private UserDetails userData;
 
 		private ILocalStorageObject<UserDetails> storage;
-
-		private readonly FacebookClient facebookClient;
 	}
 }

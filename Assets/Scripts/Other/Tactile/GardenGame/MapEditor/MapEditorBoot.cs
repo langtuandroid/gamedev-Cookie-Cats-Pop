@@ -18,9 +18,8 @@ namespace Tactile.GardenGame.MapEditor
 			IFullScreenManager fullScreenManager = new FullScreenManager(null);
 			UIController uiController = new UIController(UIViewManager.Instance);
 			FlowStack flowStack = new FlowStack();
-			FacebookClient fbClient = new FacebookClient(Constants.FACEBOOK_APP_ID, Constants.FACEBOOK_APP_NAMESPACE, Constants.FACEBOOK_URL_SUFFIX, Constants.FACEBOOK_OPENGRAPH_VERSION);
 			RequestMetaDataProviderRegistry requestMetaDataProviderRegistry = new RequestMetaDataProviderRegistry();
-			CloudClient cloudClient = new CloudClient(fbClient, requestMetaDataProviderRegistry);
+			CloudClient cloudClient = new CloudClient(requestMetaDataProviderRegistry);
 			UserSettingsManager.CreateInstance(cloudClient, delegate(UserSettingsManager u)
 			{
 			}, null);

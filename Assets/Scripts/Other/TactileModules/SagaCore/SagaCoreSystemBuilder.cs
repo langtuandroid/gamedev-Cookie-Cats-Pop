@@ -12,12 +12,12 @@ namespace TactileModules.SagaCore
 {
 	public static class SagaCoreSystemBuilder
 	{
-		public static ISagaCoreSystem Build(IFlowStack flowStack, IFullScreenManager fullScreenManager, IPlayFlowFactory playFlowFactory, MainProgressionManager mainProgressionManager, LeaderboardManager leaderBoardManager, GateManager gateManager, CloudClient cloudClient, VipManager vipManager, FacebookClient facebookClient, MapPopupManager mapPopupManager, IGameSessionManager gameSessionManager, IStoryIntroProvider storyIntroProvider, IPlacementRunner placementRunner, IAnalytics analytics, LevelDatabaseCollection databaseCollection, MapStreamerCollection mapStreamerCollection, HardLevelsManager hardLevelsManager)
+		public static ISagaCoreSystem Build(IFlowStack flowStack, IFullScreenManager fullScreenManager, IPlayFlowFactory playFlowFactory, MainProgressionManager mainProgressionManager, LeaderboardManager leaderBoardManager, GateManager gateManager, CloudClient cloudClient, VipManager vipManager, MapPopupManager mapPopupManager, IGameSessionManager gameSessionManager, IStoryIntroProvider storyIntroProvider, IPlacementRunner placementRunner, IAnalytics analytics, LevelDatabaseCollection databaseCollection, MapStreamerCollection mapStreamerCollection, HardLevelsManager hardLevelsManager)
 		{
-			MapFacade mapFacade = new MapFacade(cloudClient, vipManager, facebookClient);
+			MapFacade mapFacade = new MapFacade(cloudClient, vipManager);
 			MainLevelsFlowFactory mainLevelsFlowFactory = new MainLevelsFlowFactory(playFlowFactory, mainProgressionManager, leaderBoardManager, gateManager);
 			mapFacade.MapPlugins.Add(new HardLevelsMapRefresher(hardLevelsManager));
-			MainMapFlowFactory mainMapFlowFactory = new MainMapFlowFactory(mainProgressionManager, cloudClient, facebookClient, mapFacade, mapPopupManager, gameSessionManager, fullScreenManager, flowStack, storyIntroProvider, placementRunner, mainLevelsFlowFactory, databaseCollection, mapStreamerCollection);
+			MainMapFlowFactory mainMapFlowFactory = new MainMapFlowFactory(mainProgressionManager, cloudClient, mapFacade, mapPopupManager, gameSessionManager, fullScreenManager, flowStack, storyIntroProvider, placementRunner, mainLevelsFlowFactory, databaseCollection, mapStreamerCollection);
 			Tactile.SagaCore.MainLevels.BasicEventDecorator decorator = new Tactile.SagaCore.MainLevels.BasicEventDecorator(mainProgressionManager, gateManager);
 			analytics.RegisterDecorator(decorator);
 			Shared.SagaCore.Module.MainLevels.Analytics.BasicMissionEventBaseDecorator decorator2 = new Shared.SagaCore.Module.MainLevels.Analytics.BasicMissionEventBaseDecorator(gateManager);

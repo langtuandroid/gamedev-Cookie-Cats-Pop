@@ -7,10 +7,9 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 {
 	public class StarTournamentLeaderboardItem : MonoBehaviour
 	{
-		public void Init(StarTournamentManager manager, IMainProgression mainProgression, FacebookClient facebookClient, CloudClientBase cloudClientBase, int position, Entry entry, bool isMe)
+		public void Init(StarTournamentManager manager, IMainProgression mainProgression, CloudClientBase cloudClientBase, int position, Entry entry, bool isMe)
 		{
 			this.manager = manager;
-			this.facebookClient = facebookClient;
 			this.cloudClientBase = cloudClientBase;
 			if (isMe)
 			{
@@ -88,21 +87,18 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 			if (string.IsNullOrEmpty(text))
 			{
 				bool flag = false;
-				if (isMe && this.facebookClient.IsSessionValid && this.facebookClient.CachedMe != null)
+				if (isMe && false)
 				{
-					this.portrait.Load(this.facebookClient, this.facebookClient.CachedMe.Id, null);
 					this.nonFBPortraitTexture.gameObject.SetActive(false);
 					flag = true;
 				}
 				if (!flag)
 				{
-					this.portrait.gameObject.SetActive(false);
 					this.nonFBPortraitTexture.SetTexture(this.manager.RandomPortraitsAndNames.GetRandomPortrait(entry.DeviceId.GetHashCode()));
 				}
 			}
 			else
 			{
-				this.portrait.Load(this.facebookClient, text, null);
 				this.nonFBPortraitObject.SetActive(false);
 			}
 		}
@@ -134,9 +130,6 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 
 		[SerializeField]
 		private UILabel positionNumber;
-
-		[SerializeField]
-		private FacebookPortraitWithProgress portrait;
 
 		[SerializeField]
 		private GameObject nonFBPortraitObject;
@@ -183,8 +176,6 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 		private StarTournamentManager manager;
 
 		private CloudClientBase cloudClientBase;
-
-		private FacebookClient facebookClient;
 
 		[Serializable]
 		private struct TextLabelColors

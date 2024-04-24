@@ -1,6 +1,4 @@
-using System;
 using Tactile;
-using TactileModules.FacebookExtras;
 using TactileModules.Foundation;
 using TactileModules.PuzzleGames.GameCore;
 using UnityEngine;
@@ -31,13 +29,6 @@ public class EventsView : UIView
 		}
 	}
 
-	private FacebookLoginManager FacebookLoginManager
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookLoginManager>();
-		}
-	}
 
 	protected override void ViewWillAppear()
 	{

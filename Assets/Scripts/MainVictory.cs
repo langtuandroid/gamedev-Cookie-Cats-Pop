@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Fibers;
-using TactileModules.FacebookExtras;
 using TactileModules.Foundation;
 using TactileModules.PuzzleCore.LevelPlaying;
 using TactileModules.PuzzleGames.GameCore;
@@ -21,7 +19,7 @@ public class MainVictory : IMainLevelVictory, IGameInterface
 		LevelProxy level = implementation.Session.Level;
 		MainLeaderBoardScoresRecorder mainLeaderBoardPlacementRecorder = ManagerRepository.Get<MainLeaderBoardScoresRecorder>();
 		List<CloudScore> oldScores = mainLeaderBoardPlacementRecorder.GetCloudScoresFromWhenSessionStarted();
-		if (ManagerRepository.Get<FacebookLoginManager>().IsLoggedInAndUserRegistered)
+		if (false)
 		{
 			yield return UIViewManager.Instance.FadeCameraFrontFill(1f, 0.2f, 0);
 			yield return LeaderboardManager.Instance.UpdateCachedCloudScoresCr(level.Index);

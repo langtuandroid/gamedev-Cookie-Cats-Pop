@@ -9,14 +9,6 @@ namespace TactileModules.PuzzleGames.EndlessChallenge
 {
     public class EndlessChallengeLeaderboardItem : MonoBehaviour
     {
-        private FacebookClient FacebookClient
-        {
-            get
-            {
-                return ManagerRepository.Get<FacebookClient>();
-            }
-        }
-
         private EndlessChallengeHandler Handler
         {
             get
@@ -85,21 +77,20 @@ namespace TactileModules.PuzzleGames.EndlessChallenge
             if (string.IsNullOrEmpty(text))
             {
                 bool flag = false;
-                if (isMe && this.FacebookClient.IsSessionValid && this.FacebookClient.CachedMe != null)
+                if (isMe && false)
                 {
-                    this.portrait.Load(this.FacebookClient, this.FacebookClient.CachedMe.Id, null);
                     this.nonFBPortraitTexture.gameObject.SetActive(false);
                     flag = true;
                 }
                 if (!flag)
                 {
-                    this.portrait.gameObject.SetActive(false);
+                    
                     this.nonFBPortraitTexture.SetTexture(this.GetRandomPortrait(entry.DeviceId));
                 }
             }
             else
             {
-                this.portrait.Load(this.FacebookClient, text, null);
+                
             }
         }
 
@@ -141,10 +132,7 @@ namespace TactileModules.PuzzleGames.EndlessChallenge
             int value = hashCode % this.randomPortraitTextures.Count;
             return this.randomPortraitTextures[Mathf.Abs(value)];
         }
-
-        [SerializeField]
-        private FacebookPortraitWithProgress portrait;
-
+        
         [SerializeField]
         private UILabel firstName;
 

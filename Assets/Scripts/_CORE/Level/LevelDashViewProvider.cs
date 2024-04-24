@@ -16,15 +16,7 @@ public class LevelDashViewProvider : ILevelDashViewProvider
 			return FeatureManager.GetFeatureHandler<LevelDashManager>();
 		}
 	}
-
-	private FacebookClient FacebookClient
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookClient>();
-		}
-	}
-
+	
 	private CloudClient CloudClient
 	{
 		get
@@ -60,6 +52,6 @@ public class LevelDashViewProvider : ILevelDashViewProvider
 		int rewardsCount = this.LevelDashManager.GetRewardsCount();
 		bool isMe = entry.IsOwnedByDeviceOrUser(deviceId, userId);
 		int rank = this.LevelDashManager.GetRank(entry.DeviceId, entry.UserId);
-		component.Init(rank, entry, cloudUser, this.FacebookClient, this.CloudClient, isMe, rewardsCount, levelProgression);
+		component.Init(rank, entry, cloudUser, this.CloudClient, isMe, rewardsCount, levelProgression);
 	}
 }

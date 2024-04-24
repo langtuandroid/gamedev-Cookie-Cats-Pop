@@ -7,9 +7,8 @@ namespace TactileModules.UserSupport.DataProviders
 {
     public class MessageMetaData : IMessageMetaData
     {
-        public MessageMetaData( FacebookClient facebookClient, CloudClientBase cloudClient, IClientMessageMetaDataProvider clientMessageMetaDataProvider)
+        public MessageMetaData(CloudClientBase cloudClient, IClientMessageMetaDataProvider clientMessageMetaDataProvider)
         {
-            this.facebookClient = facebookClient;
             this.cloudClient = cloudClient;
             this.clientMessageMetaDataProvider = clientMessageMetaDataProvider;
         }
@@ -68,16 +67,7 @@ namespace TactileModules.UserSupport.DataProviders
 
         private void AddFacebookProperties(Dictionary<string, string> parameters)
         {
-            if (this.facebookClient.IsSessionValid && this.facebookClient.CachedMe != null)
-            {
-                parameters.Add("DisplayName", this.facebookClient.CachedMe.Name);
-                parameters.Add("FacebookID", this.facebookClient.CachedMe.Id);
-                parameters.Add("FacebookAccessToken", this.facebookClient.AccessToken);
-                if (!string.IsNullOrEmpty(this.facebookClient.CachedMe.Email))
-                {
-                    parameters.Add("FacebookEmail", this.facebookClient.CachedMe.Email);
-                }
-            }
+            
         }
 
         private void AddCloudProperties(Dictionary<string, string> parameters)
@@ -122,8 +112,6 @@ namespace TactileModules.UserSupport.DataProviders
             this.clientMessageMetaDataProvider.AddCustomData(out json);
             metaData["customData"] = MiniJSON.jsonEncode(json, false, 0);
         }
-
-        private readonly FacebookClient facebookClient;
 
         private readonly CloudClientBase cloudClient;
 

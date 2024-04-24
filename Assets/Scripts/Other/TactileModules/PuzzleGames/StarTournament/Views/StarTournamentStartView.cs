@@ -7,12 +7,11 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 {
 	public class StarTournamentStartView : UIView
 	{
-		public void Initialize(StarTournamentManager manager, IMainProgression mainProgression, CloudClientBase cloudClient, FacebookClient facebookClient, bool isReminder)
+		public void Initialize(StarTournamentManager manager, IMainProgression mainProgression, CloudClientBase cloudClient, bool isReminder)
 		{
 			this.manager = manager;
 			this.mainProgression = mainProgression;
 			this.cloudClient = cloudClient;
-			this.facebookClient = facebookClient;
 			this.isReminder = isReminder;
 			if (isReminder)
 			{
@@ -36,7 +35,7 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 			else
 			{
 				UIViewManager.UIViewStateGeneric<StarTournamentLeaderboardView> uiviewStateGeneric = UIViewManager.Instance.ShowView<StarTournamentLeaderboardView>(new object[0]);
-				uiviewStateGeneric.View.Initialize(this.manager, this.mainProgression, this.cloudClient, this.facebookClient);
+				uiviewStateGeneric.View.Initialize(this.manager, this.mainProgression, this.cloudClient);
 				base.Close(uiviewStateGeneric);
 			}
 		}
@@ -63,7 +62,5 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 		private IMainProgression mainProgression;
 
 		private CloudClientBase cloudClient;
-
-		private FacebookClient facebookClient;
 	}
 }

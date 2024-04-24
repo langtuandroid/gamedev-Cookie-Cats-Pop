@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Fibers;
 using JetBrains.Annotations;
-using TactileModules.FacebookExtras;
 using TactileModules.Foundation;
 using TactileModules.PuzzleGame.MainLevels;
 using UnityEngine;
@@ -23,14 +22,6 @@ public class HighscorePanel : MonoBehaviour
         get
         {
             return ManagerRepository.Get<CloudClient>();
-        }
-    }
-
-    private FacebookLoginManager FacebookLoginManager
-    {
-        get
-        {
-            return ManagerRepository.Get<FacebookLoginManager>();
         }
     }
 
@@ -71,24 +62,9 @@ public class HighscorePanel : MonoBehaviour
     [UsedImplicitly]
     private void FacebookPlayWithFriendsClicked(UIEvent e)
     {
-        this.fiber = new Fiber(this.DoFacebookLogin());
+        
     }
-
-    private IEnumerator DoFacebookLogin()
-    {
-        IEnumerator e = this.FacebookLoginManager.EnsureLoggedInAndUserRegistered();
-        while (e.MoveNext())
-        {
-            object obj = e.Current;
-            yield return obj;
-        }
-        this.playWithFriendsPivot.SetActive(!this.CloudClient.HasValidUser);
-        if (this.FacebookLoginManager.IsLoggedInAndUserRegistered)
-        {
-            yield return this.FetchScores();
-        }
-        yield break;
-    }
+    
 
     private IEnumerator FetchScores()
     {
@@ -236,16 +212,6 @@ public class HighscorePanel : MonoBehaviour
             this.processingInviteRequest = false;
         });
         this.processingInviteRequest = true;
-        IEnumerator e = this.FacebookLoginManager.EnsureLoggedInAndUserRegistered();
-        while (e.MoveNext())
-        {
-            object obj = e.Current;
-            yield return obj;
-        }
-        if (this.FacebookLoginManager.IsLoggedInAndUserRegistered)
-        {
-
-        }
         yield break;
     }
 

@@ -96,7 +96,7 @@ public class MapAvatarControllerDataRetriever : MapAvatarController.IDataRetriev
 	{
 		get
 		{
-			return ManagerRepository.Get<FacebookClient>().IsSessionValid;
+			return false;
 		}
 	}
 

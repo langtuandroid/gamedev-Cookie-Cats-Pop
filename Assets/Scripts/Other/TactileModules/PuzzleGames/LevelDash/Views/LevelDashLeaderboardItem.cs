@@ -6,9 +6,8 @@ namespace TactileModules.PuzzleGames.LevelDash.Views
 {
 	public class LevelDashLeaderboardItem : MonoBehaviour
 	{
-		public void Init(int rank, Entry entry, CloudUser user, FacebookClient facebookClient, CloudClientBase cloudClient, bool isMe, int rewardsCount, int levelProgression)
+		public void Init(int rank, Entry entry, CloudUser user, CloudClientBase cloudClient, bool isMe, int rewardsCount, int levelProgression)
 		{
-			this.facebookClient = facebookClient;
 			this.cloudClient = cloudClient;
 			this.score.Color = ((!isMe) ? this.textLabelColors.levelLabelColor : this.textLabelColors.myLevelLabelColor);
 			this.SetLevelProgressionVisuals(levelProgression);
@@ -75,15 +74,14 @@ namespace TactileModules.PuzzleGames.LevelDash.Views
 			}
 			if (string.IsNullOrEmpty(text))
 			{
-				if (isMe && this.facebookClient.IsSessionValid && this.facebookClient.CachedMe != null)
+				if (isMe && false)
 				{
-					this.SetFacebookPortrait(this.facebookClient.CachedMe.Id);
+					
 				}
 				else
 				{
 					this.nonFBPortraitTexture.SetTexture(RandomHelper.RandomPortrait(entry.DeviceId.GetHashCode()));
 					this.nonFBPortraitTexture.gameObject.SetActive(true);
-					this.portrait.gameObject.SetActive(false);
 				}
 			}
 			else
@@ -94,8 +92,6 @@ namespace TactileModules.PuzzleGames.LevelDash.Views
 
 		private void SetFacebookPortrait(string facebookId)
 		{
-			this.portrait.Load(this.facebookClient, facebookId, null);
-			this.portrait.gameObject.SetActive(true);
 			this.nonFBPortraitTexture.gameObject.SetActive(false);
 		}
 
@@ -135,9 +131,6 @@ namespace TactileModules.PuzzleGames.LevelDash.Views
 		protected UILabel positionNumber;
 
 		[SerializeField]
-		protected FacebookPortraitWithProgress portrait;
-
-		[SerializeField]
 		protected UITextureQuad nonFBPortraitTexture;
 
 		[SerializeField]
@@ -173,8 +166,6 @@ namespace TactileModules.PuzzleGames.LevelDash.Views
 
 		[SerializeField]
 		private List<string> prizeTexturesPathes;
-
-		private FacebookClient facebookClient;
 
 		private CloudClientBase cloudClient;
 

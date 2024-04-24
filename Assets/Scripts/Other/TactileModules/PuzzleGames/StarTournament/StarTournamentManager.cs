@@ -17,7 +17,7 @@ namespace TactileModules.PuzzleGames.StarTournament
     [MainMapFeature]
     public sealed class StarTournamentManager : IFeatureTypeHandler<StarTournamentInstanceCustomData, FeatureMetaData, StarTournamentTypeCustomData>, IEndPreviousFeature, IFeatureNotifications, IFeatureTypeHandler
     {
-        public StarTournamentManager([NotNull] TactileModules.FeatureManager.FeatureManager featureManager, [NotNull] IStarTournamentProvider provider, [NotNull] CloudClientBase cloudClient, FacebookClient facebookClient, IPlayFlowEvents playFlowEvents, IMainProgression mainProgression, IConfigGetter<StarTournamentConfig> configGetter, InventoryManager inventoryManager, IRandomPortraitsAndNames randomPortraitsAndNames)
+        public StarTournamentManager([NotNull] TactileModules.FeatureManager.FeatureManager featureManager, [NotNull] IStarTournamentProvider provider, [NotNull] CloudClientBase cloudClient, IPlayFlowEvents playFlowEvents, IMainProgression mainProgression, IConfigGetter<StarTournamentConfig> configGetter, InventoryManager inventoryManager, IRandomPortraitsAndNames randomPortraitsAndNames)
         {
             if (featureManager == null)
             {
@@ -33,7 +33,6 @@ namespace TactileModules.PuzzleGames.StarTournament
             }
             this.RandomPortraitsAndNames = randomPortraitsAndNames;
             this.featureManager = featureManager;
-            this.facebookClient = facebookClient;
             this.mainProgression = mainProgression;
             this.configGetter = configGetter;
             this.inventoryManager = inventoryManager;
@@ -84,7 +83,7 @@ namespace TactileModules.PuzzleGames.StarTournament
         public IEnumerator ShowStarTournamentStartedView(bool isReminder)
         {
             UIViewManager.UIViewStateGeneric<StarTournamentStartView> viewState = UIViewManager.Instance.ShowView<StarTournamentStartView>(new object[0]);
-            viewState.View.Initialize(this, this.mainProgression, this.CloudClient, this.facebookClient, isReminder);
+            viewState.View.Initialize(this, this.mainProgression, this.CloudClient, isReminder);
             yield return viewState.WaitForClose();
             if (viewState.ClosingResult is UIViewManager.UIViewState)
             {
@@ -135,7 +134,7 @@ namespace TactileModules.PuzzleGames.StarTournament
         public IEnumerator ShowLeaderboard()
         {
             UIViewManager.UIViewStateGeneric<StarTournamentLeaderboardView> vs = UIViewManager.Instance.ShowView<StarTournamentLeaderboardView>(new object[0]);
-            vs.View.Initialize(this, this.mainProgression, this.CloudClient, this.facebookClient);
+            vs.View.Initialize(this, this.mainProgression, this.CloudClient);
             yield return vs.WaitForClose();
             yield break;
         }
@@ -145,7 +144,7 @@ namespace TactileModules.PuzzleGames.StarTournament
             if (reward == null)
             {
                 UIViewManager.UIViewStateGeneric<StarTournamentLeaderboardView> view = UIViewManager.Instance.ShowView<StarTournamentLeaderboardView>(new object[0]);
-                view.View.Initialize(this, this.mainProgression, this.CloudClient, this.facebookClient);
+                view.View.Initialize(this, this.mainProgression, this.CloudClient);
                 yield return view.WaitForClose();
             }
             else
@@ -425,8 +424,6 @@ namespace TactileModules.PuzzleGames.StarTournament
         }
 
         private readonly TactileModules.FeatureManager.FeatureManager featureManager;
-
-        private readonly FacebookClient facebookClient;
 
         private readonly IMainProgression mainProgression;
 

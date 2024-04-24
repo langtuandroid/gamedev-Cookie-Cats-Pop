@@ -1,18 +1,10 @@
 using System;
-using TactileModules.FacebookExtras;
 using TactileModules.Foundation;
 using UnityEngine;
 
 public class GetMoreLivesView : UIView
 {
-	private FacebookLoginManager FacebookLoginManager
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookLoginManager>();
-		}
-	}
-
+	
 	protected override void ViewLoad(object[] parameters)
 	{
 		this.playingTournament = (parameters.Length > 0 && (bool)parameters[0]);
@@ -21,7 +13,7 @@ public class GetMoreLivesView : UIView
 	private void UpdateUI()
 	{
 		this.showSendLivesTimer = false;
-		bool isLoggedInAndUserRegistered = this.FacebookLoginManager.IsLoggedInAndUserRegistered;
+		bool isLoggedInAndUserRegistered = false;
 		this.sendLivesPivot.SetActive(isLoggedInAndUserRegistered);
 		if (!isLoggedInAndUserRegistered)
 		{
@@ -68,36 +60,7 @@ public class GetMoreLivesView : UIView
 	{
 		base.Close(0);
 	}
-
-	private void ButtonAskFriendsClicked(UIEvent e)
-	{
-		if (this.FacebookLoginManager.IsLoggedInAndUserRegistered)
-		{
-			UIViewManager.Instance.ShowView<FacebookSelectFriendsAndRequestView>(new object[]
-			{
-				(!this.playingTournament) ? FacebookSelectFriendsAndRequestView.RequestType.Life : FacebookSelectFriendsAndRequestView.RequestType.TournamentLife,
-				true
-			});
-		}
-		else
-		{
-			UIViewManager.Instance.ShowView<FacebookLoginInfoView>(new object[]
-			{
-				LoginContext.Lives
-			});
-		}
-	}
-
-	private void SendLivesButtonClicked(UIEvent e)
-	{
-		UIViewManager.Instance.ShowView<FacebookSelectFriendsAndRequestView>(new object[]
-		{
-			FacebookSelectFriendsAndRequestView.RequestType.GiftLives,
-			false
-		});
-		this.UpdateUI();
-	}
-
+	
 	private TimeSpan UpdateTimerLabel()
 	{
 		TimeSpan timeToNextSendLives = ManagerRepository.Get<SendLivesAtStartManager>().GetTimeToNextSendLives();

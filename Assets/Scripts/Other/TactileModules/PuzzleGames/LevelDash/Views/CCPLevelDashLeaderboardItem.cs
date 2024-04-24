@@ -7,9 +7,8 @@ namespace TactileModules.PuzzleGames.LevelDash.Views
 {
 	public class CCPLevelDashLeaderboardItem : MonoBehaviour
 	{
-		public void Init(int rank, Entry entry, CloudUser user, FacebookClient facebookClient, CloudClientBase cloudClient, bool isMe, int rewardsCount, int levelProgression)
+		public void Init(int rank, Entry entry, CloudUser user, CloudClientBase cloudClient, bool isMe, int rewardsCount, int levelProgression)
 		{
-			this.facebookClient = facebookClient;
 			this.cloudClient = cloudClient;
 			this.SetLevelProgressionVisuals(levelProgression);
 			this.ConfigureRankVisuals(rank, rewardsCount);
@@ -78,21 +77,19 @@ namespace TactileModules.PuzzleGames.LevelDash.Views
 			if (string.IsNullOrEmpty(text))
 			{
 				bool flag = false;
-				if (isMe && this.facebookClient.IsSessionValid && this.facebookClient.CachedMe != null)
+				if (isMe && false)
 				{
-					this.portrait.Load(this.facebookClient, this.facebookClient.CachedMe.Id, null);
+					
 					this.nonFBPortraitSprite.gameObject.SetActive(false);
 					flag = true;
 				}
 				if (!flag)
 				{
-					this.portrait.gameObject.SetActive(false);
+					
 				}
 			}
 			else
 			{
-				this.portrait.Load(this.facebookClient, text, null);
-				this.portrait.gameObject.SetActive(true);
 				this.nonFBPortraitObject.SetActive(false);
 			}
 		}
@@ -144,9 +141,6 @@ namespace TactileModules.PuzzleGames.LevelDash.Views
 		private UILabel positionNumber;
 
 		[SerializeField]
-		private FacebookPortraitWithProgress portrait;
-
-		[SerializeField]
 		private GameObject nonFBPortraitObject;
 
 		[SerializeField]
@@ -187,8 +181,6 @@ namespace TactileModules.PuzzleGames.LevelDash.Views
 		[SerializeField]
 		[OptionalSerializedField]
 		private UIFontStyle otherFontStyle;
-
-		private FacebookClient facebookClient;
 
 		private CloudClientBase cloudClient;
 	}

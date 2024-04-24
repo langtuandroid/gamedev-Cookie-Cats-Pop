@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class TournamentMapAvatarToBeat : MonoBehaviour
 {
-	private void OnEnable()
-	{
-		this.portrait.progress.gameObject.SetActive(false);
-	}
-
 	public void Initialize(CloudClientBase cloudClient)
 	{
 		this.cloudClient = cloudClient;
@@ -27,7 +22,6 @@ public class TournamentMapAvatarToBeat : MonoBehaviour
 			{
 				this.avatarFB.SetActive(true);
 				this.avatarNonFB.SetActive(false);
-				this.portrait.Load(ManagerRepository.Get<FacebookClient>(), score.facebookId, null);
 			}
 			else
 			{
@@ -47,15 +41,10 @@ public class TournamentMapAvatarToBeat : MonoBehaviour
 			if (!string.IsNullOrEmpty(text))
 			{
 				this.avatarNonFB.SetActive(false);
-				this.portrait.Load(ManagerRepository.Get<FacebookClient>(), text, null);
 			}
-			else if (ManagerRepository.Get<FacebookClient>().IsSessionValid)
+			else if (false)
 			{
-				if (ManagerRepository.Get<FacebookClient>().CachedMe != null)
-				{
-					this.portrait.Load(ManagerRepository.Get<FacebookClient>(), ManagerRepository.Get<FacebookClient>().CachedMe.Id, null);
-					this.nonFBPortraitTexture.gameObject.SetActive(false);
-				}
+				
 			}
 			else
 			{
@@ -64,9 +53,7 @@ public class TournamentMapAvatarToBeat : MonoBehaviour
 			}
 		}
 	}
-
-	public FacebookPortraitWithProgress portrait;
-
+	
 	public UILabel playerScore;
 
 	public GameObject avatarFB;

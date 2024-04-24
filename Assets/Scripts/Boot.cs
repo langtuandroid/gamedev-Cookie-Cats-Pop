@@ -16,7 +16,6 @@ using Tactile.SagaCore;
 using Tactile.XperiaGamesClub;
 using TactileModules.AgeInfo;
 using TactileModules.CrossPromotion;
-using TactileModules.FacebookExtras;
 using TactileModules.FeatureManager;
 using TactileModules.FeatureManager.Interfaces;
 using TactileModules.Foundation;
@@ -78,11 +77,10 @@ public class Boot : BootBase
         PuzzleGame.Initialize<PuzzleGameImplementation>();
 
         TactileRequest.Configure(() => Boot.IsRequestsBlocked, 30f, 2);
-        FacebookClient facebookClient = repository.Register<FacebookClient>(new FacebookClient(Constants.FACEBOOK_APP_ID, Constants.FACEBOOK_APP_NAMESPACE, Constants.FACEBOOK_URL_SUFFIX, Constants.FACEBOOK_OPENGRAPH_VERSION), null);
+     
         RequestMetaDataProviderRegistry requestMetaDataProviderRegistry = new RequestMetaDataProviderRegistry();
-        CloudClient cloudClient = repository.Register<CloudClient>(new CloudClient(facebookClient, requestMetaDataProviderRegistry), null);
+        CloudClient cloudClient = repository.Register<CloudClient>(new CloudClient(requestMetaDataProviderRegistry), null);
         OneSignalManager oneSignalManager = repository.Register<OneSignalManager>(new OneSignalManager(Constants.ONESIGNAL_APP_ID, Constants.GCM_SENDER_ID, cloudClient), null);
-        FacebookLoginManager facebookLoginManager = repository.Register<FacebookLoginManager>(new FacebookLoginManager(new FacebookLoginManagerProvider(), PuzzleGame.DialogViews), null);
         ConfigurationManager configurationManager = repository.Register<ConfigurationManager>(new ConfigurationManager(cloudClient), null);
         GameSessionManager gameSessionManager = repository.Register<GameSessionManager>(GameSessionManager.CreateInstance(new GameSessionManagerProvider()), null);
         MapPopupManager mapPopupManager = repository.Register<MapPopupManager>(MapPopupManager.CreateInstance(gameSessionManager, null), null);
@@ -144,9 +142,9 @@ public class Boot : BootBase
         SupportedAttachments supportedAttachments = new SupportedAttachments();
         BackupRestorer backupRestorer = new BackupRestorer(userSettingsManager);
         UserSettingsBackupSummaryProvider userSettingsDetailsProvider = new UserSettingsBackupSummaryProvider(userSettingsManager, inventoryManager);
-        UserSupportSystem userSupportSystem = UserSupportSystemBuilder.Build(attachmentsListener, facebookClient, oneSignalManager, messageMetaDataProvider, cloudClient, mapPopupManager, uiViewManager, supportedAttachments, backupRestorer, userSettingsDetailsProvider, tactileAnalytics);
+        UserSupportSystem userSupportSystem = UserSupportSystemBuilder.Build(attachmentsListener, oneSignalManager, messageMetaDataProvider, cloudClient, mapPopupManager, uiViewManager, supportedAttachments, backupRestorer, userSettingsDetailsProvider, tactileAnalytics);
         repository.Register<UserSupportSystem>(userSupportSystem, null);
-        CloudSynchronizer cloudSynchronizer = repository.Register<CloudSynchronizer>(new CloudSynchronizer(userSettingsManager, cloudClient, facebookClient, userSettingsBackupManager, configurationManager, assetBundleManager, leaderboardManager, featureManager, userSupportSystem.Synchronizer, () => Boot.IsRequestsBlocked), null);
+        CloudSynchronizer cloudSynchronizer = repository.Register<CloudSynchronizer>(new CloudSynchronizer(userSettingsManager, cloudClient, userSettingsBackupManager, configurationManager, assetBundleManager, leaderboardManager, featureManager, userSupportSystem.Synchronizer, () => Boot.IsRequestsBlocked), null);
         repository.Register<BonusDropManager>(Singleton<BonusDropManager>.CreateInstance(), null);
         repository.Register<LocalizationManager>(new LocalizationManager(assetBundleManager), null);
         repository.Register<TextureStreamerAssetBundleManager>(TextureStreamerAssetBundleManager.CreateInstance(new TextureStreamerAssetBundleManagerDataProvider(), assetBundleSystem.AssetBundleDownloader), null);
@@ -157,12 +155,11 @@ public class Boot : BootBase
         repository.Register<GameStatsManager>(new GameStatsManager(), null);
         repository.Register<DailyQuestManager>(DailyQuestManager.CreateInstance(new DailyQuestManagerProvider(), levelDatabaseCollection), null);
         SendLivesAtStartManager sendLivesAtStartManager = repository.Register<SendLivesAtStartManager>(new SendLivesAtStartManager(), null);
-        repository.Register<FacebookRequestManager>(new FacebookRequestManager(cloudClient, facebookClient, () => Boot.IsRequestsBlocked, new Action<FacebookRequestData>(this.SuccessfulFacebookRequestSent), new FacebookRequestProvider(), new Func<FacebookRequestData, bool>(this.IsRequestAllowed)), null);
         repository.Register<VipManager>(VipManager.CreateInstance(), null);
         repository.Register<LikeUsManager>(LikeUsManager.CreateInstance(), null);
         repository.Register<ReviewManager>(new ReviewManager(configurationManager), null);
         repository.Register<LiveVersionUpdateManager>(new LiveVersionUpdateManager(), null);
-        repository.Register<NotificationManager>(NotificationManager.CreateInstance(facebookClient), null);
+        repository.Register<NotificationManager>(NotificationManager.CreateInstance(), null);
         AchievementsManager achievementsManager = repository.Register<AchievementsManager>(new AchievementsManager(GameEventManager.Instance, new AchievementsHelper(), null), null);
         AchievementsManager achievementsManager2 = achievementsManager;
 
@@ -194,10 +191,10 @@ public class Boot : BootBase
         PlacementSystem placementsSystem = PlacementSystemBuilder.Build(configurationManager, UIViewManager.Instance, tactileAnalytics);
         repository.Register<PlacementSystem>(placementsSystem, null);
 
-        ISagaCoreSystem sagaCore = SagaCoreSystemBuilder.Build(puzzleCoreCommon.FlowStack, puzzleCoreCommon.FullScreenManager, levelPlayingSystem.PlayFlowFactory, mainProgressionManager, leaderboardManager, gateManager, cloudClient, VipManager.Instance, facebookClient, mapPopupManager, GameSessionManager.Instance, new StoryFlowProvider(), placementsSystem.PlacementRunner, tactileAnalytics, levelDatabaseCollection, mapStreamerCollection, hardLevelsManager);
+        ISagaCoreSystem sagaCore = SagaCoreSystemBuilder.Build(puzzleCoreCommon.FlowStack, puzzleCoreCommon.FullScreenManager, levelPlayingSystem.PlayFlowFactory, mainProgressionManager, leaderboardManager, gateManager, cloudClient, VipManager.Instance, mapPopupManager, GameSessionManager.Instance, new StoryFlowProvider(), placementsSystem.PlacementRunner, tactileAnalytics, levelDatabaseCollection, mapStreamerCollection, hardLevelsManager);
         repository.Register<IMainMapFlowFactory>(sagaCore.MainMapFlowFactory, null);
         new LevelSessionIdPatchup(levelPlayingSystem.PlayFlowEvents);
-        repository.Register<MainLeaderBoardScoresRecorder>(new MainLeaderBoardScoresRecorder(levelPlayingSystem.PlayFlowEvents, leaderboardManager, facebookLoginManager), null);
+        repository.Register<MainLeaderBoardScoresRecorder>(new MainLeaderBoardScoresRecorder(levelPlayingSystem.PlayFlowEvents, leaderboardManager), null);
         new SynchronizerAtLevelEnd(levelPlayingSystem.PlayFlowEvents, cloudSynchronizer);
         new AdjustProgressionEventsLogger(levelPlayingSystem.PlayFlowEvents, adjustEventConstants, adjustTracking, gateManager);
         new BoosterSuggester(levelPlayingSystem.PlayFlowEvents);
@@ -211,11 +208,10 @@ public class Boot : BootBase
         repository.Register<TournamentCloudManager>(tournamentSystem.CloudManager, null);
         IDailyQuestSystem dailyQuestSystem = DailyQuestSystemBuilder.Build(DailyQuestManager.Instance, levelPlayingSystem.PlayFlowFactory, sagaCore.MapFacade);
         repository.Register<IDailyQuestSystem>(dailyQuestSystem, typeof(IDailyQuestSystem));
-        FacebookPlacementsBuilder.Build(placementsSystem.PlacementRunnableRegistry, configurationManager, facebookLoginManager, mainProgressionManager, facebookClient, sendLivesAtStartManager);
         ILevelDashSystem levelDashSystem = LevelDashSystemBuilder.Build(featureManager, cloudClient, mapPopupManager, sagaCore, gameSessionManager, new LevelDashDataProvider(), new LevelDashMapAvatarModifierProvider(), new LevelDashViewProvider());
         repository.Register<ILevelDashSystem>(levelDashSystem, typeof(ILevelDashSystem));
         ILevelRushSystem levelRushSystem = LevelRushSystemBuilder.Build(featureManager, new LevelRushNotificationProvider(), sagaCore.MapFacade, mainProgressionManager, mapPopupManager, configurationManager, InventoryManager.Instance);
-        IStarTournamentSystem starTournamentSystem = StarTournamentSystemBuilder.Build(featureManager, new StarTournamentManagerProvider(), cloudClient, sagaCore, levelPlayingSystem.PlayFlowEvents, mapPopupManager, mainProgressionManager, configurationManager, facebookClient, inventoryManager, randomPortraitsAndNames);
+        IStarTournamentSystem starTournamentSystem = StarTournamentSystemBuilder.Build(featureManager, new StarTournamentManagerProvider(), cloudClient, sagaCore, levelPlayingSystem.PlayFlowEvents, mapPopupManager, mainProgressionManager, configurationManager, inventoryManager, randomPortraitsAndNames);
         TreasureHuntSystem treasureHuntSystem = TreasureHuntSystemBuilder.Build(featureManager, new TreasureHuntManagerProvider(), levelPlayingSystem.PlayFlowFactory, puzzleCoreCommon.FlowStack, puzzleCoreCommon.FullScreenManager, sagaCore.MapFacade);
         EndlessChallengeHandler endlessChallengeHandler = new EndlessChallengeHandler(featureManager, cloudClient, levelDatabaseCollection, configurationManager, uiViewManager, puzzleCoreCommon.FlowStack, levelPlayingSystem.PlayFlowFactory);
         SlidesAndLaddersSystem slidesAndLaddersSystem = repository.Register<SlidesAndLaddersSystem>(SlidesAndLaddersSystemBuilder.Build(featureManager, mapStreamerCollection, configurationManager, levelDatabaseCollection.GetLevelDatabase<SlidesAndLaddersLevelDatabase>("SlidesAndLadders"), new SlidesAndLaddersMapViewProvider(), new SlidesAndLaddersSave(), new SlidesAndLaddersInventory(), mainProgressionManager, livesManager, sagaCore.MapFacade, puzzleCoreCommon.FlowStack, puzzleCoreCommon.FullScreenManager, levelPlayingSystem.PlayFlowFactory), null);
@@ -299,28 +295,7 @@ public class Boot : BootBase
             }
         }
     }
-
-    private bool IsRequestAllowed(FacebookRequestData request)
-    {
-        return GateManager.Instance != null && request != null && (!(request.RequestType == "key") || (GateManager.Instance.PlayerOnGate && !GateManager.Instance.IsUserAlreadyAGateKeyGiver(request.RequestSenderFacebookId)));
-    }
-
-    private void SuccessfulFacebookRequestSent(FacebookRequestData data)
-    {
-        if (data is FacebookKeyRequestData)
-        {
-            GameEventManager.Instance.Emit(10, data, 1);
-        }
-        else if (data is FacebookLifeRequestData)
-        {
-            GameEventManager.Instance.Emit(11, data, 1);
-        }
-        else if (data is FacebookTournamentLifeRequestData)
-        {
-            GameEventManager.Instance.Emit(12, data, 1);
-        }
-    }
-
+    
     private bool AreRequestsBlocked()
     {
         return Boot.IsRequestsBlocked;

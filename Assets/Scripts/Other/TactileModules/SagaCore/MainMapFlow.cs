@@ -11,7 +11,7 @@ namespace TactileModules.SagaCore
 {
 	public class MainMapFlow : MapFlow, MapPopupManager.IPopupManagerProvider, MapStreamer.IDataProvider, IMainMapFlow, IFullScreenOwner, IMapFlow
 	{
-		public MainMapFlow(LevelDatabaseCollection levelDatabaseCollection, MapStreamerCollection mapStreamerCollection, CloudClient cloudClient, FacebookClient facebookClient, MapFacade mapFacade, IMainProgression mainProgressionManager, MapPopupManager mapPopupManager, IGameSessionManager gameSessionManager, IFullScreenManager fullScreenManager, IFlowStack flowStack, IPlacementRunner placementRunner, IMainLevelsFlowFactory mainLevelsFlowFactory, IStoryIntroProvider storyIntroProvider) : base("Main", mapFacade, fullScreenManager, flowStack)
+		public MainMapFlow(LevelDatabaseCollection levelDatabaseCollection, MapStreamerCollection mapStreamerCollection, CloudClient cloudClient, MapFacade mapFacade, IMainProgression mainProgressionManager, MapPopupManager mapPopupManager, IGameSessionManager gameSessionManager, IFullScreenManager fullScreenManager, IFlowStack flowStack, IPlacementRunner placementRunner, IMainLevelsFlowFactory mainLevelsFlowFactory, IStoryIntroProvider storyIntroProvider) : base("Main", mapFacade, fullScreenManager, flowStack)
 		{
 			this.levelDatabaseCollection = levelDatabaseCollection;
 			this.mapStreamerCollection = mapStreamerCollection;
@@ -23,8 +23,6 @@ namespace TactileModules.SagaCore
 			this.StartSequenceHooks = new BreakableHookList<MainMapFlow>();
 			UserSettingsManager.Instance.SettingsSynced += this.HandleUserSettingsSynced;
 			gameSessionManager.NewSessionStarted += this.HandleNewGameSession;
-			facebookClient.FacebookLogin += this.HandleFacebookLogin;
-			facebookClient.FacebookLogout += this.HandleFacebookLogout;
 			this.placementRunner = placementRunner;
 			this.mainLevelsFlowFactory = mainLevelsFlowFactory;
 			this.storyIntroProvider = storyIntroProvider;

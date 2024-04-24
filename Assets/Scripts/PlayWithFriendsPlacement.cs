@@ -1,16 +1,12 @@
-using System;
 using System.Collections;
-using TactileModules.FacebookExtras;
 using TactileModules.Placements;
 using TactileModules.PuzzleGame.MainLevels;
 using TactileModules.PuzzleGames.Configuration;
 
 public class PlayWithFriendsPlacement : IPlacementRunnableNoBreak, IPlacementRunnable
 {
-	public PlayWithFriendsPlacement(IConfigGetter<FacebookNotification> configGetter, FacebookLoginManager facebookLoginManager, IMainProgression mainProgression)
+	public PlayWithFriendsPlacement(IMainProgression mainProgression)
 	{
-		this.configGetter = configGetter;
-		this.facebookLoginManager = facebookLoginManager;
 		this.mainProgression = mainProgression;
 	}
 
@@ -40,13 +36,8 @@ public class PlayWithFriendsPlacement : IPlacementRunnableNoBreak, IPlacementRun
 
 	private bool ShouldShowPopup()
 	{
-		int levelRequiredForPlayWithFriendsView = this.configGetter.Get().LevelRequiredForPlayWithFriendsView;
-		return !this.facebookLoginManager.IsLoggedInAndUserRegistered && levelRequiredForPlayWithFriendsView > 0 && this.mainProgression.GetFarthestUnlockedLevelIndex() >= levelRequiredForPlayWithFriendsView;
+		return false;
 	}
-
-	private readonly IConfigGetter<FacebookNotification> configGetter;
-
-	private readonly FacebookLoginManager facebookLoginManager;
 
 	private readonly IMainProgression mainProgression;
 }

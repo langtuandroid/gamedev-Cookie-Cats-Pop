@@ -7,11 +7,10 @@ namespace TactileModules.SagaCore
 {
 	public class MainMapFlowFactory : IMainMapFlowFactory
 	{
-		public MainMapFlowFactory(IMainProgression mainProgressionManager, CloudClient cloudClient, FacebookClient facebookClient, MapFacade mapFacade, MapPopupManager mapPopupManager, IGameSessionManager gameSessionManager, IFullScreenManager fullScreen, IFlowStack flows, IStoryIntroProvider storyIntroProvider, IPlacementRunner placementRunner, IMainLevelsFlowFactory mainLevelsFlowFactory, LevelDatabaseCollection databaseCollection, MapStreamerCollection mapStreamerCollection)
+		public MainMapFlowFactory(IMainProgression mainProgressionManager, CloudClient cloudClient, MapFacade mapFacade, MapPopupManager mapPopupManager, IGameSessionManager gameSessionManager, IFullScreenManager fullScreen, IFlowStack flows, IStoryIntroProvider storyIntroProvider, IPlacementRunner placementRunner, IMainLevelsFlowFactory mainLevelsFlowFactory, LevelDatabaseCollection databaseCollection, MapStreamerCollection mapStreamerCollection)
 		{
 			this.mainProgressionManager = mainProgressionManager;
 			this.cloudClient = cloudClient;
-			this.facebookClient = facebookClient;
 			this.mapFacade = mapFacade;
 			this.mapPopupManager = mapPopupManager;
 			this.gameSessionManager = gameSessionManager;
@@ -26,14 +25,12 @@ namespace TactileModules.SagaCore
 
 		public MainMapFlow CreateMainMapFlow()
 		{
-			return new MainMapFlow(this.databaseCollection, this.mapStreamerCollection, this.cloudClient, this.facebookClient, this.mapFacade, this.mainProgressionManager, this.mapPopupManager, this.gameSessionManager, this.fullScreen, this.flows, this.placementRunner, this.mainLevelsFlowFactory, this.storyIntroProvider);
+			return new MainMapFlow(this.databaseCollection, this.mapStreamerCollection, this.cloudClient, this.mapFacade, this.mainProgressionManager, this.mapPopupManager, this.gameSessionManager, this.fullScreen, this.flows, this.placementRunner, this.mainLevelsFlowFactory, this.storyIntroProvider);
 		}
 
 		private readonly IMainProgression mainProgressionManager;
 
 		private readonly CloudClient cloudClient;
-
-		private readonly FacebookClient facebookClient;
 
 		private readonly MapFacade mapFacade;
 

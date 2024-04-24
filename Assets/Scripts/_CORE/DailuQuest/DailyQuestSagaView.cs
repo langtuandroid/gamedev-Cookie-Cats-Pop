@@ -82,7 +82,7 @@ public class DailyQuestSagaView : ExtensibleView<DailyQuestSagaView.IExtension>,
 			}
 		}
 		this.path.UpdateMesh();
-		this.avatarController = new SagaAvatarController(ManagerRepository.Get<CloudClient>(), ManagerRepository.Get<VipManager>(), ManagerRepository.Get<FacebookClient>(), mapFacade);
+		this.avatarController = new SagaAvatarController(ManagerRepository.Get<CloudClient>(), ManagerRepository.Get<VipManager>(), mapFacade);
 		this.avatarController.AttachToDotProvider(this, this, -20f, Rect.zero);
 		this.avatarController.Refresh();
 	}

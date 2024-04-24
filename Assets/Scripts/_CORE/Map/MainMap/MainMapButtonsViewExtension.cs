@@ -52,14 +52,6 @@ public class MainMapButtonsViewExtension : MonoBehaviour
 		}
 	}
 
-	private FacebookRequestManager FacebookRequestManager
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookRequestManager>();
-		}
-	}
-
 	private AchievementsManager AchievementsManager
 	{
 		get
@@ -276,14 +268,7 @@ public class MainMapButtonsViewExtension : MonoBehaviour
 		{
 			if (this.inboxButtonRef != null)
 			{
-				if (this.FacebookRequestManager.HasPendingNonConsumedRequestData)
-				{
-					this.inboxButtonRef.BadgeText = this.FacebookRequestManager.PendingNonConsumedRequestDataCount.ToString();
-				}
-				else
-				{
-					this.inboxButtonRef.BadgeText = string.Empty;
-				}
+				
 			}
 			if (this.vipButtonRef != null)
 			{

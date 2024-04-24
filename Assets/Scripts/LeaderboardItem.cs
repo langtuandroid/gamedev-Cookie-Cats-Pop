@@ -7,7 +7,6 @@ public class LeaderboardItem : MonoBehaviour
 {
 	public void InitFacebookClient(int position, CloudScore score)
 	{
-		FacebookClient facebookClient = ManagerRepository.Get<FacebookClient>();
 		this.positionNumber.text = position.ToString();
 		this.scoreLabel.text = L.FormatNumber(score.Score);
 		this.backgroundImage.Color = ((!CloudScoreHelper.IsMe(score)) ? this.textLabelColors.backgroundColor : this.textLabelColors.myBackgroundColor);
@@ -20,10 +19,9 @@ public class LeaderboardItem : MonoBehaviour
 			this.userName.text = text;
 			if (string.IsNullOrEmpty(cloudUser.FacebookId))
 			{
-				if (CloudScoreHelper.IsMe(score) && facebookClient.IsSessionValid && facebookClient.CachedMe != null)
+				if (CloudScoreHelper.IsMe(score) && false)
 				{
-					this.portrait.Load(facebookClient, facebookClient.CachedMe.Id, null);
-					this.nonFBPortraitTexture.gameObject.SetActive(false);
+					
 				}
 				else
 				{
@@ -32,7 +30,6 @@ public class LeaderboardItem : MonoBehaviour
 			}
 			else
 			{
-				this.portrait.Load(facebookClient, cloudUser.FacebookId, null);
 				this.nonFBPortraitObject.SetActive(false);
 			}
 		}
@@ -63,16 +60,12 @@ public class LeaderboardItem : MonoBehaviour
 
 	private void ShowRandomPortrait(CloudScore score)
 	{
-		this.portrait.gameObject.SetActive(false);
 		Texture2D texture = RandomHelper.RandomPortrait(score.deviceId.GetHashCode());
 		this.nonFBPortraitTexture.SetTexture(texture);
 	}
 
 	[SerializeField]
 	private UILabel positionNumber;
-
-	[SerializeField]
-	private FacebookPortraitWithProgress portrait;
 
 	[SerializeField]
 	private GameObject nonFBPortraitObject;

@@ -1,28 +1,12 @@
 using System;
 using System.Collections;
 using Fibers;
-using TactileModules.FacebookExtras;
+
 using TactileModules.Foundation;
 using UnityEngine;
 
 public class IntroView : UIView
 {
-	private FacebookClient FacebookClient
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookClient>();
-		}
-	}
-
-	private FacebookLoginManager FacebookLoginManager
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookLoginManager>();
-		}
-	}
-
 	private void StartGame(UIEvent e)
 	{
 		this.ViewClosed(BootFlow.IntroResult.Play);
@@ -71,7 +55,7 @@ public class IntroView : UIView
 		{
 			this.logo.gameObject.SetActive(true);
 			this.button.gameObject.SetActive(true);
-			this.logInButtonPivot.SetActive(this.FacebookClient.IsInitialized && !this.FacebookLoginManager.IsLoggedInAndUserRegistered);
+			this.logInButtonPivot.SetActive(false);
 		});
 		SingingBand band = this.singingBand.GetInstance<SingingBand>();
 		band.StartSinging(false);
@@ -109,26 +93,7 @@ public class IntroView : UIView
 		}
 		yield break;
 	}
-
-	private IEnumerator DoFacebookInfo()
-	{
-		Boot.IsRequestsBlocked += false;
-		UIViewManager.UIViewStateGeneric<FacebookLoginInfoView> vs = UIViewManager.Instance.ShowView<FacebookLoginInfoView>(new object[0]);
-		yield return vs.WaitForClose();
-		Boot.IsRequestsBlocked += true;
-		if ((int)vs.ClosingResult == 1)
-		{
-			this.logInButtonPivot.SetActive(false);
-			this.StartGame(default(UIEvent));
-		}
-		yield break;
-	}
-
-	private void ButtonFacebookLoginInfoClicked(UIEvent e)
-	{
-		FiberCtrl.Pool.Run(this.DoFacebookInfo(), false);
-	}
-
+	
 	public UIWidget logo;
 
 	public UIInstantiator button;

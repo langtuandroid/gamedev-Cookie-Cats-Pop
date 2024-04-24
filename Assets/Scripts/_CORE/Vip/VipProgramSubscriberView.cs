@@ -1,21 +1,12 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Fibers;
 using Tactile;
-using TactileModules.FacebookExtras;
-using TactileModules.Foundation;
 using UnityEngine;
 
 public class VipProgramSubscriberView : UIView
 {
-	private FacebookLoginManager FacebookLoginManager
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookLoginManager>();
-		}
-	}
+	
 
 	private DialogFrame Dialog
 	{

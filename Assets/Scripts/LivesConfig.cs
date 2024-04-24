@@ -30,7 +30,7 @@ public class LivesConfig
 	{
 		get
 		{
-			return (!ManagerRepository.Get<FacebookClient>().IsSessionValid) ? this.NotLoggedInMaxlives : this.LoggedInMaxlives;
+			return (!false) ? this.NotLoggedInMaxlives : this.LoggedInMaxlives;
 		}
 	}
 }

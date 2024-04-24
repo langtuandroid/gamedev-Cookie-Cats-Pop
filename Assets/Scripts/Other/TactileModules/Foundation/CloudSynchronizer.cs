@@ -10,7 +10,7 @@ namespace TactileModules.Foundation
 {
     public class CloudSynchronizer
     {
-        public CloudSynchronizer(UserSettingsManager userSettingsManager, CloudClientBase cloudClient, FacebookClient fbClient, UserSettingsBackupManager userSettingsBackupManager, ConfigurationManager configurationManager, AssetBundleManager assetBundleManager, LeaderboardManager leaderboardManager, TactileModules.FeatureManager.FeatureManager featureManager, ICloudSynchronizable userSupportSynchronizer, Func<bool> isRequestsBlocked)
+        public CloudSynchronizer(UserSettingsManager userSettingsManager, CloudClientBase cloudClient, UserSettingsBackupManager userSettingsBackupManager, ConfigurationManager configurationManager, AssetBundleManager assetBundleManager, LeaderboardManager leaderboardManager, TactileModules.FeatureManager.FeatureManager featureManager, ICloudSynchronizable userSupportSynchronizer, Func<bool> isRequestsBlocked)
         {
             this.userSettingsManager = userSettingsManager;
             this.isRequestsBlocked = isRequestsBlocked;
@@ -21,7 +21,6 @@ namespace TactileModules.Foundation
             this.userSupportSynchronizer = userSupportSynchronizer;
             this.userSettingsBackupManager = userSettingsBackupManager;
             this.cloudClient = cloudClient;
-            this.fbClient = fbClient;
             this.HasSyncedFullThisSession = false;
             ActivityManager.onResumeEvent += this.ApplicationWillEnterForeground;
             this.SyncCloud();
@@ -46,7 +45,7 @@ namespace TactileModules.Foundation
                 yield break;
             }
             this.syncCloudInProgress = true;
-            while (!this.fbClient.IsInitialized)
+            while (!false)//this.fbClient.IsInitialized
             {
                 yield return null;
             }
@@ -60,9 +59,9 @@ namespace TactileModules.Foundation
                 this.userSettingsManager.SyncUserSettings();
             }
             yield return this.WaitWhileBlocksRequests();
-            if (this.fbClient.IsSessionValid)
+            if (false)
             {
-                yield return this.fbClient.Update();
+                
             }
             else if (this.cloudClient.HasValidUser)
             {
@@ -114,8 +113,6 @@ namespace TactileModules.Foundation
         private readonly Func<bool> isRequestsBlocked;
 
         private readonly ConfigurationManager configurationManager;
-
-        private readonly FacebookClient fbClient;
 
         private readonly LeaderboardManager leaderboardManager;
 

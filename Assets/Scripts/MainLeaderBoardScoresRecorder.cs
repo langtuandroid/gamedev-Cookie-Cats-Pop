@@ -1,22 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TactileModules.FacebookExtras;
 using TactileModules.PuzzleCore.LevelPlaying;
 using TactileModules.SagaCore;
 
 public class MainLeaderBoardScoresRecorder
 {
-	public MainLeaderBoardScoresRecorder(IPlayFlowEvents playFlowEvents, LeaderboardManager leaderboardManager, FacebookLoginManager facebookLoginManager)
+	public MainLeaderBoardScoresRecorder(IPlayFlowEvents playFlowEvents, LeaderboardManager leaderboardManager)
 	{
 		this.leaderboardManager = leaderboardManager;
-		this.facebookLoginManager = facebookLoginManager;
 		playFlowEvents.PlayFlowCreated += this.HandlePlayFlowCreated;
 	}
 
 	private void HandlePlayFlowCreated(ICorePlayFlow playFlow)
 	{
-		if (this.facebookLoginManager.IsLoggedInAndUserRegistered && playFlow.PlayFlowContext is MainLevelFlow)
+		if (false && playFlow.PlayFlowContext is MainLevelFlow)
 		{
 			playFlow.LevelStartedHook.Register(new Func<ILevelAttempt, IEnumerator>(this.HandleLevelStarted));
 		}
@@ -40,8 +38,6 @@ public class MainLeaderBoardScoresRecorder
 	}
 
 	private readonly LeaderboardManager leaderboardManager;
-
-	private readonly FacebookLoginManager facebookLoginManager;
 
 	private List<CloudScore> scoresWhenLevelStarted = new List<CloudScore>();
 }

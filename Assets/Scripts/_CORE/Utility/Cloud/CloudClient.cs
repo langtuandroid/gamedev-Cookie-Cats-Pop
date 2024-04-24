@@ -11,12 +11,10 @@ using TactileModules.TactileCloud;
 
 public class CloudClient : CloudClientBase, ICloudUserSettingsProvider
 {
-	public CloudClient(FacebookClient fbClient, IRequestMetaDataProviderRegistry requestMetaDataProviderRegistry) : base(CloudClient.CreateTactileCloudInterface(CloudClientBase.PersistedOverrideCloudServer, requestMetaDataProviderRegistry))
+	public CloudClient(IRequestMetaDataProviderRegistry requestMetaDataProviderRegistry) : base(CloudClient.CreateTactileCloudInterface(CloudClientBase.PersistedOverrideCloudServer, requestMetaDataProviderRegistry))
 	{
-		this.fbClient = fbClient;
 		this.cachedFriends = CloudClient.PersistedCachedFriends;
 		this.cachedFriendsSettings = CloudClient.PersistedCachedFriendsSettings;
-		fbClient.FacebookLogout += this.FacebookLogoutHandler;
 	}
 
 	private OneSignalManager OneSignalManager
@@ -29,21 +27,14 @@ public class CloudClient : CloudClientBase, ICloudUserSettingsProvider
 
 	~CloudClient()
 	{
-		this.fbClient.FacebookLogout -= this.FacebookLogoutHandler;
+		
 	}
 
 	public override IEnumerator UpdateRegistrationCr()
 	{
-		if (this.fbClient.IsSessionValid && this.fbClient.CachedMe != null)
+		if (false)
 		{
 			List<string> friendIds = new List<string>();
-			foreach (FacebookUser facebookUser in this.fbClient.CachedFriends)
-			{
-				if (facebookUser.Installed)
-				{
-					friendIds.Add(facebookUser.Id);
-				}
-			}
 			friendIds.Sort();
 			Hashtable userData = new Hashtable
 			{
@@ -51,22 +42,7 @@ public class CloudClient : CloudClientBase, ICloudUserSettingsProvider
 					"user",
 					new Hashtable
 					{
-						{
-							"facebookId",
-							this.fbClient.CachedMe.Id
-						},
-						{
-							"facebookAccessToken",
-							this.fbClient.AccessToken
-						},
-						{
-							"facebookFriendIds",
-							friendIds.ToArray()
-						},
-						{
-							"displayName",
-							this.fbClient.CachedMe.Name
-						}
+						
 					}
 				}
 			};
@@ -687,9 +663,7 @@ public class CloudClient : CloudClientBase, ICloudUserSettingsProvider
 	private List<CloudUser> cachedFriends;
 
 	private List<CloudUserSettings> cachedFriendsSettings;
-
-	private FacebookClient fbClient;
-
+	
 	public delegate void TournamentResultDelegate(object error, List<TournamentCloudManager.Entry> entries, List<CloudUser> users, int periodId, int tournamentId, int endsInSeconds, int closesInSeconds, DateTime utcReceived);
 
 	public delegate void TournamentPresentResultDelegate(object error, List<TournamentCloudManager.Entry> entries, List<CloudUser> users, int periodId, int tournamentId, int endsInSeconds, int closesInSeconds, DateTime utcReceived, TournamentCloudManager.PresentResult presentResult);

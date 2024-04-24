@@ -11,11 +11,10 @@ namespace TactileModules.SagaCore
 {
 	public class SagaAvatarController : MapAvatar.IDataRetriever
 	{
-		public SagaAvatarController(CloudClient cloudClient, VipManager vipManager, FacebookClient facebookClient, MapFacade mapFacade)
+		public SagaAvatarController(CloudClient cloudClient, VipManager vipManager, MapFacade mapFacade)
 		{
 			this.cloudClient = cloudClient;
 			this.vipManager = vipManager;
-			this.facebookClient = facebookClient;
 			this.mapFacade = mapFacade;
 		}
 
@@ -337,13 +336,8 @@ namespace TactileModules.SagaCore
 			return friend != null && friend.UserIsVip;
 		}
 
-		FacebookClient MapAvatar.IDataRetriever.FacebookClient
-		{
-			get
-			{
-				return this.facebookClient;
-			}
-		}
+		
+
 
 		MapAvatar.BackgroundSide MapAvatar.IDataRetriever.DetermineSideFromLocalPosition(Vector3 avatarLocalPosition)
 		{
@@ -360,8 +354,6 @@ namespace TactileModules.SagaCore
 		private readonly CloudClient cloudClient;
 
 		private readonly VipManager vipManager;
-
-		private readonly FacebookClient facebookClient;
 
 		private readonly MapFacade mapFacade;
 

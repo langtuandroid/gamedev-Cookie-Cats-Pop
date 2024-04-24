@@ -16,31 +16,6 @@ public class LivesManager : MapPopupManager.IMapPopup, ILivesManager
 		MapPopupManager.Instance.RegisterPopupObject(this);
 		LivesConfig config = ConfigurationManager.Get<LivesConfig>();
 		this.service = new RegeneratingItemService(this.TimeStampManager, "Life", config.LifeRegenerationMaxCount, config.LifeRegenerationTime);
-		this.FacebookClient.FacebookLogin += delegate()
-		{
-			_0024this.service.ChangeMaxItems(config.LoggedInMaxlives);
-			if (!_0024this.state.HasConnectedPreviously)
-			{
-				_0024this.FillAllLives();
-				_0024this.state.HasConnectedPreviously = true;
-				_0024this.Save();
-			}
-		};
-		this.FacebookClient.FacebookLogout += delegate()
-		{
-			_0024this.service.ChangeMaxItems(config.NotLoggedInMaxlives);
-		};
-		this.FacebookClient.FacebookInitComplete += delegate()
-		{
-			if (_0024this.FacebookClient.IsSessionValid && _0024this.service.maxItems != config.LoggedInMaxlives)
-			{
-				_0024this.service.ChangeMaxItems(config.LoggedInMaxlives);
-			}
-			else if (!_0024this.FacebookClient.IsSessionValid && _0024this.service.maxItems != config.NotLoggedInMaxlives)
-			{
-				_0024this.service.ChangeMaxItems(config.NotLoggedInMaxlives);
-			}
-		};
 		ShopManager.Instance.ShopItemBought += delegate(ShopItem shopItem)
 		{
 			if (shopItem.Type == "ShopItemExtraLives")
@@ -59,18 +34,7 @@ public class LivesManager : MapPopupManager.IMapPopup, ILivesManager
 
 	////[DebuggerBrowsable(DebuggerBrowsableState.Never)]
 	public event Action UnlimitedLivesChanged;
-
-
-
 	public static LivesManager Instance { get; private set; }
-
-	private FacebookClient FacebookClient
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookClient>();
-		}
-	}
 
 	private ConfigurationManager ConfigurationManager
 	{
@@ -97,7 +61,7 @@ public class LivesManager : MapPopupManager.IMapPopup, ILivesManager
 	private void FillAllLives()
 	{
 		LivesConfig livesConfig = ConfigurationManager.Get<LivesConfig>();
-		int num = (!this.FacebookClient.IsSessionValid) ? livesConfig.NotLoggedInMaxlives : livesConfig.LoggedInMaxlives;
+		int num = true ? livesConfig.NotLoggedInMaxlives : livesConfig.LoggedInMaxlives;
 		if (InventoryManager.Instance.GetAmount("Life") < num)
 		{
 			InventoryManager.Instance.SetAmount("Life", num, null);

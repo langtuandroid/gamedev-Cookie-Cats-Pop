@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using Fibers;
 using JetBrains.Annotations;
-using TactileModules.FacebookExtras;
 using TactileModules.Foundation;
 using UnityEngine;
 
@@ -154,42 +152,7 @@ namespace TactileModules.SagaCore
         {
             base.Close(SagaGateView.Result.PlayLevel);
         }
-
-        private void FBButton(UIEvent e)
-        {
-            if (ManagerRepository.Get<FacebookLoginManager>().IsLoggedInAndUserRegistered)
-            {
-                UIViewManager.Instance.ShowView<FacebookSelectFriendsAndRequestView>(new object[]
-                {
-                    FacebookSelectFriendsAndRequestView.RequestType.Key
-                });
-            }
-            else
-            {
-                FiberCtrl.Pool.Run(this.DoFacebookLogin(), false);
-            }
-        }
-
-        private IEnumerator DoFacebookLogin()
-        {
-            FacebookLoginManager facebookLoginManager = ManagerRepository.Get<FacebookLoginManager>();
-            yield return facebookLoginManager.EnsureLoggedInAndUserRegistered();
-            if (facebookLoginManager.IsLoggedInAndUserRegistered)
-            {
-                if (GateManager.Instance.PlayerOnGate)
-                {
-                    UIViewManager.Instance.ShowView<FacebookSelectFriendsAndRequestView>(new object[]
-                    {
-                        FacebookSelectFriendsAndRequestView.RequestType.Key
-                    });
-                }
-                else
-                {
-                    base.Close(SagaGateView.Result.Dismiss);
-                }
-            }
-            yield break;
-        }
+        
 
         private void QuestCooldownButton(UIEvent e)
         {

@@ -7,14 +7,6 @@ using UnityEngine;
 
 public class HighscoreCell : MonoBehaviour
 {
-	private FacebookClient FacebookClient
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookClient>();
-		}
-	}
-
 	private CloudClient CloudClient
 	{
 		get
@@ -104,7 +96,6 @@ public class HighscoreCell : MonoBehaviour
 				{
 					this.fiber = new Fiber(FiberBucket.Update);
 				}
-				this.fiber.Start(this.LoadPortrait());
 			}
 		}
 	}
@@ -120,41 +111,13 @@ public class HighscoreCell : MonoBehaviour
 			this.loadingPivot.SetActive(false);
 		}
 	}
-
-	private IEnumerator LoadPortrait()
-	{
-		yield return this.FacebookClient.LoadPortrait(this.cloudUser.FacebookId, delegate(object error, Texture2D texture)
-		{
-			if (error == null)
-			{
-				this.isPortraitLoading = false;
-				this.portraitLoaded = true;
-				this.portraitQuad.Color = Color.white;
-				this.portraitQuad.SetTexture(texture);
-			}
-			else
-			{
-				this.isPortraitLoading = false;
-				this.portraitLoaded = false;
-			}
-		});
-		this.UpdateSpinner();
-		yield break;
-	}
+	
 
 	private IEnumerator LoadCr(string facebookId)
 	{
 		this.loadingPivot.gameObject.SetActive(true);
 		if (!string.IsNullOrEmpty(facebookId))
 		{
-			IEnumerator e = this.LoadImageFromFacebookIdCr(facebookId, delegate(object err)
-			{
-			});
-			while (e.MoveNext())
-			{
-				object obj = e.Current;
-				yield return obj;
-			}
 		}
 		if (this.loadingPivot != null)
 		{
@@ -163,34 +126,7 @@ public class HighscoreCell : MonoBehaviour
 		yield break;
 	}
 
-	private IEnumerator LoadImageFromFacebookIdCr(string facebookId, Action<object> callback)
-	{
-		IEnumerator e = this.FacebookClient.LoadPortrait(facebookId, delegate(object error, Texture2D tex)
-		{
-			if (tex != null)
-			{
-				if (facebookId == this.lastLoadFacebookId)
-				{
-					this.portraitQuad.SetTexture(tex);
-				}
-			}
-			else
-			{
-				string arg = "Failed to load facebook portrait for " + facebookId;
-				if (error != null)
-				{
-					arg = arg + ". Error: " + error;
-				}
-			}
-			callback(error);
-		});
-		while (e.MoveNext())
-		{
-			object obj = e.Current;
-			yield return obj;
-		}
-		yield break;
-	}
+
 
 	public string GetFirstName(string name, int maxLength = 20)
 	{

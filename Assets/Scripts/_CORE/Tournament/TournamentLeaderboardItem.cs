@@ -32,23 +32,18 @@ public class TournamentLeaderboardItem : MonoBehaviour
 	{
 		if (!string.IsNullOrEmpty(this.scoreInfo.facebookId))
 		{
-			this.portrait.Load(ManagerRepository.Get<FacebookClient>(), this.scoreInfo.facebookId, null);
 			this.nonFBPortraitObject.SetActive(false);
-			this.portrait.gameObject.SetActive(true);
 		}
 		else
 		{
 			bool flag = false;
-			if (this.isMe && ManagerRepository.Get<FacebookClient>().IsSessionValid && ManagerRepository.Get<FacebookClient>().CachedMe != null)
+			if (this.isMe && false)
 			{
-				this.portrait.Load(ManagerRepository.Get<FacebookClient>(), ManagerRepository.Get<FacebookClient>().CachedMe.Id, null);
 				this.nonFBPortraitTexture.gameObject.SetActive(false);
-				this.portrait.gameObject.SetActive(true);
 				flag = true;
 			}
 			if (!flag)
 			{
-				this.portrait.gameObject.SetActive(false);
 				this.nonFBPortraitTexture.SetTexture(SingletonAsset<TournamentSetup>.Instance.GetRandomPortrait(this.scoreInfo.deviceId.GetHashCode()));
 			}
 		}
@@ -83,8 +78,6 @@ public class TournamentLeaderboardItem : MonoBehaviour
 	public UISprite BG;
 
 	public UILabel positionNumber;
-
-	public FacebookPortraitWithProgress portrait;
 
 	public GameObject nonFBPortraitObject;
 

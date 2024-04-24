@@ -63,12 +63,12 @@ namespace TactileModules.PuzzleGames.LevelDash.Views.Handlers
                     Texture2D randomPortraitTexture = this.GetRandomPortraitTexture(mapAvatar.DeviceId);
                     if (randomPortraitTexture != null)
                     {
-                        mapAvatar.portrait.portrait.SetTexture(randomPortraitTexture);
+                        
                     }
                 }
                 else
                 {
-                    mapAvatar.portrait.Load(ManagerRepository.Get<FacebookClient>(), text, null);
+                    
                 }
             }
         }

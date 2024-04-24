@@ -15,10 +15,9 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 			}
 		}
 
-		public void Initialize(StarTournamentManager starTournamentManager, IMainProgression mainProgression, CloudClientBase cloudClient, FacebookClient facebookClient)
+		public void Initialize(StarTournamentManager starTournamentManager, IMainProgression mainProgression, CloudClientBase cloudClient)
 		{
 			this.manager = starTournamentManager;
-			this.facebookClient = facebookClient;
 			this.cloudClient = cloudClient;
 			this.mainProgression = mainProgression;
 			UIListPanel uilistPanel = this.itemList;
@@ -48,14 +47,14 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 				this.itemList.AddToContent(component);
 				StarTournamentLeaderboardItem component2 = gameObject.GetComponent<StarTournamentLeaderboardItem>();
 				bool flag = allParticipants[i].IsOwnedByDeviceOrUser(deviceId, userId);
-				component2.Init(this.manager, this.mainProgression, this.facebookClient, this.cloudClient, i + 1, allParticipants[i], flag);
+				component2.Init(this.manager, this.mainProgression, this.cloudClient, i + 1, allParticipants[i], flag);
 				if (flag)
 				{
 					component.transform.localPosition = new Vector3(component.transform.localPosition.x, component.transform.localPosition.y, -8f);
 					this.focusPosition = new Vector2(gameObject.transform.localPosition.x, component2.GetElementSize().y * (float)i);
 					this.focusSize = component2.GetElementSize();
 					this.myCellElement = component;
-					this.myItem.Init(this.manager, this.mainProgression, this.facebookClient, this.cloudClient, i + 1, allParticipants[i], true);
+					this.myItem.Init(this.manager, this.mainProgression, this.cloudClient, i + 1, allParticipants[i], true);
 					this.myItem.gameObject.SetActive(false);
 				}
 			}
@@ -113,8 +112,6 @@ namespace TactileModules.PuzzleGames.StarTournament.Views
 		private StarTournamentManager manager;
 
 		private CloudClientBase cloudClient;
-
-		private FacebookClient facebookClient;
 
 		private IMainProgression mainProgression;
 	}

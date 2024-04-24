@@ -8,10 +8,10 @@ namespace TactileModules.SagaCore
 {
 	public class MapContentController : SagaAvatarController.IDotPositions
 	{
-		public MapContentController(MapIdentifier mapId, CloudClient cloudClient, VipManager vipManager, FacebookClient facebookClient, MapFacade mapFacade)
+		public MapContentController(MapIdentifier mapId, CloudClient cloudClient, VipManager vipManager, MapFacade mapFacade)
 		{
 			this.MapIdentifier = mapId;
-			this.Avatars = new SagaAvatarController(cloudClient, vipManager, facebookClient, mapFacade);
+			this.Avatars = new SagaAvatarController(cloudClient, vipManager, mapFacade);
 		}
 
 		////[DebuggerBrowsable(DebuggerBrowsableState.Never)]

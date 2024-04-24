@@ -3,7 +3,7 @@ using System.Collections;
 using Fibers;
 using JetBrains.Annotations;
 using Tactile;
-using TactileModules.FacebookExtras;
+
 using TactileModules.Foundation;
 using TactileModules.PuzzleGame.MainLevels;
 using TactileModules.PuzzleGames.GameCore;
@@ -13,14 +13,7 @@ using UnityEngine;
 
 public class SettingsView : UIView
 {
-	private FacebookClient FacebookClient
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookClient>();
-		}
-	}
-
+	
 	private ConfigurationManager ConfigurationManager
 	{
 		get
@@ -44,14 +37,7 @@ public class SettingsView : UIView
 			return ManagerRepository.Get<LevelDatabaseCollection>();
 		}
 	}
-
-	private FacebookLoginManager FacebookLoginManager
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookLoginManager>();
-		}
-	}
+	
 
 	protected override void ViewLoad(object[] parameters)
 	{
@@ -73,15 +59,12 @@ public class SettingsView : UIView
 
 	protected override void ViewWillAppear()
 	{
-		this.FacebookClient.FacebookLogin += this.UpdateUI;
-		this.FacebookClient.FacebookLogout += this.UpdateUI;
 		this.UpdateUI();
 	}
 
 	protected override void ViewWillDisappear()
 	{
-		this.FacebookClient.FacebookLogin -= this.UpdateUI;
-		this.FacebookClient.FacebookLogout -= this.UpdateUI;
+		
 	}
 
 	private void UpdateUI()
@@ -90,7 +73,7 @@ public class SettingsView : UIView
 		this.soundToggleButton.GetInstance<ButtonToggle>().IsOn = AudioManager.Instance.SoundEffectsActive;
 		this.notificationToggleButton.GetInstance<ButtonToggle>().IsOn = !NotificationManager.Instance.LocalNotificationsBlocked;
 		ButtonWithTitle instance = this.facebookButton.GetInstance<ButtonWithTitle>();
-		if (this.FacebookClient.IsSessionValid)
+		if (false)
 		{
 			instance.Title = L.Get("Log Out");
 		}
@@ -126,38 +109,7 @@ public class SettingsView : UIView
 		AudioManager.Instance.SoundEffectsActive = component.IsOn;
 	}
 
-	[UsedImplicitly]
-	private void FacebookLogInOrOut(UIEvent e)
-	{
-		if (this.FacebookClient.IsSessionValid)
-		{
-			UIViewManager.UIViewStateGeneric<ProgressView> vs = UIViewManager.Instance.ShowView<ProgressView>(new object[]
-			{
-				L.Get("Logging Out")
-			});
-			FiberCtrl.Pool.Run(this.FacebookClient.DeletePermissions(delegate(object err)
-			{
-				vs.View.Close(0);
-				if (err == null)
-				{
-					this.CloudClient.ClearCachedAndPersistedUserData();
-					this.Close(1);
-				}
-				else
-				{
-					UIViewManager.Instance.ShowView<MessageBoxView>(new object[]
-					{
-						L.Get("Sorry"),
-						L.Get("There was a problem when trying to log out. Please try again later.")
-					});
-				}
-			}), false);
-		}
-		else
-		{
-			FiberCtrl.Pool.Run(this.DoFacebookLogin(), false);
-		}
-	}
+
 
 	[UsedImplicitly]
 	private void ToStartScreen(UIEvent e)
@@ -191,17 +143,7 @@ public class SettingsView : UIView
 		}
 		return L.Get("Notifications Disabled");
 	}
-
-	private IEnumerator DoFacebookLogin()
-	{
-		IEnumerator e = this.FacebookLoginManager.EnsureLoggedInAndUserRegistered();
-		while (e.MoveNext())
-		{
-			object obj = e.Current;
-			yield return obj;
-		}
-		yield break;
-	}
+	
 
 	[SerializeField]
 	private UIInstantiator musicToggleButton;

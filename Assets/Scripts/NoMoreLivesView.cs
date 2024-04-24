@@ -1,22 +1,11 @@
 using System;
-using System.Collections;
 using Fibers;
 using Tactile;
-using TactileModules.Ads;
-using TactileModules.FacebookExtras;
-using TactileModules.Foundation;
 using UnityEngine;
 
 public class NoMoreLivesView : UIView
 {
-	private FacebookLoginManager FacebookLoginManager
-	{
-		get
-		{
-			return ManagerRepository.Get<FacebookLoginManager>();
-		}
-	}
-
+	
 	private void OnDestroy()
 	{
 		this.watchFiber.Terminate();
@@ -79,8 +68,8 @@ public class NoMoreLivesView : UIView
 
 	private void UpdateFacebookButton()
 	{
-		this.askFriendsButton.SetActive(this.FacebookLoginManager.IsLoggedInAndUserRegistered || this.playingTournament);
-		this.connectNormal.SetActive(!this.FacebookLoginManager.IsLoggedInAndUserRegistered && !this.playingTournament);
+		this.askFriendsButton.SetActive(false);
+		this.connectNormal.SetActive(false);
 	}
 
 	private void Update()
@@ -114,23 +103,7 @@ public class NoMoreLivesView : UIView
 	{
 		base.Close(0);
 	}
-
-	private void ButtonConnectToFacebook(UIEvent e)
-	{
-		UIViewManager.Instance.ShowView<FacebookLoginInfoView>(new object[]
-		{
-			LoginContext.Lives
-		});
-	}
-
-	private void ButtonAskFriendsClicked(UIEvent e)
-	{
-		UIViewManager.Instance.ShowView<FacebookSelectFriendsAndRequestView>(new object[]
-		{
-			(!this.playingTournament) ? FacebookSelectFriendsAndRequestView.RequestType.Life : FacebookSelectFriendsAndRequestView.RequestType.TournamentLife,
-			true
-		});
-	}
+	
 
 	private void BuyLives(UIEvent e)
 	{

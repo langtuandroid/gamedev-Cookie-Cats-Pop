@@ -37,7 +37,7 @@ public class MapAvatar : MonoBehaviour
 
 	private void OnEnable()
 	{
-		this.portrait.progress.gameObject.SetActive(false);
+		
 	}
 
 	protected bool IsMe()
@@ -98,29 +98,6 @@ public class MapAvatar : MonoBehaviour
 		if (this.retriever == null)
 		{
 			return;
-		}
-		if (this.retriever.FacebookClient.IsSessionValid)
-		{
-			if (this.IsMe())
-			{
-				FacebookUser cachedMe = this.retriever.FacebookClient.CachedMe;
-				if (cachedMe != null)
-				{
-					this.portrait.Load(this.retriever.FacebookClient, cachedMe.Id, null);
-				}
-			}
-			else if (this.CloudUser != null)
-			{
-				this.portrait.Load(this.retriever.FacebookClient, this.CloudUser.FacebookId, null);
-			}
-			else
-			{
-				this.portrait.Reset();
-			}
-		}
-		else
-		{
-			this.portrait.Reset();
 		}
 	}
 
@@ -209,8 +186,7 @@ public class MapAvatar : MonoBehaviour
 		}
 		return Vector3.zero;
 	}
-
-	public FacebookPortraitWithProgress portrait;
+	
 
 	[OptionalSerializedField]
 	public GameObject backgroundLeft;
@@ -252,9 +228,7 @@ public class MapAvatar : MonoBehaviour
 		bool IsPlayerVIP { get; }
 
 		bool GetVIPStatusForCloudUser(CloudUser cloudUser);
-
-		FacebookClient FacebookClient { get; }
-
+		
 		MapAvatar.BackgroundSide DetermineSideFromLocalPosition(Vector3 avatarLocalPosition);
 	}
 }

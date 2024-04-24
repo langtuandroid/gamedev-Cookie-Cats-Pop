@@ -46,10 +46,10 @@ public class NotificationManager
 
 	public static NotificationManager Instance { get; private set; }
 
-	public static NotificationManager CreateInstance(FacebookClient facebookClient)
+	public static NotificationManager CreateInstance()
 	{
 		NotificationManager.Instance = new NotificationManager();
-		NotificationManager.Instance.facebookClient = facebookClient;
+	
 		return NotificationManager.Instance;
 	}
 
@@ -199,10 +199,6 @@ public class NotificationManager
 
 	private string TryGetGreetingWithName()
 	{
-		if (this.facebookClient.IsSessionValid && this.facebookClient.CachedMe != null)
-		{
-			return string.Format(L.Get("Hi {0}."), this.facebookClient.CachedMe.FirstName) + " ";
-		}
 		return string.Empty;
 	}
 
@@ -220,8 +216,6 @@ public class NotificationManager
 		lottery.Add(1f, L.Get("The cats are already lining up, waiting for your cookies!"));
 		return lottery.PickRandomItem(false);
 	}
-
-	private FacebookClient facebookClient;
 
 	public class NotificationInfo
 	{

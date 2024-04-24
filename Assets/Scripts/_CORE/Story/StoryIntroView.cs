@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Fibers;
 using Spine;
 using Spine.Unity;
-using TactileModules.FacebookExtras;
 using TactileModules.Foundation;
 using UnityEngine;
 
@@ -29,28 +28,11 @@ public class StoryIntroView : UIView
 		this.parameters.done(this.didCheatSkip);
 		base.Close(0);
 	}
-
-	private IEnumerator DoFacebookInfo()
-	{
-		Boot.IsRequestsBlocked += false;
-		UIViewManager.UIViewStateGeneric<FacebookLoginInfoView> vs = UIViewManager.Instance.ShowView<FacebookLoginInfoView>(new object[0]);
-		yield return vs.WaitForClose();
-		Boot.IsRequestsBlocked += true;
-		if ((int)vs.ClosingResult == 1)
-		{
-			this.logInButtonPivot.SetActive(false);
-			if (PuzzleGame.PlayerState.FarthestUnlockedLevelHumanNumber > 1)
-			{
-				this.parameters.done(true);
-				base.Close(0);
-			}
-		}
-		yield break;
-	}
+	
 
 	private void ButtonFacebookLoginInfoClicked(UIEvent e)
 	{
-		FiberCtrl.Pool.Run(this.DoFacebookInfo(), false);
+		
 	}
 
 	public UIInstantiator devButton;
@@ -75,14 +57,6 @@ public class StoryIntroView : UIView
 	[Serializable]
 	public class AlarmState : StoryState
 	{
-		private FacebookLoginManager FacebookLoginManager
-		{
-			get
-			{
-				return ManagerRepository.Get<FacebookLoginManager>();
-			}
-		}
-
 		public override void Enter()
 		{
             base.Enter();
@@ -121,7 +95,7 @@ public class StoryIntroView : UIView
             });
             yield return FiberHelper.Wait(0.5f, (FiberHelper.WaitFlag)0);
             this.playButton.SetActive(true);
-            this.logInButtonPivot.SetActive(ManagerRepository.Get<FacebookClient>().IsInitialized && !this.FacebookLoginManager.IsLoggedInAndUserRegistered);
+            this.logInButtonPivot.SetActive(false);
             bool playClicked = false;
             this.introView.playClicked = delegate ()
             {
