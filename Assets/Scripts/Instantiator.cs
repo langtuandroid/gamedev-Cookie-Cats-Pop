@@ -130,7 +130,6 @@ public class Instantiator : MonoBehaviour
 	{
 		foreach (MonoBehaviour comp in instance.GetComponents<MonoBehaviour>())
 		{
-			Debug.Log(comp);
 			Type type = comp.GetType();
 			foreach (PropertyInfo info in type.GetProperties(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.FlattenHierarchy))
 			{
