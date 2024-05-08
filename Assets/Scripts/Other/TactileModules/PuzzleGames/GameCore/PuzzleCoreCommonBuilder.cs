@@ -25,9 +25,9 @@ namespace TactileModules.PuzzleGames.GameCore
             };
         }
 
-        public static void BuildAnalytics(IAnalytics analytics, IConfigurationManager configurationManager, InventoryManager inventoryManager, IFlowStack flowStack, TactileModules.FeatureManager.FeatureManager featureManager, IAnalyticsContextProvider contextProvider)
+        public static void BuildAnalytics(IConfigurationManager configurationManager, InventoryManager inventoryManager, IFlowStack flowStack, TactileModules.FeatureManager.FeatureManager featureManager)
         {
-            analytics.RegisterDecorator(new BasicEventDecorator(flowStack, configurationManager, inventoryManager, featureManager, contextProvider));
+            
         }
     }
 }

@@ -45,10 +45,9 @@ namespace TactileModules.FeatureManager
 		[Description("Timestamp from the server. Persisted for situations where a player starts the game on offline mode.")]
 		public int ServerTimestamp { get; set; }
 
-		public static void Initialize(IFeatureMergeUtil featureMergeUtil, IFeatureManagerAnalytics featureManagerAnalytics, IFeatureManager featureManager)
+		public static void Initialize(IFeatureMergeUtil featureMergeUtil, IFeatureManager featureManager)
 		{
 			FeatureManagerPersistableState.featureMergeUtility = featureMergeUtil;
-			FeatureManagerPersistableState.featureManagerAnalytics = featureManagerAnalytics;
 			FeatureManagerPersistableState.featureManager = featureManager;
 		}
 
@@ -166,7 +165,6 @@ namespace TactileModules.FeatureManager
 					Type customDataType = keyValuePair.Value.CustomDataType;
 					if (customDataType != typeOfFeatureHandlerGeneric && !string.IsNullOrEmpty(customDataTypeAsString))
 					{
-						FeatureManagerPersistableState.featureManagerAnalytics.LogFixedIncompatibleFeatureDataTypes(value, customDataTypeAsString, typeOfFeatureHandlerGeneric.AssemblyQualifiedName);
 						value.ActivatedFeatureInstanceDatas.Clear();
 						keyValuePair.Value.CustomDataTypeAsString = typeOfFeatureHandlerGeneric.AssemblyQualifiedName;
 						keyValuePair.Value.FeatureTypeCustomData = FeatureHandlerInvokers.NewFeatureTypeCustomData(handler);
@@ -190,7 +188,6 @@ namespace TactileModules.FeatureManager
 						if (!featureTypeHandler.AllowMultipleFeatureInstances)
 						{
 							ActivatedFeatureInstanceData activatedFeatureInstanceData2 = FeatureManagerPersistableState.featureMergeUtility.MergeSingle(featureTypeHandler, activatedFeatureInstanceDatas[0], activatedFeatureInstanceDatas[1]);
-							FeatureManagerPersistableState.featureManagerAnalytics.LogCleanedInvalidFeatureState(new StackTrace(true), featureTypeHandler, activatedFeatureInstanceDatas[0], activatedFeatureInstanceDatas[1], activatedFeatureInstanceData2);
 							activatedFeatureInstanceDatas.Clear();
 							activatedFeatureInstanceDatas.Add(activatedFeatureInstanceData2);
 						}
@@ -220,8 +217,6 @@ namespace TactileModules.FeatureManager
 		}
 
 		private static IFeatureMergeUtil featureMergeUtility;
-
-		private static IFeatureManagerAnalytics featureManagerAnalytics;
 
 		private static IFeatureManager featureManager;
 

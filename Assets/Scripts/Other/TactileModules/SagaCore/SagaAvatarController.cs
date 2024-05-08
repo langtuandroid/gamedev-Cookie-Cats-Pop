@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace TactileModules.SagaCore
 {
-	public class SagaAvatarController : MapAvatar.IDataRetriever
+	public class SagaAvatarController : MapAvatare.IDataRetriever
 	{
 		public SagaAvatarController(CloudClient cloudClient, MapFacade mapFacade)
 		{
@@ -24,7 +24,7 @@ namespace TactileModules.SagaCore
 
 
 
-        public Dictionary<string, MapAvatar> Avatars
+        public Dictionary<string, MapAvatare> Avatars
 		{
 			get
 			{
@@ -120,14 +120,14 @@ namespace TactileModules.SagaCore
 			this.RebuildProgressionMarker();
 		}
 
-		public MapAvatar GetMeAvatar()
+		public MapAvatare GetMeAvatar()
 		{
 			return this.avatars.GetValueOrDefault("me");
 		}
 
 		private void ClearAvatars()
 		{
-			foreach (KeyValuePair<string, MapAvatar> keyValuePair in this.avatars)
+			foreach (KeyValuePair<string, MapAvatare> keyValuePair in this.avatars)
 			{
 				if (keyValuePair.Value != null)
 				{
@@ -244,20 +244,20 @@ namespace TactileModules.SagaCore
 			yield break;
 		}
 
-		private IEnumerator MoveAvatar(MapAvatar avatar, int fromDot, int toDot)
+		private IEnumerator MoveAvatar(MapAvatare avatar, int fromDot, int toDot)
 		{
 			yield return this.MoveAvatar(avatar, fromDot, toDot, new SagaAvatarController.AvatarMoveAnimation(this.DefaultMoveAnimation));
 			yield break;
 		}
 
-		private IEnumerator DefaultMoveAnimation(MapAvatar avatar, Vector3 fromPos, Vector3 toPos)
+		private IEnumerator DefaultMoveAnimation(MapAvatare avatar, Vector3 fromPos, Vector3 toPos)
 		{
 			avatar.UpdateFromLocalPosition(fromPos);
 			yield return avatar.AnimateToLocalPosition(toPos, this.mapFacade.Setup.AvatarMoveCurve);
 			yield break;
 		}
 
-		private IEnumerator MoveAvatar(MapAvatar avatar, int fromDot, int toDot, SagaAvatarController.AvatarMoveAnimation customAnimation)
+		private IEnumerator MoveAvatar(MapAvatare avatar, int fromDot, int toDot, SagaAvatarController.AvatarMoveAnimation customAnimation)
 		{
 			Vector3 sourcePos;
 			this.dotPositionsProvider.TryGetDotPosition(fromDot, out sourcePos);
@@ -269,7 +269,7 @@ namespace TactileModules.SagaCore
 
 		private void ConstructAvatar(string cloudId, SagaAvatarInfo info)
 		{
-			MapAvatar mapAvatar = info.visualPrefab;
+			MapAvatare mapAvatar = info.visualPrefab;
 			if (mapAvatar == null)
 			{
 				if (cloudId == "me")
@@ -281,10 +281,12 @@ namespace TactileModules.SagaCore
 					mapAvatar = this.mapFacade.GetDefaultFriendAvatarPrefab();
 				}
 			}
-			MapAvatar mapAvatar2 = UnityEngine.Object.Instantiate<MapAvatar>(mapAvatar);
+			mapAvatar = this.mapFacade.GetDefaultMeAvatarPrefab();
+			Debug.Log(this.mapFacade.GetDefaultMeAvatarPrefab());
+			MapAvatare mapAvatar2 = UnityEngine.Object.Instantiate<MapAvatare>(mapAvatar);
 			mapAvatar2.transform.parent = this.avatarRoot;
 			mapAvatar2.gameObject.SetLayerRecursively(this.avatarRoot.gameObject.layer);
-			string deviceId = (!(cloudId == "me")) ? null : ((MapAvatar.IDataRetriever)this).GetCloudDeviceId;
+			string deviceId = (!(cloudId == "me")) ? null : ((MapAvatare.IDataRetriever)this).GetCloudDeviceId;
 			CloudUser userForCloudId = this.cloudClient.GetUserForCloudId(cloudId);
 			mapAvatar2.Initialize(this, userForCloudId, deviceId);
 			this.avatars.Add(cloudId, mapAvatar2);
@@ -292,7 +294,7 @@ namespace TactileModules.SagaCore
 
 		private void UpdateAvatarPosition(string id)
 		{
-			MapAvatar mapAvatar = this.avatars[id];
+			MapAvatare mapAvatar = this.avatars[id];
 			int dotIndex = this.currentAvatarState[id].dotIndex;
 			Vector3 localPosition;
 			if (this.dotPositionsProvider.TryGetDotPosition(dotIndex, out localPosition))
@@ -301,7 +303,7 @@ namespace TactileModules.SagaCore
 			}
 		}
 
-		CloudUser MapAvatar.IDataRetriever.GetCachedMe
+		CloudUser MapAvatare.IDataRetriever.GetCachedMe
 		{
 			get
 			{
@@ -309,7 +311,7 @@ namespace TactileModules.SagaCore
 			}
 		}
 
-		string MapAvatar.IDataRetriever.GetCloudDeviceId
+		string MapAvatare.IDataRetriever.GetCloudDeviceId
 		{
 			get
 			{
@@ -319,7 +321,7 @@ namespace TactileModules.SagaCore
 
 		public bool IsPlayerVIP { get; }
 
-		bool MapAvatar.IDataRetriever.GetVIPStatusForCloudUser(CloudUser cloudUser)
+		bool MapAvatare.IDataRetriever.GetVIPStatusForCloudUser(CloudUser cloudUser)
 		{
 			if (cloudUser == null)
 			{
@@ -332,14 +334,14 @@ namespace TactileModules.SagaCore
 		
 
 
-		MapAvatar.BackgroundSide MapAvatar.IDataRetriever.DetermineSideFromLocalPosition(Vector3 avatarLocalPosition)
+		MapAvatare.BackgroundSide MapAvatare.IDataRetriever.DetermineSideFromLocalPosition(Vector3 avatarLocalPosition)
 		{
 			if (this.visualBounds == Rect.zero)
 			{
-				return MapAvatar.BackgroundSide.None;
+				return MapAvatare.BackgroundSide.None;
 			}
 			float num = avatarLocalPosition.x - this.visualBounds.center.x;
-			return (num <= 0f) ? MapAvatar.BackgroundSide.Right : MapAvatar.BackgroundSide.Left;
+			return (num <= 0f) ? MapAvatare.BackgroundSide.Right : MapAvatare.BackgroundSide.Left;
 		}
 
 		public const string ME_ID = "me";
@@ -356,7 +358,7 @@ namespace TactileModules.SagaCore
 
 		private SagaAvatarController.IAvatarInfoProvider provider;
 
-		private readonly Dictionary<string, MapAvatar> avatars = new Dictionary<string, MapAvatar>();
+		private readonly Dictionary<string, MapAvatare> avatars = new Dictionary<string, MapAvatare>();
 
 		private Transform avatarRoot;
 
@@ -371,7 +373,7 @@ namespace TactileModules.SagaCore
 
 		public delegate Dictionary<string, SagaAvatarInfo> AvatarInfoDelegate();
 
-		public delegate IEnumerator AvatarMoveAnimation(MapAvatar avatar, Vector3 fromPos, Vector3 toPos);
+		public delegate IEnumerator AvatarMoveAnimation(MapAvatare avatar, Vector3 fromPos, Vector3 toPos);
 
 		public interface IDotPositions
 		{

@@ -6,12 +6,12 @@ namespace TactileModules.TactileCloud.AssetBundles
 {
 	public static class AssetBundleSystemBuilder
 	{
-		public static AssetBundleSystem Build(CloudClientBase clientBase, IAnalytics analytics, AssetBundleManager.PauseLoadingCheck pauseLoadingCheck)
+		public static AssetBundleSystem Build(CloudClientBase clientBase, AssetBundleManager.PauseLoadingCheck pauseLoadingCheck)
 		{
 			PlayerPrefsSignedString localStorageString = new PlayerPrefsSignedString("AssetBundleManager", "PersistedState");
 			LocalStorageJSONObject<PersistableState> localStorageObject = new LocalStorageJSONObject<PersistableState>(localStorageString);
 			PersistableStateCache persistableStateHandler = new PersistableStateCache(localStorageObject);
-			AnalyticsReporter analyticsReporter = new AnalyticsReporter(analytics, persistableStateHandler);
+			AnalyticsReporter analyticsReporter = new AnalyticsReporter(persistableStateHandler);
 			AssetBundleDownloader assetBundleDownloader = new AssetBundleDownloader(analyticsReporter);
 			AssetBundleManager assetBundleManager = new AssetBundleManager(clientBase, pauseLoadingCheck, assetBundleDownloader, persistableStateHandler);
 			IAvailableAssetBundles availableAssetBundles = assetBundleManager;

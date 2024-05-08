@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TactileModules.Validation;
 using UnityEngine;
 
-public class MapAvatar : MonoBehaviour
+public class MapAvatare : MonoBehaviour
 {
 	public CloudUser CloudUser { get; private set; }
 
@@ -18,7 +18,7 @@ public class MapAvatar : MonoBehaviour
 		}
 	}
 	
-	public void Initialize(MapAvatar.IDataRetriever dataRetriever, CloudUser cloudUser, string deviceId = null)
+	public void Initialize(MapAvatare.IDataRetriever dataRetriever, CloudUser cloudUser, string deviceId = null)
 	{
 		this.retriever = dataRetriever;
 		this.CloudUser = cloudUser;
@@ -30,7 +30,7 @@ public class MapAvatar : MonoBehaviour
 		return this.retriever.GetCloudDeviceId != null && this.retriever.GetCloudDeviceId == this.DeviceId;
 	}
 
-	public MapAvatar.BackgroundSide GetSideFromLocalPosition(Vector3 localPosition)
+	public MapAvatare.BackgroundSide GetSideFromLocalPosition(Vector3 localPosition)
 	{
 		return this.retriever.DetermineSideFromLocalPosition(localPosition);
 	}
@@ -38,14 +38,14 @@ public class MapAvatar : MonoBehaviour
 	public void UpdateFromLocalPosition(Vector3 localPosition)
 	{
 		base.transform.localPosition = localPosition;
-		MapAvatar.BackgroundSide sideFromLocalPosition = this.GetSideFromLocalPosition(localPosition);
+		MapAvatare.BackgroundSide sideFromLocalPosition = this.GetSideFromLocalPosition(localPosition);
 		this.SetPivotPositionFromSide(sideFromLocalPosition);
 		this.SetFrameFromSide(sideFromLocalPosition);
 	}
 
-	public IEnumerator AnimateFramePivotToNewSide(MapAvatar.BackgroundSide newBackgroundSide)
+	public IEnumerator AnimateFramePivotToNewSide(MapAvatare.BackgroundSide newBackgroundSide)
 	{
-		this.SetFrameFromSide(MapAvatar.BackgroundSide.None);
+		this.SetFrameFromSide(MapAvatare.BackgroundSide.None);
 		Vector3 newPivotLocalPos = this.GetLocalPosForPivot(newBackgroundSide);
 		if (this.pivot != null)
 		{
@@ -57,16 +57,16 @@ public class MapAvatar : MonoBehaviour
 
 	public IEnumerator AnimateFramePivotToDefaultSide()
 	{
-		MapAvatar.BackgroundSide newSide = this.GetSideFromLocalPosition(base.transform.localPosition);
+		MapAvatare.BackgroundSide newSide = this.GetSideFromLocalPosition(base.transform.localPosition);
 		yield return this.AnimateFramePivotToNewSide(newSide);
 		yield break;
 	}
 
 	public IEnumerator AnimateToLocalPosition(Vector3 newLocalPosition, AnimationCurve curve)
 	{
-		MapAvatar.BackgroundSide newSide = this.GetSideFromLocalPosition(newLocalPosition);
+		MapAvatare.BackgroundSide newSide = this.GetSideFromLocalPosition(newLocalPosition);
 		Vector3 newPivotLocalPos = this.GetLocalPosForPivot(newSide);
-		this.SetFrameFromSide(MapAvatar.BackgroundSide.None);
+		this.SetFrameFromSide(MapAvatare.BackgroundSide.None);
 		List<IEnumerator> animList = new List<IEnumerator>();
 		animList.Add(FiberAnimation.MoveLocalTransform(base.transform, base.transform.localPosition, newLocalPosition, curve, 0f));
 		if (this.pivot != null)
@@ -109,23 +109,23 @@ public class MapAvatar : MonoBehaviour
 		this.additionalIcons.Clear();
 	}
 	
-	public void SetFrameFromSide(MapAvatar.BackgroundSide side)
+	public void SetFrameFromSide(MapAvatare.BackgroundSide side)
 	{
 		if (this.backgroundLeft != null)
 		{
-			this.backgroundLeft.SetActive(side == MapAvatar.BackgroundSide.Left);
+			this.backgroundLeft.SetActive(side == MapAvatare.BackgroundSide.Left);
 		}
 		if (this.backgroundRight != null)
 		{
-			this.backgroundRight.SetActive(side == MapAvatar.BackgroundSide.Right);
+			this.backgroundRight.SetActive(side == MapAvatare.BackgroundSide.Right);
 		}
 		if (this.backgroundNone != null)
 		{
-			this.backgroundNone.SetActive(side == MapAvatar.BackgroundSide.None);
+			this.backgroundNone.SetActive(side == MapAvatare.BackgroundSide.None);
 		}
 	}
 
-	public void SetPivotPositionFromSide(MapAvatar.BackgroundSide side)
+	public void SetPivotPositionFromSide(MapAvatare.BackgroundSide side)
 	{
 		if (this.pivot != null)
 		{
@@ -133,16 +133,16 @@ public class MapAvatar : MonoBehaviour
 		}
 	}
 
-	private Vector3 GetLocalPosForPivot(MapAvatar.BackgroundSide side)
+	private Vector3 GetLocalPosForPivot(MapAvatare.BackgroundSide side)
 	{
 		if (this.pivot != null)
 		{
 			float num = 0f;
-			if (side == MapAvatar.BackgroundSide.Left)
+			if (side == MapAvatare.BackgroundSide.Left)
 			{
 				num = -0.5f;
 			}
-			else if (side == MapAvatar.BackgroundSide.Right)
+			else if (side == MapAvatare.BackgroundSide.Right)
 			{
 				num = 0.5f;
 			}
@@ -174,7 +174,7 @@ public class MapAvatar : MonoBehaviour
 	[OptionalSerializedField]
 	private UIAdvancedFlowLayout additionalIconsLayout;
 
-	protected MapAvatar.IDataRetriever retriever;
+	protected MapAvatare.IDataRetriever retriever;
 
 	private Dictionary<string, GameObject> additionalIcons = new Dictionary<string, GameObject>();
 
@@ -195,6 +195,6 @@ public class MapAvatar : MonoBehaviour
 
 		bool GetVIPStatusForCloudUser(CloudUser cloudUser);
 		
-		MapAvatar.BackgroundSide DetermineSideFromLocalPosition(Vector3 avatarLocalPosition);
+		MapAvatare.BackgroundSide DetermineSideFromLocalPosition(Vector3 avatarLocalPosition);
 	}
 }

@@ -142,7 +142,6 @@ public class SeagullModule : LogicModule
         {
             yield return null;
         }
-        Analytics.Instance.LogSeagullSeen(hit);
         yield break;
     }
 

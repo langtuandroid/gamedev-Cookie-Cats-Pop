@@ -20,7 +20,7 @@ namespace TactileModules.FeatureManager
 {
 	public class FeatureManager : IFeatureManager, ICloudSynchronizable
 	{
-		public FeatureManager(ITimingManager timeStampManager, IFeatureManagerProvider featureManagerProvider, IUserSettings userSettings, IFeatureAssetBundles featureAssetBundles, IFeatureUrlFileCaching featureUrlFileCaching, IFeatureAvailabilityModel featureAvailability, IFeaturesCloud featuresCloud, IFeatureManagerAnalytics featureManagerAnalytics)
+		public FeatureManager(ITimingManager timeStampManager, IFeatureManagerProvider featureManagerProvider, IUserSettings userSettings, IFeatureAssetBundles featureAssetBundles, IFeatureUrlFileCaching featureUrlFileCaching, IFeatureAvailabilityModel featureAvailability, IFeaturesCloud featuresCloud)
 		{
 			if (FeatureManager.Instance != null)
 			{
@@ -32,7 +32,6 @@ namespace TactileModules.FeatureManager
 			this.urlFilesCaching = featureUrlFileCaching;
 			this.featureAvailabilityModel = featureAvailability;
 			this.featuresCloud = featuresCloud;
-			this.featureManagerAnalytics = featureManagerAnalytics;
 			this.userSettings = userSettings;
 			FeatureManager.StabilizedTime.SyncTime(this);
 			this.assetBundles.AvailableAssetBundlesUpdated += this.UpdateFeatureAssetBundles;
@@ -135,7 +134,6 @@ namespace TactileModules.FeatureManager
 					}
 					catch (Exception e)
 					{
-						this.featureManagerAnalytics.LogFailedUpgradingMetaData(e, featureHandler, activatedFeatureInstanceData, metaVersion);
 						this.DeactivateFeature(featureHandler, activatedFeatureInstanceData);
 						break;
 					}
@@ -431,7 +429,6 @@ namespace TactileModules.FeatureManager
 			this.GetFeatureTypeData(featureTypeHandler).ActivatedFeatureInstanceDatas.Add(activatedFeatureInstanceData);
 			this.Save();
 			this.ScheduleNotifications(featureTypeHandler, activatedFeatureInstanceData);
-			this.featureManagerAnalytics.LogFeatureActivatedEvent(featureData);
 			if (this.OnFeatureActivated != null)
 			{
 				this.OnFeatureActivated(activatedFeatureInstanceData);
@@ -499,7 +496,6 @@ namespace TactileModules.FeatureManager
 			ActivatedFeatureInstanceData activatedFeature = this.GetActivatedFeature(featureTypeHandler);
 			if (activatedFeature == null)
 			{
-				this.featureManagerAnalytics.LogEndingNullFeatureInstance(new StackTrace(true), featureTypeHandler, this.GetFeatureTypeData(featureTypeHandler));
 				return;
 			}
 			this.DeactivateFeature(featureTypeHandler, activatedFeature);
@@ -520,7 +516,6 @@ namespace TactileModules.FeatureManager
 			featureTypeData.ActivatedFeatureInstanceDatas.Remove(activatedInstanceData);
 			this.Save();
 			this.CancelNotifications(featureTypeHandler, activatedInstanceData.FeatureData);
-			this.featureManagerAnalytics.LogFeatureDeactivatedEvent(featureData);
 			if (this.OnFeatureDeactivated != null)
 			{
 				this.OnFeatureDeactivated(activatedInstanceData);
@@ -637,7 +632,7 @@ namespace TactileModules.FeatureManager
 			}
 			string data = string.Format("Dont call GetActivatedFeatures at boot time. FeatureHandler registration is not Complete. Please fix this in Featurehandler={0}", featureTypeHandler.FeatureType);
 			ClientErrorEvent clientErrorEvent = new ClientErrorEvent("GetFeaturesCalledInBoot", new StackTrace(false).ToString(), null, data, null, null, null, null, null);
-			this.featureManagerAnalytics.LogClientErrorEvent(clientErrorEvent);
+			
 			return false;
 		}
 
@@ -659,10 +654,7 @@ namespace TactileModules.FeatureManager
 					}
 				}
 			}
-			else
-			{
-				this.featureManagerAnalytics.LogNullActivatedFeatures(new StackTrace(true), featureTypeHandler);
-			}
+			
 			return list;
 		}
 
@@ -1261,10 +1253,7 @@ namespace TactileModules.FeatureManager
 			availableFeatures.Sort((FeatureData a, FeatureData b) => (a.StartUnixTime >= b.StartUnixTime) ? 1 : -1);
 			upcomingFeatures.Sort((FeatureData a, FeatureData b) => (a.StartUnixTime >= b.StartUnixTime) ? 1 : -1);
 			unavailableFeatures.Sort((FeatureData a, FeatureData b) => (a.StartUnixTime >= b.StartUnixTime) ? 1 : -1);
-			foreach (FeatureData featureData in availableFeatures)
-			{
-				this.featureManagerAnalytics.LogFeatureReceivedEvent(featureData);
-			}
+			
 			this.UpdateFeatureDatasInFeatureHandlers();
 			this.UpdateFeatureAssets();
 		}
@@ -1321,7 +1310,7 @@ namespace TactileModules.FeatureManager
 					}
 				}
 			}
-			this.featureManagerAnalytics.LogFeatureDisappearedEvent(list);
+
 			this.Save();
 			if (this.OnFeatureListUpdated != null)
 			{
@@ -1350,8 +1339,6 @@ namespace TactileModules.FeatureManager
 		private readonly IFeatureAvailabilityModel featureAvailabilityModel;
 
 		private readonly IFeaturesCloud featuresCloud;
-
-		private readonly IFeatureManagerAnalytics featureManagerAnalytics;
 
 		private readonly IUserSettings userSettings;
 

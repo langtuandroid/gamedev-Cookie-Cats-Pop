@@ -11,11 +11,10 @@ namespace TactileModules.PuzzleGame.ScheduledBooster.Model
 {
 	public class ScheduledBoosters : IScheduledBoosters
 	{
-		public ScheduledBoosters(IScheduledBoosterProvider provider, IScheduledBoosterViewProvider viewProvider, IScheduledBoosterInventoryProvider inventoryProvider, IAnalytics tactileAnalytics)
+		public ScheduledBoosters(IScheduledBoosterProvider provider, IScheduledBoosterViewProvider viewProvider, IScheduledBoosterInventoryProvider inventoryProvider)
 		{
 			this.Provider = provider;
 			this.InventoryProvider = inventoryProvider;
-			this.tactileAnalytics = tactileAnalytics;
 		}
 
 		public IScheduledBoosterProvider Provider { get; private set; }
@@ -32,7 +31,6 @@ namespace TactileModules.PuzzleGame.ScheduledBooster.Model
 			{
 				string errorName = "[ScheduledBoosters] Trying to add two scheduled boosters with the same key.";
 				StackTrace stackTrace = new StackTrace();
-				this.tactileAnalytics.LogEvent(new ClientErrorEvent(errorName, stackTrace.ToString(), null, null, null, null, null, null, null), -1.0, null);
 			}
 		}
 
@@ -120,8 +118,6 @@ namespace TactileModules.PuzzleGame.ScheduledBooster.Model
 			IScheduledBooster booster = this.GetBooster(boosterType);
 			return this.InventoryProvider.GetCoins() >= booster.Price;
 		}
-
-		private readonly IAnalytics tactileAnalytics;
 
 		private readonly IFeatureManager featureManager;
 

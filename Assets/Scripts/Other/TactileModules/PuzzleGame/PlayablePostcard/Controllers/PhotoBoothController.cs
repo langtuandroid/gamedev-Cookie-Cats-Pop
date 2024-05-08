@@ -12,12 +12,11 @@ namespace TactileModules.PuzzleGame.PlayablePostcard.Controllers
 {
 	public class PhotoBoothController
 	{
-		public PhotoBoothController(PlayablePostcardProgress model, PlayablePostcardActivation activation, UIViewManager uiViewManager, IAnalytics analytics)
+		public PhotoBoothController(PlayablePostcardProgress model, PlayablePostcardActivation activation, UIViewManager uiViewManager)
 		{
 			this.model = model;
 			this.activation = activation;
 			this.uiViewManager = uiViewManager;
-			this.analytics = analytics;
 			this.itemContainer = activation.GetAssetBundle();
 		}
 
@@ -49,20 +48,17 @@ namespace TactileModules.PuzzleGame.PlayablePostcard.Controllers
 
 		private void ConfirmItem(string id)
 		{
-			this.analytics.LogEvent(new PlayablePostcardAttributePicked(this.currentItemType, id, this.activation.GetAssetBundleName(), this.activation.GetAssetBundleUrl()), -1.0, null);
 			this.model.UpdatePersistedPostcard(this.currentItemType, id);
 		}
 
 		private void FinalizedPostcard(List<PostcardItemTypeAndId> postcardData)
 		{
 			string postcardId = this.GetPostcardId(postcardData);
-			this.analytics.LogEvent(new PlayablePostcardCompleted(postcardId, this.activation.GetAssetBundleName(), this.activation.GetAssetBundleUrl()), -1.0, null);
 		}
 
 		private void SharePostcard(List<PostcardItemTypeAndId> postcardData)
 		{
 			string postcardId = this.GetPostcardId(postcardData);
-			this.analytics.LogEvent(new SharePlayablePostcardClicked(postcardId, this.activation.GetAssetBundleName(), this.activation.GetAssetBundleUrl()), -1.0, null);
 		}
 
 		private string GetPostcardId(List<PostcardItemTypeAndId> postcardData)
@@ -88,8 +84,6 @@ namespace TactileModules.PuzzleGame.PlayablePostcard.Controllers
 		private readonly PlayablePostcardActivation activation;
 
 		private readonly UIViewManager uiViewManager;
-
-		private readonly IAnalytics analytics;
 
 		private PlayablePostcardCreationView view;
 

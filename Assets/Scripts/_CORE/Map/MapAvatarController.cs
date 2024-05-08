@@ -6,10 +6,10 @@ using UnityEngine;
 public class MapAvatarController : MonoBehaviour
 {
 	//[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	public event Action<MapAvatar> OnPlayerAvatarUpdated;
+	public event Action<MapAvatare> OnPlayerAvatarUpdated;
 
 	//[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	public event Action<MapAvatar> OnOtherAvatarUpdated;
+	public event Action<MapAvatare> OnOtherAvatarUpdated;
 
 	public void UpdateAllAvatars()
 	{
@@ -19,7 +19,7 @@ public class MapAvatarController : MonoBehaviour
 	{
 	}
 
-	public IEnumerator MoveAvatar(LevelProxy source, LevelProxy dest, MapAvatar avatar)
+	public IEnumerator MoveAvatar(LevelProxy source, LevelProxy dest, MapAvatare avatar)
 	{
 		yield break;
 	}
@@ -40,7 +40,7 @@ public class MapAvatarController : MonoBehaviour
 	{
 	}
 
-	public MapAvatar playerAvatar
+	public MapAvatare playerAvatar
 	{
 		get
 		{

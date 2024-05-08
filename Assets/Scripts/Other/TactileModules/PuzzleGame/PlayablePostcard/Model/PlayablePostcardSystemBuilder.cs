@@ -15,7 +15,7 @@ namespace TactileModules.PuzzleGame.PlayablePostcard.Model
 {
     public static class PlayablePostcardSystemBuilder
     {
-        public static PlayablePostcardSystem Build(TactileModules.FeatureManager.FeatureManager featureManager, ConfigurationManager configurationManager, LevelDatabaseCollection levelDatabaseCollection, MainProgressionManager mainProgressionManager, AssetBundleManager assetBundleManager, IAssetBundleDownloader assetBundleDownloader, UIViewManager uiViewManager, IAnalytics analytics, IPlayablePostcardProvider provider, MapFacade mapFacade, IFlowStack flowStack, IFullScreenManager fullScreenManager, IPlayFlowFactory playLevelFacade)
+        public static PlayablePostcardSystem Build(TactileModules.FeatureManager.FeatureManager featureManager, ConfigurationManager configurationManager, LevelDatabaseCollection levelDatabaseCollection, MainProgressionManager mainProgressionManager, AssetBundleManager assetBundleManager, IAssetBundleDownloader assetBundleDownloader, UIViewManager uiViewManager, IPlayablePostcardProvider provider, MapFacade mapFacade, IFlowStack flowStack, IFullScreenManager fullScreenManager, IPlayFlowFactory playLevelFacade)
         {
             PlayablePostcardLevelDatabase levelDatabase = levelDatabaseCollection.GetLevelDatabase<PlayablePostcardLevelDatabase>("PlayablePostcard");
             PlayablePostcardConfig config = configurationManager.GetConfig<PlayablePostcardConfig>();
@@ -25,7 +25,7 @@ namespace TactileModules.PuzzleGame.PlayablePostcard.Model
             FeatureDataProvider<PlayablePostcardMetaData> metaData = new FeatureDataProvider<PlayablePostcardMetaData>(playablePostcardHandler);
             PostcardAssetBundleDownloader postcardAssetBundleDownloader = new PostcardAssetBundleDownloader(assetBundleManager, assetBundleDownloader);
             PlayablePostcardActivation postcardActivation = new PlayablePostcardActivation(playablePostcardHandler, featureInstanceData, metaData, postcardAssetBundleDownloader);
-            PlayablePostcardControllerFactory controllerFactory = new PlayablePostcardControllerFactory(levelDatabase, featureInstanceData, postcardActivation, uiViewManager, analytics, mapFacade, flowStack, fullScreenManager, playLevelFacade);
+            PlayablePostcardControllerFactory controllerFactory = new PlayablePostcardControllerFactory(levelDatabase, featureInstanceData, postcardActivation, uiViewManager, mapFacade, flowStack, fullScreenManager, playLevelFacade);
             playablePostcardMapFeatureProvider.OnSwitchToFeatureMapView += delegate ()
             {
                 PlayablePostcardProgress playablePostcardProgress = new PlayablePostcardProgress(featureInstanceData.Get());

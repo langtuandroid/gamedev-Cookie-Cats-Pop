@@ -31,13 +31,13 @@ namespace TactileModules.PuzzleGames.LevelDash.Views.Handlers
 
         private void HandleAvatarsChanged(SagaAvatarController avatarController)
         {
-            foreach (KeyValuePair<string, MapAvatar> keyValuePair in avatarController.Avatars)
+            foreach (KeyValuePair<string, MapAvatare> keyValuePair in avatarController.Avatars)
             {
                 this.ModifyAvatarForLevelDash(keyValuePair.Value, keyValuePair.Key == "me");
             }
         }
 
-        private void ModifyAvatarForLevelDash(MapAvatar mapAvatar, bool isMyAvatar)
+        private void ModifyAvatarForLevelDash(MapAvatare mapAvatar, bool isMyAvatar)
         {
             if (mapAvatar.DeviceId == null || this.levelDashManager == null || this.levelDashMapAvatarModifierProvider == null)
             {

@@ -42,7 +42,7 @@ public class Debug
 		UnityEngine.Debug.LogWarningFormat(context, format, args);
 	}
 
-	[Conditional("ENABLE_DEBUG_LOG")]
+	//[Conditional("ENABLE_DEBUG_LOG")]
 	public static void Log(object log)
 	{
 		global::Debug.StoreLog(log);

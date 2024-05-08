@@ -16,13 +16,13 @@ namespace TactileModules.SpecialOffers
 {
 	public static class SpecialOffersSystemBuilder
 	{
-		public static SpecialOffersSystem Build(IFeatureManager featureManager, IAnalytics analytics, ISpecialOffersMainProgressionProvider mainProgression, IConfigurationManager configurationManager, IPlacementRunnableRegistry placementSystemPlacementRunnableRegistry, IInventoryManager inventoryManager, IShopManager shopManager, PlacementIdentifier placementIdentifier)
+		public static SpecialOffersSystem Build(IFeatureManager featureManager, ISpecialOffersMainProgressionProvider mainProgression, IConfigurationManager configurationManager, IPlacementRunnableRegistry placementSystemPlacementRunnableRegistry, IInventoryManager inventoryManager, IShopManager shopManager, PlacementIdentifier placementIdentifier)
 		{
 			string domainNamespace = "TactileModules.SpecialOffers.Model";
 			string key = "PendingPurchases";
 			SpecialOffersHandler specialOffersHandler = new SpecialOffersHandler(configurationManager);
 			SpecialOffersGlobalCoolDown specialOffersGlobalCoolDown = new SpecialOffersGlobalCoolDown(featureManager, specialOffersHandler, configurationManager);
-			AnalyticsReporter analyticsReporter = new AnalyticsReporter(analytics, featureManager, specialOffersHandler, specialOffersGlobalCoolDown);
+			AnalyticsReporter analyticsReporter = new AnalyticsReporter(featureManager, specialOffersHandler, specialOffersGlobalCoolDown);
 			ITemplateAssetFactory templateAssetFactory = new TemplateAssetFactory();
 			SpecialOfferViewFactory specialOfferViewFactory = new SpecialOfferViewFactory(templateAssetFactory);
 			SpecialOfferControllerFactory specialOfferControllerFactory = new SpecialOfferControllerFactory(specialOfferViewFactory, specialOffersGlobalCoolDown, shopManager, inventoryManager, analyticsReporter);

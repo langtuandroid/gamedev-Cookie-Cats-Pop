@@ -6,9 +6,8 @@ namespace TactileModules.FeatureManager.Analytics
 {
 	public class FeatureAvailabilityModel : IFeatureAvailabilityModel
 	{
-		public FeatureAvailabilityModel(IFeatureManagerAnalytics featureManagerAnalytics)
+		public FeatureAvailabilityModel()
 		{
-			this.featureManagerAnalytics = featureManagerAnalytics;
 			PlayerPrefsSignedString localStorageString = new PlayerPrefsSignedString("FeatureAvailabilityModel", "PersistedState");
 			this.storageObject = new LocalStorageJSONObject<FeatureAvailabilityPersistableState>(localStorageString);
 			this.persistableState = this.storageObject.Load();
@@ -55,12 +54,10 @@ namespace TactileModules.FeatureManager.Analytics
 			{
 				if (isAvailable)
 				{
-					this.featureManagerAnalytics.LogFeatureAvailableEvent(featureData);
 				}
 				else
 				{
 					string reason = (!areFeatureAssetsAvailable) ? "assetsNotAvailable" : "other";
-					this.featureManagerAnalytics.LogFeatureUnAvailableEvent(featureData, reason);
 				}
 				this.SetAvailabilityState(id, isAvailable);
 			}
@@ -84,8 +81,6 @@ namespace TactileModules.FeatureManager.Analytics
 			bool availabilityState = this.GetAvailabilityState(featureId);
 			return availabilityState != isAvailable;
 		}
-
-		private readonly IFeatureManagerAnalytics featureManagerAnalytics;
 
 		private const string PERSISTABLE_STATE_KEY = "PersistedState";
 

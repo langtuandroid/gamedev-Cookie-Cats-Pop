@@ -8,9 +8,8 @@ namespace TactileModules.PuzzleGames.StoryMapEvent
 {
 	public class AnalyticsEventLogger
 	{
-		public AnalyticsEventLogger(IAnalytics analytics, IStoryManager storyManager, InventoryManager inventoryManager)
+		public AnalyticsEventLogger(IStoryManager storyManager, InventoryManager inventoryManager)
 		{
-			this.analytics = analytics;
 			this.storyManager = (storyManager as StoryManager);
 			this.inventoryManager = inventoryManager;
 			this.RegisterEvents();
@@ -26,14 +25,12 @@ namespace TactileModules.PuzzleGames.StoryMapEvent
 		private void StoryManagerOnTaskStarted(MapTask task)
 		{
 			task.ActionEnded += this.TaskOnActionEnded;
-			this.analytics.LogEvent(new TaskStartedEvent(task, this.storyManager.CurrentChapter, this.inventoryManager.GetAmount("Star")), -1.0, null);
 			this.hasSkippedDialog = false;
 		}
 
 		private void StoryManagerOnTaskEnded(MapTask task)
 		{
 			task.ActionEnded -= this.TaskOnActionEnded;
-			this.analytics.LogEvent(new TaskEndedEvent(task, this.storyManager.CurrentChapter, this.inventoryManager.GetAmount("Star"), this.hasSkippedDialog), -1.0, null);
 		}
 
 		private void TaskOnActionEnded(MapAction action, object result)
@@ -47,10 +44,8 @@ namespace TactileModules.PuzzleGames.StoryMapEvent
 
 		private void StoryManagerOnTaskSkipped(MapTask task)
 		{
-			this.analytics.LogEvent(new TaskSkippedEvent(task, this.storyManager.CurrentChapter, this.inventoryManager.GetAmount("Star")), -1.0, null);
+			
 		}
-
-		private readonly IAnalytics analytics;
 
 		private readonly StoryManager storyManager;
 

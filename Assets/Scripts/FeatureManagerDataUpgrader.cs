@@ -20,7 +20,6 @@ public static class FeatureManagerDataUpgrader
 			i = FeatureManagerDataUpgrader.GetFeatureManagerPersistableStateSerializedVersion(privateSettings);
 			if (num == i || i > featureManagerPersistableStateSerializingVersion || i < num)
 			{
-				Analytics.Instance.LogFeatureUpgradeVersionError(num, toVersion, i, featureManagerPersistableStateSerializingVersion);
 				FeatureManagerDataUpgrader.CopyHashtable(from, privateSettings);
 				return FeatureManagerDataUpgrader.UpgradeResult.VersionFailure;
 			}
@@ -40,7 +39,6 @@ public static class FeatureManagerDataUpgrader
 		}
 		catch (Exception e)
 		{
-			Analytics.Instance.LogFeatureUpgradeException(e, fromVersion, toVersion);
 			return false;
 		}
 		return true;

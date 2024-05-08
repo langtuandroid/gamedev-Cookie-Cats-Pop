@@ -14,7 +14,7 @@ namespace TactileModules.CrossPromotion.General.Ads.AdModels
 {
 	public class CrossPromotionAd : ICrossPromotionAd
 	{
-		public CrossPromotionAd(CrossPromotionAdMetaData data, DateTime requestTime, ILimitedUrlCacherRetriever adCacherRetriever, IAdCreativeSelector adCreativeSelector, IPromotedGameLauncher promotedGameLauncher, ITextureLoader textureLoader, IAdSession session, IGeneralDataRetriever generalDataRetriever, ITactileDateTime dateTimeGetter, ICrossPromotionAnalyticsEventFactory analyticsEventFactory, IAnalytics analytics)
+		public CrossPromotionAd(CrossPromotionAdMetaData data, DateTime requestTime, ILimitedUrlCacherRetriever adCacherRetriever, IAdCreativeSelector adCreativeSelector, IPromotedGameLauncher promotedGameLauncher, ITextureLoader textureLoader, IAdSession session, IGeneralDataRetriever generalDataRetriever, ITactileDateTime dateTimeGetter, ICrossPromotionAnalyticsEventFactory analyticsEventFactory)
 		{
 			this.data = data;
 			this.requestTime = requestTime;
@@ -26,7 +26,6 @@ namespace TactileModules.CrossPromotion.General.Ads.AdModels
 			this.generalDataRetriever = generalDataRetriever;
 			this.dateTimeGetter = dateTimeGetter;
 			this.analyticsEventFactory = analyticsEventFactory;
-			this.analytics = analytics;
 		}
 
 		public string GetVideoPath()
@@ -84,27 +83,23 @@ namespace TactileModules.CrossPromotion.General.Ads.AdModels
 		public void ReportAsShown(AdGroupContext adGroupContext)
 		{
 			object eventObject = this.analyticsEventFactory.CreateImpressionEvent(this.data, adGroupContext);
-			this.analytics.LogEvent(eventObject, -1.0, null);
 			this.promotedGameLauncher.LogAdjustImpression(this.data, adGroupContext, this.data);
 		}
 
 		public void ReportAsClicked(AdGroupContext adGroupContext)
 		{
 			object eventObject = this.analyticsEventFactory.CreateClickEvent(this.data, adGroupContext);
-			this.analytics.LogEvent(eventObject, -1.0, null);
 		}
 
 		public void ReportAsCompletedWatching(AdGroupContext adGroupContext)
 		{
 			object eventObject = this.analyticsEventFactory.CreateCompletedEvent(this.data, adGroupContext);
-			this.analytics.LogEvent(eventObject, -1.0, null);
 			this.session.IncrementNumberOfTimesShown();
 		}
 
 		public void ReportAsClosed(AdGroupContext adGroupContext)
 		{
 			object eventObject = this.analyticsEventFactory.CreateClosedEvent(this.data, adGroupContext);
-			this.analytics.LogEvent(eventObject, -1.0, null);
 		}
 
 		public bool CanShowInThisSession()
@@ -168,7 +163,5 @@ namespace TactileModules.CrossPromotion.General.Ads.AdModels
 		private readonly ITactileDateTime dateTimeGetter;
 
 		private readonly ICrossPromotionAnalyticsEventFactory analyticsEventFactory;
-
-		private readonly IAnalytics analytics;
 	}
 }

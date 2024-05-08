@@ -10,13 +10,12 @@ namespace TactileModules.PuzzleGame.PlayablePostcard.Module.Controllers
 {
 	public class PlayablePostcardControllerFactory : IPlayablePostcardControllerFactory
 	{
-		public PlayablePostcardControllerFactory(PlayablePostcardLevelDatabase levelDatabase, FeatureDataProvider<PlayablePostcardInstanceCustomData> featureDataProvider, PlayablePostcardActivation postcardActivation, UIViewManager uiViewManager, IAnalytics analytics, MapFacade mapFacade, IFlowStack flowStack, IFullScreenManager fullScreenManager, IPlayFlowFactory playFlowFactory)
+		public PlayablePostcardControllerFactory(PlayablePostcardLevelDatabase levelDatabase, FeatureDataProvider<PlayablePostcardInstanceCustomData> featureDataProvider, PlayablePostcardActivation postcardActivation, UIViewManager uiViewManager, MapFacade mapFacade, IFlowStack flowStack, IFullScreenManager fullScreenManager, IPlayFlowFactory playFlowFactory)
 		{
 			this.levelDatabase = levelDatabase;
 			this.featureDataProvider = featureDataProvider;
 			this.postcardActivation = postcardActivation;
 			this.uiViewManager = uiViewManager;
-			this.analytics = analytics;
 			this.mapFacade = mapFacade;
 			this.flowStack = flowStack;
 			this.fullScreenManager = fullScreenManager;
@@ -46,7 +45,7 @@ namespace TactileModules.PuzzleGame.PlayablePostcard.Module.Controllers
 
 		public PhotoBoothController CreatePhotoBoothController(PlayablePostcardProgress model)
 		{
-			return new PhotoBoothController(model, this.postcardActivation, this.uiViewManager, this.analytics);
+			return new PhotoBoothController(model, this.postcardActivation, this.uiViewManager);
 		}
 
 		private readonly PlayablePostcardLevelDatabase levelDatabase;
@@ -56,8 +55,6 @@ namespace TactileModules.PuzzleGame.PlayablePostcard.Module.Controllers
 		private readonly PlayablePostcardActivation postcardActivation;
 
 		private readonly UIViewManager uiViewManager;
-
-		private readonly IAnalytics analytics;
 
 		private readonly MapFacade mapFacade;
 

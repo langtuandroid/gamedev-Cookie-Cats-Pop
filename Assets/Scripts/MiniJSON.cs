@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using UnityEngine;
 
@@ -261,7 +262,8 @@ public class MiniJSON
 		Array.Copy(json, index, array, 0, num);
 		index = lastIndexOfNumber + 1;
 		string s = new string(array);
-		double num2 = double.Parse(s);
+		double num2 = double.Parse(s, CultureInfo.InvariantCulture);
+		
 		long num3;
 		if (long.TryParse(s, out num3) && (long)num2 != num3)
 		{

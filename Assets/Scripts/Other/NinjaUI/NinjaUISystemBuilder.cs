@@ -6,10 +6,10 @@ namespace NinjaUI
 {
 	public class NinjaUISystemBuilder
 	{
-		public static NinjaUISystem Build(IAnalytics analytics)
+		public static NinjaUISystem Build()
 		{
 			UIViewManager instance = UIViewManager.Instance;
-			UIAnalyticsEventLogger analyticsEventLogger = new UIAnalyticsEventLogger(analytics, instance);
+			UIAnalyticsEventLogger analyticsEventLogger = new UIAnalyticsEventLogger(instance);
 			return new NinjaUISystem(instance, analyticsEventLogger);
 		}
 	}

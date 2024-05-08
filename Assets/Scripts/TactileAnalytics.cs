@@ -9,7 +9,7 @@ using TactileModules.Analytics.EventVerification;
 using TactileModules.Analytics.Interfaces;
 using UnityEngine;
 
-public class TactileAnalytics : SingleInstance<TactileAnalytics>, IAnalytics
+public class TactileAnalytics : SingleInstance<TactileAnalytics>
 {
 	protected TactileAnalytics(string appId, string versionName, int versionCode, string userId, TactileAnalytics.Config config)
 	{

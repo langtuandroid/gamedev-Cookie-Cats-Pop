@@ -8,15 +8,14 @@ namespace TactileModules.UrlCaching.Caching
 {
 	public class UrlCacherFactory : IUrlCacherFactory
 	{
-		public UrlCacherFactory(IAnalytics analytics)
+		public UrlCacherFactory()
 		{
-			this.analytics = analytics;
+			
 			this.Initialize();
 		}
 
-		public UrlCacherFactory(IAnalytics analytics, string domain)
+		public UrlCacherFactory(string domain)
 		{
-			this.analytics = analytics;
 			this.domain = domain;
 			this.Initialize();
 		}
@@ -29,23 +28,19 @@ namespace TactileModules.UrlCaching.Caching
 
 		public IUrlCacher Create(string domain)
 		{
-			AnalyticsReporter analyticsReporter = new AnalyticsReporter(this.analytics, domain);
-			return new UrlCacher(analyticsReporter, this.fileSystem, this.wwwFactory, domain);
+			
+			return new UrlCacher(this.fileSystem, this.wwwFactory, domain);
 		}
 
 		public IUrlCacher Create()
 		{
 			if (!string.IsNullOrEmpty(this.domain))
 			{
-				AnalyticsReporter analyticsReporter = new AnalyticsReporter(this.analytics, this.domain);
-				return new UrlCacher(analyticsReporter, this.fileSystem, this.wwwFactory, this.domain);
+				return new UrlCacher(this.fileSystem, this.wwwFactory, this.domain);
 			}
 			ClientErrorEvent eventObject = new ClientErrorEvent("UrlCacherFactoryNoDomain", new StackTrace(false).ToString(), null, null, null, null, null, null, null);
-			this.analytics.LogEvent(eventObject, -1.0, null);
 			return null;
 		}
-
-		private readonly IAnalytics analytics;
 
 		private readonly string domain;
 

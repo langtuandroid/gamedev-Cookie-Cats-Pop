@@ -6,10 +6,9 @@ namespace TactileModules.Inventory
 {
 	public class InventoryEventLogger
 	{
-		public InventoryEventLogger(InventoryManager inventoryManager, IAnalytics analyticsInstance, IAdjustInventoryTracking adjustInventoryTracking)
+		public InventoryEventLogger(InventoryManager inventoryManager, IAdjustInventoryTracking adjustInventoryTracking)
 		{
 			inventoryManager.InventoryChanged += this.HandleInventoryChanged;
-			this.analytics = analyticsInstance;
 			this.adjustInventoryTracking = adjustInventoryTracking;
 		}
 
@@ -42,26 +41,20 @@ namespace TactileModules.Inventory
 
 		private void LogCoinsReceived(InventoryManager.ItemChangeInfo info)
 		{
-			this.analytics.LogEvent(new CoinsReceivedEvent(info), -1.0, null);
 		}
 
 		private void LogCoinsUsed(InventoryManager.ItemChangeInfo info)
 		{
-			this.analytics.LogEvent(new CoinsUsedEvent(info), -1.0, null);
 			this.adjustInventoryTracking.TrackAdjustCoinsUsed();
 		}
 
 		private void LogItemsReceived(InventoryManager.ItemChangeInfo info)
 		{
-			this.analytics.LogEvent(new ItemsReceivedEvent(info), -1.0, null);
 		}
 
 		private void LogItemsUsed(InventoryManager.ItemChangeInfo info)
 		{
-			this.analytics.LogEvent(new ItemsUsedEvent(info), -1.0, null);
 		}
-
-		private readonly IAnalytics analytics;
 
 		private readonly IAdjustInventoryTracking adjustInventoryTracking;
 	}

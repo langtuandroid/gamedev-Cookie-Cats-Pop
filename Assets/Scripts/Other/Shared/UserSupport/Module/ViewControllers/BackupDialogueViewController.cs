@@ -13,21 +13,18 @@ namespace Shared.UserSupport.Module.ViewControllers
 {
 	public class BackupDialogueViewController : IUIViewController
 	{
-		public BackupDialogueViewController(IConversations conversations, IConversationsViewMediator viewMediator, IConversationRequests conversationRequests, IUserSupportBackupRestorer backupRestorer, IUserSupportBackupDetailsProvider backupDetailsProvider, IAnalytics analytics)
+		public BackupDialogueViewController(IConversations conversations, IConversationsViewMediator viewMediator, IConversationRequests conversationRequests, IUserSupportBackupRestorer backupRestorer, IUserSupportBackupDetailsProvider backupDetailsProvider)
 		{
 			this.conversations = conversations;
 			this.viewMediator = viewMediator;
 			this.conversationRequests = conversationRequests;
 			this.backupRestorer = backupRestorer;
 			this.backupDetailsProvider = backupDetailsProvider;
-			this.analytics = analytics;
 		}
 
 		////[DebuggerBrowsable(DebuggerBrowsableState.Never)]
 		public event Action ViewClosed;
-
-
-
+		
 		public bool IsShowing { get; private set; }
 
 		public void ShowView()
@@ -85,7 +82,6 @@ namespace Shared.UserSupport.Module.ViewControllers
 			else
 			{
 				this.ShowRestoreFailed(pendingBackup);
-				this.analytics.LogEvent(new ClientErrorEvent("UserSupport.ApplyBackupFailed", new StackTrace(false).ToString(), null, null, null, null, null, null, null), -1.0, null);
 			}
 		}
 
@@ -128,8 +124,6 @@ namespace Shared.UserSupport.Module.ViewControllers
 		private readonly IUserSupportBackupRestorer backupRestorer;
 
 		private readonly IUserSupportBackupDetailsProvider backupDetailsProvider;
-
-		private readonly IAnalytics analytics;
 
 		private IBackupDialogueView backupView;
 

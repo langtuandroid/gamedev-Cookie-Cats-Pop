@@ -16,12 +16,5 @@ public class SurveyManagerProvider : SurveyManager.ISurveyProvider
 		yield return vs.WaitForClose();
 		yield break;
 	}
-
-	public AnalyticsBase AnalyticsReference
-	{
-		get
-		{
-			return Analytics.Instance;
-		}
-	}
+	
 }

@@ -9,19 +9,18 @@ namespace TactileModules.PuzzleGames.GameCore.Analytics
 {
     public class BasicEventDecorator : IEventDecorator<BasicEvent>, IEventDecorator
     {
-        public BasicEventDecorator(IFlowStack flowStack, IConfigurationManager configurationManager, InventoryManager inventoryManager, [CanBeNull] TactileModules.FeatureManager.FeatureManager featureManager, [CanBeNull] IAnalyticsContextProvider contextProvider)
+        public BasicEventDecorator(IFlowStack flowStack, IConfigurationManager configurationManager, InventoryManager inventoryManager, [CanBeNull] TactileModules.FeatureManager.FeatureManager featureManager)
         {
             this.flowStack = flowStack;
             this.configurationManager = configurationManager;
             this.inventoryManager = inventoryManager;
             this.featureManager = featureManager;
-            this.contextProvider = contextProvider;
         }
 
         public void Decorate(BasicEvent basicEvent)
         {
             int version = this.configurationManager.GetVersion();
-            basicEvent.SetPuzzleCoreCommonProperties(this.MakeFlowStackAsPathSafely(this.flowStack), version, (this.contextProvider == null) ? string.Empty : this.contextProvider.CreateContextString());
+            basicEvent.SetPuzzleCoreCommonProperties(this.MakeFlowStackAsPathSafely(this.flowStack), version,  string.Empty);
         }
 
         private string MakeFlowStackAsPathSafely(IFlowStack flowStack)
@@ -57,7 +56,5 @@ namespace TactileModules.PuzzleGames.GameCore.Analytics
         private readonly InventoryManager inventoryManager;
 
         private readonly TactileModules.FeatureManager.FeatureManager featureManager;
-
-        private readonly IAnalyticsContextProvider contextProvider;
     }
 }

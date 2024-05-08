@@ -4,7 +4,7 @@ namespace TactileModules.SagaCore
 {
 	public class SagaAvatarInfo
 	{
-		public MapAvatar visualPrefab;
+		public MapAvatare visualPrefab;
 
 		public int dotIndex;
 	}

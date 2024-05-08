@@ -6,7 +6,7 @@ using TactileModules.PuzzleGame.MainLevels;
 using TactileModules.PuzzleGame.ReengagementRewards;
 using UnityEngine;
 
-public class LevelDot : MapDot
+public class LevelDott : MapDot
 {
 	private LevelDatabaseCollection LevelDatabaseCollection
 	{

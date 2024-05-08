@@ -120,7 +120,7 @@ public class StoryOutroView : UIView
 			this.mapButtonsView.transform.parent.localScale = new Vector3(1f, 1.5f, 1f);
 			this.mainMapFlow.MapContentController.Avatars.AvatarRoot.gameObject.SetActive(true);
 			this.mainMapFlow.MapContentController.Avatars.ProgressMarker.gameObject.SetActive(false);
-			MapAvatar avatar = this.mainMapFlow.MapContentController.Avatars.GetMeAvatar();
+			MapAvatare avatar = this.mainMapFlow.MapContentController.Avatars.GetMeAvatar();
 			yield return FiberAnimation.ScaleTransform(avatar.transform, Vector3.one * 0.001f, Vector3.one, AnimationCurve.EaseInOut(0f, 0f, 1f, 1f), 0.5f);
 			yield return FiberAnimation.ScaleTransform(this.mapButtonsView.transform.parent, new Vector3(1f, 1.5f, 1f), Vector3.one, AnimationCurve.EaseInOut(0f, 0f, 1f, 1f), 0.5f);
 			this.view.CloseView();
@@ -135,7 +135,7 @@ public class StoryOutroView : UIView
 				duration -= Time.deltaTime;
 				foreach (Transform transform in spawnPool)
 				{
-					LevelDot component = transform.gameObject.GetComponent<LevelDot>();
+					LevelDott component = transform.gameObject.GetComponent<LevelDott>();
 					if (component != null)
 					{
 						component.gameObject.SetActive(component.transform.position.y < this.octopusTransform.position.y);

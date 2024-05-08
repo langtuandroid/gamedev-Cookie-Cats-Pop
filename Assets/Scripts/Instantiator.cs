@@ -126,10 +126,11 @@ public class Instantiator : MonoBehaviour
 		}
 	}
 
-	public static IEnumerable<Instantiator.ComponentPropertyInfo> GetSerializedProperties(GameObject instance)
+	public static IEnumerable<ComponentPropertyInfo> GetSerializedProperties(GameObject instance)
 	{
 		foreach (MonoBehaviour comp in instance.GetComponents<MonoBehaviour>())
 		{
+			Debug.Log(comp);
 			Type type = comp.GetType();
 			foreach (PropertyInfo info in type.GetProperties(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.FlattenHierarchy))
 			{

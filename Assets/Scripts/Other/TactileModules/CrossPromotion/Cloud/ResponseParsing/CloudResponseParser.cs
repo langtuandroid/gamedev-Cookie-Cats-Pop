@@ -9,11 +9,6 @@ namespace TactileModules.CrossPromotion.Cloud.ResponseParsing
 {
 	public class CloudResponseParser : ICloudResponseParser
 	{
-		public CloudResponseParser(IAnalytics analytics)
-		{
-			this.analytics = analytics;
-		}
-
 		public T ParseDataFromResponse<T>(ICloudResponse response)
 		{
 			T result = default(T);
@@ -54,9 +49,8 @@ namespace TactileModules.CrossPromotion.Cloud.ResponseParsing
 
 		private void LogResponseError(Exception e, ICloudResponse response)
 		{
-			this.analytics.LogEvent(new ClientErrorEvent("CrossPromotionRequestError", new StackTrace(false).ToString(), e, response.data.toJson(), null, null, null, null, null), -1.0, null);
+			
 		}
 
-		private readonly IAnalytics analytics;
 	}
 }

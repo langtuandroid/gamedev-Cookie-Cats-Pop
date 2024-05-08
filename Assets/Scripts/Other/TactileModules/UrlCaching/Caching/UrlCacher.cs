@@ -12,7 +12,7 @@ namespace TactileModules.UrlCaching.Caching
 {
 	public class UrlCacher : IUrlCacher
 	{
-		public UrlCacher(IAnalyticsReporter analyticsReporter, IFileSystem fileSystem, IWWWFactory wwwFactory, string domain)
+		public UrlCacher(IFileSystem fileSystem, IWWWFactory wwwFactory, string domain)
 		{
 			string persistentDataPath = Application.persistentDataPath;
 			if (domain.Contains(persistentDataPath))
@@ -20,7 +20,6 @@ namespace TactileModules.UrlCaching.Caching
 				throw new Exception("Please dont add Application.persistentDataPath in the UrlCacher domain : " + domain);
 			}
 			this.cachePath = Path.Combine(Application.persistentDataPath, domain);
-			this.analyticsReporter = analyticsReporter;
 			this.fileSystem = fileSystem;
 			this.wwwFactory = wwwFactory;
 			this.domain = domain;
@@ -82,20 +81,16 @@ namespace TactileModules.UrlCaching.Caching
 			{
 				yield break;
 			}
-			this.analyticsReporter.ReportUrlCachingStarted(url);
 			IWWW www = this.wwwFactory.CreateWWW(url);
 			yield return www.WaitForCompletion();
 			if (www.Error != null)
 			{
-				this.analyticsReporter.ReportUrlCachingError(url, "WWW Request error", www.Error, null);
 				yield break;
 			}
 			if (www.Bytes == null)
 			{
-				this.analyticsReporter.ReportUrlCachingError(url, "WWW Request error", "File is null", null);
 				yield break;
 			}
-			this.analyticsReporter.ReportUrlCachingCompleted(url, www.Bytes.Length);
 			success.value = this.TryCacheFile(url, www.Bytes);
 			yield break;
 		}
@@ -105,14 +100,11 @@ namespace TactileModules.UrlCaching.Caching
 			bool result;
 			try
 			{
-				this.analyticsReporter.ReportUrlCachingWriteAllBytesStarted(url);
 				this.fileSystem.WriteAllBytes(this.GetCachePath(url), bytes);
-				this.analyticsReporter.ReportUrlCachingWriteAllBytesCompleted(url);
 				result = true;
 			}
 			catch (Exception exception)
 			{
-				this.analyticsReporter.ReportUrlCachingError(url, "WriteAllBytes error", "Failed to write file to disk", exception);
 				result = false;
 			}
 			return result;
@@ -123,7 +115,6 @@ namespace TactileModules.UrlCaching.Caching
 			if (!UrlInfo.IsValidUrl(url))
 			{
 				string errorMessage = "URL not using HTTPS!";
-				this.analyticsReporter.ReportUrlCachingError(url, "IsValidUrl error", errorMessage, null);
 				return false;
 			}
 			return true;
@@ -139,8 +130,6 @@ namespace TactileModules.UrlCaching.Caching
 		}
 
 		private readonly string cachePath;
-
-		private IAnalyticsReporter analyticsReporter;
 
 		private readonly IFileSystem fileSystem;
 

@@ -16,22 +16,20 @@ namespace TactileModules.FeatureManager
 {
 	public static class FeatureManagerSystemBuilder
 	{
-		public static FeatureManagerSystem Build(CloudClientBase cloudClientBase, ITimingManager timeStampManager, IFeatureManagerProvider provider, ITargetingParameterFactory targetingParameterFactory, IAnalytics analytics, IAssetBundleSystem assetBundleSystem, IUserSettings userSettings, IFeatureSyncPoints syncPoints, IApplicationLifeCycleEvents applicationLifeCycleEvents)
+		public static FeatureManagerSystem Build(CloudClientBase cloudClientBase, ITimingManager timeStampManager, IFeatureManagerProvider provider, ITargetingParameterFactory targetingParameterFactory, IAssetBundleSystem assetBundleSystem, IUserSettings userSettings, IFeatureSyncPoints syncPoints, IApplicationLifeCycleEvents applicationLifeCycleEvents)
 		{
 			FeatureAssetBundles featureAssetBundles = new FeatureAssetBundles(assetBundleSystem.AssetBundleDownloader, assetBundleSystem.AssetBundleManager);
 			FeatureTypeUrlFileCachingFactory featureTypeUrlFileCachingFactory = new FeatureTypeUrlFileCachingFactory();
-			UrlCacherFactory urlCacherFactory = new UrlCacherFactory(analytics);
+			UrlCacherFactory urlCacherFactory = new UrlCacherFactory();
 			FeatureUrlFileCaching featureUrlFileCaching = new FeatureUrlFileCaching(featureTypeUrlFileCachingFactory, urlCacherFactory);
 			PlayerPrefsSignedString localStorageString = new PlayerPrefsSignedString("FeatureManager", "ReceivedFeatureEvents");
 			LocalStorageJSONObject<FeatureReceivedEventLoggingState> localStorageObject = new LocalStorageJSONObject<FeatureReceivedEventLoggingState>(localStorageString);
 			FeatureReceivedEventLoggingStateHandler featureReceivedEventLoggingStateHandler = new FeatureReceivedEventLoggingStateHandler(localStorageObject);
-			FeatureManagerAnalytics featureManagerAnalytics = new FeatureManagerAnalytics(analytics, featureReceivedEventLoggingStateHandler);
-			FeatureAvailabilityModel featureAvailability = new FeatureAvailabilityModel(featureManagerAnalytics);
+			FeatureAvailabilityModel featureAvailability = new FeatureAvailabilityModel();
 			FeaturesCloud featuresCloud = new FeaturesCloud(cloudClientBase.cloudInterface, cloudClientBase, targetingParameterFactory);
-			FeatureMergeUtil featureMergeUtil = new FeatureMergeUtil(featureManagerAnalytics);
-			FeatureManager featureManager = new FeatureManager(timeStampManager, provider, userSettings, featureAssetBundles, featureUrlFileCaching, featureAvailability, featuresCloud, featureManagerAnalytics);
-			FeatureManagerPersistableState.Initialize(featureMergeUtil, featureManagerAnalytics, featureManager);
-			analytics.RegisterDecorator(new FeatureManagerBasicEventDecorator(featureManager));
+			FeatureMergeUtil featureMergeUtil = new FeatureMergeUtil();
+			FeatureManager featureManager = new FeatureManager(timeStampManager, provider, userSettings, featureAssetBundles, featureUrlFileCaching, featureAvailability, featuresCloud);
+			FeatureManagerPersistableState.Initialize(featureMergeUtil, featureManager);
 			applicationLifeCycleEvents.ApplicationWillEnterForeground += featureManager.ApplicationWillEnterForeground;
 			cloudClientBase.OnServerTimeUpdated += featureManager.ServerTimeUpdated;
 			syncPoints.SafeForFeaturesToSync += featureManager.FadedToBlack;

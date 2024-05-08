@@ -10,7 +10,7 @@ namespace TactileModules.UserSupport
 {
 	public class UserSupportViewControllerFactory : IUserSupportViewControllerFactory
 	{
-		public UserSupportViewControllerFactory(IUser user, IConversations conversations, IPushNotificationHandler pushNotificationHandler, IConversationRequests conversationRequests, IConversationsViewMediator viewMediator, IUserSupportBackupRestorer backupRestorer, IUserSupportBackupDetailsProvider userSettingsDetailsProvider, IAnalytics analytics)
+		public UserSupportViewControllerFactory(IUser user, IConversations conversations, IPushNotificationHandler pushNotificationHandler, IConversationRequests conversationRequests, IConversationsViewMediator viewMediator, IUserSupportBackupRestorer backupRestorer, IUserSupportBackupDetailsProvider userSettingsDetailsProvider)
 		{
 			this.user = user;
 			this.conversations = conversations;
@@ -19,7 +19,6 @@ namespace TactileModules.UserSupport
 			this.viewMediator = viewMediator;
 			this.backupRestorer = backupRestorer;
 			this.userSettingsDetailsProvider = userSettingsDetailsProvider;
-			this.analytics = analytics;
 		}
 
 		public IUIViewController CreateConversationViewController()
@@ -39,7 +38,7 @@ namespace TactileModules.UserSupport
 
 		public IUIViewController CreateBackupDialogueViewController()
 		{
-			return new BackupDialogueViewController(this.conversations, this.viewMediator, this.conversationRequests, this.backupRestorer, this.userSettingsDetailsProvider, this.analytics);
+			return new BackupDialogueViewController(this.conversations, this.viewMediator, this.conversationRequests, this.backupRestorer, this.userSettingsDetailsProvider);
 		}
 
 		private readonly IConversations conversations;
@@ -55,7 +54,5 @@ namespace TactileModules.UserSupport
 		private readonly IUserSupportBackupRestorer backupRestorer;
 
 		private readonly IUserSupportBackupDetailsProvider userSettingsDetailsProvider;
-
-		private readonly IAnalytics analytics;
 	}
 }

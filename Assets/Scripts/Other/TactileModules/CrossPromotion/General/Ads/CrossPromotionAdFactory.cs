@@ -12,7 +12,7 @@ namespace TactileModules.CrossPromotion.General.Ads
 {
 	public class CrossPromotionAdFactory : ICrossPromotionAdFactory
 	{
-		public CrossPromotionAdFactory(ILimitedUrlCacherRetriever adCacherRetriever, IAdCreativeSelector adCreativeSelector, IPromotedGameLauncher promotedGameLauncher, IGeneralDataRetriever generalDataRetriever, ITactileDateTime dateTimeGetter, ITextureLoader textureLoader, IAnalytics analytics)
+		public CrossPromotionAdFactory(ILimitedUrlCacherRetriever adCacherRetriever, IAdCreativeSelector adCreativeSelector, IPromotedGameLauncher promotedGameLauncher, IGeneralDataRetriever generalDataRetriever, ITactileDateTime dateTimeGetter, ITextureLoader textureLoader)
 		{
 			this.adCacherRetriever = adCacherRetriever;
 			this.adCreativeSelector = adCreativeSelector;
@@ -20,12 +20,11 @@ namespace TactileModules.CrossPromotion.General.Ads
 			this.generalDataRetriever = generalDataRetriever;
 			this.dateTimeGetter = dateTimeGetter;
 			this.textureLoader = textureLoader;
-			this.analytics = analytics;
 		}
 
 		public ICrossPromotionAd Create(CrossPromotionAdMetaData metaData, DateTime requestTime, IAdSession session, ICrossPromotionAnalyticsEventFactory analyticsEventFactory)
 		{
-			return new CrossPromotionAd(metaData, requestTime, this.adCacherRetriever, this.adCreativeSelector, this.promotedGameLauncher, this.textureLoader, session, this.generalDataRetriever, this.dateTimeGetter, analyticsEventFactory, this.analytics);
+			return new CrossPromotionAd(metaData, requestTime, this.adCacherRetriever, this.adCreativeSelector, this.promotedGameLauncher, this.textureLoader, session, this.generalDataRetriever, this.dateTimeGetter, analyticsEventFactory);
 		}
 
 		private readonly ILimitedUrlCacherRetriever adCacherRetriever;
@@ -33,8 +32,6 @@ namespace TactileModules.CrossPromotion.General.Ads
 		private readonly IAdCreativeSelector adCreativeSelector;
 
 		private readonly ITextureLoader textureLoader;
-
-		private readonly IAnalytics analytics;
 
 		private readonly IPromotedGameLauncher promotedGameLauncher;
 

@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class PlayerAvatarMapLocation : MonoBehaviour
 {
-	public MapAvatar PlayerAvatar
+	public MapAvatare PlayerAvatar
 	{
 		get
 		{
@@ -30,12 +30,12 @@ public class PlayerAvatarMapLocation : MonoBehaviour
 		{
 			UnityEngine.Object.Destroy(this.avatarOnHud.gameObject);
 		}
-		MapAvatar meAvatar = avatarController.GetMeAvatar();
+		MapAvatare meAvatar = avatarController.GetMeAvatar();
 		if (meAvatar == null)
 		{
 			return;
 		}
-		this.avatarOnHud = UnityEngine.Object.Instantiate<MapAvatar>(meAvatar);
+		this.avatarOnHud = UnityEngine.Object.Instantiate<MapAvatare>(meAvatar);
 		this.avatarOnHud.transform.parent = base.transform;
 		this.avatarOnHud.transform.position += Vector3.forward * -150f;
 		this.avatarOnHud.gameObject.SetLayerRecursively(base.gameObject.layer);
@@ -101,8 +101,8 @@ public class PlayerAvatarMapLocation : MonoBehaviour
 	private IEnumerator AnimateAvatarIn(float duration)
 	{
 		this.avatarOnHud.gameObject.SetActive(true);
-		this.avatarOnHud.SetFrameFromSide(MapAvatar.BackgroundSide.None);
-		this.avatarOnHud.SetPivotPositionFromSide(MapAvatar.BackgroundSide.None);
+		this.avatarOnHud.SetFrameFromSide(MapAvatare.BackgroundSide.None);
+		this.avatarOnHud.SetPivotPositionFromSide(MapAvatare.BackgroundSide.None);
 		float time = 0f;
 		for (;;)
 		{
@@ -125,7 +125,7 @@ public class PlayerAvatarMapLocation : MonoBehaviour
 	private IEnumerator AnimateAvatarOut(float duration)
 	{
 		this.avatarOnHud.gameObject.SetActive(true);
-		MapAvatar.BackgroundSide newSize = this.avatarTransformOnMap.GetComponent<MapAvatar>().GetSideFromLocalPosition(this.avatarTransformOnMap.localPosition);
+		MapAvatare.BackgroundSide newSize = this.avatarTransformOnMap.GetComponent<MapAvatare>().GetSideFromLocalPosition(this.avatarTransformOnMap.localPosition);
 		this.avatarOnHud.SetFrameFromSide(newSize);
 		this.avatarOnHud.SetPivotPositionFromSide(newSize);
 		float time = 0f;
@@ -241,7 +241,7 @@ public class PlayerAvatarMapLocation : MonoBehaviour
 
 	private UIScrollablePanel scrollPanel;
 
-	private MapAvatar avatarOnHud;
+	private MapAvatare avatarOnHud;
 
 	private Transform avatarTransformOnMap;
 

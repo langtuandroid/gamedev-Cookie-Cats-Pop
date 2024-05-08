@@ -25,12 +25,12 @@ namespace TactileModules.CrossPromotion
 {
 	public static class CrossPromotionSystemBuilder
 	{
-		public static void Build(string currentGameId, IGameSessionManager gameSessionManager, IUIViewManager uiViewManager, SideMapButtonSystem sideButtonsSystem, IAnalytics analytics, ISpinnerViewController spinnerViewController, IBasicDialogViewController basicDialogViewController, IUserProgressProvider userProgressProvider)
+		public static void Build(string currentGameId, IGameSessionManager gameSessionManager, IUIViewManager uiViewManager, SideMapButtonSystem sideButtonsSystem, ISpinnerViewController spinnerViewController, IBasicDialogViewController basicDialogViewController, IUserProgressProvider userProgressProvider)
 		{
 			PromotedGameUtilityFactory promotedGameUtilityFactory = new PromotedGameUtilityFactory();
 			IPromotedGameUtility promotedGameUtility = promotedGameUtilityFactory.Create(currentGameId);
 			PromotedGameLauncher promotedGameLauncher = new PromotedGameLauncher(promotedGameUtility);
-			UrlCacherFactory urlCacherFactory = new UrlCacherFactory(analytics);
+			UrlCacherFactory urlCacherFactory = new UrlCacherFactory();
 			TactileDateTime dateTimeGetter = new TactileDateTime();
 			IUrlCacher urlCacher = urlCacherFactory.Create("CrossPromotion/Texture");
 			PlayerPrefsSignedString localStorageString = new PlayerPrefsSignedString("CrossPromotion", "TextureCacherStorage");
@@ -43,7 +43,7 @@ namespace TactileModules.CrossPromotion
 			LimitedUrlCacherRetriever adCacherRetriever = new LimitedUrlCacherRetriever(textureCacher, videoCacher);
 			AdServerCloudInterface cloudInterface = new AdServerCloudInterface();
 			TextureLoader textureLoader = new TextureLoader();
-			CloudResponseParser cloudResponseParser = new CloudResponseParser(analytics);
+			CloudResponseParser cloudResponseParser = new CloudResponseParser();
 			GeneralDataCloud crossPromotionGeneralDataCloud = new GeneralDataCloud(cloudInterface, cloudResponseParser);
 			HubGameFactory hubGameFactory = new HubGameFactory(promotedGameLauncher, textureLoader, spinnerViewController);
 			PlayerPrefsSignedString localStorageString3 = new PlayerPrefsSignedString("CrossPromotion", "GeneralDataStorage");
@@ -53,7 +53,7 @@ namespace TactileModules.CrossPromotion
 			ScreenOrientationGetter screenOrientationGetter = new ScreenOrientationGetter();
 			AdCreativeSelector adCreativeSelector = new AdCreativeSelector(screenOrientationGetter);
 			CrossPromotionAnalyticsDataFactory analyticsDataFactory = new CrossPromotionAnalyticsDataFactory(screenOrientationGetter, adCreativeSelector);
-			CrossPromotionAdFactory crossPromotionAdFactory = new CrossPromotionAdFactory(adCacherRetriever, adCreativeSelector, promotedGameLauncher, generalDataRetriever, dateTimeGetter, textureLoader, analytics);
+			CrossPromotionAdFactory crossPromotionAdFactory = new CrossPromotionAdFactory(adCacherRetriever, adCreativeSelector, promotedGameLauncher, generalDataRetriever, dateTimeGetter, textureLoader);
 		}
 
 		private const string CROSS_PROMOTION_DOMAIN = "CrossPromotion";

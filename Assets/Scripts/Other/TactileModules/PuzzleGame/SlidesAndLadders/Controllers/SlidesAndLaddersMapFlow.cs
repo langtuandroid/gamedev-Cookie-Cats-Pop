@@ -237,7 +237,7 @@ namespace TactileModules.PuzzleGame.SlidesAndLadders.Controllers
 
 		private IEnumerator RunAvatarAnimation(bool isSlide, ILevelProxy to, SlidesAndLaddersSpline spline, float durationFactor)
 		{
-			MapAvatar avatar = base.MapContentController.Avatars.GetMeAvatar();
+			MapAvatare avatar = base.MapContentController.Avatars.GetMeAvatar();
 			Vector3 startPosition = avatar.transform.localPosition;
 			AnimationCurve animCurve = null;
 			UICamera.DisableInput();
@@ -321,8 +321,8 @@ namespace TactileModules.PuzzleGame.SlidesAndLadders.Controllers
 
 		private IEnumerator MoveSteps(ILevelProxy from, ILevelProxy to)
 		{
-			MapAvatar avatar = base.MapContentController.Avatars.GetMeAvatar();
-			yield return avatar.AnimateFramePivotToNewSide(MapAvatar.BackgroundSide.None);
+			MapAvatare avatar = base.MapContentController.Avatars.GetMeAvatar();
+			yield return avatar.AnimateFramePivotToNewSide(MapAvatare.BackgroundSide.None);
 			yield return FiberHelper.Wait(0.2f, (FiberHelper.WaitFlag)0);
 			for (int i = from.Index; i < to.Index; i++)
 			{
@@ -334,7 +334,7 @@ namespace TactileModules.PuzzleGame.SlidesAndLadders.Controllers
 			yield break;
 		}
 
-		private IEnumerator CustomAvatarAnimation(MapAvatar avatar, Vector3 fromPos, Vector3 toPos)
+		private IEnumerator CustomAvatarAnimation(MapAvatare avatar, Vector3 fromPos, Vector3 toPos)
 		{
 			SlidesAndLaddersMapCurves curves = base.MapContentController.MapView.GetComponent<SlidesAndLaddersMapCurves>();
 			yield return FiberAnimation.Animate(curves.AvatarMoveCurve.Duration(), delegate(float t)

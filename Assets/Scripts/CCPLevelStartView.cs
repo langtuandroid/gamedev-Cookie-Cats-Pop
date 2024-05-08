@@ -65,7 +65,6 @@ public class CCPLevelStartView : LevelStartView
         }
         LevelStartDialog.slideAndLadders.SetActive(false);
         bool flag = levelToPlay.LevelAsset is EndlessLevel;
-        Analytics.Instance.AddSubContext("Pregame");
         int numStars = levelToPlay.Stars;
         int hardStars = levelToPlay.GetHardStars();
         if (flag)

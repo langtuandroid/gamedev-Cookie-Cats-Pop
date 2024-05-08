@@ -16,7 +16,7 @@ namespace TactileModules.PuzzleGames.StoryMapEvent
 {
     public static class StoryMapEventSystemBuilder
     {
-        public static IStoryMapEventSystem Build(LevelPlayingSystem levelPlayingSystem, IStoryManager storyManager, BrowseTasksFactory browseTasksFactory, InventoryManager inventoryManager, MainMapStateFactory mainMapStateFactory, SideMapButtonSystem sideMapButtonSystem, ConfigurationManager configurationManager, TactileModules.FeatureManager.FeatureManager featureManager, IPlacementRunnableRegistry placementRunnableRegistry, IFlowStack flowStack, IMainProgression mainProgression, UIViewManager uiViewManager, IAnalytics analytics, IStoryMapEventNotificationProvider storyMapEventNotificationProvider)
+        public static IStoryMapEventSystem Build(LevelPlayingSystem levelPlayingSystem, IStoryManager storyManager, BrowseTasksFactory browseTasksFactory, InventoryManager inventoryManager, MainMapStateFactory mainMapStateFactory, SideMapButtonSystem sideMapButtonSystem, ConfigurationManager configurationManager, TactileModules.FeatureManager.FeatureManager featureManager, IPlacementRunnableRegistry placementRunnableRegistry, IFlowStack flowStack, IMainProgression mainProgression, UIViewManager uiViewManager, IStoryMapEventNotificationProvider storyMapEventNotificationProvider)
         {
             ConfigGetter<StoryMapEventConfig> configGetter = new ConfigGetter<StoryMapEventConfig>(configurationManager);
             StoryMapEventFeatureHandler storyMapEventFeatureHandler = new StoryMapEventFeatureHandler(configGetter, storyMapEventNotificationProvider);
@@ -37,7 +37,7 @@ namespace TactileModules.PuzzleGames.StoryMapEvent
             new LevelStartAddonLifecycleHandler(currencyCollector, currencyAvailability, featureActivation, flowFactory, flowStack);
             new CurrencyRewardLifecycleHandler(currencyCollector);
             new CountdownLifecycleHandler(featureActivation);
-            new AnalyticsEventLogger(analytics, storyManager, inventoryManager);
+            new AnalyticsEventLogger(storyManager, inventoryManager);
             SideButtonControllerFactory controllerProvider = new SideButtonControllerFactory(viewFactory, flowFactory, storyManager, inventoryManager, featureActivation, reminderCooldown);
             sideMapButtonSystem.Registry.Register(controllerProvider);
             return new StoryMapEventSystem(storyMapEventFeatureHandler);

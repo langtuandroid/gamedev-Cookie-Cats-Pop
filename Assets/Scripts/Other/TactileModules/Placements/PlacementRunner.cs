@@ -9,12 +9,11 @@ namespace TactileModules.Placements
 {
 	public class PlacementRunner : IPlacementRunner
 	{
-		public PlacementRunner(IPlacementRunnableRegistry registry, IPlacementViewMediator viewMediator, IConfigPropertyGetter<PlacementConfigData> configPropertyGetter, IAnalytics analytics)
+		public PlacementRunner(IPlacementRunnableRegistry registry, IPlacementViewMediator viewMediator, IConfigPropertyGetter<PlacementConfigData> configPropertyGetter)
 		{
 			this.registry = registry;
 			this.viewMediator = viewMediator;
 			this.configPropertyGetter = configPropertyGetter;
-			this.analytics = analytics;
 		}
 
 		public IEnumerator Run(NonBreakablePlacementIdentifier placement)
@@ -104,7 +103,6 @@ namespace TactileModules.Placements
 		private void LogError(string runnableID, PlacementIdentifier placement)
 		{
 			ClientErrorEvent eventObject = new ClientErrorEvent("PlacementRunnableTypeMismatch", new StackTrace().ToString(), null, runnableID, placement.ID, null, null, null, null);
-			this.analytics.LogEvent(eventObject, -1.0, null);
 		}
 
 		private int GetPlacementViewLimit(PlacementIdentifier placement)
@@ -123,7 +121,5 @@ namespace TactileModules.Placements
 		private readonly IPlacementViewMediator viewMediator;
 
 		private readonly IConfigPropertyGetter<PlacementConfigData> configPropertyGetter;
-
-		private readonly IAnalytics analytics;
 	}
 }

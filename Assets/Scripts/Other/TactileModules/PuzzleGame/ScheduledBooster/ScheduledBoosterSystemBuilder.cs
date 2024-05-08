@@ -10,11 +10,11 @@ namespace TactileModules.PuzzleGame.ScheduledBooster
 {
     public static class ScheduledBoosterSystemBuilder
     {
-        public static IScheduledBoosterSystem Build(TactileModules.FeatureManager.FeatureManager featureManager, ConfigurationManager configurationManager, IAnalytics tactileAnalytics, IScheduledBoosterProvider provider, IScheduledBoosterViewProvider viewProvider, IScheduledBoosterInventoryProvider inventoryProvider)
+        public static IScheduledBoosterSystem Build(TactileModules.FeatureManager.FeatureManager featureManager, ConfigurationManager configurationManager, IScheduledBoosterProvider provider, IScheduledBoosterViewProvider viewProvider, IScheduledBoosterInventoryProvider inventoryProvider)
         {
             ScheduledBoosterDefinitions definitionsUtility = new ScheduledBoosterDefinitions(SingletonAsset<ScheduledBoosterSetup>.Instance.scheduledBoosterDefinitions);
             ScheduledBoosterFactory scheduledBoosterFactory = new ScheduledBoosterFactory(featureManager, definitionsUtility);
-            ScheduledBoosters scheduledBoosters = new ScheduledBoosters(provider, viewProvider, inventoryProvider, tactileAnalytics);
+            ScheduledBoosters scheduledBoosters = new ScheduledBoosters(provider, viewProvider, inventoryProvider);
             ScheduledBoosterHandler handler = new ScheduledBoosterHandler(featureManager, configurationManager, scheduledBoosters, scheduledBoosterFactory);
             return new ScheduledBoosterSystem(handler, scheduledBoosters, viewProvider);
         }

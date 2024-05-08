@@ -217,7 +217,7 @@ public abstract class MapViewBase : UIView
         this.MapStreamerCollection.UpdateLevelDatabasesIfAvailable();
     }
 
-    protected IEnumerator MoveAvatar(LevelProxy source, LevelProxy dest, MapAvatar avatar)
+    protected IEnumerator MoveAvatar(LevelProxy source, LevelProxy dest, MapAvatare avatar)
     {
         yield return this.mapAvatarController.MoveAvatar(source, dest, avatar);
         yield break;

@@ -7,9 +7,8 @@ namespace Tactile.GardenGame.Story.Analytics
 {
 	public class StoryAnalyticsEventLogger
 	{
-		public StoryAnalyticsEventLogger(IAnalytics analytics, StoryManager storyManager, IStoryMapLevels mainLevelsManager)
+		public StoryAnalyticsEventLogger(StoryManager storyManager, IStoryMapLevels mainLevelsManager)
 		{
-			this.analytics = analytics;
 			this.storyManager = storyManager;
 			this.mainLevelsManager = mainLevelsManager;
 			this.factoryCollection = new ActionEventFactoryCollection();
@@ -27,7 +26,6 @@ namespace Tactile.GardenGame.Story.Analytics
 			task.ActionStarted += this.TaskOnActionStarted;
 			task.ActionEnded += this.TaskOnActionEnded;
 			task.TaskSkippedToAction += this.OnTaskSkippedToAction;
-			this.analytics.LogEvent(new TaskStartedEvent(task, this.storyManager.CurrentChapter, this.mainLevelsManager.NumberOfAvailableLevels), -1.0, null);
 			this.currentTask = task;
 		}
 
@@ -36,7 +34,6 @@ namespace Tactile.GardenGame.Story.Analytics
 			task.ActionStarted -= this.TaskOnActionStarted;
 			task.ActionEnded -= this.TaskOnActionEnded;
 			task.TaskSkippedToAction -= this.OnTaskSkippedToAction;
-			this.analytics.LogEvent(new TaskEndedEvent(task, this.storyManager.CurrentChapter, this.mainLevelsManager.NumberOfAvailableLevels, task.SkippedTask), -1.0, null);
 		}
 
 		private void TaskOnActionStarted(MapAction action)
@@ -52,19 +49,12 @@ namespace Tactile.GardenGame.Story.Analytics
 		private void OnTaskSkippedToAction(MapTask task, MapAction action, bool isLastAction)
 		{
 			string skipTo = (!isLastAction) ? action.GetType().Name : "MapActionLast";
-			this.analytics.LogEvent(new TaskSkippedEvent(task, this.storyManager.CurrentChapter, this.mainLevelsManager.NumberOfAvailableLevels, skipTo), -1.0, null);
 		}
 
 		private void LogAction(MapAction action, bool isStartEvent, object result)
 		{
 			object obj = this.factoryCollection.TryCreateEventFromAction(this.currentTask, action, isStartEvent, result);
-			if (obj != null)
-			{
-				this.analytics.LogEvent(obj, -1.0, null);
-			}
 		}
-
-		private readonly IAnalytics analytics;
 
 		private readonly StoryManager storyManager;
 

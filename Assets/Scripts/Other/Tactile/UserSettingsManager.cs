@@ -584,7 +584,7 @@ namespace Tactile
 			UserSettingsManager.SaveLocalSettingsTable("UserSettingsManagerLocalPrivateUserSettings", localSettingsAsTable);
 			Hashtable localSettingsAsTable2 = this.GetLocalSettingsAsTable(this.localPublicUserSettings);
 			UserSettingsManager.SaveLocalSettingsTable("UserSettingsManagerLocalPublicUserSettings", localSettingsAsTable2);
-			this.SettingsSaved();
+			//this.SettingsSaved();
 		}
 
 		private static Hashtable LoadLocalHashtable(string key)

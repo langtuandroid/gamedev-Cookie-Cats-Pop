@@ -17,11 +17,9 @@ namespace TactileModules.PuzzleCore.LevelPlaying
 			return new LevelPlayingSystem(playFlowFactory, playFlowEvents);
 		}
 
-		public static void BuildAnalytics(IAnalytics analytics, string adjustMissionStartedEventId, IAdjustTracking adjustTracking, IMainProgressionForAnalytics mainProgression, IPlayFlowEvents playFlowEvents)
+		public static void BuildAnalytics(string adjustMissionStartedEventId, IAdjustTracking adjustTracking, IMainProgressionForAnalytics mainProgression, IPlayFlowEvents playFlowEvents)
 		{
-			analytics.RegisterDecorator(new BasicEventDecorator(playFlowEvents));
-			analytics.RegisterDecorator(new BasicMissionEventBaseDecorator(mainProgression));
-			new LevelEventsLogger(analytics, playFlowEvents, adjustMissionStartedEventId, adjustTracking, mainProgression);
+			new LevelEventsLogger(playFlowEvents, adjustMissionStartedEventId, adjustTracking, mainProgression);
 		}
 	}
 }

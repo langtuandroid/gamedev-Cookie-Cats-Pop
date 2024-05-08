@@ -22,14 +22,14 @@ namespace TactileModules.SagaCore
 			}
 		}
 
-		public MapAvatar GetDefaultMeAvatarPrefab()
+		public MapAvatare GetDefaultMeAvatarPrefab()
 		{
-			return Resources.Load<MapAvatar>("Map/DefaultAvatars/PlayerAvatar");
+			return Resources.Load<MapAvatare>("map/defaultavatars/PlayerAvatar");
 		}
 
-		public MapAvatar GetDefaultFriendAvatarPrefab()
+		public MapAvatare GetDefaultFriendAvatarPrefab()
 		{
-			return Resources.Load<MapAvatar>("Map/DefaultAvatars/FriendAvatar");
+			return Resources.Load<MapAvatare>("Map/DefaultAvatars/FriendAvatar");
 		}
 
 		public FlashAtCurrentLevel GetDefaultDotFlasherPrefab()

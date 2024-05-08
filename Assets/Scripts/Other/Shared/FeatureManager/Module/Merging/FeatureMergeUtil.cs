@@ -10,9 +10,9 @@ namespace Shared.FeatureManager.Module.Merging
 {
     public class FeatureMergeUtil : IFeatureMergeUtil
     {
-        public FeatureMergeUtil(IFeatureManagerAnalytics featureManagerAnalytics)
+        public FeatureMergeUtil()
         {
-            this.featureManagerAnalytics = featureManagerAnalytics;
+            
         }
 
         public List<ActivatedFeatureInstanceData> MergeMultiple(IFeatureTypeHandler featureTypeHandler, FeatureTypeData current, FeatureTypeData cloud)
@@ -73,7 +73,6 @@ namespace Shared.FeatureManager.Module.Merging
             }
             catch (Exception exception)
             {
-                this.featureManagerAnalytics.LogMergeMultipleFailed(featureTypeHandler, current, cloud, exception);
                 throw;
             }
             return result;
@@ -113,7 +112,6 @@ namespace Shared.FeatureManager.Module.Merging
                         IEndPreviousFeature endPreviousFeature = featureTypeHandler as IEndPreviousFeature;
                         if (flag && flag2)
                         {
-                            this.featureManagerAnalytics.LogMergingMultipleActiveInstancesOfSingleFeature(new StackTrace(), featureTypeHandler, current.Id, cloud.Id);
                             FeatureInstanceCustomData featureInstanceCustomData2 = FeatureHandlerInvokers.NewFeatureInstanceCustomData(featureTypeHandler, new FeatureData());
                             FeatureHandlerInvokers.MergeFeatureInstanceStates(featureTypeHandler, ref featureInstanceCustomData2, customInstanceData, customInstanceData2);
                             ActivatedFeatureInstanceData feature2 = new ActivatedFeatureInstanceData(featureInstanceCustomData2, activatedFeatureInstanceData.FeatureInstanceActivationData);
@@ -161,7 +159,6 @@ namespace Shared.FeatureManager.Module.Merging
             }
             catch (Exception exception)
             {
-                this.featureManagerAnalytics.LogMergeSingleFailed(featureTypeHandler, current, cloud, exception);
                 throw;
             }
             return result;
@@ -238,7 +235,6 @@ namespace Shared.FeatureManager.Module.Merging
             }
             return null;
         }
-
-        private readonly IFeatureManagerAnalytics featureManagerAnalytics;
+        
     }
 }

@@ -7,11 +7,10 @@ namespace TactileModules.Placements
 {
 	public class PlacementRunnableRegistry : IPlacementRunnableRegistry
 	{
-		public PlacementRunnableRegistry(IConfigPropertyGetter<PlacementConfigData> configPropertyGetter, IPlacementEnumerator placementEnumerator, IAnalytics analytics)
+		public PlacementRunnableRegistry(IConfigPropertyGetter<PlacementConfigData> configPropertyGetter, IPlacementEnumerator placementEnumerator)
 		{
 			this.configPropertyGetter = configPropertyGetter;
 			this.placementEnumerator = placementEnumerator;
-			this.analytics = analytics;
 			this.registeredPlacementRunnables = new Dictionary<string, IPlacementRunnable>();
 			this.defaultRunnablePlacements = new Dictionary<IPlacementRunnable, PlacementRunnableRegistry.PlacementData>();
 		}
@@ -42,7 +41,6 @@ namespace TactileModules.Placements
 			if (placementConfigData == null)
 			{
 				string data = "Could not locate config for placement " + placement.ID;
-				this.analytics.LogEvent(new ClientErrorEvent("PlacementsError", new StackTrace(false).ToString(), null, data, null, null, null, null, null), -1.0, null);
 				return list;
 			}
 			List<PlacementConfigData.PlacementRunnableData> list2 = (behavior != PlacementBehavior.Skippable) ? placementConfigData.UnskippableRunnables : placementConfigData.SkippableRunnables;
@@ -111,8 +109,6 @@ namespace TactileModules.Placements
 		private readonly IConfigPropertyGetter<PlacementConfigData> configPropertyGetter;
 
 		private readonly IPlacementEnumerator placementEnumerator;
-
-		private readonly IAnalytics analytics;
 
 		private readonly Dictionary<string, IPlacementRunnable> registeredPlacementRunnables;
 
